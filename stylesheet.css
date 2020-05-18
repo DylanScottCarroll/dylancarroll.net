@@ -16,11 +16,11 @@
 
 #navBarTable {width: 90%; position: relative; left: 7%;}
 
-#navBarTD {padding-top: 1vw; color: #f4f0b7;
+#navBarTD {padding-top: 0%; color: #f4f0b7;
      font-size: 3vw; text-align: left;}
 
 #navBarSelector { position: absolute; background-color: #25aac6;
-    height: 0.3vw; top: 4vw; margin: auto;}
+    height: 0.3vw; top: 13.5vw; margin: auto;}
 
 #backDrop {background-color: #808080;
     position: absolute; top: 15vw; left: 0px;
@@ -36,8 +36,8 @@
 div.bodyText { 
     position: relative; width: 90%; left:5%;}
 
-p.title {font-size: 32pt; color: #25aac6;}
+p.title {font-size: 32pt; color: #25aac6; line-height: 0px;}
 
 p.subtitle {font-size: 24; color: #68c2ba;}
 
-p.main {font-size: 15; color: #000000;}
+p.main {font-size: 16; color: #000000; line-height: 16px;}
