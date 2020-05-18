@@ -1,36 +1,36 @@
 #header {background-color: #808080;
     position: absolute; top: 0px; left: 0px;
-    width: 100%; height: 10vw;}
+    width: 100%; height: 15vw;}
 
 #headerBar {
     background-color: #404040; 
-    position: absolute; left: 0px; top: 0px; width: 100%; height: 7vw;
+    position: absolute; left: 0px; top: 0px; width: 100%; height: 10vw;
     display: table;}
 
 #headerText {display: table-cell; vertical-align: middle;
     color: #ffffff; font-size: 5.5vw; text-align: center;}
 
 #navBar {background-color: #404040;
-    position: absolute; left: 0px; top: 7vw; width: 100%; height: 3.1vw;
+    position: absolute; left: 0px; top: 10vw; width: 100%; height: 5vw;
     display: table;}
 
-#navBarTable {width: 80%; position: relative; left: 10%;}
+#navBarTable {width: 90%; position: relative; left: 7%;}
 
-#navBarTD {padding-top: 1vh; color: #f4f0b7;
-     font-size: 1.5vw; text-align: left;}
+#navBarTD {padding-top: 1vw; color: #f4f0b7;
+     font-size: 3vw; text-align: left;}
 
 #navBarSelector { position: absolute; background-color: #25aac6;
-    height: 0.25vw; top: 2.2vw; align-self: center;}
+    height: 0.3vw; top: 4vw; margin: auto;}
 
 #backDrop {background-color: #808080;
-    position: absolute; top: 10vw; left: 0px;
+    position: absolute; top: 15vw; left: 0px;
     width: 100%; bottom: 0%;}
 
 #tabSelector {background-color: #f4f0b7;}
 
 #main {background-color: #ffffff;
-    position: absolute; top: 0%; left: 5%;
-    width: 90%; height: 90%;}
+    position: absolute; top: 0%; left: 5%; bottom: 5%;
+    width: 90%;}
 
 
 div.bodyText { 
