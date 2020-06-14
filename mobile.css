@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {padding: 0; margin: 0;}
+
+#MainTable {width: 100%; height: 100%;
+    border-collapse:collapse; border: 0px;}
+
+#TopBarRow {background-color:#303030; height: 100px; 
+    left:0px; top: 0px;}
+
+#TitleColumn {width: 30vw;
+    color: #ffffff; font-size: 4vw; text-align: center;
+    font-family: 'Open Sans', sans-serif;}
+
+#TitleDiv {right: 0px; width: .5vw; height: 80px; top: 10px; 
+    background-color: #ffffff;}
+
+#NavTable {width:100%; height: 100px;
+    color: #ffffff; text-align: center; font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;}
+
+
+
+#BodyRow {height: 100%; width: 100%;}
+
+#BodyTable {height: 100%; width: 100%;
+    border-collapse:collapse; border: 0px;}
+
+#BodyDiv {top: 100px; height: calc(100vh - 100px);}
+
+#BodyEdge {background-color: #ff0000; width:5%;}
+
+h1 { font-size: 32pt; color: #25aac6; line-height: 1.5em;}
+
+h2 { font-size: 24; color: #68c2ba; line-height: 1.5em;}
+
+p {font-size: 14pt; 
+    font-family: 'Open Sans', sans-serif;}
