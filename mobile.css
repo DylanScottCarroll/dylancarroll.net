@@ -5,17 +5,17 @@ body {padding: 0; margin: 0;}
 #MainTable {width: 100%; height: 100%;
     border-collapse:collapse; border: 0px;}
 
-#TopBarRow {background-color:#303030; height: 100px; 
+#TopBarRow {background-color:#303030; height: 150px; 
     left:0px; top: 0px;}
 
 #TitleColumn {width: 30vw;
     color: #ffffff; font-size: 6vw; text-align: center;
     font-family: 'Open Sans', sans-serif;}
 
-#TitleDiv {right: 0px; width: .5vw; height: 80px; top: 10px; 
+#TitleDiv {right: 0px; width: .5vw; height: 120px; top: 14px; 
     background-color: #ffffff;}
 
-#NavTable {width:100%; height: 100px;
+#NavTable {width:100%; height: 150px;
     color: #ffffff; text-align: center; font-size: 3vw;
     font-family: 'Open Sans', sans-serif;}
 
@@ -26,7 +26,7 @@ body {padding: 0; margin: 0;}
 #BodyTable {height: 100%; width: 100%;
     border-collapse:collapse; border: 0px;}
 
-#BodyDiv {top: 100px; height: calc(100vh - 100px);}
+#BodyDiv {top: 100px; height: 100%;}
 
 #BodyEdge {background-color: #ffffff; width:5%;}
 
