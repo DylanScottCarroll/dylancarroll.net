@@ -5,18 +5,18 @@ body {padding: 0; margin: 0;}
 #MainTable {width: 100%; height: 100%;
     border-collapse:collapse; border: 0px;}
 
-#TopBarRow {background-color:#303030; height: 150px; 
+#TopBarRow {background-color:#303030; height: 200px; 
     left:0px; top: 0px;}
 
 #TitleColumn {width: 30vw;
     color: #ffffff; font-size: 6vw; text-align: center;
     font-family: 'Open Sans', sans-serif;}
 
-#TitleDiv {right: 0px; width: .5vw; height: 120px; top: 14px; 
+#TitleDiv {right: 0px; width: .5vw; height: 170px; top: 14px; 
     background-color: #ffffff;}
 
-#NavTable {width:100%; height: 150px;
-    color: #ffffff; text-align: center; font-size: 3vw;
+#NavTable {width:100%; height: 200px;
+    color: #ffffff; text-align: center; font-size: 4vw;
     font-family: 'Open Sans', sans-serif;}
 
 
