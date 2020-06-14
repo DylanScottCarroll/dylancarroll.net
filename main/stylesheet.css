@@ -1,8 +1,11 @@
+tr.TopBar {}
 
-tr.TitleBar {}
+td.Title {}
 
-tr.NavBar {}
+td.Nav {}
 
 tr.Body {}
 
-tr.Body {}
+td.MainBody {}
+
+td.BodyEdge {}
