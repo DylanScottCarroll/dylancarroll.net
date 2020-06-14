@@ -1,45 +1,68 @@
+<!--
 ---
 permalink: /animation
 ---
+-->
 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>
-        About Dylan Carroll
-    </title>
-
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-    <style>
-        #navBarSelector {width: 13.7vw; left: 51.3vw}
-
-    </style>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css" />
 </head>
 
 <body>
 
+<table id="MainTable">
+    <tr id="TopBarRow">
+        
+        <td id="TitleColumn">
+            <a class="TitleLink">Dylan Carroll</a>
+        </td>
 
-    <div id = "backDrop">
+        <td> <div id="TitleDiv"></div> </td>
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://dylancarroll.site/about">About</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/ra">Resident Advisor</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/programming">Programming</a></td>
+                </tr>
+                <tr>
+                    <td><a class="NavLink" href="https://dylancarroll.site/animation">Animation</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/other">other</a></td>
+                </tr>
+            </table>
 
-        <div id = "main">
-            <div class = "bodyText">
-                    <p class = "title" >Animation</p>
-
-                    <div class = paragraph>
-                        <p>This page will show off my animations. <nobr>[Under Construction]</nobr> </p>
-                    </div>
-            </div>
-        </div>
-
-    </div>
-
-    <iframe class = "header" src = "header.html" style="border: 0;"></iframe>
+        </td>
+    </tr>
     
-    <div id = "navBarSelector"></div>
-    
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <h1>Animation</h1>
+
+
+                    <p>
+                    This page will show off my animations [Under Construction]
+                    </p>
+
+                </div>
+            </td>
+
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
 
 </body>
 
