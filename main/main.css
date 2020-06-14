@@ -1,4 +1,4 @@
-tr.TopBar {}
+tr.TopBar {widows: 90px; background-color:#404040;}
 
 td.Title {}
 
