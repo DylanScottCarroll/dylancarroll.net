@@ -1,7 +1,0 @@
-Background Color = #808080
-Top Bar Color = #404040
-
-Main Title = #25aac6
-Sub Title = #68c2ba
-
-Light Highlight = #f4f0b7
