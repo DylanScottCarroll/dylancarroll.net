@@ -11,8 +11,8 @@
     color: #ffffff; text-align: center; font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;}
 
-#BodyRow {}
+#BodyRow {background-color:#ffffff;}
 
-td.MainBody {}
+td.MainBody {background-color:#ffffff;}
 
-td.BodyEdge {}
+td.BodyEdge {background-color:#909090;}
