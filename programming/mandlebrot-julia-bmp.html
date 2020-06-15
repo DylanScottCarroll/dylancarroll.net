@@ -8,8 +8,8 @@ permalink: /mandlebrot-julia-bmp
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 901px)" href="desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../mobile.css" />
 </head>
 
 <body>
@@ -47,17 +47,21 @@ permalink: /mandlebrot-julia-bmp
             <td>
                 <div id="BodyDiv">
 
-                    <h1>Mandlebrot and Julia Renderers</h1>
-                    <h2>With custom bmp exporter.</h2>
-
-                    <img src="https://dylancarroll.site/files/programming/image.png"
+                    <br>
+                    <h1 style="line-height: 0;">Mandlebrot and Julia renderers with custom bmp exporter</h1>
+                    <h2 style="line-height: 0;">May 2019</h2>
+                    <br>
 
                     <p>
-                        May 2019 <br>
-                        I wrote both the Mandlebrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.<br>
-                        In addition to the fractal renderers I wrote a program in C that takes 24-bit color data in the form of an array pointer and saves a bitmap file. I wrote the bitmap program while I was teaching myself C as a way to practice file I/O and simple memory management.<br>
+                        I wrote both the Mandlebrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.<br><br>
+                        In addition to the fractal renderers I wrote a program in C that takes 24-bit color data in the form of an array pointer and saves a bitmap file. I wrote the bitmap program while I was teaching myself C as a way to practice file I/O and simple memory management.<br><br>
                         The example julia fractal is the fractal for c = -0.65 + 0.45i.<br>
                     </p>
+
+                    <br>
+
+                    <img src="../files/programming/mandlebrot/image.png" 
+                    style = "width: 80vw; height: 40vw;">
 
 
                 </div>
