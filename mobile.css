@@ -38,9 +38,11 @@ body {padding: 0; margin: 0;}
 
 #BodyEdge {background-color: #ffffff; width:5%;}
 
-h1 { font-size: 32pt; color: #25aac6; line-height: 1em;}
+h1 { font-size: 32pt; color: #25aac6; line-height: 1em;
+    font-family: 'Open Sans', sans-serif;}}
 
-h2 { font-size: 24; color: #68c2ba; line-height: 1em;}
+h2 { font-size: 24; color: #68c2ba; line-height: 1em;
+    font-family: 'Open Sans', sans-serif;}}
 
 p {font-size: 14pt; 
     font-family: 'Open Sans', sans-serif;}
