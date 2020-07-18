@@ -10,22 +10,28 @@ body {padding: 0; margin: 0;}
 #MainTable {width: 100%; height: 100%;
     border-collapse:collapse; border: 0px;}
 
+#MobileTopBarRow {display: none;}
+
 #TopBarRow {background-color:#303030; height: 100px; 
     left:0px; top: 0px;}
 
-#TitleColumn {width: 30vw;
+#DesktopTitleColumn {
+    width: 30vw;
     color: #ffffff; font-size: 4vw; text-align: center;
     font-family: 'Open Sans', sans-serif;}
+
+#MobileTitleColumn {display: none;}
 
 #TitleDivColumn {width: 3vw}
 
 #TitleDiv {right: 0px; width: 4px; height: 80px; top: 10px; 
     background-color: #ffffff;}
 
+#MobileTitleDiv {display: none;}
+
 #NavTable {width:100%; height: 100px;
     color: #ffffff; text-align: center; font-size: 1.5vw;
     font-family: 'Open Sans', sans-serif;}
-
 
 
 #BodyRow {height: 100%; width: 100%;}
