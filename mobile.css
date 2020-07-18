@@ -10,10 +10,10 @@ body {padding: 0; margin: 0;}
 #MainTable {width: 100%; height: 100%;
     border-collapse:collapse; border: 0px;}
 
-#TopBarRow {background-color:#303030; height: 100px; 
+#TopBarRow {background-color:#303030; height: 2vh; 
     left:0px; top: 0px;}
 
-#MobileTopBarRow {background-color:#303030; height: 100px; 
+#MobileTopBarRow {background-color:#303030; height: 2vh; 
     left:0px; top: 0px;}
 
 #DesktopTitleColumn {display: none;}
