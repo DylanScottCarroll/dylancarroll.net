@@ -13,7 +13,7 @@ body {padding: 0; margin: 0;}
 #TopBarRow {background-color:#303030; height: 2vh; 
     left:0px; top: 0px;}
 
-#MobileTopBarRow {background-color:#303030; height: 2vh; 
+#MobileTopBarRow {background-color:#303030; height: 50px; 
     left:0px; top: 0px;}
 
 #DesktopTitleColumn {display: none;}
@@ -25,14 +25,13 @@ body {padding: 0; margin: 0;}
 
 #TitleDivColumn {width: 3vw}
 
-#TitleDiv {display: none;
-    }
+#TitleDiv {display: none;}
 
 #MobileTitleDiv {
-    right: 10px; left: 10px; height: 0.5vh; 
+    right: 10px; left: 10px; height: 3px; 
     background-color: #ffffff;}
 
-#NavTable {width:100%; height: 75px;
+#NavTable {width:100%; height: 50px;
     color: #ffffff; text-align: center; font-size: 3vw;
     font-family: 'Open Sans', sans-serif;}
 
