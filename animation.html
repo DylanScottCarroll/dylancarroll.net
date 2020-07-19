@@ -12,6 +12,9 @@ permalink: /animation
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="CSS/mobile.css" />
     
     <link rel="stylesheet" href="CSS/style.css">
+
+
+
 </head>
 
 <body>
@@ -68,6 +71,15 @@ permalink: /animation
                     <p>
                     This page will show off my animations [Under Construction]
                     </p>
+                    
+                    <div id="image_1">
+                        <img src="https://dylancarroll.site/files/animation/">
+                    </div>
+                    
+
+                    <table id="imageTable">
+
+                    </table>
 
                 </div>
             </td>
@@ -80,5 +92,27 @@ permalink: /animation
 </table>
 
 </body>
+
+<script>
+    var table = document.getElementById("imageTable")
+    
+    var imageCount = 4
+    var images = []
+    for(var i = 0; i < imageCount; i++){
+        var currentImage = document.getElementById("image_" + i.toString())
+        images[i] = currentImage
+    }
+    
+    for(var y = 0; y < 2; y++){
+        var row = table.insertRow()
+        for(var x = 0; x < 2; x++){
+            var cell = row.insertCell()
+
+            var index = y*2 + x
+            cell.appendChild( images[index])
+            
+        }
+    }
+</script>
 
 </html>
