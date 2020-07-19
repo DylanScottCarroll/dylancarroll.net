@@ -17,7 +17,7 @@ body {padding: 0; margin: 0;}
 
 #DesktopTitleColumn {
     width: 30vw;
-    color: #ffffff; font-size: 4vw; text-align: center;
+    color: #ffffff; font-size: 32pt; text-align: center;
     font-family: 'Open Sans', sans-serif;}
 
 #MobileTitleColumn {display: none;}
@@ -30,9 +30,10 @@ body {padding: 0; margin: 0;}
 #MobileTitleDiv {display: none;}
 
 #NavTable {width:100%; height: 100px;
-    color: #ffffff; text-align: center; font-size: 1.5vw;
+    color: #ffffff; text-align: center; font-size: 14pt;
     font-family: 'Open Sans', sans-serif;}
 
+#ContentPad {height: 24pt; }
 
 #BodyRow {height: 100%; width: 100%;}
 
