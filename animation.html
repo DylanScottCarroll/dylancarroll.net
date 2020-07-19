@@ -69,13 +69,78 @@ permalink: /animation
 
 
                     <p>
-                    This page will show off my animations [Under Construction]
+                    
                     </p>
                     
-                    <div id="image_1">
-                        <img src="https://dylancarroll.site/files/animation/">
+                    <div id="image_1" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/1SmileMan.gif">
                     </div>
+
                     
+                    <div id = "image_2" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/2WorldZoom.gif">
+                    </div>
+
+                    <div id = "image_3" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/3Drawface.gif">
+                    </div>
+
+                    <div id = "image_4" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/4UpsideFrown.gif">
+                    </div>
+
+                    <div id = "image_5" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/5SphereSmash.gif">
+                    </div>
+
+                    <div id = "image_6" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/6CubeSplit.gif">
+                    </div>
+
+                    <div id = "image_7" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/7CircleCube.gif">
+                    </div>
+
+                    <div id = "image_8" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/8EmilyBirthday.gif">
+                    </div>
+
+                    <div id = "image_9" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/9GetWell.gif">
+                    </div>
+
+                    <div id = "image_10" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/10NatalieBirthday.gif">
+                    </div>
+
+                    <div id = "image_11" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/11RedBall.gif">
+                    </div>
+
+                    <div id = "image_12" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/12SquishedBall.gif">
+                    </div>
+
+                    <div id = "image_13" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/13ByHand.gif">
+                    </div>
+
+                    <div id = "image_14" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/14ColorPipes.gif">
+                    </div>
+
+                    <div id = "image_15" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/15DontDieCindy.gif">
+                    </div>
+
+                    <div id = "image_16" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/16SmileMan2.gif">
+                    </div>
+
+                    <div id = "image_17" style="width: auto; height: auto;">
+                        <img src="https://dylancarroll.site/files/animation/17BouncingBall.gif">
+                    </div>
+
 
                     <table id="imageTable">
 
@@ -94,25 +159,47 @@ permalink: /animation
 </body>
 
 <script>
+    
+    var photoCount = 17
+
+    var w = window.innerWidth
+    var h = window.innerHeight *.75
+
+    var tableWidth = Math.trunc(w / h)
+    console.log(tableWidth)
+    var tableHeight = Math.ceil( photoCount / tableWidth)
+
     var table = document.getElementById("imageTable")
-    
-    var imageCount = 4
-    var images = []
-    for(var i = 0; i < imageCount; i++){
-        var currentImage = document.getElementById("image_" + i.toString())
-        images[i] = currentImage
-    }
-    
-    for(var y = 0; y < 2; y++){
+
+    var imageWidth = Math.floor((window.innerWidth * 0.8) / tableWidth)
+
+    for(var y = 0; y < tableHeight; y++){
         var row = table.insertRow()
-        for(var x = 0; x < 2; x++){
+
+        for(var x = 0; x < tableWidth; x++){
             var cell = row.insertCell()
 
-            var index = y*2 + x
-            cell.appendChild( images[index])
-            
+            var index = y*tableWidth + x + 1
+            if(index <= photoCount){
+                var div = document.getElementById("image_" + index.toString())
+                var image = div.children[0]
+                
+                console.log(image)
+
+                var aspect = image.naturalHeight / image.naturalWidth
+                var imageHeight = Math.floor(imageWidth * aspect)
+
+                image.style.width = imageWidth.toString() + "px"
+                image.style.height = imageHeight.toString() + "px"
+
+
+
+                cell.appendChild(div)
+            }
+
         }
     }
+
 </script>
 
 </html>
