@@ -82,53 +82,101 @@ permalink: /programming
 
                     <!-- Mandlebrot -->
                     <br><br>
-                    <h3 style="text-align: center;">
+                    <h3>
                         <a class ="text" href="https://dylancarroll.site/programming/mandlebrot-julia-bmp">
                             Mandlebrot and Julia renderers with custom bmp exporter
                         </a>
                     </h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <div  style="width: 60vw; height: 30vw; background-color: black;">
+                                    <a href="https://dylancarroll.site/programming/mandlebrot-julia-bmp">
+                                        <img src="https://dylancarroll.site/files/programming/Mandlebrot/image.png" 
+                                        style = "width: 100%; height: 100%;">
+                                    </a>
+                                </div>
+                            </td>
+                            
+                            <td style="width: 1%;"></td>
+                        </tr>
+
+                        <tr>
+                            <td style = "vertical-align: top;">
+                                <h3 style="line-height: 1;">May 2019</h3>
+                                <p>
+                                    I wrote both the Mandlebrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.<br><br>
+                                    In addition to the fractal renderers I wrote a program in C that takes 24-bit color data in the form of an array pointer and saves a bitmap file without using any extra libraries. I wrote the bitmap program while I was teaching myself C as a way to practice file I/O and simple memory management.<br><br>
+                                    The example julia fractal is the fractal for c = -0.65 + 0.45i.<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
                     
-                    <div 
-                        style="width: 60vw; height: 30vw; background-color: black; display: block; margin: auto;">
-                        <a href="https://dylancarroll.site/programming/mandlebrot-julia-bmp">
-                            <img src="https://dylancarroll.site/files/programming/Mandlebrot/image.png" 
-                            style = "width: 100%; height: 100%;">
-                        </a>
-                    </div>
+                    
 
                     
 
                     <!-- Perlin Noise -->
-                    <br><br>
-                    <h3 style="text-align: center;">
+                    <br><br><br>
+                    <h3>
                         <a class ="text" href="https://dylancarroll.site/programming/perlin">
                             Perlin Noise Generator
                         </a>
                     </h2>
-                    
-                    <div 
-                        style="width: 35vw; height: 35vw; background-color: black; display: block; margin: auto;">
-                        <a href="https://dylancarroll.site/programming/perlin">
-                            <img src="https://dylancarroll.site/files/programming/perlin/PerlinScroll.gif" 
-                            style = "width: 100%; height: 100%;">
-                        </a>
-                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="width: 35vw; height: 35vw; background-color: black;">
+                                    <a href="https://dylancarroll.site/programming/perlin">
+                                        <img src="https://dylancarroll.site/files/programming/perlin/PerlinScroll.gif" 
+                                        style = "width: 100%; height: 100%;">
+                                    </a>
+                                </div>
+                            </td>
+                            
+                            <td style="width: 1%;"></td>
+
+                            <td style = "vertical-align: top;">
+                                <h3 style="line-height: 1;">March 2019</h3>
+
+                                <p> I became interested in noise generation because I saw it being applied in procedural terrain and textures of the games that I played and was curious about how it worked. After researching the Perlin noise algorithm, I wrote an implementation of the algorithm in Python to understand it further. The visuals are rendered using a python library called Pygame.</p>
+                                <p>The render below is a 500x500 grid of 1 octive of Perlin noise.</p>
+                            </td>
+                        </tr>
+                    </table>
+
 
 
                     <!-- 3D Ray Tracing Engine -->
-                    <br>
-                    <h3 style="text-align: center;">
+                    <br><br>
+                    <h3>
                         <a class ="text" href="https://dylancarroll.site/programming/ray-tracing">
                             3D Ray Tracing Engine
                         </a>
                     </h2>
-                    <div 
-                        style="width: 35vw; height: 35vw; background-color: black; display: block; margin: auto;">
-                        <a href="https://dylancarroll.site/programming/ray-tracing">
-                            <img src="https://dylancarroll.site/files/programming/ray-tracing/RotatingSphere.gif" 
-                            style = "width: 100%; height: 100%;">
-                        </a>
-                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div 
+                                    style="width: 35vw; height: 35vw; background-color: black;">
+                                    <a href="https://dylancarroll.site/programming/ray-tracing">
+                                        <img src="https://dylancarroll.site/files/programming/ray-tracing/RotatingSphere.gif" 
+                                        style = "width: 100%; height: 100%;">
+                                    </a>
+                                </div>
+                            </td>
+
+                            <td style="width: 1%;"></td>
+
+                            <td style = "vertical-align: top;">
+                                <h3 style="line-height: 1;">May 2019</h3>
+
+                                <p>I wrote this engine as a way to further understand 3D computer graphics. Additionally, I was learning about vectors and planes in my pre-calculus class, which is what got me to finally begin the project. I was not intending to use the program as an actual graphical engine, I just wrote it to experiment with 3D graphics and the vector math that I was learning in schoool. The program takes a single .obj as an input. The engine runs on a single processor thread in Python, as such it is very slow. I indended to add more complex lighting and reflections, but I decided not to contunue with the project, because it takes a very long time to render one frame with even slightly complex meshes even at very low resolutons. The shading of each face is based off of the angle relative to the plane of the camera.</p>
+                                <p>The example is an animation of an icosphere rotating to demonstrate the engine.</p>
+                            </td>
+                        </tr>
+                    </table>
 
                     
                 </div>
