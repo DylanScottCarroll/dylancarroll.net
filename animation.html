@@ -67,79 +67,56 @@ permalink: /animation
 
                     <h1>Animation</h1>
 
+                    <h2>About</h2>
+                    <p>I occasionally make simple .gif animations in my spare time. 
+                        I'm not a skilled artist, but I enjoy the process of animation. 
+                        I first got into animation because of a specific idea I had for an animation, which is the first one displayed below. 
+                        I made several of my animations for specific purposes, such as wishing a friend happy birthday or asking them to get well soon. 
+                        Others are just other ideas that I thought would be interesting or challenging.</p>
+                    <p>Below is a gallery of my animations in roughly chronological order.</p>
 
-                    <p>
+                    <br>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="text-align: center; line-height: 0;" >
+                                    <a class="NavLink" onclick="lastAnimation()" >< Previous</a>
+                                </p>
+
+                                <input id="last" type="image" src="#" style="width: 10vw; outline: 5px solid #EEEEEE;">
+                            </td>
+
+                            <td>
+                                <img id="current" src="https://dylancarroll.site/files/animation/1SmileMan.gif" style="width: 90vh; outline: 5px solid #EEEEEE;">
+                            </td>
+
+                            <td>
+                                <p style="text-align: center; line-height: 0;" >
+                                    <a class="NavLink" onclick="nextAnimation()" >Next ></a>
+                                </p>
+
+                                <input id="next" type="image" src="#" style="width: 10vw; outline: 5px solid #EEEEEE;">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+
+                            <td >
+                                <table style="width: 100%;">
+                                    <tr style="width: 100%;">
+                                        <td id="Progress_Bar_Start" style="background-color: #25aac6; width: 20%; height: 10px;"></td>
+                                        <td id="Progress_Bar_End" style="background-color: #505050; width: 80%; height: 10px"></td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                            <td></td>
+                        </tr>
                     
-                    </p>
                     
-                    <div id="image_1" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/1SmileMan.gif">
-                    </div>
-
-                    
-                    <div id = "image_2" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/2WorldZoom.gif">
-                    </div>
-
-                    <div id = "image_3" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/3Drawface.gif">
-                    </div>
-
-                    <div id = "image_4" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/4UpsideFrown.gif">
-                    </div>
-
-                    <div id = "image_5" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/5SphereSmash.gif">
-                    </div>
-
-                    <div id = "image_6" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/6CubeSplit.gif">
-                    </div>
-
-                    <div id = "image_7" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/7CircleCube.gif">
-                    </div>
-
-                    <div id = "image_8" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/8EmilyBirthday.gif">
-                    </div>
-
-                    <div id = "image_9" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/9GetWell.gif">
-                    </div>
-
-                    <div id = "image_10" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/10NatalieBirthday.gif">
-                    </div>
-
-                    <div id = "image_11" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/11RedBall.gif">
-                    </div>
-
-                    <div id = "image_12" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/12SquishedBall.gif">
-                    </div>
-
-                    <div id = "image_13" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/13ByHand.gif">
-                    </div>
-
-                    <div id = "image_14" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/14ColorPipes.gif">
-                    </div>
-
-                    <div id = "image_15" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/15DontDieCindy.gif">
-                    </div>
-
-                    <div id = "image_16" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/16SmileMan2.gif">
-                    </div>
-
-                    <div id = "image_17" style="width: auto; height: auto;">
-                        <img src="https://dylancarroll.site/files/animation/17BouncingBall.gif">
-                    </div>
+                    </table>
 
 
                     <table id="imageTable">
@@ -160,44 +137,68 @@ permalink: /animation
 
 <script>
     
-    var photoCount = 17
+    var imageCount = 17
+    var currentImage = 1
 
-    var w = window.innerWidth
-    var h = window.innerHeight *.75
+    var pictureDict = {
+        1 : "1SmileMan.gif",
+        2 : "2WorldZoom.gif",
+        3 : "3Drawface.gif",
+        4 : "4UpsideFrown.gif",
+        5 : "5SphereSmash.gif",
+        6 : "6CubeSplit.gif",
+        7 : "7CircleCube.gif",
+        8 : "8EmilyBirthday.gif",
+        9 : "9GetWell.gif",
+        10 : "10NatalieBirthday.gif",
+        11 : "11RedBall.gif",
+        12 : "12SquishedBall.gif",
+        13 : "13ByHand.gif",
+        14 : "14ColorPipes.gif",
+        15 : "15DontDieCindy.gif",
+        16 : "16SmileMan2.gif",
+        17 : "17BouncingBall.gif"
+    }
 
-    var tableWidth = Math.trunc(w / h)
-    console.log(tableWidth)
-    var tableHeight = Math.ceil( photoCount / tableWidth)
+    var lastButton = document.getElementById("last")
+    lastButton.addEventListener("click", lastAnimation)
 
-    var table = document.getElementById("imageTable")
-
-    var imageWidth = Math.floor((window.innerWidth * 0.8) / tableWidth)
-
-    for(var y = 0; y < tableHeight; y++){
-        var row = table.insertRow()
-
-        for(var x = 0; x < tableWidth; x++){
-            var cell = row.insertCell()
-
-            var index = y*tableWidth + x + 1
-            if(index <= photoCount){
-                var div = document.getElementById("image_" + index.toString())
-                var image = div.children[0]
-                
-                console.log(image)
-
-                var aspect = image.naturalHeight / image.naturalWidth
-                var imageHeight = Math.floor(imageWidth * aspect)
-
-                image.style.width = imageWidth.toString() + "px"
-                image.style.height = imageHeight.toString() + "px"
+    var nextButton = document.getElementById("next")
+    nextButton.addEventListener("click", nextAnimation)
 
 
+    updateImages()
 
-                cell.appendChild(div)
-            }
+    function lastAnimation(){
+        currentImage = (currentImage == 1) ? imageCount : (currentImage - 1)
 
-        }
+        updateImages()
+    }
+
+    function nextAnimation(){
+        currentImage = (currentImage == imageCount) ? 1 : (currentImage + 1)
+
+        updateImages()
+    }
+
+    function updateImages(){
+        var last = document.getElementById("last")
+        var current = document.getElementById("current")
+        var next = document.getElementById("next")
+
+        var lastNum = (currentImage == 1) ? imageCount : (currentImage - 1)
+        var nextNum = (currentImage == imageCount) ? 1 : (currentImage + 1)
+
+        last.setAttribute("src", "https://dylancarroll.site/files/animation/" + pictureDict[lastNum])
+        current.setAttribute("src", "https://dylancarroll.site/files/animation/" + pictureDict[currentImage])
+        next.setAttribute("src", "https://dylancarroll.site/files/animation/" + pictureDict[nextNum])
+
+        var progressBarStart = document.getElementById("Progress_Bar_Start")
+        var progressBarEnd = document.getElementById("Progress_Bar_End")
+
+        progressBarStart.style.width = (100 - Math.floor(100* currentImage / imageCount).toString()) + "%"
+        progressBarStart.style.width = Math.floor(100* currentImage / imageCount).toString() + "%"
+        
     }
 
 </script>
