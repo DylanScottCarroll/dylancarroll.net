@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-
+/* Title Bar */
 #MobileTitleRow {background-color:#303030; height: 75px; 
     left:0px; top: 0px;}
 #MobileTitlecolumn { 
@@ -17,4 +17,9 @@
     right: 10px; left: 10px; height: 3px; 
     background-color: #ffffff;}
 
+/* Programming Page */
+.InvisibleDesktop {}
+.InvisibleMobile {display: none;}
 
+.ImageDiv {width: 50vw; height: 50vw; background-color: black;}
+.ImageTable {display: block; margin-left: auto; margin-right: auto;}

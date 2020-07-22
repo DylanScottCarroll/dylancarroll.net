@@ -76,18 +76,19 @@ permalink: /programming
 
                     <h2>Independant projects</h2>
                     
-                    <p>
-                        These are some of the projects that I have completed on my own time as a hobby. Most of them are just simple projects that I worked on out of curiosity, mainly to explore a new concept or idea.
-                    </p>
+                    <p> These are some of the projects that I have completed on my own time as a hobby. Most of them are just simple projects that I worked on out of curiosity, mainly to explore a new concept or idea. </p>
+
+                    <br>
+
+                    <p class = "InvisibleDesktop"> <b>--Click images for details--</b> </p>
 
                     <!-- Mandlebrot -->
-                    <br><br>
                     <h3>
                         <a class ="text" href="https://dylancarroll.site/programming/mandlebrot-julia-bmp">
                             Mandlebrot and Julia renderers with custom bmp exporter
                         </a>
                     </h2>
-                    <table>
+                    <table class="ImageTable">
                         <tr>
                             <td>
                                 <div  style="width: 60vw; height: 30vw; background-color: black;">
@@ -102,7 +103,7 @@ permalink: /programming
                         </tr>
 
                         <tr>
-                            <td style = "vertical-align: top;">
+                            <td style = "vertical-align: top;" class="InvisibleMobile">
                                 <h3 style="line-height: 1;">May 2019</h3>
                                 <p>
                                     I wrote both the Mandlebrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.<br><br>
@@ -124,10 +125,10 @@ permalink: /programming
                             Perlin Noise Generator
                         </a>
                     </h2>
-                    <table>
+                    <table class="ImageTable">
                         <tr>
                             <td>
-                                <div style="width: 35vw; height: 35vw; background-color: black;">
+                                <div class = "ImageDiv">
                                     <a href="https://dylancarroll.site/programming/perlin">
                                         <img src="https://dylancarroll.site/files/programming/perlin/PerlinScroll.gif" 
                                         style = "width: 100%; height: 100%;">
@@ -137,13 +138,14 @@ permalink: /programming
                             
                             <td style="width: 1%;"></td>
 
-                            <td style = "vertical-align: top;">
+                            <td style = "vertical-align: top;" class="InvisibleMobile">
                                 <h3 style="line-height: 1;">March 2019</h3>
 
                                 <p> I became interested in noise generation because I saw it being applied in procedural terrain and textures of the games that I played and was curious about how it worked. After researching the Perlin noise algorithm, I wrote an implementation of the algorithm in Python to understand it further. The visuals are rendered using a python library called Pygame.</p>
                                 <p>The render below is a 500x500 grid of 1 octive of Perlin noise.</p>
                             </td>
                         </tr>
+
                     </table>
 
 
@@ -155,11 +157,10 @@ permalink: /programming
                             3D Ray Tracing Engine
                         </a>
                     </h2>
-                    <table>
+                    <table class="ImageTable">
                         <tr>
                             <td>
-                                <div 
-                                    style="width: 35vw; height: 35vw; background-color: black;">
+                                <div class = "ImageDiv">
                                     <a href="https://dylancarroll.site/programming/ray-tracing">
                                         <img src="https://dylancarroll.site/files/programming/ray-tracing/RotatingSphere.gif" 
                                         style = "width: 100%; height: 100%;">
@@ -169,7 +170,7 @@ permalink: /programming
 
                             <td style="width: 1%;"></td>
 
-                            <td style = "vertical-align: top;">
+                            <td style = "vertical-align: top;" class="InvisibleMobile">
                                 <h3 style="line-height: 1;">May 2019</h3>
 
                                 <p>I wrote this engine as a way to further understand 3D computer graphics. Additionally, I was learning about vectors and planes in my pre-calculus class, which is what got me to finally begin the project. I was not intending to use the program as an actual graphical engine, I just wrote it to experiment with 3D graphics and the vector math that I was learning in schoool. The program takes a single .obj as an input. The engine runs on a single processor thread in Python, as such it is very slow. I indended to add more complex lighting and reflections, but I decided not to contunue with the project, because it takes a very long time to render one frame with even slightly complex meshes even at very low resolutons. The shading of each face is based off of the angle relative to the plane of the camera.</p>
