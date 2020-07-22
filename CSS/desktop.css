@@ -17,8 +17,11 @@
 
 
 /* Programming Page */
-.InvisibleDesktop {display: none;}
+.InvisibleDesktop {display: none; width: 0px; height: 0px;}
 .InvisibleMobile { }
 
 .ImageDiv {width: 35vw; height: 35vw; background-color: black;}
-.ImageTable { }
+
+
+/* Animation Page */
+#current {width: 50vw;}

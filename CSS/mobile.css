@@ -19,7 +19,10 @@
 
 /* Programming Page */
 .InvisibleDesktop {}
-.InvisibleMobile {display: none;}
+.InvisibleMobile {display: none; width: 0px; height: 0px;}
 
 .ImageDiv {width: 50vw; height: 50vw; background-color: black;}
-.ImageTable {display: block; margin-left: auto; margin-right: auto;}
+
+
+/* Animation Page */
+#current {width: 70vw;}
