@@ -1,0 +1,112 @@
+<!--
+---
+permalink: /nn-racer
+---
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<table id="MainTable">
+
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://dylancarroll.site">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://dylancarroll.site">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://dylancarroll.site/about">About</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/animation">Animation</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/programming">Programming</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://dylancarroll.site/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/other">other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+    
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <br>
+                    <h1 style="line-height: 1;">3D Ray Tracing Engine</h1>
+                    <h2 style="line-height: 1;">November 2020</h2>
+                    <br>
+
+                    <p>I have long been interested in neural networks and have wanted to try implementing one for a while. I decided to use the neural network to play a simple racing game because I thought that it was an application that wouldn't be too difficult for my first time using neural networks. I decided to use a genetic algorithm to train the network for a similar reason: I have done minimal research on how to implement neural networks and thought that a genetic algorithm would be easy to figure out for myself.</p>
+
+                    <p>I wrote the program in <a class="GenericLink" href="processing.org">Processing</a>, which is a language/application that is intended to make writing simple graphical apps easy to write. Processing is essentially identical to Java since Java code will run in  Processing without modification. I do have plans to reuse this code in future Java projects.</p>
+
+                    <p>The neural network takes 5 inputs that consist of the distance to the edge of the track and gives two outputs for the speed of the car and the rotational velocity of the car.</p>
+
+                    <p>The genetic algorithm works by taking the top 1/3 of networks each generation and populate the next generation with random variations off of those networks. Each generation has 50 networks. </p>
+
+                    <p>It took me a long time to work out all of the bugs and optimize the program. After I did, however, I was surprised to see how quickly the network trains. After only about 3-5 generations the cars can mostly navigate the course, and after 20 generations, the cars can reliably make many laps without crashing.</p>
+
+                    <p>After I was done training the network, I tried putting the car in a different course than the one it trained it. It crashed pretty quickly but after only a few generations, the cars were reliably not crashing in the new course.</p>
+
+                    <p>The first image below is an animation of the car driving the course it trained on. The inputs to the network are shown as lines and the inside of the network is rendered to the right. The network pictured has two hidden layers with 15 nodes each. I tried various sizes for the network and sizes much smaller than this were worse at driving the track.</p>
+
+                    <img src="https://dylancarroll.site/files/programming/nn-racer/Track0.gif" 
+                    style = "width: 50vw; height: 50vw;">
+
+                    <p>This image shows the car driving the track it did not train on after three generations of adapting to that new track.</p>
+
+                    <img src="https://dylancarroll.site/files/programming/nn-racer/Track3.gif" 
+                    style = "width: 50vw; height: 50vw;">
+
+                    <p>The final image below shows the first two generations of training a new set of networks. It is being played in real-time, however I ran it much faster when I was actually training.</p>
+
+                    <img src="https://dylancarroll.site/files/programming/nn-racer/Training.gif" 
+                    style = "width: 50vw; height: 50vw;">
+
+                    <br>
+
+
+                </div>
+            </td>
+
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+</html>

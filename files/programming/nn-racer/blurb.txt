@@ -1,0 +1,23 @@
+I have long been interested in neural networks and have wanted to try implementing one for a while. I decided to use the neural network to play a simple racing game because I thought that it was an application that wouldn't be too difficult for my first time using neural networks. I decided to use a genetic algorithm to train the network for a similar reason: I have done minimal research on how to implement neural networks and thought that a genetic algoritm would be easy to figure out for myself.
+
+I wrote the program in <a>Processing</a>, which is a language/application that is intended to make writing simple graphical apps easy to write. Processing is esentially identical to Java, sice Java code will run in  Processing without modification. I do have plans to reuse this code in future Java projects.
+
+The neural network takes 5 inputs that consist of the distance to the edge of the track, and gives tow outputs for the speed of the car and the rotational velocity of the car.
+
+The genetic algorithm works by taking the top 1/3 of networks each each generation and populate the next generation with random variations off of those networks. Each generation has 50 networks. 
+
+It took me a long time to work out all of the bugs and optimize the program. After I did, however, I was suprised to see how quickly the network trains. After only about 3-5 generations the cars can mostly navigate the course, and after 20 generations, the cars can reliably make many laps without crashing.
+
+After I was done training the network, I tried putting the car in a different course than the one it trained it. It crashed pretty quickly but after only a few generations, the cars were reliably not crashing in the new course.
+
+The first image below is an animation of the car driving the course it trained on. The inputs to the network shown as lines and the inside of the network rendered to the right. The network pictured has two hiden layers with 15 nodes each. I tried various sizes for the network, and sizes much smaller than this were worse at driving the track.
+
+[]
+
+This image shows the car driving the track it did not train on after 3 generations of adapting to that new track.
+
+[]
+
+The final image below shows the first two generations of training a new set of networks.
+
+[]
