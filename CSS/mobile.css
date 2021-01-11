@@ -17,6 +17,8 @@
     right: 10px; left: 10px; height: 3px; 
     background-color: #ffffff;}
 
+#BodyEdge {background-color: #ffffff; width:5%;}
+
 /* Programming Page */
 .InvisibleDesktop {}
 .InvisibleMobile {display: none; width: 0px; height: 0px;}

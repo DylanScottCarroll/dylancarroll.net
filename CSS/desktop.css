@@ -15,10 +15,12 @@
     background-color: #ffffff;}
 #MobileTitleDiv {display: none;}
 
+#BodyEdge {background-color: #ffffff; width:20%;}
 
 /* Programming Page */
 .InvisibleDesktop {display: none; width: 0px; height: 0px;}
 .InvisibleMobile { }
+
 
 .ImageDiv {width: 25vw; height: 25vw; background-color: black;}
 
