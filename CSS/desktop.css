@@ -30,4 +30,4 @@
 
 
 /*about me*/
-#AboutImage {width:20vw; height: 15vw}
+#AboutImage {max-width:100%; height:auto;}
