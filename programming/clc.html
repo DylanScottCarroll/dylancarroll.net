@@ -1,0 +1,94 @@
+<!--
+---
+permalink: /markov
+---
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+<table id="MainTable">
+
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://dylancarroll.site">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://dylancarroll.site">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://dylancarroll.site/about">About</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/animation">Animation</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/programming">Programming</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://dylancarroll.site/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://dylancarroll.site/other">other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+    
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <br>
+                    <h1 style="line-height: 1;">Command-Line Calculator</h1>
+                    <h2 style="line-height: 1;">Nov 2020</h2>
+                    <br>
+
+                    <p>Much more detail on the specifics of the syntax and functionality of the calculator can be found in the readme on its github repo:  <a href="https://github.com/DylanScottCarroll/Command-Line-Calculator" class="GenericLink">https://github.com/DylanScottCarroll/Command-Line-Calculator</a> </p>
+
+                    <p>This is a calculator written in python that runs in the terminal. The program uses python data types and math functions, but I wrote all of the parsing logic myself. This calculator has largely been an exercise in parsing user input and parsing mathematical expressions using regular expressions and finite context-free grammars.</p>
+
+                    <p>I wrote this because I seldom used the Windows calculator and instead typed calculations right into the windows search bar because I found the calculator slow and cumbersome to open and use. Most of the time, this shows up as a bing search, which has the result of the calculation. The advantage of this is that all I need to do is quickly hit the windows key and start typing. The problem is that this uses bing, and it doesn't work all of the time (sometimes it thinks you're trying to search for files). On my PC, I have this calculator linked to run whenever I type a keyboard shortcut, so it is just as fast.</p>
+
+                    <p>The inner workings of this calculator were inspired by a few things that I've learned in my studies of Computer Science. First, was a brief example problem in an introductory class that referenced postfix notation for mathematical expressions. That got me interested in the shunting yard algorithm, which converts standard notation of expressions into postfix, which is easy to evaluate programmatically. I wrote the calculator initially in November of 2020, after becoming frustrated with the windows calculator. The code was pretty messy and there were a lot of things wrong with it, but it worked very well for my purposes. </p>
+                    <p>Later, I began a new Computer Science class studying state machines, regular expressions, and regular grammar. This inspired me to more robustly rewrite the entire calculator using regular expressions and an LL1 parser to parse the input before converting it to postfix.</p>
+                    <p>Now the calculator is much more robust and extensible.</p>
+
+                    
+
+                </div>
+            </td>
+
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
