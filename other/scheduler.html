@@ -1,6 +1,8 @@
+<!--
 ---
 permalink: /other/scheduler
 ---
+-->
 
 <!DOCTYPE html>
 <html>
@@ -10,6 +12,22 @@ permalink: /other/scheduler
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
     
     <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
+
+    <style>
+        input.HourBox {width: 24pt;}
+        input.MinuteBox {width: 24pt;}
+
+        div.border {color: #78CCAD; border-style: solid; border-width: 1pt; border-radius: 6pt;}
+        div.course { margin-left: auto; margin-right: 0pt;}
+
+        p {white-space: nowrap;}
+        h3 {white-space: nowrap;}
+
+        input[type=button] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
+            margin-left: auto; margin-right: auto; font-size: 15pt; color: #505050; 
+            font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI";}
+    </style>
+
 </head>
 
 <body>
@@ -61,8 +79,130 @@ permalink: /other/scheduler
             <td>
                 <div id="BodyDiv">
 
-                    <p> This is my class scheduling app. It's in progress! </p>
-                    </p>
+                    <div class="border settings" >
+                        <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
+                            <tr>
+                                <td> <h3 style="line-height: 0pt;"> Settings </td>
+                            </tr>
+
+                            <tr>
+                                <td > <p>Start Time: </p> </td>
+                                <td> <input class=StartTime type="time">  </td>
+                                    
+                                
+                                
+                                <td> <p>End Time: </p> </td>
+                                <td> <input class=EndTime type="time" >  </td>
+                            </tr>
+                            
+                            <tr>
+                                <td> <p>Min Credits</p> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                    
+                                
+                                
+                                <td> <p>Min Courses</p> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                    
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td> <p>Max Credits</p> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+
+
+                                <td> <p>Max Courses</p> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                
+                            </tr>
+                            
+                            <tr>
+                                <td class=UploadSave> </td>
+
+
+                                <td class=DownloadSave></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    &nbsp;
+
+                    <table style="width: 100%;">
+                        <tr><td>
+                            <div class="border course"> 
+                                <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
+                                    <tr>
+                                        <td><h3 style="line-height: 0pt;">Course 1:</h3></td>
+                                        <td></td>
+                                        <td><p> Name: </p></td>
+                                        <td> <input type=text style="width: 75%;"> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Credits:</p></td>
+                                        <td> <input type="number" min="0" style="width: 36pt;"> </td>
+                                        <td><p>CRN:</p></td>
+                                        <td><input type="number" style="width: 48pt;"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Shade:</p></td>
+                                        <td> 
+                                            <select>
+                                                <option value=""></option>
+                                                <option value="light">Light</option>
+                                                <option value="dark">Dark</option>
+                                            </select> 
+                                        </td>
+
+                                        <td><p>Color:</p></td>
+                                        <td>
+                                            <select>
+                                                <option value="red"> Red </option>
+                                                <option value="orange"> Orange </option>
+                                                <option value="yellow"> Yellow </option>
+                                                <option value="green"> Green </option>
+                                                <option value="teal"> Teal </option>
+                                                <option value="blue"> Blue </option>
+                                                <option value="purble"> Purple </option>
+                                            </select> 
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Start:</p></td>
+                                        <td><input class=StartTime type="time"></td>
+                                        <td><p>End:</p></td>
+                                        <td><input class=EndTime type="time"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Note:</p></td>
+                                        <td><input type=text style="width: 100;"></td>
+                                        <td><p>Group:</p></td>
+                                        <td><input type=text style="width: 75%;"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td></tr>
+
+                        <tr>
+                            <td>
+                                &nbsp;
+                                <div style="margin-left: auto; margin-right: auto; display: block;">
+                                    <input  type="button" onclick="removeCourse()" value="Remove Course">
+                                    <input type="button" onclick="addCourse()" value="Add Course">
+                                </div>
+                                
+
+                            </td>
+                        </tr>
+
+                        
+                    </table>
+                    
                     
 
                 </div>
@@ -76,5 +216,74 @@ permalink: /other/scheduler
 </table>
 
 </body>
+
+<script>
+    var blankCourseElement = `<tr><td>
+                            <div class="border course"> 
+                                <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
+                                    <tr>
+                                        <td><h3 style="line-height: 0pt;">Course 1:</h3></td>
+                                        <td></td>
+                                        <td><p> Name: </p></td>
+                                        <td> <input type=text style="width: 75%;"> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Credits:</p></td>
+                                        <td> <input type="number" min="0" style="width: 36pt;"> </td>
+                                        <td><p>CRN:</p></td>
+                                        <td><input type="number" style="width: 48pt;"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Shade:</p></td>
+                                        <td> 
+                                            <select>
+                                                <option value=""></option>
+                                                <option value="light">Light</option>
+                                                <option value="dark">Dark</option>
+                                            </select> 
+                                        </td>
+
+                                        <td><p>Color:</p></td>
+                                        <td>
+                                            <select>
+                                                <option value="red"> Red </option>
+                                                <option value="orange"> Orange </option>
+                                                <option value="yellow"> Yellow </option>
+                                                <option value="green"> Green </option>
+                                                <option value="teal"> Teal </option>
+                                                <option value="blue"> Blue </option>
+                                                <option value="purble"> Purple </option>
+                                            </select> 
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Start:</p></td>
+                                        <td><input class=StartTime type="time"></td>
+                                        <td><p>End:</p></td>
+                                        <td><input class=EndTime type="time"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p>Note:</p></td>
+                                        <td><input type=text style="width: 100;"></td>
+                                        <td><p>Group:</p></td>
+                                        <td><input type=text style="width: 75%;"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td></tr>`;
+
+    function removeCourse() {
+        window.alert("Remove")
+    }
+
+    function addCourse() {
+        window.alert("Add");
+    }
+
+</script>
 
 </html>
