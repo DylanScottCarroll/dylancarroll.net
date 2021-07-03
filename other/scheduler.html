@@ -297,8 +297,6 @@ permalink: /other/scheduler
         var courseTableBody = document.getElementById("CourseTableBody");
         var buttonTR = courseTableBody.childNodes[courseTableBody.childNodes.length - 1];
 
-        console.log(buttonTR.nodeName);
-
         courseTableBody.insertBefore(newCourseElement, buttonTR);
     }
 
@@ -326,8 +324,8 @@ permalink: /other/scheduler
         return 0;
     }
 
-    function validateCourseForm(){
-        return Falsse;
+    function validateCourseForm(course, name, crn, credits, start, end){
+        return false;
     }
 
     function colStrToRGB(shadeStr, colorIndStr){
@@ -353,7 +351,42 @@ permalink: /other/scheduler
     }
 
     function calcOptions(){
-        
+        var courseTableBody = document.getElementById("CourseTableBody");
+        var courses = courseTableBody.children;
+
+
+        for(let i = 0; i < courses.length; i++){
+            var borderDiv = courses[i].children[0].children[0];
+
+            var div1 = borderDiv.children[0];
+            var div2 = borderDiv.children[1];
+            var div3 = borderDiv.children[2];
+            var div4 = borderDiv.children[3];
+            
+            console.log(borderDiv);
+
+            var name = div1.children[2].value;
+            var crn = div1.children[4].value;
+            var credits = div2.children[1].value;
+            var shade = div2.children[3].value;
+            var color = div2.children[5].value;
+            var start = div3.children[1].value
+            var end = div3.children[3].value
+            var group = div3.children[5].value;
+            var notes = div4.children[1].value;
+
+            console.log("Course " + i + ": ")
+            console.log("\tName: " + name);
+            console.log("\tCRN: " + crn);
+            console.log("\tCredits: " + credits);
+            console.log("\tShade: " + shade);
+            console.log("\tColor: " + color);
+            console.log("\tStart: " + start);
+            console.log("\tEnd: " + end);
+            console.log("\tGroup: " + group);
+            console.log("\tNotes: " + notes);
+
+        }
     }
 
     function showNext(){
