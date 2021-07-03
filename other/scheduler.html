@@ -18,14 +18,15 @@ permalink: /other/scheduler
         input.MinuteBox {width: 24pt;}
 
         div.border {color: #78CCAD; border-style: solid; border-width: 1pt; border-radius: 6pt;}
-        div.course { margin-left: auto; margin-right: 0pt;}
 
         p {white-space: nowrap;}
         h3 {white-space: nowrap;}
 
-        input[type=button] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
+        input.act[type=button] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
             margin-left: auto; margin-right: auto; font-size: 15pt; color: #505050; 
             font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI";}
+
+        .inline {display: inline-block;}
     </style>
 
 </head>
@@ -80,7 +81,7 @@ permalink: /other/scheduler
                 <div id="BodyDiv">
 
                     <div class="border settings" >
-                        <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
+                        <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 12pt 0pt;"> 
                             <tr>
                                 <td> <h3 style="line-height: 0pt;"> Settings </td>
                             </tr>
@@ -116,94 +117,100 @@ permalink: /other/scheduler
                                 <td> <input type="number" min=0 style="width: 48pt"> </td>
                                 
                             </tr>
-                            
-                            <tr>
-                                <td class=UploadSave> </td>
-
-
-                                <td class=DownloadSave></td>
-                            </tr>
-
                         </table>
+
+                        <div align=center>
+                            <input class="inline" type="file" id="saveFile" name="saveFile">
+                            <input type=button value="Download Save" onclick="dowload()">
+
+                        </div>
+                        &nbsp;
+
                     </div>
 
                     &nbsp;
 
-                    <table style="width: 100%;">
+                    <table  style="width: 100%;">
+                        <tbody id="CourseTableBody">
                         <tr><td>
-                            <div class="border course"> 
-                                <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
-                                    <tr>
-                                        <td><h3 style="line-height: 0pt;">Course 1:</h3></td>
-                                        <td></td>
-                                        <td><p> Name: </p></td>
-                                        <td> <input type=text style="width: 75%;"> </td>
-                                    </tr>
+                            <div class="border" style="line-height: 0pt;"> 
+                                <div align="center">
+                                    <h3 class="inline" style="line-height: 0pt;">Course 1</h3>
 
-                                    <tr>
-                                        <td><p>Credits:</p></td>
-                                        <td> <input type="number" min="0" style="width: 36pt;"> </td>
-                                        <td><p>CRN:</p></td>
-                                        <td><input type="number" style="width: 48pt;"></td>
-                                    </tr>
+                                    <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
-                                    <tr>
-                                        <td><p>Shade:</p></td>
-                                        <td> 
-                                            <select>
-                                                <option value=""></option>
-                                                <option value="light">Light</option>
-                                                <option value="dark">Dark</option>
-                                            </select> 
-                                        </td>
+                                    <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;">
+                                </div>
+                                
+                                
+                                <div align="center">
+                                    <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
+                                
+                                    <p class="inline" style="margin-left: 24pt;">Shade:</p>
+                                    <select>
+                                        <option value="0"></option>
+                                        <option value ="1">Dark</option>
+                                        <option value="2">Light</option>
+                                    </select>
 
-                                        <td><p>Color:</p></td>
-                                        <td>
-                                            <select>
-                                                <option value="red"> Red </option>
-                                                <option value="orange"> Orange </option>
-                                                <option value="yellow"> Yellow </option>
-                                                <option value="green"> Green </option>
-                                                <option value="teal"> Teal </option>
-                                                <option value="blue"> Blue </option>
-                                                <option value="purble"> Purple </option>
-                                            </select> 
-                                        </td>
-                                    </tr>
+                                    <p class="inline" style="margin-left: 24pt;">Color:</p>
+                                    <select>
+                                        <option value="0">Red</option>
+                                        <option value="1">Orange</option>
+                                        <option value="2">Yellow</option>
+                                        <option value="3">Green</option>
+                                        <option value="4">Teal</option>
+                                        <option value="5">Blue</option>
+                                        <option value="6">Purple</option>
+                                        <option value="7">Grey</option>
+                                    </select>
+                                </div>
 
-                                    <tr>
-                                        <td><p>Start:</p></td>
-                                        <td><input class=StartTime type="time"></td>
-                                        <td><p>End:</p></td>
-                                        <td><input class=EndTime type="time"></td>
-                                    </tr>
+                                <div align="center">
+                                    <p class="inline">Start:</p> <input type="time">
 
-                                    <tr>
-                                        <td><p>Note:</p></td>
-                                        <td><input type=text style="width: 100;"></td>
-                                        <td><p>Group:</p></td>
-                                        <td><input type=text style="width: 75%;"></td>
-                                    </tr>
-                                </table>
+                                    <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
+
+                                    <p class="inline" style="margin-left: 12pt;">Group:</p> <input type="text" style="width: 36pt;">
+                                </div>
+
+                                <div align="center">
+
+                                    <p class="inline">Note:</p> <input class="inline" type="text" style="width: 240pt; margin-left: 12pt;">
+                                </div>
                             </div>
                         </td></tr>
 
-                        <tr>
-                            <td>
-                                &nbsp;
-                                <div style="margin-left: auto; margin-right: auto; display: block;">
-                                    <input  type="button" onclick="removeCourse()" value="Remove Course">
-                                    <input type="button" onclick="addCourse()" value="Add Course">
-                                </div>
-                                
-
-                            </td>
-                        </tr>
-
                         
+                        </tbody>
                     </table>
                     
+
+                    &nbsp;
+                    <div align=center style="margin-left: auto; margin-right: auto; display: block;">
+                        <input class="act" type="button" onclick="removeCourse()" value="Remove Course">
+                        <input class="act" type="button" onclick="addCourse()" value="Add Course">
+                    </div>
                     
+                    &nbsp;
+
+                    <div id = "DisplayDiv">
+                        <div align=center style="margin-left: auto; margin-right: auto; display: block;">
+                            <input class="act" type="button" onclick="calcOptions()" value="Calculate Options">
+                            <input class="act" type="button" onclick="downloadImages()" value="Download Images">
+                        </div>
+
+                        <canvas id="MainCanvas" style="width: 100%; height: 100px; color: #505050 1pt;">
+
+                        </canvas>
+
+                        <div align=center style="margin-left: auto; margin-right: auto; display: block;">
+                            <input class="act" type="button" onclick="showPrev()" value="Show Previous">
+                            <input class="act" type="button" onclick="showNext()" value="Show Next">
+                        </div>
+
+
+                    </div>
 
                 </div>
             </td>
@@ -219,69 +226,142 @@ permalink: /other/scheduler
 
 <script>
     var blankCourseElement = `<tr><td>
-                            <div class="border course"> 
-                                <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 24pt 0pt;">
-                                    <tr>
-                                        <td><h3 style="line-height: 0pt;">Course 1:</h3></td>
-                                        <td></td>
-                                        <td><p> Name: </p></td>
-                                        <td> <input type=text style="width: 75%;"> </td>
-                                    </tr>
+                            <div class="border" style="line-height: 0pt;"> 
+                                <div align="center">
+                                    <h3 class="inline" style="line-height: 0pt;">{Course}</h3>
 
-                                    <tr>
-                                        <td><p>Credits:</p></td>
-                                        <td> <input type="number" min="0" style="width: 36pt;"> </td>
-                                        <td><p>CRN:</p></td>
-                                        <td><input type="number" style="width: 48pt;"></td>
-                                    </tr>
+                                    <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
-                                    <tr>
-                                        <td><p>Shade:</p></td>
-                                        <td> 
-                                            <select>
-                                                <option value=""></option>
-                                                <option value="light">Light</option>
-                                                <option value="dark">Dark</option>
-                                            </select> 
-                                        </td>
+                                    <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;">
+                                </div>
+                                
+                                
+                                <div align="center">
+                                    <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
+                                
+                                    <p class="inline" style="margin-left: 24pt;">Shade:</p>
+                                    <select>
+                                        <option value=""></option>
+                                        <option value ="dark">Dark</option>
+                                        <option value="light">Light</option>
+                                    </select>
 
-                                        <td><p>Color:</p></td>
-                                        <td>
-                                            <select>
-                                                <option value="red"> Red </option>
-                                                <option value="orange"> Orange </option>
-                                                <option value="yellow"> Yellow </option>
-                                                <option value="green"> Green </option>
-                                                <option value="teal"> Teal </option>
-                                                <option value="blue"> Blue </option>
-                                                <option value="purble"> Purple </option>
-                                            </select> 
-                                        </td>
-                                    </tr>
+                                    <p class="inline" style="margin-left: 24pt;">Color:</p>
+                                    <select>
+                                        <option value="red">Red</option>
+                                        <option value="orange">Orange</option>
+                                        <option value="yellow">Yellow</option>
+                                        <option value="green">Green</option>
+                                        <option value="teal">Teal</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="purple">Purple</option>
+                                        <option value="grey">Grey</option>
+                                    </select>
+                                </div>
 
-                                    <tr>
-                                        <td><p>Start:</p></td>
-                                        <td><input class=StartTime type="time"></td>
-                                        <td><p>End:</p></td>
-                                        <td><input class=EndTime type="time"></td>
-                                    </tr>
+                                <div align="center">
+                                    <p class="inline">Start:</p> <input type="time">
 
-                                    <tr>
-                                        <td><p>Note:</p></td>
-                                        <td><input type=text style="width: 100;"></td>
-                                        <td><p>Group:</p></td>
-                                        <td><input type=text style="width: 75%;"></td>
-                                    </tr>
-                                </table>
+                                    <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
+
+                                    <p class="inline" style="margin-left: 12pt;">Group:</p> <input type="text" style="width: 36pt;">
+                                </div>
+
+                                <div align="center">
+
+                                    <p class="inline">Note:</p> <input class="inline" type="text" style="width: 240pt; margin-left: 12pt;">
+                                </div>
                             </div>
                         </td></tr>`;
+    var courseCount = 1;
 
     function removeCourse() {
-        window.alert("Remove")
+        if(courseCount>1){
+            var courseTableBody = document.getElementById("CourseTableBody");
+            var lastCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
+
+            lastCourse.remove();
+
+            courseCount -= 1;
+        }
     }
 
     function addCourse() {
-        window.alert("Add");
+        courseCount += 1;
+
+        var template = document.createElement("template");
+        template.innerHTML = blankCourseElement.replace("{Course}", "Course " + courseCount);
+        
+        var newCourseElement = template.content.firstChild;
+        
+        var courseTableBody = document.getElementById("CourseTableBody");
+        var buttonTR = courseTableBody.childNodes[courseTableBody.childNodes.length - 1];
+
+        console.log(buttonTR.nodeName);
+
+        courseTableBody.insertBefore(newCourseElement, buttonTR);
+    }
+
+    class Course{
+        constructor(name, crn, group, credits, start, end, color, notes){
+            this.name = name; 
+            this.crn = crn; 
+            this.group = group; 
+            this.credits = credits; 
+            this.start = start; 
+            this.end = end; 
+            this.color = color; 
+            this.notes = notes;
+        }
+
+        collides(course1, course2){
+            return !((course1.start >= course2.start && course1.start <= course2.end) || (course2.start >= course1.start && course2.start <= course1.end))
+        }
+
+
+    }
+
+    function timeToMins(time){
+
+        return 0;
+    }
+
+    function validateCourseForm(){
+        return Falsse;
+    }
+
+    function colStrToRGB(shadeStr, colorIndStr){
+        //Select the correct color from this list
+        var color = [ [255, 0, 0],
+            [255, 128, 0],
+            [255 , 255, ],
+            [0, 255, 0],
+            [0, 255, 255],
+            [0, 0, 255],
+            [255, 0, 255],
+            [128, 128, 128] ][parseInt(colIndStr)];
+
+        //Averageing the color with white to make it brigher and with black to make it darker.
+        if(shadeStr === "2"){
+            color = [color[0]/2 + 128, color[1]/2 + 128, color[2]/2 + 128];
+        }
+        else if(shadeStr === "1"){
+            color = [color[0]/2, color[1]/2, color[2]/2];
+        }
+
+        return color;
+    }
+
+    function calcOptions(){
+        
+    }
+
+    function showNext(){
+
+    }
+
+    function showPrev(){
+
     }
 
 </script>
