@@ -82,6 +82,7 @@ permalink: /other/scheduler
 
                     <div class="border settings" >
                         <table style="margin-left: auto; margin-right: auto; line-height: 0pt; border-spacing: 12pt 0pt;"> 
+                        <tbody id="settingsTbody">
                             <tr>
                                 <td> <h3 style="line-height: 0pt;"> Settings </td>
                             </tr>
@@ -97,26 +98,28 @@ permalink: /other/scheduler
                             </tr>
                             
                             <tr>
-                                <td> <p>Min Credits</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
-                                    
-                                
-                                
                                 <td> <p>Min Courses</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
-                                    
-                            </tr>
-                            
-                            <tr>
-                                
-                                <td> <p>Max Credits</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                <td> <input type="number" min=0 value=0 style="width: 48pt"> </td>
 
 
                                 <td> <p>Max Courses</p> </td>
                                 <td> <input type="number" min=0 style="width: 48pt"> </td>
+
+                                    
+                            </tr>
+                            
+                            <tr>
+                                <td> <p>Min Credits</p> </td>
+                                <td> <input type="number" min=0 value=0 style="width: 48pt"> </td>
+                                    
+                                
+                                
+                                <td> <p>Max Credits</p> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                
                                 
                             </tr>
+                        </tbody>
                         </table>
 
                         <div align=center>
@@ -274,6 +277,14 @@ permalink: /other/scheduler
                             </div>
                         </td></tr>`;
     var courseCount = 1;
+                    
+
+    var startTime = 0;
+    var endTime = 0; 
+    var minCredits = 0;
+    var maxCredits = 0;
+    var minCourses = 0;
+    var maxCourses = 0;
 
     function removeCourse() {
         if(courseCount>1){
@@ -310,6 +321,7 @@ permalink: /other/scheduler
             this.end = timeToMins(end); 
             this.color = colStrToRGB(shade, color); 
             this.notes = notes;
+        }
 
         collides(course1, course2){
             return !((course1.start >= course2.start && course1.start <= course2.end) || (course2.start >= course1.start && course2.start <= course1.end))
@@ -346,8 +358,11 @@ permalink: /other/scheduler
             alert("Course " + course + " end time can't be empty");
             return false;
         }
+        else{
+            return true;
+        }
 
-        return true;
+        
     }
 
     function colStrToRGB(shadeStr, colorIndStr){
@@ -359,7 +374,7 @@ permalink: /other/scheduler
             [0, 255, 255],
             [0, 0, 255],
             [255, 0, 255],
-            [128, 128, 128] ][parseInt(colIndStr)];
+            [128, 128, 128] ][parseInt(colorIndStr)];
 
         //Averageing the color with white to make it brigher and with black to make it darker.
         if(shadeStr === "2"){
@@ -372,13 +387,13 @@ permalink: /other/scheduler
         return color;
     }
 
-    function calcOptions(){
+    function getCourseDatas(){
         var courseTableBody = document.getElementById("CourseTableBody");
         var courseTDs = courseTableBody.children;
 
         var courses = []
 
-        for(let i = 0; i < courses.length; i++){
+        for(let i = 0; i < courseTDs.length; i++){
             var borderDiv = courseTDs[i].children[0].children[0];
 
             var div1 = borderDiv.children[0];
@@ -397,20 +412,70 @@ permalink: /other/scheduler
             var end = div3.children[3].value
             var group = div3.children[5].value;
             var notes = div4.children[1].value;
-            
+
             if(! validateCourseForm(i+1, name, crn, credits, start, end)){
                 return false;
             }
 
             var newCourse = new Course(name, crn, group, credits, start, end, shade, color, notes);
-            
-            console.log(newCourse);
-
             courses.push( newCourse );
 
         }
 
-        console.log(courses);
+        return courses;
+    }
+
+    function updateSettings(){
+        var settingsTbody = document.getElementById("settingsTbody");
+
+        var row1 = settingsTbody.children[1];
+        var row2 = settingsTbody.children[2];
+        var row3 = settingsTbody.children[3];
+
+        var start = row1.children[1].children[0].value;
+        var end = row1.children[3].children[0].value;
+        var minCourses = row2.children[1].children[0].value;
+        var maxCourses = row2.children[3].children[0].value;
+        var minCredits = row3.children[1].children[0].value;
+        var maxCredits = row2.children[3].children[0].value;
+
+        return validateSettings(start, end, minCourses, maxCourses);
+        
+    }
+
+    function validateSettings(start, end, minCourses, maxCourses){
+        if(start === ""){
+            alert("Start Time can't be empty");
+            return false;
+        }
+        else if(end === ""){
+            alert("End time can't be empty");
+            return false;
+        }
+        else if(minCourses === ""){
+            alert("Min courses can't be empty");
+            return false;
+        }
+        else if(start === ""){
+            alert("Max courses can't be empty");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    function calcOptions(){
+        if(! updateSettings()){
+            return false;
+        }
+        
+        
+        var courses = getCourseDatas();
+        if(courses === false){
+            return false;
+        } 
+        
     }
 
     function showNext(){
