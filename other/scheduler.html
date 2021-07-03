@@ -8,10 +8,10 @@ permalink: /other/scheduler
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 901px)" href="https://www.dylancarroll.net/CSS/desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/mobile.css" />
     
-    <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <style>
         input.HourBox {width: 24pt;}
@@ -301,16 +301,15 @@ permalink: /other/scheduler
     }
 
     class Course{
-        constructor(name, crn, group, credits, start, end, color, notes){
+        constructor(name, crn, group, credits, start, end, shade, color, notes){
             this.name = name; 
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
-            this.start = start; 
-            this.end = end; 
-            this.color = color; 
+            this.start = timeToMins(start); 
+            this.end = timeToMins(end); 
+            this.color = colStrToRGB(shade, color); 
             this.notes = notes;
-        }
 
         collides(course1, course2){
             return !((course1.start >= course2.start && course1.start <= course2.end) || (course2.start >= course1.start && course2.start <= course1.end))
@@ -320,12 +319,35 @@ permalink: /other/scheduler
     }
 
     function timeToMins(time){
-
-        return 0;
+        var splitTime = time.split(":");
+        var hour = splitTime[0];
+        var minute = splitTime[1];
+        return parseInt(hour)*12 + parseInt(minute);
     }
 
     function validateCourseForm(course, name, crn, credits, start, end){
-        return false;
+        if(name === ""){
+            alert("Course " + course + " name can't be empty");
+            return false;
+        }
+        else if(crn === ""){
+            alert("Course " + course + " CRN can't be empty");
+            return false;
+        }
+        else if(credits === ""){
+            alert("Course " + course + " credits can't be empty");
+            return false;
+        }
+        else if(start === ""){
+            alert("Course " + course + " start time can't be empty");
+            return false;
+        }
+        else if(end === ""){
+            alert("Course " + course + " end time can't be empty");
+            return false;
+        }
+
+        return true;
     }
 
     function colStrToRGB(shadeStr, colorIndStr){
@@ -352,11 +374,12 @@ permalink: /other/scheduler
 
     function calcOptions(){
         var courseTableBody = document.getElementById("CourseTableBody");
-        var courses = courseTableBody.children;
+        var courseTDs = courseTableBody.children;
 
+        var courses = []
 
         for(let i = 0; i < courses.length; i++){
-            var borderDiv = courses[i].children[0].children[0];
+            var borderDiv = courseTDs[i].children[0].children[0];
 
             var div1 = borderDiv.children[0];
             var div2 = borderDiv.children[1];
@@ -374,19 +397,20 @@ permalink: /other/scheduler
             var end = div3.children[3].value
             var group = div3.children[5].value;
             var notes = div4.children[1].value;
+            
+            if(! validateCourseForm(i+1, name, crn, credits, start, end)){
+                return false;
+            }
 
-            console.log("Course " + i + ": ")
-            console.log("\tName: " + name);
-            console.log("\tCRN: " + crn);
-            console.log("\tCredits: " + credits);
-            console.log("\tShade: " + shade);
-            console.log("\tColor: " + color);
-            console.log("\tStart: " + start);
-            console.log("\tEnd: " + end);
-            console.log("\tGroup: " + group);
-            console.log("\tNotes: " + notes);
+            var newCourse = new Course(name, crn, group, credits, start, end, shade, color, notes);
+            
+            console.log(newCourse);
+
+            courses.push( newCourse );
 
         }
+
+        console.log(courses);
     }
 
     function showNext(){
