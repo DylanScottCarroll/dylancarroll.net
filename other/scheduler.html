@@ -312,21 +312,26 @@ permalink: /other/scheduler
     }
 
     class Course{
-        constructor(name, crn, group, credits, start, end, shade, color, notes){
+        constructor(name, crn, group, credits, start, end, color, notes){
             this.name = name; 
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
-            this.start = timeToMins(start); 
-            this.end = timeToMins(end); 
-            this.color = colStrToRGB(shade, color); 
+            this.start = start; 
+            this.end = end; 
+            this.color = color; 
             this.notes = notes;
         }
 
         collides(course1, course2){
-            return !((course1.start >= course2.start && course1.start <= course2.end) || (course2.start >= course1.start && course2.start <= course1.end))
+            return !( (course1.start >= course2.start && course1.start <= course2.end) 
+                || (course2.start >= course1.start && course2.start <= course1.end)
+                || (course1.group === course2.group) );
         }
 
+        copy(){
+            return new Course(this.name, this.crn, this.group, this.credits, this.start, this.end, this.color, this.notes);
+        }
 
     }
 
@@ -417,7 +422,7 @@ permalink: /other/scheduler
                 return false;
             }
 
-            var newCourse = new Course(name, crn, group, credits, start, end, shade, color, notes);
+            var newCourse = new Course(name, crn, group, credits, timeToMins(start), timeToMins(end), colStrToRGB(shade, color), notes);
             courses.push( newCourse );
 
         }
@@ -465,6 +470,36 @@ permalink: /other/scheduler
         }
     }
 
+    function scheduleIsValid(schedule, newCourse){
+        for(let i = 0; i < schedule.length; i++){
+            if(schedule[i].collides(newCourse)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function combinePossibilities(schedule, courses){
+        var newPossibilities = []
+        for(let i = 0; i < courses.length; i++){
+            
+            //If the current coutse forms a valid schedule,
+            //add that schedule to newPossibilities
+            if(scheduleIsValid(schedule, courses[i])){
+
+                var newPossibility = [];
+                for(let j = 0; j < schedule.length; j++){
+                    newPossibility.push(schedule[j].copy());
+                }
+                newPossibility.push(courses[i].copy());
+
+                newPossibilities.push(newPossibility);
+            }
+        }
+
+        return newPossibilities;
+    }
+
     function calcOptions(){
         if(! updateSettings()){
             return false;
@@ -475,6 +510,34 @@ permalink: /other/scheduler
         if(courses === false){
             return false;
         } 
+
+        //Create a list of lists with a layer for each number of courses
+        var layers = new Array();
+        for(let i = 0; i < maxCourses; i++){
+            layers.push(new Array());
+        }
+
+        //Populate the first layer with individual classes
+        for(let i = 0; i < courses.length; i++){
+            layers[0].push([courses[i].copy() ]);
+        }
+
+        for(let i = 1; i < maxCourses; i++){
+            var previousList = layers[i-1]
+            var currentList = layers[i];
+
+            for(let j = 0; j < previousList.length; j++){
+                //Calculate the new posibilites for the current schedule
+                var newPossibilities = combinePossibilities(previousList[j], courses);
+
+                //Add all of the newly found posibilites to the current layer
+                for(let k = 0; k < newPossibilities.length; k++){
+                    currentList.push(newPossibilities[k]);
+                }
+            }
+        }
+
+        
         
     }
 
