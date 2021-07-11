@@ -151,7 +151,7 @@ permalink: /other/scheduler
                                 
                                     <p class="inline" style="margin-left: 24pt;">Shade:</p>
                                     <select>
-                                        <option value="0"></option>
+                                        <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
@@ -231,7 +231,7 @@ permalink: /other/scheduler
     var blankCourseElement = `<tr><td>
                             <div class="border" style="line-height: 0pt;"> 
                                 <div align="center">
-                                    <h3 class="inline" style="line-height: 0pt;">{Course}</h3>
+                                    <h3 class="inline" style="line-height: 0pt;">Course 1</h3>
 
                                     <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
@@ -244,21 +244,21 @@ permalink: /other/scheduler
                                 
                                     <p class="inline" style="margin-left: 24pt;">Shade:</p>
                                     <select>
-                                        <option value=""></option>
-                                        <option value ="dark">Dark</option>
-                                        <option value="light">Light</option>
+                                        <option value="0">Medium</option>
+                                        <option value ="1">Dark</option>
+                                        <option value="2">Light</option>
                                     </select>
 
                                     <p class="inline" style="margin-left: 24pt;">Color:</p>
                                     <select>
-                                        <option value="red">Red</option>
-                                        <option value="orange">Orange</option>
-                                        <option value="yellow">Yellow</option>
-                                        <option value="green">Green</option>
-                                        <option value="teal">Teal</option>
-                                        <option value="blue">Blue</option>
-                                        <option value="purple">Purple</option>
-                                        <option value="grey">Grey</option>
+                                        <option value="0">Red</option>
+                                        <option value="1">Orange</option>
+                                        <option value="2">Yellow</option>
+                                        <option value="3">Green</option>
+                                        <option value="4">Teal</option>
+                                        <option value="5">Blue</option>
+                                        <option value="6">Purple</option>
+                                        <option value="7">Grey</option>
                                     </select>
                                 </div>
 
@@ -288,14 +288,15 @@ permalink: /other/scheduler
     var maxCourses = 0;
 
     class Course{
-        constructor(name, crn, group, credits, start, end, color, notes){
+        constructor(name, crn, group, credits, start, end, color, shade, notes){
             this.name = name; 
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
             this.start = start; 
             this.end = end; 
-            this.color = color; 
+            this.shade = shade;
+            this.color = color;
             this.notes = notes;
         }
 
@@ -316,10 +317,11 @@ permalink: /other/scheduler
     //////////////////////
 
     function fileSelected(){
-        var file = document.getElementById("saveFile");
-
-        console.log(file);
+        var file = document.getElementById("saveFile").files[0];
+        var text = file.text();
+        text.then(function(text) { populateFields(text) })
     }
+
 
     function downloadSave(){
         if(! updateSettings()){
@@ -335,12 +337,13 @@ permalink: /other/scheduler
 
         saveString += startTime + "\n";
         saveString += endTime + "\n";
-        saveString += minCredits + "\n";
-        saveString += maxCredits + "\n";
         saveString += minCourses + "\n";
         saveString += maxCourses + "\n";
+        saveString += minCredits + "\n";
+        saveString += maxCredits + "\n";
+        
 
-        saveString += "---\n";
+        saveString += "--\n";
 
         for(let i = 0; i < courses.length; i++){
             if(i != 0) saveString += "--\n"
@@ -349,11 +352,12 @@ permalink: /other/scheduler
 
             saveString += currentCourse.name + "\n"; 
             saveString += currentCourse.crn + "\n"; 
-            saveString += currentCourse.group + "\n"; 
             saveString += currentCourse.credits + "\n"; 
+            saveString += currentCourse.shade + "\n";
+            saveString += currentCourse.color + "\n";
             saveString += currentCourse.start + "\n"; 
             saveString += currentCourse.end + "\n"; 
-            saveString += currentCourse.color + "\n"; 
+            saveString += currentCourse.group + "\n"; 
             saveString += currentCourse.notes + "\n";
         }
 
@@ -441,6 +445,63 @@ permalink: /other/scheduler
     // Program Logic //
     ///////////////////
 
+    function populateFields(text){
+        
+        var courseList = text.split("--\n");
+
+
+        //Update Settings Field
+
+        var settings = courseList[0].split("\n");
+   
+        var settingsTbody = document.getElementById("settingsTbody");
+
+        var row1 = settingsTbody.children[1];
+        var row2 = settingsTbody.children[2];
+        var row3 = settingsTbody.children[3];
+
+        row1.children[1].children[0].value = minsToTime(parseInt(settings[0]));
+        row1.children[3].children[0].value = minsToTime(parseInt(settings[1])); 
+        row2.children[1].children[0].value = parseInt(settings[2]);
+        row2.children[3].children[0].value = parseInt(settings[3]);
+        row3.children[1].children[0].value = parseInt(settings[4]);
+        row3.children[3].children[0].value = parseInt(settings[5]);
+
+        //Get to the correct number of courses
+        while(courseCount < courseList.length-1){
+            addCourse();
+        }
+        while(courseCount > courseList.length-1){
+            removeCourse();
+        }
+        
+
+        //Loop through and fill in all of the courses
+        var courseTableBody = document.getElementById("CourseTableBody");
+        var courseTDs = courseTableBody.children;
+
+        for(let i = 0; i < courseList.length-1; i++){
+            var currentCourse = courseList[i+1].split("\n");
+            
+            var borderDiv = courseTDs[i].children[0].children[0];
+
+            var div1 = borderDiv.children[0];
+            var div2 = borderDiv.children[1];
+            var div3 = borderDiv.children[2];
+            var div4 = borderDiv.children[3];
+
+            div1.children[2].value = currentCourse[0]; //name
+            div1.children[4].value = currentCourse[1]; //crn
+            div2.children[1].value = currentCourse[2]; //credits
+            div2.children[5].value = currentCourse[3]; //shade
+            div2.children[3].value = currentCourse[4]; //color
+            div3.children[1].value = minsToTime(currentCourse[5]); //start
+            div3.children[3].value = minsToTime(currentCourse[6]); //end
+            div3.children[5].value = currentCourse[7]; //group
+            div4.children[1].value = currentCourse[8]; //notes
+
+        }
+    }
 
     function updateSettings(){
         var settingsTbody = document.getElementById("settingsTbody");
@@ -552,7 +613,7 @@ permalink: /other/scheduler
                 return null;
             }
 
-            var newCourse = new Course(name, crn, group, credits, timeToMins(start), timeToMins(end), colStrToRGB(shade, color), notes);
+            var newCourse = new Course(name, crn, group, parseInt(credits), timeToMins(start), timeToMins(end), color, shade, notes);
             courses.push( newCourse );
 
         }
@@ -561,10 +622,23 @@ permalink: /other/scheduler
     }
 
     function timeToMins(time){
+        console.log(time);
         var splitTime = time.split(":");
         var hour = splitTime[0];
         var minute = splitTime[1];
-        return parseInt(hour)*12 + parseInt(minute);
+        return parseInt(hour)*60 + parseInt(minute);
+    }
+
+    function minsToTime(mins){
+        var hours = Math.floor(mins/60);
+        var minutes = mins - (hours*60);
+        var minutesString = minutes.toString();
+        if(minutesString.length ==1 )(minutesString = 0 + minutesString)
+        
+        var hoursString = hours.toString()
+        if(hoursString.length ==1 )(hoursString = 0 + hoursString)
+
+        return hoursString + ":" + minutesString; 
     }
 
     function colStrToRGB(shadeStr, colorIndStr){
@@ -619,8 +693,8 @@ permalink: /other/scheduler
         return true;
     }
 
-    //Thanks Stack Overflow: https://stackoverflow.com/questions/13405129/javascript-create-and-save-file
     // Function to download data to a file
+    //Thanks Stack Overflow: https://stackoverflow.com/questions/13405129/javascript-create-and-save-file    
     function download(data, filename, type) {
         var file = new Blob([data], {type: type});
         if (window.navigator.msSaveOrOpenBlob) // IE10+
