@@ -419,7 +419,7 @@ permalink: /other/scheduler
             var notes = div4.children[1].value;
 
             if(! validateCourseForm(i+1, name, crn, credits, start, end)){
-                return false;
+                return null;
             }
 
             var newCourse = new Course(name, crn, group, credits, timeToMins(start), timeToMins(end), colStrToRGB(shade, color), notes);
@@ -502,13 +502,13 @@ permalink: /other/scheduler
 
     function calcOptions(){
         if(! updateSettings()){
-            return false;
+            return null;
         }
         
         
         var courses = getCourseDatas();
-        if(courses === false){
-            return false;
+        if(courses === null){
+            return null;
         } 
 
         //Create a list of lists with a layer for each number of courses
