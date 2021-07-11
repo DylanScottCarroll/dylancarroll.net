@@ -123,8 +123,8 @@ permalink: /other/scheduler
                         </table>
 
                         <div align=center>
-                            <input class="inline" type="file" id="saveFile" name="saveFile">
-                            <input type=button value="Download Save" onclick="dowload()">
+                            <input class="inline" type="file" id="saveFile" name="saveFile" onchange="fileSelected()">
+                            <input type=button value="Download Save" onclick="downloadSave()">
 
                         </div>
                         &nbsp;
@@ -276,6 +276,7 @@ permalink: /other/scheduler
                                 </div>
                             </div>
                         </td></tr>`;
+
     var courseCount = 1;
                     
 
@@ -285,31 +286,6 @@ permalink: /other/scheduler
     var maxCredits = 0;
     var minCourses = 0;
     var maxCourses = 0;
-
-    function removeCourse() {
-        if(courseCount>1){
-            var courseTableBody = document.getElementById("CourseTableBody");
-            var lastCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
-
-            lastCourse.remove();
-
-            courseCount -= 1;
-        }
-    }
-
-    function addCourse() {
-        courseCount += 1;
-
-        var template = document.createElement("template");
-        template.innerHTML = blankCourseElement.replace("{Course}", "Course " + courseCount);
-        
-        var newCourseElement = template.content.firstChild;
-        
-        var courseTableBody = document.getElementById("CourseTableBody");
-        var buttonTR = courseTableBody.childNodes[courseTableBody.childNodes.length - 1];
-
-        courseTableBody.insertBefore(newCourseElement, buttonTR);
-    }
 
     class Course{
         constructor(name, crn, group, credits, start, end, color, notes){
@@ -335,11 +311,187 @@ permalink: /other/scheduler
 
     }
 
-    function timeToMins(time){
-        var splitTime = time.split(":");
-        var hour = splitTime[0];
-        var minute = splitTime[1];
-        return parseInt(hour)*12 + parseInt(minute);
+    //////////////////////
+    // Button Functions //
+    //////////////////////
+
+    function fileSelected(){
+        var file = document.getElementById("saveFile");
+
+        console.log(file);
+    }
+
+    function downloadSave(){
+        if(! updateSettings()){
+            return null;
+        }
+        
+        var courses = getCourseDatas();
+        if(courses === null){
+            return null;
+        } 
+
+        saveString = ""
+
+        saveString += startTime + "\n";
+        saveString += endTime + "\n";
+        saveString += minCredits + "\n";
+        saveString += maxCredits + "\n";
+        saveString += minCourses + "\n";
+        saveString += maxCourses + "\n";
+
+        saveString += "---\n";
+
+        for(let i = 0; i < courses.length; i++){
+            if(i != 0) saveString += "--\n"
+
+            var currentCourse = courses[i]
+
+            saveString += currentCourse.name + "\n"; 
+            saveString += currentCourse.crn + "\n"; 
+            saveString += currentCourse.group + "\n"; 
+            saveString += currentCourse.credits + "\n"; 
+            saveString += currentCourse.start + "\n"; 
+            saveString += currentCourse.end + "\n"; 
+            saveString += currentCourse.color + "\n"; 
+            saveString += currentCourse.notes + "\n";
+        }
+
+        download(saveString, "save.txt", "txt")
+
+
+    }
+    
+    function removeCourse(){
+        if(courseCount>1){
+            var courseTableBody = document.getElementById("CourseTableBody");
+            var lastCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
+
+            lastCourse.remove();
+
+            courseCount -= 1;
+        }
+    }
+
+    function addCourse(){
+        courseCount += 1;
+
+        var template = document.createElement("template");
+        template.innerHTML = blankCourseElement.replace("{Course}", "Course " + courseCount);
+        
+        var newCourseElement = template.content.firstChild;
+        
+        var courseTableBody = document.getElementById("CourseTableBody");
+        var buttonTR = courseTableBody.childNodes[courseTableBody.childNodes.length - 1];
+
+        courseTableBody.insertBefore(newCourseElement, buttonTR);
+    }
+ 
+    function calcOptions(){
+        if(! updateSettings()){
+            return null;
+        }
+        
+        var courses = getCourseDatas();
+        if(courses === null){
+            return null;
+        } 
+
+        //Create a list of lists with a layer for each number of courses
+        var layers = new Array();
+        for(let i = 0; i < maxCourses; i++){
+            layers.push(new Array());
+        }
+
+        //Populate the first layer with individual classes
+        for(let i = 0; i < courses.length; i++){
+            layers[0].push([courses[i].copy() ]);
+        }
+
+        for(let i = 1; i < maxCourses; i++){
+            var previousList = layers[i-1]
+            var currentList = layers[i];
+
+            for(let j = 0; j < previousList.length; j++){
+                //Calculate the new posibilites for the current schedule
+                var newPossibilities = combinePossibilities(previousList[j], courses);
+
+                //Add all of the newly found posibilites to the current layer
+                for(let k = 0; k < newPossibilities.length; k++){
+                    currentList.push(newPossibilities[k]);
+                }
+            }
+        }
+    }
+
+    function downloadImages(){
+
+    }
+
+    function showNext(){
+
+    }
+
+    function showPrev(){
+
+    }
+
+
+    ///////////////////
+    // Program Logic //
+    ///////////////////
+
+
+    function updateSettings(){
+        var settingsTbody = document.getElementById("settingsTbody");
+
+        var row1 = settingsTbody.children[1];
+        var row2 = settingsTbody.children[2];
+        var row3 = settingsTbody.children[3];
+
+        var newStart = row1.children[1].children[0].value;
+        var newEnd = row1.children[3].children[0].value;
+        var newMinCourses = row2.children[1].children[0].value;
+        var newMaxCourses = row2.children[3].children[0].value;
+        var newMinCredits = row3.children[1].children[0].value;
+        var newMaxCredits = row2.children[3].children[0].value;
+
+        if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses) ){
+            return false;
+        }
+        else{
+            startTime = timeToMins(newStart);
+            endTime = timeToMins(newEnd);
+            minCourses = parseInt(newMinCourses);
+            maxCourses = parseInt(newMaxCourses);
+            minCredits = parseInt(newMinCredits);
+            maxCredits = parseInt(newMaxCredits);
+
+            return true;
+        }
+        
+    }
+
+    function validateSettings(start, end, minCourses, maxCourses){
+        if(start === ""){
+            alert("Start Time can't be empty");
+            return false;
+        }
+        else if(end === ""){
+            alert("End time can't be empty");
+            return false;
+        }
+        else if(minCourses === ""){
+            alert("Min courses can't be empty");
+            return false;
+        }
+        else if(start === ""){
+            alert("Max courses can't be empty");
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     function validateCourseForm(course, name, crn, credits, start, end){
@@ -368,28 +520,6 @@ permalink: /other/scheduler
         }
 
         
-    }
-
-    function colStrToRGB(shadeStr, colorIndStr){
-        //Select the correct color from this list
-        var color = [ [255, 0, 0],
-            [255, 128, 0],
-            [255 , 255, ],
-            [0, 255, 0],
-            [0, 255, 255],
-            [0, 0, 255],
-            [255, 0, 255],
-            [128, 128, 128] ][parseInt(colorIndStr)];
-
-        //Averageing the color with white to make it brigher and with black to make it darker.
-        if(shadeStr === "2"){
-            color = [color[0]/2 + 128, color[1]/2 + 128, color[2]/2 + 128];
-        }
-        else if(shadeStr === "1"){
-            color = [color[0]/2, color[1]/2, color[2]/2];
-        }
-
-        return color;
     }
 
     function getCourseDatas(){
@@ -430,53 +560,33 @@ permalink: /other/scheduler
         return courses;
     }
 
-    function updateSettings(){
-        var settingsTbody = document.getElementById("settingsTbody");
-
-        var row1 = settingsTbody.children[1];
-        var row2 = settingsTbody.children[2];
-        var row3 = settingsTbody.children[3];
-
-        var start = row1.children[1].children[0].value;
-        var end = row1.children[3].children[0].value;
-        var minCourses = row2.children[1].children[0].value;
-        var maxCourses = row2.children[3].children[0].value;
-        var minCredits = row3.children[1].children[0].value;
-        var maxCredits = row2.children[3].children[0].value;
-
-        return validateSettings(start, end, minCourses, maxCourses);
-        
+    function timeToMins(time){
+        var splitTime = time.split(":");
+        var hour = splitTime[0];
+        var minute = splitTime[1];
+        return parseInt(hour)*12 + parseInt(minute);
     }
 
-    function validateSettings(start, end, minCourses, maxCourses){
-        if(start === ""){
-            alert("Start Time can't be empty");
-            return false;
-        }
-        else if(end === ""){
-            alert("End time can't be empty");
-            return false;
-        }
-        else if(minCourses === ""){
-            alert("Min courses can't be empty");
-            return false;
-        }
-        else if(start === ""){
-            alert("Max courses can't be empty");
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
+    function colStrToRGB(shadeStr, colorIndStr){
+        //Select the correct color from this list
+        var color = [ [255, 0, 0],
+            [255, 128, 0],
+            [255 , 255, ],
+            [0, 255, 0],
+            [0, 255, 255],
+            [0, 0, 255],
+            [255, 0, 255],
+            [128, 128, 128] ][parseInt(colorIndStr)];
 
-    function scheduleIsValid(schedule, newCourse){
-        for(let i = 0; i < schedule.length; i++){
-            if(schedule[i].collides(newCourse)){
-                return false;
-            }
+        //Averageing the color with white to make it brigher and with black to make it darker.
+        if(shadeStr === "2"){
+            color = [color[0]/2 + 128, color[1]/2 + 128, color[2]/2 + 128];
         }
-        return true;
+        else if(shadeStr === "1"){
+            color = [color[0]/2, color[1]/2, color[2]/2];
+        }
+
+        return color;
     }
 
     function combinePossibilities(schedule, courses){
@@ -500,54 +610,35 @@ permalink: /other/scheduler
         return newPossibilities;
     }
 
-    function calcOptions(){
-        if(! updateSettings()){
-            return null;
-        }
-        
-        
-        var courses = getCourseDatas();
-        if(courses === null){
-            return null;
-        } 
-
-        //Create a list of lists with a layer for each number of courses
-        var layers = new Array();
-        for(let i = 0; i < maxCourses; i++){
-            layers.push(new Array());
-        }
-
-        //Populate the first layer with individual classes
-        for(let i = 0; i < courses.length; i++){
-            layers[0].push([courses[i].copy() ]);
-        }
-
-        for(let i = 1; i < maxCourses; i++){
-            var previousList = layers[i-1]
-            var currentList = layers[i];
-
-            for(let j = 0; j < previousList.length; j++){
-                //Calculate the new posibilites for the current schedule
-                var newPossibilities = combinePossibilities(previousList[j], courses);
-
-                //Add all of the newly found posibilites to the current layer
-                for(let k = 0; k < newPossibilities.length; k++){
-                    currentList.push(newPossibilities[k]);
-                }
+    function scheduleIsValid(schedule, newCourse){
+        for(let i = 0; i < schedule.length; i++){
+            if(schedule[i].collides(newCourse)){
+                return false;
             }
         }
-
-        
-        
+        return true;
     }
 
-    function showNext(){
-
+    //Thanks Stack Overflow: https://stackoverflow.com/questions/13405129/javascript-create-and-save-file
+    // Function to download data to a file
+    function download(data, filename, type) {
+        var file = new Blob([data], {type: type});
+        if (window.navigator.msSaveOrOpenBlob) // IE10+
+            window.navigator.msSaveOrOpenBlob(file, filename);
+        else { // Others
+            var a = document.createElement("a"),
+                    url = URL.createObjectURL(file);
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(function() {
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);  
+            }, 0); 
+        }
     }
-
-    function showPrev(){
-
-    }
+    
 
 </script>
 
