@@ -300,10 +300,11 @@ permalink: /other/scheduler
             this.notes = notes;
         }
 
-        collides(course1, course2){
-            return !( (course1.start >= course2.start && course1.start <= course2.end) 
-                || (course2.start >= course1.start && course2.start <= course1.end)
-                || (course1.group === course2.group) );
+        //Checks if two courses' time slots overlap
+        collides(other){
+            return !( (this.start >= other.start && this.start <= other.end) 
+                || (other.start >= this.start && other.start <= this.end)
+                || (this.group === other.group) );
         }
 
         copy(){
@@ -426,6 +427,12 @@ permalink: /other/scheduler
                 }
             }
         }
+
+        console.log(layers)
+
+
+
+
     }
 
     function downloadImages(){
@@ -596,8 +603,6 @@ permalink: /other/scheduler
             var div2 = borderDiv.children[1];
             var div3 = borderDiv.children[2];
             var div4 = borderDiv.children[3];
-            
-            console.log(borderDiv);
 
             var name = div1.children[2].value;
             var crn = div1.children[4].value;
@@ -622,7 +627,6 @@ permalink: /other/scheduler
     }
 
     function timeToMins(time){
-        console.log(time);
         var splitTime = time.split(":");
         var hour = splitTime[0];
         var minute = splitTime[1];
@@ -686,7 +690,7 @@ permalink: /other/scheduler
 
     function scheduleIsValid(schedule, newCourse){
         for(let i = 0; i < schedule.length; i++){
-            if(schedule[i].collides(newCourse)){
+            if(! schedule[i].collides(newCourse)){
                 return false;
             }
         }
