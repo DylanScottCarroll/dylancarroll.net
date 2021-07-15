@@ -169,17 +169,26 @@ permalink: /other/scheduler
                                     </select>
                                 </div>
 
-                                <div align="center">
-                                    <p class="inline">Start:</p> <input type="time">
+                                <div>
+                                    <div align="center">
+                                        <p class="inline">Start:</p> <input type="time">
 
-                                    <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
+                                        <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
 
-                                    <p class="inline" style="margin-left: 12pt;">Group:</p> <input type="text" style="width: 36pt;">
+                                        <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
+                                    </div>
+
+                                    <div align="center">
+                                        <input type="button" value="Add Time Slot" onclick= "addTimeSlot(this)" style="margin-left: 6pt;">
+                                        <input type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)" style="margin-left: 6pt;"> 
+                                    </div>
+
+                                    
                                 </div>
 
                                 <div align="center">
-
-                                    <p class="inline">Note:</p> <input class="inline" type="text" style="width: 240pt; margin-left: 12pt;">
+                                    <p class="inline">Group:</p> <input type="text" style="width: 36pt;">
+                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 175pt; margin-left: 12pt;">
                                 </div>
                             </div>
                         </td></tr>
@@ -231,7 +240,7 @@ permalink: /other/scheduler
     var blankCourseElement = `<tr><td>
                             <div class="border" style="line-height: 0pt;"> 
                                 <div align="center">
-                                    <h3 class="inline" style="line-height: 0pt;">Course 1</h3>
+                                    <h3 class="inline" style="line-height: 0pt;">{Course}</h3>
 
                                     <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
@@ -276,6 +285,14 @@ permalink: /other/scheduler
                                 </div>
                             </div>
                         </td></tr>`;
+
+    var blankTimeSlot = `<div align="center">
+                            <p class="inline">Start:</p> <input type="time">
+
+                            <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
+
+                            <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
+                        </div>`
 
     var courseCount = 1;
                     
@@ -371,6 +388,26 @@ permalink: /other/scheduler
 
     }
     
+    function addTimeSlot(button){
+        var div = button.parentElement;
+
+        var template = document.createElement("template");
+        template.innerHTML = blankTimeSlot
+        var newTimeSlot = template.content.firstChild;
+
+        div.parentElement.insertBefore(newTimeSlot, div);
+    }
+
+    function removeTimeSlot(button){
+        var div = button.parentElement.parentElement;
+
+        var children = div.children;
+
+        if(children.length > 2){
+            children[children.length-2].remove();
+        }
+    }
+
     function removeCourse(){
         if(courseCount>1){
             var courseTableBody = document.getElementById("CourseTableBody");
@@ -721,7 +758,16 @@ permalink: /other/scheduler
         }
     }
     
-    function drawSchedule(){}
+    function drawSchedule(schedule){
+        var canvas = document.getElementById("MainCanvas");
+
+        var width = canvas.width;
+        var height = width;
+    }
+
+    function drawCourse(course){
+
+    }
 
 </script>
 
