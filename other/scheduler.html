@@ -240,7 +240,7 @@ permalink: /other/scheduler
     var blankCourseElement = `<tr><td>
                             <div class="border" style="line-height: 0pt;"> 
                                 <div align="center">
-                                    <h3 class="inline" style="line-height: 0pt;">{Course}</h3>
+                                    <h3 class="inline" style="line-height: 0pt;">Course 1</h3>
 
                                     <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
@@ -271,17 +271,26 @@ permalink: /other/scheduler
                                     </select>
                                 </div>
 
-                                <div align="center">
-                                    <p class="inline">Start:</p> <input type="time">
+                                <div>
+                                    <div align="center">
+                                        <p class="inline">Start:</p> <input type="time">
 
-                                    <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
+                                        <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
 
-                                    <p class="inline" style="margin-left: 12pt;">Group:</p> <input type="text" style="width: 36pt;">
+                                        <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
+                                    </div>
+
+                                    <div align="center">
+                                        <input type="button" value="Add Time Slot" onclick= "addTimeSlot(this)" style="margin-left: 6pt;">
+                                        <input type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)" style="margin-left: 6pt;"> 
+                                    </div>
+
+                                    
                                 </div>
 
                                 <div align="center">
-
-                                    <p class="inline">Note:</p> <input class="inline" type="text" style="width: 240pt; margin-left: 12pt;">
+                                    <p class="inline">Group:</p> <input type="text" style="width: 36pt;">
+                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 175pt; margin-left: 12pt;">
                                 </div>
                             </div>
                         </td></tr>`;
@@ -309,18 +318,20 @@ permalink: /other/scheduler
     var allSchedules = undefined;
 
     class Course{
-        constructor(name, crn, group, credits, start, end, color, shade, notes){
+        constructor(name, crn, group, credits, starts, ends, days,  color, shade, notes){
             this.name = name; 
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
-            this.start = start; 
-            this.end = end; 
+            this.starts = starts; 
+            this.ends = ends; 
+            this.days = days;
             this.shade = shade;
             this.color = color;
             this.notes = notes;
         }
 
+        //TODO: Fix for multiple time slots
         //Checks if two courses' time slots overlap 0r 
         collides(other){
             return !( (this.start >= other.start && this.start <= other.end) 
@@ -329,7 +340,7 @@ permalink: /other/scheduler
         }
 
         copy(){
-            return new Course(this.name, this.crn, this.group, this.credits, this.start, this.end, this.color, this.notes);
+            return new Course(this.name, this.crn, this.group, this.credits, [...this.starts], [...this.ends], this.days, this.color, this.notes);
         }
 
     }
@@ -377,7 +388,22 @@ permalink: /other/scheduler
             saveString += currentCourse.credits + "\n"; 
             saveString += currentCourse.shade + "\n";
             saveString += currentCourse.color + "\n";
-            saveString += currentCourse.start + "\n"; 
+            
+            for(let i = 0; i < currentCourse.starts.length; i++){
+                saveString += currentCourse.starts[i] + ";";
+            }
+            saveString += "\n";
+
+            for(let i = 0; i < currentCourse.ends.length; i++){
+                saveString += currentCourse.ends[i] + ";";
+            }
+            saveString += "\n";
+
+            for(let i = 0; i < currentCourse.days.length; i++){
+                saveString += currentCourse.days[i] + ";";
+            }
+            saveString += "\n";
+            
             saveString += currentCourse.end + "\n"; 
             saveString += currentCourse.group + "\n"; 
             saveString += currentCourse.notes + "\n";
@@ -433,6 +459,7 @@ permalink: /other/scheduler
         courseTableBody.insertBefore(newCourseElement, buttonTR);
     }
  
+    //TODO: Fix for multiple time slots
     function calcOptions(){
         if(! updateSettings()){
             return null;
@@ -493,6 +520,7 @@ permalink: /other/scheduler
     // Program Logic //
     ///////////////////
 
+    //TODO: Fix for multiple time slots
     function populateFields(text){
         
         var courseList = text.split("--\n");
@@ -543,10 +571,22 @@ permalink: /other/scheduler
             div2.children[1].value = currentCourse[2]; //credits
             div2.children[5].value = currentCourse[3]; //shade
             div2.children[3].value = currentCourse[4]; //color
-            div3.children[1].value = minsToTime(currentCourse[5]); //start
-            div3.children[3].value = minsToTime(currentCourse[6]); //end
-            div3.children[5].value = currentCourse[7]; //group
-            div4.children[1].value = currentCourse[8]; //notes
+            
+            
+            var starts = currentCourse[5].split(";"); //starts
+            var ends = currentCourse[6].split(";"); //ends
+            var days = currentCourse[7].split(";"); //days
+
+            for(let i = 0; i < div3.children.length-1; i++){
+                var currenDiv = div3.children[i];
+
+                currentDiv.children[1].value = minsToTime(starts[i]); //start
+                currentDiv.children[3].value = minsToTime(ends[i]); //end
+                currentDiv.children[4].value = days[i]; //day
+            }
+            
+            div4.children[1].value = currentCourse[8]; //group
+            div4.children[3].value = currentCourse[9]; //notes
 
         }
     }
@@ -603,7 +643,21 @@ permalink: /other/scheduler
         }
     }
 
-    function validateCourseForm(course, name, crn, credits, start, end){
+    function validateCourseForm(course, name, crn, credits, starts, ends){
+        
+        for(let i = 0; i < starts.length; i++){
+            
+            if(starts[i] === ""){
+                alert("Course " + course + " start time can't be empty");
+                return false;
+            }
+            
+            if(ends[i] === ""){
+                alert("Course " + course + " end time can't be empty");
+                return false;
+            }
+        }
+        
         if(name === ""){
             alert("Course " + course + " name can't be empty");
             return false;
@@ -614,14 +668,6 @@ permalink: /other/scheduler
         }
         else if(credits === ""){
             alert("Course " + course + " credits can't be empty");
-            return false;
-        }
-        else if(start === ""){
-            alert("Course " + course + " start time can't be empty");
-            return false;
-        }
-        else if(end === ""){
-            alert("Course " + course + " end time can't be empty");
             return false;
         }
         else{
@@ -650,16 +696,37 @@ permalink: /other/scheduler
             var credits = div2.children[1].value;
             var shade = div2.children[3].value;
             var color = div2.children[5].value;
-            var start = div3.children[1].value
-            var end = div3.children[3].value
-            var group = div3.children[5].value;
-            var notes = div4.children[1].value;
+            
+            
+            var rawStarts = [];
+            var rawEnds = [];
+            var days = [];
 
-            if(! validateCourseForm(i+1, name, crn, credits, start, end)){
+            for(let i = 0; i < div3.children.length-1; i++){
+                var currenDiv = div3.children[i];
+
+                starts.push(currentDiv.children[1].value);
+                ends.push(currentDiv.children[3].value);
+                days.push(currentDiv.children[4].value.toLowerCase());
+            }
+            
+            
+            var group = div4.children[1].value;
+            var notes = div4.children[3].value;
+
+            if(! validateCourseForm(i+1, name, crn, credits, starts, ends)){
                 return null;
             }
 
-            var newCourse = new Course(name, crn, group, parseInt(credits), timeToMins(start), timeToMins(end), color, shade, notes);
+            var starts = [];
+            var ends = [];
+
+            for(let i = 0; i < rawStarts.length; i++){
+                starts.push(timeToMins(rawStarts[i]));
+                ends.push(timeToMins(rawEnds[i]));
+            }
+
+            var newCourse = new Course(name, crn, group, parseInt(credits), starts, ends, days, color, shade, notes);
             courses.push( newCourse );
 
         }
