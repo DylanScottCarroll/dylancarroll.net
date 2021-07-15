@@ -287,6 +287,10 @@ permalink: /other/scheduler
     var minCourses = 0;
     var maxCourses = 0;
 
+
+    var currentOptionViewed = undefined;
+    var allSchedules = undefined;
+
     class Course{
         constructor(name, crn, group, credits, start, end, color, shade, notes){
             this.name = name; 
@@ -300,7 +304,7 @@ permalink: /other/scheduler
             this.notes = notes;
         }
 
-        //Checks if two courses' time slots overlap
+        //Checks if two courses' time slots overlap 0r 
         collides(other){
             return !( (this.start >= other.start && this.start <= other.end) 
                 || (other.start >= this.start && other.start <= this.end)
@@ -522,7 +526,7 @@ permalink: /other/scheduler
         var newMinCourses = row2.children[1].children[0].value;
         var newMaxCourses = row2.children[3].children[0].value;
         var newMinCredits = row3.children[1].children[0].value;
-        var newMaxCredits = row2.children[3].children[0].value;
+        var newMaxCredits = row3.children[3].children[0].value;
 
         if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses) ){
             return false;
@@ -717,6 +721,7 @@ permalink: /other/scheduler
         }
     }
     
+    function drawSchedule(){}
 
 </script>
 
