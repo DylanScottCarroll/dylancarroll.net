@@ -338,11 +338,12 @@ permalink: /other/scheduler
             }
 
             for(let i = 0; i < this.starts.length; i++){
-                for(let j = 0; i < other.starts.length; j++){
+                for(let j = 0; j < other.starts.length; j++){
+                    
                     if(daysOverlap(this.days[i], other.days[j]) ){
                         //If the two courses overlap
-                        if((this.start[i] >= other.start[j] && this.start[i] <= other.end[j]) 
-                        || (other.start[j] >= this.start[i] && other.start[j] <= this.end[i])){
+                        if((this.starts[i] >= other.starts[j] && this.starts[i] <= other.ends[j]) 
+                        || (other.starts[j] >= this.starts[i] && other.starts[j] <= this.ends[i])){
                             return false;
                         }
                     }
@@ -804,7 +805,10 @@ permalink: /other/scheduler
             
             //If the current coutse forms a valid schedule,
             //add that schedule to newPossibilities
-            if(scheduleIsValid(schedule, courses[i])){
+            
+            var isValid = scheduleIsValid(schedule, courses[i]);
+
+            if(isValid){
 
                 var newPossibility = [];
                 for(let j = 0; j < schedule.length; j++){
@@ -829,6 +833,7 @@ permalink: /other/scheduler
     }
 
     function daysOverlap(days1, days2){
+
         for(let i = 0; i < days1.length; i++){
             if (days2.includes( days1.charAt(i) ) ){
                 return true;
