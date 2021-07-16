@@ -518,10 +518,12 @@ permalink: /other/scheduler
 
     }
 
+    //TODO: Implement downloading images
     function downloadImages(){
 
     }
 
+    //TODO: Implement cycling through displays
     function showNext(){
 
     }
@@ -799,6 +801,8 @@ permalink: /other/scheduler
         return color;
     }
 
+    //TODO: remove duplicate schedules
+    //TODO: Add all valid schedules to a single 1D array
     function combinePossibilities(schedule, courses){
         var newPossibilities = []
         for(let i = 0; i < courses.length; i++){
@@ -863,6 +867,7 @@ permalink: /other/scheduler
         }
     }
     
+    //TODO: Implement drawing schedules
     function drawSchedule(schedule){
         var canvas = document.getElementById("MainCanvas");
 
