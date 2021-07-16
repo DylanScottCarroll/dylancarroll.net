@@ -331,12 +331,25 @@ permalink: /other/scheduler
             this.notes = notes;
         }
 
-        //TODO: Fix for multiple time slots
         //Checks if two courses' time slots overlap 0r 
         collides(other){
-            return !( (this.start >= other.start && this.start <= other.end) 
-                || (other.start >= this.start && other.start <= this.end)
-                || (this.group === other.group) );
+            if(this.group === other.group){
+                return false;
+            }
+
+            for(let i = 0; i < this.starts.length; i++){
+                for(let j = 0; i < other.starts.length; j++){
+                    if(daysOverlap(this.days[i], other.days[j]) ){
+                        //If the two courses overlap
+                        if((this.start[i] >= other.start[j] && this.start[i] <= other.end[j]) 
+                        || (other.start[j] >= this.start[i] && other.start[j] <= this.end[i])){
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            return true;
         }
 
         copy(){
@@ -459,7 +472,6 @@ permalink: /other/scheduler
         courseTableBody.insertBefore(newCourseElement, buttonTR);
     }
  
-    //TODO: Fix for multiple time slots
     function calcOptions(){
         if(! updateSettings()){
             return null;
@@ -520,7 +532,6 @@ permalink: /other/scheduler
     // Program Logic //
     ///////////////////
 
-    //TODO: Fix for multiple time slots
     function populateFields(text){
         
         var courseList = text.split("--\n");
@@ -803,6 +814,16 @@ permalink: /other/scheduler
             }
         }
         return true;
+    }
+
+    function daysOverlap(days1, days2){
+        for(let i = 0; i < days1.length; i++){
+            if (days2.includes( days1.charAt(i) ) ){
+                return true;
+            }
+        }
+
+        return false;
     }
 
     // Function to download data to a file
