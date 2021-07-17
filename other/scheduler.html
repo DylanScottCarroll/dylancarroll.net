@@ -1041,16 +1041,25 @@ permalink: /other/scheduler
 
 
                     var duration = (course.ends[i] - course.starts[i])/60
-                    ctx.fillRect(xPos + MAJOR_LINE_WIDTH/2, yPos, dayWidth - MAJOR_LINE_WIDTH/2, duration*hourHeight);
+                    ctx.fillRect(xPos + MAJOR_LINE_WIDTH/2, yPos, dayWidth - MAJOR_LINE_WIDTH, duration*hourHeight);
 
                     ctx.fillStyle = findTextColor(color);
 
                     var fontSize = Math.floor(hourHeight /5);
                     ctx.font = fontSize + "px Arial";
                     
-                    ctx.fillText(course.name, xPos + fontSize/2, yPos + fontSize*1.5);
-                    ctx.fillText(course.crn + " - " + course.credits, xPos + fontSize/2, yPos + fontSize*2.5);
-                    ctx.fillText(course.notes, xPos + fontSize/2, yPos + fontSize*3.5);
+                    var notes = course.notes;
+                    var notes2 = ""
+                    if(notes.length > 20){
+                        let temp = notes;
+                        notes = temp.slice(0, 20);
+                        notes2 = temp.slice(20, temp.length);
+                    }
+
+                    ctx.fillText(course.name, xPos + fontSize/2, yPos + fontSize*1.1);
+                    ctx.fillText(course.crn + " - " + course.credits, xPos + fontSize/2, yPos + fontSize*2.1);
+                    ctx.fillText(notes, xPos + fontSize/2, yPos + fontSize*3.1);
+                    ctx.fillText(notes2, xPos + fontSize/2, yPos + fontSize*4.1);
                 }
             }
         }
