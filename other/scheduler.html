@@ -313,7 +313,8 @@ permalink: /other/scheduler
     const DAY_COUNT = 7;
 
     var weekDayStrings = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    
+    var weekDayChars = ["m", "t", "w", "r", "f", "s", "u"];
+
     var courseCount = 1;
                     
     var startTime = 0;
@@ -342,6 +343,8 @@ permalink: /other/scheduler
             this.shade = shade;
             this.color = color;
             this.notes = notes;
+
+            console.log(this.notes);
         }
 
         //Checks if two courses' time slots overlap or if they belong to the same group
@@ -370,7 +373,7 @@ permalink: /other/scheduler
             var newStarts = [...this.starts];
             var newEnds = [...this.ends];
             return new Course(this.name, this.num, this.crn, this.group, this.credits, 
-                newStarts, newEnds, this.days, this.color, this.notes);
+                newStarts, newEnds, this.days, this.color, this.shade, this.notes);
         }
 
     }
@@ -779,6 +782,7 @@ permalink: /other/scheduler
             var group = div4.children[1].value;
             var notes = div4.children[3].value;
 
+
             if(! validateCourseForm(i+1, name, crn, credits, rawStarts, rawEnds)){
                 return null;
             }
@@ -791,6 +795,7 @@ permalink: /other/scheduler
                 ends.push(timeToMins(rawEnds[i]));
             }
 
+            
             var newCourse = new Course(name, i, crn, group, parseInt(credits), starts, ends, days, color, shade, notes);
             courses.push( newCourse );
 
@@ -911,7 +916,7 @@ permalink: /other/scheduler
     
     function daysOverlap(days1, days2){
         for(let i = 0; i < days1.length; i++){
-            if (days2.includes( days1.charAt(i) ) ){
+            if (days2.toLowerCase().includes( days1.toLowerCase().charAt(i) ) ){
                 return true;
             }
         }
@@ -1012,16 +1017,51 @@ permalink: /other/scheduler
         }
 
         for(let i = 0; i < allSchedules[schedule].length; i++){
-            drawCourse(allSchedules[schedule][i], ctx)
+            drawCourse(allSchedules[schedule][i], ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset)
         }
 
     }
 
-    function drawCourse(course, ctx){
+    function drawCourse(course, ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset){
+        
         for(let i = 0; i < course.days.length; i++){
-            for(let i = 0; i < DAY_COUNT; i++){
-                
+            for(let day = 0; day < DAY_COUNT; day++){
+                var onDay = daysOverlap(course.days[i], weekDayChars[day])
+
+                if(onDay){
+                    var xPos = sideMarginOffset + dayWidth*day;
+                    var yPos = topMarginOffset + (hourHeight*(course.starts[i]-startTime)/60);
+
+                    var color = colStrToRGB(course.shade, course.color);
+
+                    ctx.fillStyle = `rgb(
+                        ${color[0]},
+                        ${color[1]},
+                        ${color[2]})`
+
+
+                    var duration = (course.ends[i] - course.starts[i])/60
+                    ctx.fillRect(xPos + MAJOR_LINE_WIDTH/2, yPos, dayWidth - MAJOR_LINE_WIDTH/2, duration*hourHeight);
+
+                    ctx.fillStyle = findTextColor(color);
+
+                    var fontSize = Math.floor(hourHeight /5);
+                    ctx.font = fontSize + "px Arial";
+                    
+                    ctx.fillText(course.name, xPos + fontSize/2, yPos + fontSize*1.5);
+                    ctx.fillText(course.crn + " - " + course.credits, xPos + fontSize/2, yPos + fontSize*2.5);
+                    ctx.fillText(course.notes, xPos + fontSize/2, yPos + fontSize*3.5);
+                }
             }
+        }
+    }
+
+    function findTextColor(color){
+        if( (0.299*color[0] + 0.587*color[1] + 0.114*color[2]) > 128 ){
+            return "#000000";
+        }
+        else{
+            return "#E0E0E0";
         }
     }
 
