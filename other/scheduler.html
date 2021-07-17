@@ -99,18 +99,18 @@ permalink: /other/scheduler
                             
                             <tr>
                                 <td> <p>Min Courses</p> </td>
-                                <td> <input type="number" min=0 value=0 style="width: 48pt"> </td>
+                                <td> <input type="number" min=1 value="1" style="width: 48pt"> </td>
 
 
                                 <td> <p>Max Courses</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                <td> <input type="number" min=1 style="width: 48pt"> </td>
 
                                     
                             </tr>
                             
                             <tr>
                                 <td> <p>Min Credits</p> </td>
-                                <td> <input type="number" min=0 value=0 style="width: 48pt"> </td>
+                                <td> <input type="number" min=0 style="width: 48pt"> </td>
                                     
                                 
                                 
@@ -212,7 +212,7 @@ permalink: /other/scheduler
                             <input class="act" type="button" onclick="downloadImages()" value="Download Images">
                         </div>
 
-                        <canvas id="MainCanvas" style="width: 100%; height: 100px; color: #505050 1pt;">
+                        <canvas id="MainCanvas" style="width: 100%; color: #505050 1pt; margin-top: 24pt; margin-bottom: 24pt;" height="10px">
 
                         </canvas>
 
@@ -303,9 +303,19 @@ permalink: /other/scheduler
                             <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
                         </div>`
 
+    //Draw Settings
+    const WIDTH = 2000;
+    const HEIGHT = 1200;
+    const TOP_MARGIN = 0.07;
+    const SIDE_MARGIN = 0.1;
+    const MAJOR_LINE_WIDTH = 6;
+    const MINOR_LINE_WIDTH = 2;
+    const DAY_COUNT = 7;
+
+    var weekDayStrings = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    
     var courseCount = 1;
                     
-
     var startTime = 0;
     var endTime = 0; 
     var minCredits = 0;
@@ -317,9 +327,12 @@ permalink: /other/scheduler
     var currentOptionViewed = undefined;
     var allSchedules = undefined;
 
+    
+
     class Course{
-        constructor(name, crn, group, credits, starts, ends, days,  color, shade, notes){
+        constructor(name, num, crn, group, credits, starts, ends, days,  color, shade, notes){
             this.name = name; 
+            this.num = num;
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
@@ -331,7 +344,7 @@ permalink: /other/scheduler
             this.notes = notes;
         }
 
-        //Checks if two courses' time slots overlap 0r 
+        //Checks if two courses' time slots overlap or if they belong to the same group
         collides(other){
             if(this.group === other.group){
                 return false;
@@ -354,7 +367,10 @@ permalink: /other/scheduler
         }
 
         copy(){
-            return new Course(this.name, this.crn, this.group, this.credits, [...this.starts], [...this.ends], this.days, this.color, this.notes);
+            var newStarts = [...this.starts];
+            var newEnds = [...this.ends];
+            return new Course(this.name, this.num, this.crn, this.group, this.credits, 
+                newStarts, newEnds, this.days, this.color, this.notes);
         }
 
     }
@@ -511,11 +527,25 @@ permalink: /other/scheduler
             }
         }
 
-        console.log(layers)
+        allSchedules = []
+        for(let i = minCourses-1; i <= maxCourses-1; i++){
+            var layer = layers[i];
 
+            for(let j = 0; j < layer.length; j++){
+                var schedule = layer[j];
 
+                var credits = sumCredits(schedule);
 
+                if(credits >= minCredits && credits <= maxCredits){
+                    allSchedules.push(schedule);
+                }
+            }
+        }
 
+        console.log(allSchedules);
+        currentOptionViewed = 1;
+
+        drawSchedule(currentOptionViewed);
     }
 
     //TODO: Implement downloading images
@@ -631,7 +661,7 @@ permalink: /other/scheduler
         var newMinCredits = row3.children[1].children[0].value;
         var newMaxCredits = row3.children[3].children[0].value;
 
-        if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses) ){
+        if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses, newMinCredits, newMaxCredits) ){
             return false;
         }
         else{
@@ -647,7 +677,8 @@ permalink: /other/scheduler
         
     }
 
-    function validateSettings(start, end, minCourses, maxCourses){
+    //TODO: Check the bounds of the values
+    function validateSettings(start, end, minCourses, maxCourses, minCredits, maxCredits){
         if(start === ""){
             alert("Start Time can't be empty");
             return false;
@@ -660,8 +691,16 @@ permalink: /other/scheduler
             alert("Min courses can't be empty");
             return false;
         }
-        else if(start === ""){
+        else if(maxCourses === ""){
             alert("Max courses can't be empty");
+            return false;
+        }
+        else if(minCredits === ""){
+            alert("Min Credits can't be empty");
+            return false;
+        }
+        else if(maxCredits === ""){
+            alert("Max Credits can't be empty");
             return false;
         }
         else{
@@ -752,7 +791,7 @@ permalink: /other/scheduler
                 ends.push(timeToMins(rawEnds[i]));
             }
 
-            var newCourse = new Course(name, crn, group, parseInt(credits), starts, ends, days, color, shade, notes);
+            var newCourse = new Course(name, i, crn, group, parseInt(credits), starts, ends, days, color, shade, notes);
             courses.push( newCourse );
 
         }
@@ -779,6 +818,28 @@ permalink: /other/scheduler
         return hoursString + ":" + minutesString; 
     }
 
+    function minsToPrettyTime(mins){
+        var hours = Math.floor(mins/60);
+        var minutes = mins - (hours*60);
+        
+        var AMPM = "";
+        if(hours > 12){
+            hours -= 12;
+            AMPM = "PM"
+        }
+        else{
+            AMPM = "AM"
+        }
+
+        var minutesString = minutes.toString();
+        if(minutesString.length ==1 )(minutesString = 0 + minutesString)
+        
+        var hoursString = hours.toString()
+        if(hoursString.length ==1 )(hoursString = " " + hoursString)
+
+        return hoursString + ":" + minutesString + " " + AMPM; 
+    }
+
     function colStrToRGB(shadeStr, colorIndStr){
         //Select the correct color from this list
         var color = [ [255, 0, 0],
@@ -801,8 +862,6 @@ permalink: /other/scheduler
         return color;
     }
 
-    //TODO: remove duplicate schedules
-    //TODO: Add all valid schedules to a single 1D array
     function combinePossibilities(schedule, courses){
         var newPossibilities = []
         for(let i = 0; i < courses.length; i++){
@@ -828,6 +887,12 @@ permalink: /other/scheduler
     }
 
     function scheduleIsValid(schedule, newCourse){
+        //Ensures the lists are strictly in number order
+        //Does not reject any schedules, just disallows for duplicate lists
+        if(schedule[schedule.length-1].num > newCourse.num){
+            return false;
+        }
+        
         for(let i = 0; i < schedule.length; i++){
             if(! schedule[i].collides(newCourse)){
                 return false;
@@ -836,8 +901,15 @@ permalink: /other/scheduler
         return true;
     }
 
+    function sumCredits(schedule){
+        var sum = 0;
+        for(let i = 0; i < schedule.length; i++){
+            sum += schedule[i].credits;
+        }
+        return sum;
+    }
+    
     function daysOverlap(days1, days2){
-
         for(let i = 0; i < days1.length; i++){
             if (days2.includes( days1.charAt(i) ) ){
                 return true;
@@ -870,13 +942,87 @@ permalink: /other/scheduler
     //TODO: Implement drawing schedules
     function drawSchedule(schedule){
         var canvas = document.getElementById("MainCanvas");
+        var ctx = canvas.getContext("2d");
 
-        var width = canvas.width;
-        var height = width;
+        canvas.width = WIDTH;
+        canvas.height = HEIGHT;
+
+        console.log(startTime, endTime);
+        var dayWidth = (WIDTH*(1-SIDE_MARGIN))/DAY_COUNT;
+        var hourCount = (endTime - startTime)/60
+        var hourHeight = (HEIGHT*(1-TOP_MARGIN)) / hourCount;
+
+        var topMarginOffset = HEIGHT*TOP_MARGIN
+        var sideMarginOffset = WIDTH*SIDE_MARGIN
+
+        
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, WIDTH, HEIGHT);
+        
+        ctx.lineWidth = MAJOR_LINE_WIDTH;
+        ctx.fillStyle = "#000000";
+        
+        ctx.beginPath();
+        ctx.moveTo(sideMarginOffset , 0);
+        ctx.lineTo(sideMarginOffset, HEIGHT);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0 , topMarginOffset);
+        ctx.lineTo(WIDTH, topMarginOffset);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0 , 0);
+        ctx.lineTo(WIDTH , 0);
+        ctx.lineTo(WIDTH , HEIGHT);
+        ctx.lineTo(0 , HEIGHT);
+        ctx.lineTo(0 , 0);
+        ctx.stroke();
+
+        var fontSize = Math.floor(topMarginOffset / 2) + "px";
+        ctx.font = fontSize + " Arial";
+
+        for(let day = 1; day <= DAY_COUNT; day++){
+            let xPos = sideMarginOffset + dayWidth*day;
+
+            ctx.fillText(weekDayStrings[day-1], xPos-dayWidth*0.95, topMarginOffset*0.70)
+
+            ctx.beginPath();
+            ctx.moveTo(xPos , 0);
+            ctx.lineTo(xPos, HEIGHT);
+            ctx.stroke();
+        }
+
+        var fontSize = Math.floor(hourHeight / 5) + "px";
+        ctx.font = fontSize + " Arial";
+
+        ctx.lineWidth = MINOR_LINE_WIDTH;
+        for(let hour = 1; hour < hourCount+1; hour++){
+            let yPos = topMarginOffset + hourHeight*hour;
+
+            
+            var time = minsToPrettyTime(startTime + (hour-1)*60);
+            ctx.fillText(time, sideMarginOffset*0.38, yPos-(hourHeight*0.75) );
+
+            ctx.beginPath();
+            ctx.moveTo(0 , yPos);
+            ctx.lineTo(WIDTH, yPos);
+            ctx.stroke();
+        }
+
+        for(let i = 0; i < allSchedules[schedule].length; i++){
+            drawCourse(allSchedules[schedule][i], ctx)
+        }
+
     }
 
-    function drawCourse(course){
-
+    function drawCourse(course, ctx){
+        for(let i = 0; i < course.days.length; i++){
+            for(let i = 0; i < DAY_COUNT; i++){
+                
+            }
+        }
     }
 
 </script>
