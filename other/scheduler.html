@@ -388,7 +388,6 @@ permalink: /other/scheduler
         text.then(function(text) { populateFields(text) })
     }
 
-
     function downloadSave(){
         if(! updateSettings()){
             return null;
@@ -545,26 +544,52 @@ permalink: /other/scheduler
             }
         }
 
-        console.log(allSchedules);
-        currentOptionViewed = 1;
+        currentOptionViewed = 0;
 
         drawSchedule(currentOptionViewed);
     }
 
-    //TODO: Implement downloading images
     function downloadImages(){
-
+        if(allSchedules === undefined){
+            alert("You must click calculate options first.")
+            return undefined;
+        }
+        
+        for(let i = 0; i < allSchedules.length; i++){
+            drawSchedule(i);
+            downloadCanvas(i);
+        }
     }
 
-    //TODO: Implement cycling through displays
     function showNext(){
+        if(allSchedules === undefined){
+            alert("You must click calculate options first.")
+            return undefined;
+        }
 
+        currentOptionViewed ++;
+
+        if(currentOptionViewed >= allSchedules.length){
+            currentOptionViewed = 0;
+        }
+
+        drawSchedule(currentOptionViewed);
     }
 
     function showPrev(){
+        if(allSchedules === undefined){
+            alert("You must click calculate options first.")
+            return undefined;
+        }
+        
+        currentOptionViewed --;
 
+        if(currentOptionViewed < 0){
+            currentOptionViewed = allSchedules.length-1;
+        }
+
+        drawSchedule(currentOptionViewed);
     }
-
 
     ///////////////////
     // Program Logic //
@@ -944,7 +969,6 @@ permalink: /other/scheduler
         }
     }
     
-    //TODO: Implement drawing schedules
     function drawSchedule(schedule){
         var canvas = document.getElementById("MainCanvas");
         var ctx = canvas.getContext("2d");
@@ -985,8 +1009,10 @@ permalink: /other/scheduler
         ctx.lineTo(0 , 0);
         ctx.stroke();
 
-        var fontSize = Math.floor(topMarginOffset / 2) + "px";
-        ctx.font = fontSize + " Arial";
+        var fontSize = Math.floor(topMarginOffset / 2);
+        ctx.font = fontSize + "px Arial";
+
+        ctx.fillText("Option " + (schedule+1), fontSize*0.2, topMarginOffset*0.7)
 
         for(let day = 1; day <= DAY_COUNT; day++){
             let xPos = sideMarginOffset + dayWidth*day;
@@ -1050,10 +1076,10 @@ permalink: /other/scheduler
                     
                     var notes = course.notes;
                     var notes2 = ""
-                    if(notes.length > 20){
+                    if(notes.length > 17){
                         let temp = notes;
-                        notes = temp.slice(0, 20);
-                        notes2 = temp.slice(20, temp.length);
+                        notes = temp.slice(0, 17);
+                        notes2 = temp.slice(15, temp.length);
                     }
 
                     ctx.fillText(course.name, xPos + fontSize/2, yPos + fontSize*1.1);
@@ -1072,6 +1098,18 @@ permalink: /other/scheduler
         else{
             return "#E0E0E0";
         }
+    }
+
+    function downloadCanvas(i){
+        
+        
+        var canvas = document.getElementById("MainCanvas");
+        var link = document.createElement('a');
+        link.download = "Schedule_" + i +  '.png';
+        link.href = canvas.toDataURL()
+        link.click();
+
+        link.remove();
     }
 
 </script>
