@@ -88,6 +88,8 @@ permalink: /other/scheduler
                     <p> <b>Step 1:</b> For each class you may want to register for, fill out all of the information for every section of that class  you might want to register for. </p>
                     <p><b>Step 2:</b> Click "Calculate Options" to generate the list of all valid schedules that can be made from those sections. </p>
                     <p> <b>Step 3:</b> Click "Show Next" and "Show Previous" to cylce through that list to find which schedule is your favorite. </p>
+                    <p> <b>Step 4:</b> Download the image of your favorite schedules to remember them later.</p>
+
                     
                     <h3>Things to Note</h3>
                     <li style="font-size: 15pt; color: #505050; font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI'">
@@ -95,11 +97,11 @@ permalink: /other/scheduler
                     </li>
                     <br>
                     <li style="font-size: 15pt; color: #505050; font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI'">
-                        The "CRN" and "Note" boxes are not mandatory. They are just for you to mark specific information about each course section to make selecting between schedules and registering easier.
+                        The "Mandatory Group" box is for listing groups you need at least one class from. Any schedule without at lest one class from all manditory groups will not be displayed.
                     </li>
                     <br>
                     <li style="font-size: 15pt; color: #505050; font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI'">
-                        You can save and load the data you've filled in already, so you can leave and revisit the page with the same schedule. The data will not persist when you leave the page, so you must save your data if you don't want to lose it.
+                        The "CRN" and "Note" boxes are not mandatory.
                     </li>
                     <br>
                     <li style="font-size: 15pt; color: #505050; font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI'">
@@ -152,10 +154,21 @@ permalink: /other/scheduler
                         </table>
 
                         <div align=center>
+                            <p class="inline" >Mandatory Groups: </p>
+                            <div class="inline" style="width: 24pt;"></div>
+                            <textarea id="mandatoryGroups" cols=20 rows=3 style="vertical-align:middle; resize: vertical;"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div align=center>
                             <input class="inline" type="file" id="saveFile" name="saveFile" onchange="fileSelected()">
                             <input type=button value="Download Save" onclick="downloadSave()">
 
                         </div>
+
+                        
+
                         &nbsp;
 
                     </div>
@@ -167,7 +180,7 @@ permalink: /other/scheduler
                         <tr><td>
                             <div class="border" style="line-height: 0pt;"> 
                                 <div align="center">
-                                    <h3 class="inline" style="line-height: 0pt;">Course 1</h3>
+                                    <h3 class="inline" style="line-height: 0pt;">Course</h3>
 
                                     <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
@@ -230,6 +243,7 @@ permalink: /other/scheduler
                     &nbsp;
                     <div align=center style="margin-left: auto; margin-right: auto; display: block;">
                         <input class="act" type="button" onclick="removeCourse()" value="Remove Course">
+                        <input class="act" type="button" onclick="copyCourse()" value="Copy Course">
                         <input class="act" type="button" onclick="addCourse()" value="Add Course">
                     </div>
                     
@@ -238,7 +252,7 @@ permalink: /other/scheduler
                     <div id = "DisplayDiv">
                         <div align=center style="margin-left: auto; margin-right: auto; display: block;">
                             <input class="act" type="button" onclick="calcOptions()" value="Calculate Options">
-                            <input class="act" type="button" onclick="downloadImages()" value="Download Images">
+                            <input class="act" type="button" onclick="downloadAllImages()" value="Download All Images">
                         </div>
 
                         <canvas id="MainCanvas" style="width: 100%; color: #505050 1pt; margin-top: 24pt; margin-bottom: 24pt;" height="10px">
@@ -247,6 +261,7 @@ permalink: /other/scheduler
 
                         <div align=center style="margin-left: auto; margin-right: auto; display: block;">
                             <input class="act" type="button" onclick="showPrev()" value="Show Previous">
+                            <input class="act" type="button" onclick="downloadImage()" value="Download Image">
                             <input class="act" type="button" onclick="showNext()" value="Show Next">
                         </div>
 
@@ -269,7 +284,7 @@ permalink: /other/scheduler
     var blankCourseElement = `<tr><td>
                             <div class="border" style="line-height: 0pt;"> 
                                 <div align="center">
-                                    <h3 class="inline" style="line-height: 0pt;">{Course}</h3>
+                                    <h3 class="inline" style="line-height: 0pt;">Course</h3>
 
                                     <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
 
@@ -352,10 +367,11 @@ permalink: /other/scheduler
     var maxCredits = 0;
     var minCourses = 0;
     var maxCourses = 0;
-
+    var mandatoryGroups = [];
 
     var currentOptionViewed = undefined;
     var allSchedules = undefined;
+
 
     
 
@@ -372,8 +388,6 @@ permalink: /other/scheduler
             this.shade = shade;
             this.color = color;
             this.notes = notes;
-
-            console.log(this.notes);
         }
 
         //Checks if two courses' time slots overlap or if they belong to the same group
@@ -435,6 +449,12 @@ permalink: /other/scheduler
         saveString += maxCourses + "\n";
         saveString += minCredits + "\n";
         saveString += maxCredits + "\n";
+
+        for(let i = 0; i < mandatoryGroups.length; i++){
+            if(i != 0){saveString += ";"}
+            saveString += mandatoryGroups[i];
+        }
+        saveString+="\n";
         
 
         saveString += "--\n";
@@ -508,11 +528,19 @@ permalink: /other/scheduler
         }
     }
 
+    function copyCourse(){
+        var courseTableBody = document.getElementById("CourseTableBody");
+        var lastCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
+        var buttonTR = courseTableBody.childNodes[courseTableBody.childNodes.length - 1];
+        
+        courseTableBody.insertBefore(lastCourse.cloneNode(true), buttonTR);
+    }
+
     function addCourse(){
         courseCount += 1;
 
         var template = document.createElement("template");
-        template.innerHTML = blankCourseElement.replace("{Course}", "Course " + courseCount);
+        template.innerHTML = blankCourseElement;
         
         var newCourseElement = template.content.firstChild;
         
@@ -553,10 +581,14 @@ permalink: /other/scheduler
 
                 //Add all of the newly found posibilites to the current layer
                 for(let k = 0; k < newPossibilities.length; k++){
-                    currentList.push(newPossibilities[k]);
+                    if( !scheduleAlreadyInList(newPossibilities[k], currentList) ){
+                        currentList.push(newPossibilities[k]);
+                    }
                 }
             }
         }
+
+        console.log(layers);
 
         allSchedules = []
         for(let i = minCourses-1; i <= maxCourses-1; i++){
@@ -568,7 +600,9 @@ permalink: /other/scheduler
                 var credits = sumCredits(schedule);
 
                 if(credits >= minCredits && credits <= maxCredits){
-                    allSchedules.push(schedule);
+                    if( scheduleHasMandatory(schedule) ){
+                        allSchedules.push(schedule);
+                    }
                 }
             }
         }
@@ -578,7 +612,7 @@ permalink: /other/scheduler
         drawSchedule(currentOptionViewed);
     }
 
-    function downloadImages(){
+    function downloadAllImages(){
         if(allSchedules === undefined){
             alert("You must click calculate options first.")
             return undefined;
@@ -588,6 +622,16 @@ permalink: /other/scheduler
             drawSchedule(i);
             downloadCanvas(i);
         }
+    }
+
+    function downloadImage(){
+        if(allSchedules === undefined){
+            alert("You must click calculate options first.")
+            return undefined;
+        }
+
+        drawSchedule(currentOptionViewed);
+        downloadCanvas(currentOptionViewed);
     }
 
     function showNext(){
@@ -645,6 +689,8 @@ permalink: /other/scheduler
         row2.children[3].children[0].value = parseInt(settings[3]);
         row3.children[1].children[0].value = parseInt(settings[4]);
         row3.children[3].children[0].value = parseInt(settings[5]);
+
+        document.getElementById("mandatoryGroups").value = settings[6].replace(";", "\n");
 
         //Get to the correct number of courses
         while(courseCount < courseList.length-1){
@@ -717,6 +763,10 @@ permalink: /other/scheduler
         var newMaxCourses = row2.children[3].children[0].value;
         var newMinCredits = row3.children[1].children[0].value;
         var newMaxCredits = row3.children[3].children[0].value;
+
+        mandatoryGroups = document.getElementById("mandatoryGroups").value.split("\n");
+
+        console.log(mandatoryGroups);
 
         if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses, newMinCredits, newMaxCredits) ){
             return false;
@@ -849,6 +899,9 @@ permalink: /other/scheduler
                 ends.push(timeToMins(rawEnds[i]));
             }
 
+            if(group == ""){
+                group = i.toString();
+            }
             
             var newCourse = new Course(name, i, crn, group, parseInt(credits), starts, ends, days, color, shade, notes);
             courses.push( newCourse );
@@ -938,19 +991,59 @@ permalink: /other/scheduler
                 }
                 newPossibility.push(courses[i].copy());
 
+                newPossibility.sort(function (a, b) {
+                return a.num - b.num;
+                });
+
                 newPossibilities.push(newPossibility);
+
+                
             }
         }
 
         return newPossibilities;
     }
 
-    function scheduleIsValid(schedule, newCourse){
-        //Ensures the lists are strictly in number order
-        //Does not reject any schedules, just disallows for duplicate lists
-        if(schedule[schedule.length-1].num > newCourse.num){
-            return false;
+    function scheduleAlreadyInList(schedule, list){
+        
+        var IDString = scheduleToIDString(schedule);
+        for(let i = 0; i < list.length; i++){
+            if(scheduleToIDString(list[i]) == IDString ){
+                return true;
+            }
         }
+        return false;
+    }
+
+    function scheduleToIDString(schedule){
+        var string = "";
+        for(let i = 0; i < schedule.length; i++){
+            if(i!=0){string += " ";}
+            string += schedule[i].num;
+        }
+
+        return string;
+    }
+
+    function scheduleHasMandatory(schedule){
+        for(let i = 0; i < mandatoryGroups.length; i++){
+            var hasCurentGroup = false;
+
+            for(let j = 0; j < schedule.length; j++){
+                if(schedule[j].group == mandatoryGroups[i]){
+                    hasCurentGroup = true;
+                }
+            }
+
+            if(!hasCurentGroup){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function scheduleIsValid(schedule, newCourse){
         
         for(let i = 0; i < schedule.length; i++){
             if(! schedule[i].collides(newCourse)){
@@ -958,6 +1051,13 @@ permalink: /other/scheduler
             }
         }
         return true;
+    }
+
+    function schedulesEqual(s1, s2){
+        var list1 = Array();
+        for(let i = 0; i < s1.length; i++){
+            list1.push(s1[i].num)
+        }
     }
 
     function sumCredits(schedule){
@@ -998,6 +1098,7 @@ permalink: /other/scheduler
         }
     }
     
+    //TODO: Add information about the schedule in the top bar
     function drawSchedule(schedule){
         var canvas = document.getElementById("MainCanvas");
         var ctx = canvas.getContext("2d");
@@ -1005,7 +1106,6 @@ permalink: /other/scheduler
         canvas.width = WIDTH;
         canvas.height = HEIGHT;
 
-        console.log(startTime, endTime);
         var dayWidth = (WIDTH*(1-SIDE_MARGIN))/DAY_COUNT;
         var hourCount = (endTime - startTime)/60
         var hourHeight = (HEIGHT*(1-TOP_MARGIN)) / hourCount;
@@ -1038,10 +1138,15 @@ permalink: /other/scheduler
         ctx.lineTo(0 , 0);
         ctx.stroke();
 
-        var fontSize = Math.floor(topMarginOffset / 2);
+        var fontSize = Math.floor(topMarginOffset / 2.5);
         ctx.font = fontSize + "px Arial";
 
-        ctx.fillText("Option " + (schedule+1), fontSize*0.2, topMarginOffset*0.7)
+        ctx.fillText("Option " + (schedule+1), fontSize*0.5, fontSize*1.2)
+        ctx.fillText(sumCredits(allSchedules[schedule]) + " credits", fontSize*0.5, fontSize*2.2)
+
+
+        var fontSize = Math.floor(topMarginOffset / 2);
+        ctx.font = fontSize + "px Arial";
 
         for(let day = 1; day <= DAY_COUNT; day++){
             let xPos = sideMarginOffset + dayWidth*day;
@@ -1134,8 +1239,8 @@ permalink: /other/scheduler
         
         var canvas = document.getElementById("MainCanvas");
         var link = document.createElement('a');
-        link.download = "Schedule_" + i +  '.png';
-        link.href = canvas.toDataURL()
+        link.download = "Option_" + (i+1) +  '.png';
+        link.href = canvas.toDataURL();
         link.click();
 
         link.remove();
