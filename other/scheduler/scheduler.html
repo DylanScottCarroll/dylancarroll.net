@@ -8,10 +8,10 @@ permalink: /other/scheduler
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../CSS/desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="../../CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../../CSS/mobile.css" />
     
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/style.css">
 
     <style>
         input.HourBox {width: 24pt;}
@@ -443,53 +443,51 @@ permalink: /other/scheduler
 
         saveString = ""
 
-        saveString += startTime + "\n";
-        saveString += endTime + "\n";
-        saveString += minCourses + "\n";
-        saveString += maxCourses + "\n";
-        saveString += minCredits + "\n";
-        saveString += maxCredits + "\n";
+        saveString += startTime + ";";
+        saveString += endTime + ";";
+        saveString += minCourses + ";";
+        saveString += maxCourses + ";";
+        saveString += minCredits + ";";
+        saveString += maxCredits + ";";
 
         for(let i = 0; i < mandatoryGroups.length; i++){
-            if(i != 0){saveString += ";"}
+            if(i != 0){saveString += ":"}
             saveString += mandatoryGroups[i];
         }
-        saveString+="\n";
-        
+        saveString += "\n";
 
-        saveString += "--\n";
 
         for(let i = 0; i < courses.length; i++){
-            if(i != 0) saveString += "--\n"
+            if(i != 0) saveString += "\n"
 
             var currentCourse = courses[i]
 
-            saveString += currentCourse.name + "\n"; 
-            saveString += currentCourse.crn + "\n"; 
-            saveString += currentCourse.credits + "\n"; 
-            saveString += currentCourse.shade + "\n";
-            saveString += currentCourse.color + "\n";
+            saveString += currentCourse.crn + ";"; 
+            saveString += currentCourse.name + ";"; 
+            saveString += currentCourse.credits + ";"; 
+            saveString += currentCourse.shade + ";";
+            saveString += currentCourse.color + ";";
             
             for(let i = 0; i < currentCourse.starts.length; i++){
-                if(i!=0){saveString += "; ";}
+                if(i!=0){saveString += ":";}
                 saveString += currentCourse.starts[i];
             }
-            saveString += "\n";
+            saveString += ";";
 
             for(let i = 0; i < currentCourse.ends.length; i++){
-                if(i!=0){saveString += "; ";}
+                if(i!=0){saveString += ":";}
                 saveString += currentCourse.ends[i];
             }
-            saveString += "\n";
+            saveString += ";";
 
             for(let i = 0; i < currentCourse.days.length; i++){
-                if(i!=0){saveString += "; ";}
+                if(i!=0){saveString += ":";}
                 saveString += currentCourse.days[i];
             }
-            saveString += "\n";
+            saveString += ";";
             
-            saveString += currentCourse.group + "\n"; 
-            saveString += currentCourse.notes + "\n";
+            saveString += currentCourse.group + ";"; 
+            saveString += currentCourse.notes;
         }
 
         download(saveString, "save.txt", "txt")
@@ -670,12 +668,12 @@ permalink: /other/scheduler
 
     function populateFields(text){
         
-        var courseList = text.split("--\n");
+        var courseList = text.split("\n");
 
 
         //Update Settings Field
 
-        var settings = courseList[0].split("\n");
+        var settings = courseList[0].split(";");
    
         var settingsTbody = document.getElementById("settingsTbody");
 
@@ -690,7 +688,7 @@ permalink: /other/scheduler
         row3.children[1].children[0].value = parseInt(settings[4]);
         row3.children[3].children[0].value = parseInt(settings[5]);
 
-        document.getElementById("mandatoryGroups").value = settings[6].replace(";", "\n");
+        document.getElementById("mandatoryGroups").value = settings[6].replace(":", "\n");
 
         //Get to the correct number of courses
         while(courseCount < courseList.length-1){
@@ -706,7 +704,7 @@ permalink: /other/scheduler
         var courseTDs = courseTableBody.children;
 
         for(let i = 0; i < courseList.length-1; i++){
-            var currentCourse = courseList[i+1].split("\n");
+            var currentCourse = courseList[i+1].split(";");
             
             var borderDiv = courseTDs[i].children[0].children[0];
 
@@ -715,16 +713,16 @@ permalink: /other/scheduler
             var div3 = borderDiv.children[2];
             var div4 = borderDiv.children[3];
 
-            div1.children[2].value = currentCourse[0]; //name
-            div1.children[4].value = currentCourse[1]; //crn
+            div1.children[2].value = currentCourse[1]; //crn
+            div1.children[4].value = currentCourse[0]; //name
             div2.children[1].value = currentCourse[2]; //credits
             div2.children[3].value = currentCourse[3]; //shade
             div2.children[5].value = currentCourse[4]; //color
             
             
-            var starts = currentCourse[5].split(";"); //starts
-            var ends = currentCourse[6].split(";"); //ends
-            var days = currentCourse[7].split(";"); //days
+            var starts = currentCourse[5].split(":"); //starts
+            var ends = currentCourse[6].split(":"); //ends
+            var days = currentCourse[7].split(":"); //days
 
             //Get to the correct number of time slots
             var addButton = div3.children[div3.children.length-1].firstChild;
