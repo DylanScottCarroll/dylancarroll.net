@@ -100,10 +100,14 @@ def parseTime(time):
 def tupleToSaveString(dataTuple):
     """Takes a tuple output from extractDatas() and formats it in the format of the save file"""
 
-    string = ""
-    string += dataTuple[1] + ";"
-    string += dataTuple[0] + ";"
-    string += dataTuple[2] + ";"
+    string = "~"
+    string += dataTuple[1] + ";" #CRN
+    string += dataTuple[0] + ";" #Name
+    string += dataTuple[2] + ";" #Credirs
+    string += "0;"; #Color
+    string += "0;"; #Shade
+
+
 
     for i, startTime in enumerate(dataTuple[3]):
         if i != 0: string += ":"
@@ -120,6 +124,8 @@ def tupleToSaveString(dataTuple):
         string += days
     string += ";"
 
+
+    string += ";" #Group
     string += dataTuple[6]
 
     return string

@@ -1,8 +1,6 @@
-<!--
 ---
 permalink: /other/scheduler
 ---
--->
 
 <!DOCTYPE html>
 <html>
@@ -85,7 +83,7 @@ permalink: /other/scheduler
                     <p>This application automates the process of selecting a schedule from a list of courses. Given a list of many course sections, it generates a list of all possible schedules from that list, so you can easily select from that list</p>
 
                     <h3>How to use it:</h3>
-                    <p> <b>Step 1:</b> For each class you may want to register for, fill out all of the information for every section of that class  you might want to register for. </p>
+                    <p> <b>Step 1:</b> For each class you may want to register for, fill out all of the information for every section of that class  you might want to register for. Or, inport the data of those classes from their CRNs. </p>
                     <p><b>Step 2:</b> Click "Calculate Options" to generate the list of all valid schedules that can be made from those sections. </p>
                     <p> <b>Step 3:</b> Click "Show Next" and "Show Previous" to cylce through that list to find which schedule is your favorite. </p>
                     <p> <b>Step 4:</b> Download the image of your favorite schedules to remember them later.</p>
@@ -162,12 +160,23 @@ permalink: /other/scheduler
                         <br>
 
                         <div align=center>
-                            <input class="inline" type="file" id="saveFile" name="saveFile" onchange="fileSelected()">
-                            <input type=button value="Download Save" onclick="downloadSave()">
-
+                            <input class="inline"  type="button" value="Import CRNs" onclick="importCRNs()">
+                            <select id="termSelect" class="inline" style="margin-left: 12pt;">
+                                <option value="">Select Term...</option>
+                                <option value="Fall_2021.txt">Fall 2021</option>
+                            </select>
+                            <div class="inline" style="width: 12pt;"></div>
+                            <textarea  id="crnList" cols=10 rows=2 style="vertical-align:middle; resize: vertical;"></textarea>
                         </div>
 
-                        
+                        <br>
+
+                        <div align=center>
+                            <input class="inline" style="width: 150pt;" type="file" id="saveFile" name="saveFile" onchange="fileSelected()">
+                            <input class="inline" type=button value="Download Save" onclick="downloadSave()">
+                            
+                            
+                        </div>
 
                         &nbsp;
 
@@ -428,7 +437,7 @@ permalink: /other/scheduler
     function fileSelected(){
         var file = document.getElementById("saveFile").files[0];
         var text = file.text();
-        text.then(function(text) { populateFields(text) })
+        text.then(function(text) { populateFields(text, true) })
     }
 
     function downloadSave(){
@@ -495,6 +504,20 @@ permalink: /other/scheduler
 
     }
     
+    function importCRNs(){
+        
+        url = "https://www.dylancarroll.net/other/scheduler/CRN_Data/"
+        termFile = document.getElementById("termSelect").value
+        url += termFile
+
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => blob.text())
+            .then(function(data) {extractCRNData(data)} );
+
+
+    }
+
     function addTimeSlot(button){
         var div = button.parentElement;
 
@@ -666,29 +689,59 @@ permalink: /other/scheduler
     // Program Logic //
     ///////////////////
 
-    function populateFields(text){
+    function extractCRNData(allCourses){
+        var crnStr = document.getElementById("crnList").value;
+        var crns = crnStr.split("\n");
+        console.log(crns)
+        
+        var loadString = "";
+
+        for(let i = 0; i < crns.length; i++){
+            var regex = "~" +  crns[i] + ";.*";
+            
+            
+            matched = allCourses.match(regex)
+
+            if(matched == null){
+                alert("CRN " + crns[i] +" not found.");
+                continue;
+            }
+
+            if(i!=0){loadString+="\n";}
+            loadString += matched[0].replace("~", "");
+        }
+
+
+        loadString = "\n" + loadString; 
+
+        populateFields(loadString, false);
+    }
+
+    function populateFields(text, overwriteSettings){
         
         var courseList = text.split("\n");
 
 
-        //Update Settings Field
+        if(overwriteSettings){
+            //Update Settings Field
 
-        var settings = courseList[0].split(";");
-   
-        var settingsTbody = document.getElementById("settingsTbody");
+            var settings = courseList[0].split(";");
+    
+            var settingsTbody = document.getElementById("settingsTbody");
 
-        var row1 = settingsTbody.children[1];
-        var row2 = settingsTbody.children[2];
-        var row3 = settingsTbody.children[3];
+            var row1 = settingsTbody.children[1];
+            var row2 = settingsTbody.children[2];
+            var row3 = settingsTbody.children[3];
 
-        row1.children[1].children[0].value = minsToTime(parseInt(settings[0]));
-        row1.children[3].children[0].value = minsToTime(parseInt(settings[1])); 
-        row2.children[1].children[0].value = parseInt(settings[2]);
-        row2.children[3].children[0].value = parseInt(settings[3]);
-        row3.children[1].children[0].value = parseInt(settings[4]);
-        row3.children[3].children[0].value = parseInt(settings[5]);
+            row1.children[1].children[0].value = minsToTime(parseInt(settings[0]));
+            row1.children[3].children[0].value = minsToTime(parseInt(settings[1])); 
+            row2.children[1].children[0].value = parseInt(settings[2]);
+            row2.children[3].children[0].value = parseInt(settings[3]);
+            row3.children[1].children[0].value = parseInt(settings[4]);
+            row3.children[3].children[0].value = parseInt(settings[5]);
 
-        document.getElementById("mandatoryGroups").value = settings[6].replace(":", "\n");
+            document.getElementById("mandatoryGroups").value = settings[6].replace(":", "\n");
+        }
 
         //Get to the correct number of courses
         while(courseCount < courseList.length-1){
