@@ -239,8 +239,8 @@ permalink: /other/scheduler
                                 </div>
 
                                 <div align="center">
-                                    <p class="inline">Group:</p> <input type="text" style="width: 36pt;">
-                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 175pt; margin-left: 12pt;">
+                                    <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
+                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
                                 </div>
                             </div>
                         </td></tr>
@@ -343,8 +343,8 @@ permalink: /other/scheduler
                                 </div>
 
                                 <div align="center">
-                                    <p class="inline">Group:</p> <input type="text" style="width: 36pt;">
-                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 175pt; margin-left: 12pt;">
+                                    <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
+                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
                                 </div>
                             </div>
                         </td></tr>`;
@@ -631,6 +631,7 @@ permalink: /other/scheduler
 
         currentOptionViewed = 0;
 
+        console.log( allSchedules[currentOptionViewed] );
         drawSchedule(currentOptionViewed);
     }
 
@@ -818,7 +819,11 @@ permalink: /other/scheduler
 
         mandatoryGroups = document.getElementById("mandatoryGroups").value.split("\n");
 
-        console.log(mandatoryGroups);
+       for(let i = 0; i < mandatoryGroups.length; i++){
+           if(mandatoryGroups[i] == ""){
+               mandatoryGroups.splice(i, 1);
+           }
+       }
 
         if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses, newMinCredits, newMaxCredits) ){
             return false;
@@ -1151,7 +1156,7 @@ permalink: /other/scheduler
     }
     
     //TODO: Add information about the schedule in the top bar
-    function drawSchedule(schedule){
+    function drawSchedule(schedule){        
         var canvas = document.getElementById("MainCanvas");
         var ctx = canvas.getContext("2d");
 
@@ -1166,70 +1171,88 @@ permalink: /other/scheduler
         var sideMarginOffset = WIDTH*SIDE_MARGIN
 
         
-        ctx.fillStyle = "#FFFFFF";
-        ctx.fillRect(0, 0, WIDTH, HEIGHT);
-        
-        ctx.lineWidth = MAJOR_LINE_WIDTH;
-        ctx.fillStyle = "#000000";
-        
-        ctx.beginPath();
-        ctx.moveTo(sideMarginOffset , 0);
-        ctx.lineTo(sideMarginOffset, HEIGHT);
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.moveTo(0 , topMarginOffset);
-        ctx.lineTo(WIDTH, topMarginOffset);
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.moveTo(0 , 0);
-        ctx.lineTo(WIDTH , 0);
-        ctx.lineTo(WIDTH , HEIGHT);
-        ctx.lineTo(0 , HEIGHT);
-        ctx.lineTo(0 , 0);
-        ctx.stroke();
-
-        var fontSize = Math.floor(topMarginOffset / 2.5);
-        ctx.font = fontSize + "px Arial";
-
-        ctx.fillText("Option " + (schedule+1), fontSize*0.5, fontSize*1.2)
-        ctx.fillText(sumCredits(allSchedules[schedule]) + " credits", fontSize*0.5, fontSize*2.2)
+        if(allSchedules[schedule] === undefined){
 
 
-        var fontSize = Math.floor(topMarginOffset / 2);
-        ctx.font = fontSize + "px Arial";
-
-        for(let day = 1; day <= DAY_COUNT; day++){
-            let xPos = sideMarginOffset + dayWidth*day;
-
-            ctx.fillText(weekDayStrings[day-1], xPos-dayWidth*0.95, topMarginOffset*0.70)
-
-            ctx.beginPath();
-            ctx.moveTo(xPos , 0);
-            ctx.lineTo(xPos, HEIGHT);
-            ctx.stroke();
-        }
-
-        var fontSize = Math.floor(hourHeight / 5) + "px";
-        ctx.font = fontSize + " Arial";
-
-        ctx.lineWidth = MINOR_LINE_WIDTH;
-        for(let hour = 1; hour < hourCount+1; hour++){
-            let yPos = topMarginOffset + hourHeight*hour;
+            var fontSize = WIDTH/30;
+            ctx.font = fontSize + "px Arial";
 
             
-            var time = minsToPrettyTime(startTime + (hour-1)*60);
-            ctx.fillText(time, sideMarginOffset*0.38, yPos-(hourHeight*0.75) );
+            ctx.fillText("No options found.", WIDTH/3, HEIGHT/3);
+
+
+            ctx.fillText("Things to try: ", WIDTH/4, HEIGHT/3 + fontSize*2);
+            ctx.fillText("  • Change course count or credit requirements.", WIDTH/4, HEIGHT/3 + fontSize*3);
+            ctx.fillText("  • Remove mandatory groups.", WIDTH/4, HEIGHT/3 + fontSize*4);
+            ctx.fillText("  • Add more sections.", WIDTH/4, HEIGHT/3 + fontSize*5);
+
+        }
+        else{
+            ctx.fillStyle = "#FFFFFF";
+            ctx.fillRect(0, 0, WIDTH, HEIGHT);
+            
+            ctx.lineWidth = MAJOR_LINE_WIDTH;
+            ctx.fillStyle = "#000000";
+            
+            ctx.beginPath();
+            ctx.moveTo(sideMarginOffset , 0);
+            ctx.lineTo(sideMarginOffset, HEIGHT);
+            ctx.stroke();
 
             ctx.beginPath();
-            ctx.moveTo(0 , yPos);
-            ctx.lineTo(WIDTH, yPos);
+            ctx.moveTo(0 , topMarginOffset);
+            ctx.lineTo(WIDTH, topMarginOffset);
             ctx.stroke();
-        }
 
-        for(let i = 0; i < allSchedules[schedule].length; i++){
-            drawCourse(allSchedules[schedule][i], ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset)
+            ctx.beginPath();
+            ctx.moveTo(0 , 0);
+            ctx.lineTo(WIDTH , 0);
+            ctx.lineTo(WIDTH , HEIGHT);
+            ctx.lineTo(0 , HEIGHT);
+            ctx.lineTo(0 , 0);
+            ctx.stroke();
+
+            var fontSize = Math.floor(topMarginOffset / 2.5);
+            ctx.font = fontSize + "px Arial";
+
+            ctx.fillText("Option " + (schedule+1), fontSize*0.5, fontSize*1.2)
+            ctx.fillText(sumCredits(allSchedules[schedule]) + " credits", fontSize*0.5, fontSize*2.2)
+
+
+            var fontSize = Math.floor(topMarginOffset / 2);
+            ctx.font = fontSize + "px Arial";
+
+            for(let day = 1; day <= DAY_COUNT; day++){
+                let xPos = sideMarginOffset + dayWidth*day;
+
+                ctx.fillText(weekDayStrings[day-1], xPos-dayWidth*0.95, topMarginOffset*0.70)
+
+                ctx.beginPath();
+                ctx.moveTo(xPos , 0);
+                ctx.lineTo(xPos, HEIGHT);
+                ctx.stroke();
+            }
+
+            var fontSize = Math.floor(hourHeight / 5) + "px";
+            ctx.font = fontSize + " Arial";
+
+            ctx.lineWidth = MINOR_LINE_WIDTH;
+            for(let hour = 1; hour < hourCount+1; hour++){
+                let yPos = topMarginOffset + hourHeight*hour;
+
+                
+                var time = minsToPrettyTime(startTime + (hour-1)*60);
+                ctx.fillText(time, sideMarginOffset*0.38, yPos-(hourHeight*0.75) );
+
+                ctx.beginPath();
+                ctx.moveTo(0 , yPos);
+                ctx.lineTo(WIDTH, yPos);
+                ctx.stroke();
+            }
+
+            for(let i = 0; i < allSchedules[schedule].length; i++){
+                drawCourse(allSchedules[schedule][i], ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset)
+            }
         }
 
     }
