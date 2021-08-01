@@ -192,23 +192,25 @@ permalink: /other/scheduler
                                 <div align="center">
                                     <h3 class="inline" style="line-height: 0pt;">Course</h3>
 
-                                    <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
+                                    <span style="white-space: nowrap;"> 
+                                        <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
+                                        <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;"> 
+                                    </span>
 
-                                    <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;">
                                 </div>
                                 
                                 
                                 <div align="center">
                                     <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
                                 
-                                    <p class="inline" style="margin-left: 24pt;">Shade:</p>
+                                    <p class="inline" style="margin-left: 12pt;">Shade:</p>
                                     <select>
                                         <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
 
-                                    <p class="inline" style="margin-left: 24pt;">Color:</p>
+                                    <p class="inline" style="margin-left: 12pt;">Color:</p>
                                     <select>
                                         <option value="0">Red</option>
                                         <option value="1">Orange</option>
@@ -240,7 +242,11 @@ permalink: /other/scheduler
 
                                 <div align="center">
                                     <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
-                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+
+                                    <span style="white-space: nowrap;"> 
+                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+                                    </span>
+
                                 </div>
                             </div>
                         </td></tr>
@@ -386,9 +392,9 @@ permalink: /other/scheduler
     
 
     class Course{
-        constructor(name, num, crn, group, credits, starts, ends, days,  color, shade, notes){
+        constructor(name, ID, crn, group, credits, starts, ends, days,  color, shade, notes){
             this.name = name; 
-            this.num = num;
+            this.ID = ID;
             this.crn = crn; 
             this.group = group; 
             this.credits = credits; 
@@ -425,10 +431,104 @@ permalink: /other/scheduler
         copy(){
             var newStarts = [...this.starts];
             var newEnds = [...this.ends];
-            return new Course(this.name, this.num, this.crn, this.group, this.credits, 
+            return new Course(this.name, this.ID, this.crn, this.group, this.credits, 
                 newStarts, newEnds, this.days, this.color, this.shade, this.notes);
         }
 
+    }
+
+    class Schedule{
+        constructor(courses){
+            this.courses = courses;
+            this.count = courses.length;
+            this.credits = this.countCredits();
+            this.IDString = this.createIDString();
+        }
+
+        createIDString(){
+            var string = "ID";
+            for(let i = 0; i < this.count; i++){
+                string += " ";
+                string += this.courses[i].ID;
+            }
+
+            return string;
+        }
+
+        countCredits(){
+            let sum = 0;
+            for(let i = 0; i < this.count; i++){
+                sum += this.courses[i].credits;
+            }
+
+            return sum;
+        }
+
+        formsValidSchedule(course){
+            for(let i = 0; i < this.count; i++){
+                if(!this.courses[i].collides(course)){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        createNewSchedule(course){
+            let newCourseArray = new Array();
+            
+            for(let i= 0; i < this.count; i++){
+                newCourseArray.push(this.courses[i].copy());
+            }
+            newCourseArray.push(course.copy());
+
+            //Sort the courses in the list by their number
+            newCourseArray.sort( function (a, b) {return a.ID - b.ID;} );
+
+            return new Schedule(newCourseArray);
+        }
+
+        hasMandatoryGroups(){
+            for(let i = 0; i < mandatoryGroups.length; i++){
+                var hasCurrentGroup = false;
+
+                for(let j = 0; j < this.count; j++){
+                    if(this.courses[j].group == mandatoryGroups[i]){
+                        hasCurrentGroup = true;
+                    }
+                }
+
+                if(!hasCurrentGroup){
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+    
+        isInArray(array){
+            for(let i = 0; i < array.length; i++){
+                if( this.equals(array[i]) ){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        equals(other){
+            return (this.IDString == other.IDString);
+        }
+    
+        createPossibilities(courses){
+            var newPossibilities = []
+            for(let i = 0; i < courses.length; i++){
+
+                if(this.formsValidSchedule(courses[i])){
+                    newPossibilities.push(this.createNewSchedule(courses[i]));
+                }
+            }
+
+            return newPossibilities;            
+        }
     }
 
     //////////////////////
@@ -588,9 +688,9 @@ permalink: /other/scheduler
             layers.push(new Array());
         }
 
-        //Populate the first layer with individual classes
+        //Populate the first layer with schedules with single courses
         for(let i = 0; i < courses.length; i++){
-            layers[0].push([courses[i].copy() ]);
+            layers[0].push( new Schedule([ courses[i] ]) );
         }
 
         for(let i = 1; i < maxCourses; i++){
@@ -598,19 +698,19 @@ permalink: /other/scheduler
             var currentList = layers[i];
 
             for(let j = 0; j < previousList.length; j++){
-                //Calculate the new posibilites for the current schedule
-                var newPossibilities = combinePossibilities(previousList[j], courses);
+                var newPossibilities = previousList[j].createPossibilities(courses);
 
-                //Add all of the newly found posibilites to the current layer
                 for(let k = 0; k < newPossibilities.length; k++){
-                    if( !scheduleAlreadyInList(newPossibilities[k], currentList) ){
+                    if( !newPossibilities[k].isInArray(currentList) ){
                         currentList.push(newPossibilities[k]);
                     }
                 }
+
             }
         }
 
         console.log(layers);
+        //Add all valid schedules to the allSchedules array;
 
         allSchedules = []
         for(let i = minCourses-1; i <= maxCourses-1; i++){
@@ -619,19 +719,17 @@ permalink: /other/scheduler
             for(let j = 0; j < layer.length; j++){
                 var schedule = layer[j];
 
-                var credits = sumCredits(schedule);
-
-                if(credits >= minCredits && credits <= maxCredits){
-                    if( scheduleHasMandatory(schedule) ){
-                        allSchedules.push(schedule);
-                    }
+                if(schedule.credits >= minCredits && schedule.credits <= maxCredits && schedule.hasMandatoryGroups() ){
+                    allSchedules.push(schedule);
                 }
             }
         }
 
+        console.log(allSchedules);
+
+        //Draw the correct schedules
         currentOptionViewed = 0;
 
-        console.log( allSchedules[currentOptionViewed] );
         drawSchedule(currentOptionViewed);
     }
 
@@ -1031,107 +1129,12 @@ permalink: /other/scheduler
         return color;
     }
 
-    function combinePossibilities(schedule, courses){
-        var newPossibilities = []
-        for(let i = 0; i < courses.length; i++){
-            
-            //If the current coutse forms a valid schedule,
-            //add that schedule to newPossibilities
-            
-            var isValid = scheduleIsValid(schedule, courses[i]);
-
-            if(isValid){
-
-                var newPossibility = [];
-                for(let j = 0; j < schedule.length; j++){
-                    newPossibility.push(schedule[j].copy());
-                }
-                newPossibility.push(courses[i].copy());
-
-                newPossibility.sort(function (a, b) {
-                return a.num - b.num;
-                });
-
-                newPossibilities.push(newPossibility);
-
-                
-            }
-        }
-
-        return newPossibilities;
-    }
-
-    function scheduleAlreadyInList(schedule, list){
-        
-        var IDString = scheduleToIDString(schedule);
-        for(let i = 0; i < list.length; i++){
-            if(scheduleToIDString(list[i]) == IDString ){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    function scheduleToIDString(schedule){
-        var string = "";
-        for(let i = 0; i < schedule.length; i++){
-            if(i!=0){string += " ";}
-            string += schedule[i].num;
-        }
-
-        return string;
-    }
-
-    function scheduleHasMandatory(schedule){
-        for(let i = 0; i < mandatoryGroups.length; i++){
-            var hasCurentGroup = false;
-
-            for(let j = 0; j < schedule.length; j++){
-                if(schedule[j].group == mandatoryGroups[i]){
-                    hasCurentGroup = true;
-                }
-            }
-
-            if(!hasCurentGroup){
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    function scheduleIsValid(schedule, newCourse){
-        
-        for(let i = 0; i < schedule.length; i++){
-            if(! schedule[i].collides(newCourse)){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    function schedulesEqual(s1, s2){
-        var list1 = Array();
-        for(let i = 0; i < s1.length; i++){
-            list1.push(s1[i].num)
-        }
-    }
-
-    function sumCredits(schedule){
-        var sum = 0;
-        for(let i = 0; i < schedule.length; i++){
-            sum += schedule[i].credits;
-        }
-        return sum;
-    }
-    
     function daysOverlap(days1, days2){
         for(let i = 0; i < days1.length; i++){
             if (days2.toLowerCase().includes( days1.toLowerCase().charAt(i) ) ){
                 return true;
             }
         }
-
         return false;
     }
 
@@ -1156,7 +1159,7 @@ permalink: /other/scheduler
     }
     
     //TODO: Add information about the schedule in the top bar
-    function drawSchedule(schedule){        
+    function drawSchedule(scheduleIndex){        
         var canvas = document.getElementById("MainCanvas");
         var ctx = canvas.getContext("2d");
 
@@ -1170,8 +1173,12 @@ permalink: /other/scheduler
         var topMarginOffset = HEIGHT*TOP_MARGIN
         var sideMarginOffset = WIDTH*SIDE_MARGIN
 
+
+        let schedule = allSchedules[scheduleIndex];
+
+        console.log(schedule.IDString);
         
-        if(allSchedules[schedule] === undefined){
+        if(schedule === undefined){
 
 
             var fontSize = WIDTH/30;
@@ -1215,8 +1222,8 @@ permalink: /other/scheduler
             var fontSize = Math.floor(topMarginOffset / 2.5);
             ctx.font = fontSize + "px Arial";
 
-            ctx.fillText("Option " + (schedule+1), fontSize*0.5, fontSize*1.2)
-            ctx.fillText(sumCredits(allSchedules[schedule]) + " credits", fontSize*0.5, fontSize*2.2)
+            ctx.fillText("Option " + (scheduleIndex+1), fontSize*0.5, fontSize*1.2)
+            ctx.fillText(schedule.credits + " credits", fontSize*0.5, fontSize*2.2)
 
 
             var fontSize = Math.floor(topMarginOffset / 2);
@@ -1250,8 +1257,8 @@ permalink: /other/scheduler
                 ctx.stroke();
             }
 
-            for(let i = 0; i < allSchedules[schedule].length; i++){
-                drawCourse(allSchedules[schedule][i], ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset)
+            for(let i = 0; i < schedule.count; i++){
+                drawCourse( schedule.courses[i], ctx, dayWidth, hourHeight, sideMarginOffset, topMarginOffset)
             }
         }
 
