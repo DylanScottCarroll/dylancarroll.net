@@ -1,6 +1,8 @@
+<!--
 ---
 permalink: /other/scheduler
 ---
+-->
 
 <!DOCTYPE html>
 <html>
@@ -242,7 +244,7 @@ permalink: /other/scheduler
 
                                 <div align="center">
                                     <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
-
+                                    
                                     <span style="white-space: nowrap;"> 
                                         <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
                                     </span>
@@ -302,23 +304,25 @@ permalink: /other/scheduler
                                 <div align="center">
                                     <h3 class="inline" style="line-height: 0pt;">Course</h3>
 
-                                    <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
+                                    <span style="white-space: nowrap;"> 
+                                        <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
+                                        <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;"> 
+                                    </span>
 
-                                    <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;">
                                 </div>
                                 
                                 
                                 <div align="center">
                                     <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
                                 
-                                    <p class="inline" style="margin-left: 24pt;">Shade:</p>
+                                    <p class="inline" style="margin-left: 12pt;">Shade:</p>
                                     <select>
                                         <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
 
-                                    <p class="inline" style="margin-left: 24pt;">Color:</p>
+                                    <p class="inline" style="margin-left: 12pt;">Color:</p>
                                     <select>
                                         <option value="0">Red</option>
                                         <option value="1">Orange</option>
@@ -350,7 +354,11 @@ permalink: /other/scheduler
 
                                 <div align="center">
                                     <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
-                                    <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+                                    
+                                    <span style="white-space: nowrap;"> 
+                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+                                    </span>
+
                                 </div>
                             </div>
                         </td></tr>`;
@@ -866,8 +874,8 @@ permalink: /other/scheduler
             var div3 = borderDiv.children[2];
             var div4 = borderDiv.children[3];
 
-            div1.children[2].value = currentCourse[1]; //crn
-            div1.children[4].value = currentCourse[0]; //name
+            div1.children[1].children[1].value = currentCourse[1]; //crn
+            div1.children[1].children[3].value = currentCourse[0]; //name
             div2.children[1].value = currentCourse[2]; //credits
             div2.children[3].value = currentCourse[3]; //shade
             div2.children[5].value = currentCourse[4]; //color
@@ -896,7 +904,7 @@ permalink: /other/scheduler
             }
             
             div4.children[1].value = currentCourse[8]; //group
-            div4.children[3].value = currentCourse[9]; //notes
+            div4.children[2].children[1].value = currentCourse[9]; //notes
 
         }
     }
@@ -1018,8 +1026,8 @@ permalink: /other/scheduler
             var div3 = borderDiv.children[2];
             var div4 = borderDiv.children[3];
 
-            var name = div1.children[2].value;
-            var crn = div1.children[4].value;
+            var crn = div1.children[1].children[1].value;
+            var name = div1.children[1].children[3].value;
             var credits = div2.children[1].value;
             var shade = div2.children[3].value;
             var color = div2.children[5].value;
@@ -1039,7 +1047,7 @@ permalink: /other/scheduler
             
             
             var group = div4.children[1].value;
-            var notes = div4.children[3].value;
+            var notes = div4.children[2].children[1].value;
 
 
             if(! validateCourseForm(i+1, name, crn, credits, rawStarts, rawEnds)){
