@@ -1183,7 +1183,7 @@ permalink: /other/scheduler
 
         let schedule = allSchedules[scheduleIndex];
 
-        console.log(schedule.IDString);
+        
         
         if(schedule === undefined){
 
@@ -1202,6 +1202,8 @@ permalink: /other/scheduler
 
         }
         else{
+            console.log(schedule.IDString);
+
             ctx.fillStyle = "#FFFFFF";
             ctx.fillRect(0, 0, WIDTH, HEIGHT);
             
