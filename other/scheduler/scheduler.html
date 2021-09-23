@@ -377,7 +377,7 @@ permalink: /other/scheduler
     const SIDE_MARGIN = 0.1;
     const MAJOR_LINE_WIDTH = 6;
     const MINOR_LINE_WIDTH = 2;
-    const DAY_COUNT = 7;
+    const DAY_COUNT = 5;
 
     var weekDayStrings = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     var weekDayChars = ["m", "t", "w", "r", "f", "s", "u"];
@@ -1246,7 +1246,7 @@ permalink: /other/scheduler
             }
             console.log(hourHeight)
             console.log(dayWidth)
-            var fontSize = Math.floor(dayWidth / 8) + "px";
+            var fontSize = Math.floor(dayWidth / 11) + "px";
             ctx.font = fontSize + " Arial";
 
             ctx.lineWidth = MINOR_LINE_WIDTH;
@@ -1293,7 +1293,7 @@ permalink: /other/scheduler
 
                     ctx.fillStyle = findTextColor(color);
 
-                    var fontSize = Math.floor(hourHeight /5);
+                    var fontSize = Math.floor(hourHeight /4);
                     ctx.font = fontSize + "px Arial";
                     
                     var notes = course.notes;
