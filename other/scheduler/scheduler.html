@@ -1244,8 +1244,9 @@ permalink: /other/scheduler
                 ctx.lineTo(xPos, HEIGHT);
                 ctx.stroke();
             }
-
-            var fontSize = Math.floor(hourHeight / 5) + "px";
+            console.log(hourHeight)
+            console.log(dayWidth)
+            var fontSize = Math.floor(dayWidth / 8) + "px";
             ctx.font = fontSize + " Arial";
 
             ctx.lineWidth = MINOR_LINE_WIDTH;
@@ -1254,7 +1255,7 @@ permalink: /other/scheduler
 
                 
                 var time = minsToPrettyTime(startTime + (hour-1)*60);
-                ctx.fillText(time, sideMarginOffset*0.38, yPos-(hourHeight*0.75) );
+                ctx.fillText(time, sideMarginOffset*0.22, yPos-(hourHeight*0.75) );
 
                 ctx.beginPath();
                 ctx.moveTo(0 , yPos);
