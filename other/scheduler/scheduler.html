@@ -1116,24 +1116,19 @@ permalink: /other/scheduler
 
     function colStrToRGB(shadeStr, colorIndStr){
         //Select the correct color from this list
-        var color = [ [255, 0, 0],
-            [255, 128, 0],
-            [255 , 255, ],
-            [0, 255, 0],
-            [0, 255, 255],
-            [0, 0, 255],
-            [255, 0, 255],
-            [128, 128, 128] ][parseInt(colorIndStr)];
 
-        //Averageing the color with white to make it brigher and with black to make it darker.
-        if(shadeStr === "2"){
-            color = [color[0]/2 + 128, color[1]/2 + 128, color[2]/2 + 128];
-        }
-        else if(shadeStr === "1"){
-            color = [color[0]/2, color[1]/2, color[2]/2];
-        }
 
-        return color;
+        var colors = [ [[212, 21, 21], [150,0,0], [255,128,128]], //Red
+                       [[255,128,0], [148,74,0], [255, 175, 94]], //Orange
+                       [[255,255,0], [181,181,0], [255,255,191]], //Yellow
+                       [ [43,179,43], [83,219,83], [0,130,0]], //Green
+                       [[11,230,226], [23,156,153], [161, 255, 252]], //Teal
+                       [[0,115,255], [0,78,194], [74,167,255]], //Blue
+                       [[162,23,255], [83,0,138], [223,64,255]], //Purple
+                       [[128,128,128], [64,64,64], [191,191,191]]] //Grey
+
+
+        return colors[parseInt(colorIndStr)][parseInt(shadeStr)]
     }
 
     function daysOverlap(days1, days2){
