@@ -28,11 +28,12 @@
 ~13152;AHE 574;4;0;0;1080;1310;w;;Goto, Stan
 ~14085;AHE 578;4;0;0;1080;1310;m;;Cuban, Sondra
 ~11614;AHE 580;4;0;0;1080;1310;w;;Goulet, Gail Marie
-~11447;AHE 691;4;0;0;;;;;Goto, Stan
 ~11786;AMST 205;4;0;0;720;820;tr;;Takagi, Midori
-~12668;AMST 301;4;0;0;600;710;tr;;Staff
+~14202;AMST 242;4;0;0;840;950;tr;;Staff
+~12668;AMST 301;4;0;0;720;830;tr;;Fillingim, Angela Elena
 ~13783;AMST 315;4;0;0;;;;;Staff
 ~14041;AMST 397A;4;0;0;840;1070;w;;Elia, Nada
+~14201;AMST 397C;4;0;0;780;890;mw;;Staff
 ~13792;AMST 464;4;0;0;600;710;tr;;Ferreras-Stone, Jessica D.
 ~13719;AMST 499;4;0;0;540;650;tr;;Gutierrez Najera, Lourdes
 ~10465;ANTH 102;5;0;0;690;770;mwf;;Rollins, Alyson Marie
@@ -68,7 +69,7 @@
 ~11277;ANTH 470;0;0;0;;;;;Koetje, Todd A.
 ~13675;ANTH 472;5;0;0;600;680;mwf;;Staff
 ~11762;ANTH 479;0;0;0;;;;;Koetje, Todd A.
-~11269;ANTH 490;5;0;0;900;1010;t;;Young, Kathleen
+~11269;ANTH 490;5;0;0;;;;;Young, Kathleen
 ~12897;ANTH 490;5;0;0;;;;;Monson, Tesla A.
 ~14158;ANTH 495;3;0;0;;;;;Staff
 ~10403;ANTH 496;1;0;0;;;;;Fisher, Josh
@@ -117,17 +118,17 @@
 ~13692;ART 316;0;0;0;;;;;Camlin, Cynthia E.
 ~13693;ART 320;5;0;0;920;1080;tr;;Bernhardt, Paul
 ~13694;ART 324;5;0;0;920;1080;mw;;Camlin, Cynthia E.
-~12231;ART 332;5;0;0;730;890;tr;;Petrenko, Sasha
+~14204;ART 331;5;0;0;730;890;tr;;Petrenko, Sasha
 ~11593;ART 341;5;0;0;540;700;tr;;Kelly, Ryan Wilson
 ~13695;ART 355;5;0;0;730;890;mw;;Turner, Lisa Michelle
 ~13264;ART 360;5;0;0;730;890;tr;;Purdue, Seiko
 ~11983;ART 371;5;0;0;730;890;mw;;Amundson, Garth
-~11456;ART 380;3;0;0;720;800;mw;;Myers, Margot Bianca
+~11456;ART 380;3;0;0;720;800;mw;;Myers, Margot
 ~12089;ART 398;3;0;0;540;620;mw;;Mattix, Christen
 ~10129;ART 400;0;0;0;;;;;Staff
 ~11283;ART 492;3;0;0;;;;;Camlin, Cynthia E.
 ~12232;ART 494;5;0;0;920;1080;mw;;Amundson, Garth
-~12566;ART 495;5;0;0;920;1080;tr;;Myers, Margot Bianca
+~12566;ART 495;5;0;0;920;1080;tr;;Myers, Margot
 ~12233;ART 496A;2;0;0;600;710;mw;;Kelly, Ryan Wilson
 ~13710;A/HI 231;3;0;0;780;860;mw;;Berzal de Dios, Jimena Ines
 ~10815;A/HI 240;3;0;0;600;680;mw;;Miller, Barbara L.
@@ -210,8 +211,8 @@
 ~11418;BIOL 340;5;0;0;780:780;860:860;mw:f;;van Hees, Dan
 ~12019;BIOL 340;5;0;0;510:510;590:590;mw:f;;Miner, Benjamin Gregory
 ~10232;BIOL 345;4;0;0;480;590;tr;;Moyer, Craig L.
-~10336;BIOL 346;4;0;0;900:600;950:770;m:tr;;Brodhagen, Marion L.
-~10419;BIOL 346;4;0;0;900:840;950:1010;m:tr;;Brodhagen, Marion L.
+~10336;BIOL 346;4;0;0;900:600;950:770;m:tr;;Staff
+~10419;BIOL 346;4;0;0;900:840;950:1010;m:tr;;Staff
 ~10213;BIOL 348;5;0;0;480:720;590:770;tr:mwf;;Staff
 ~10214;BIOL 348;5;0;0;600:720;710:770;tr:mwf;;Staff
 ~10215;BIOL 348;5;0;0;960:720;1070:770;tr:mwf;;Staff
@@ -358,48 +359,48 @@
 ~12187;CHEM 161;5;0;0;540:780;590:890;mwrf:w;;Rider, David Allen
 ~12188;CHEM 161;5;0;0;540:660;590:770;mwrf:f;;Rider, David Allen
 ~12189;CHEM 161;5;0;0;540:660;590:770;mwrf:f;;Rider, David Allen
-~12190;CHEM 161;5;0;0;720:540;770:650;mtwf:w;;Staff
-~12191;CHEM 161;5;0;0;720:540;770:650;mtwf:w;;Staff
-~12192;CHEM 161;5;0;0;720:900;770:1010;mtwf:w;;Duffy, Erin
+~12190;CHEM 161;5;0;0;720:540;770:650;mtwf:w;;Rindal, Hope Elizabeth
+~12191;CHEM 161;5;0;0;720:540;770:650;mtwf:w;;Rindal, Hope Elizabeth
+~12192;CHEM 161;5;0;0;720:900;770:1010;mtwf:w;;Rindal, Hope Elizabeth
 ~12193;CHEM 161;5;0;0;720:900;770:1010;mtwf:w;;Staff
-~12194;CHEM 161;5;0;0;660:1020;710:1130;mtwf:w;;Staff
-~12195;CHEM 161;5;0;0;660:1020;710:1130;mtwf:w;;Staff
-~12196;CHEM 161;5;0;0;660:780;710:890;mtwf:f;;Staff
-~12197;CHEM 161;5;0;0;660:780;710:890;mtwf:f;;Staff
-~12198;CHEM 162;5;0;0;480:900;530:1010;mtwf:t;;Staff
-~12199;CHEM 162;5;0;0;480:900;530:1010;mtwf:t;;Staff
-~12200;CHEM 162;5;0;0;480:660;530:770;mtwf:r;;Staff
-~12201;CHEM 162;5;0;0;480:660;530:770;mtwf:r;;Staff
-~12202;CHEM 162;5;0;0;540:1020;590:1130;mtwf:t;;Scheuermann, Margaret Louise
-~12203;CHEM 162;5;0;0;540:1020;590:1130;mtwf:t;;Scheuermann, Margaret Louise
-~12204;CHEM 162;5;0;0;540:780;590:890;mtwf:r;;Scheuermann, Margaret Louise
-~12205;CHEM 162;5;0;0;540:780;590:890;mtwf:r;;Scheuermann, Margaret Louise
+~12194;CHEM 161;5;0;0;660:1020;710:1130;mtwf:w;;Stephenson, Norda
+~12195;CHEM 161;5;0;0;660:1020;710:1130;mtwf:w;;Stephenson, Norda
+~12196;CHEM 161;5;0;0;660:780;710:890;mtwf:f;;Stephenson, Norda
+~12197;CHEM 161;5;0;0;660:780;710:890;mtwf:f;;Stephenson, Norda
+~12198;CHEM 162;5;0;0;480:900;530:1010;mtwf:t;;Raymond, Elizabeth Anne
+~12199;CHEM 162;5;0;0;480:900;530:1010;mtwf:t;;Raymond, Elizabeth Anne
+~12200;CHEM 162;5;0;0;480:660;530:770;mtwf:r;;Raymond, Elizabeth Anne
+~12201;CHEM 162;5;0;0;480:660;530:770;mtwf:r;;Raymond, Elizabeth Anne
+~12202;CHEM 162;5;0;0;540:1020;590:1130;mtwf:t;;Scheuermann, Margaret
+~12203;CHEM 162;5;0;0;540:1020;590:1130;mtwf:t;;Scheuermann, Margaret
+~12204;CHEM 162;5;0;0;540:780;590:890;mtwf:r;;Scheuermann, Margaret
+~12205;CHEM 162;5;0;0;540:780;590:890;mtwf:r;;Scheuermann, Margaret
 ~12206;CHEM 162;5;0;0;720:660;770:770;mwrf:t;;Staff
 ~12207;CHEM 162;5;0;0;720:660;770:770;mwrf:t;;Staff
 ~12208;CHEM 162;5;0;0;720:900;770:1010;mwrf:r;;Staff
 ~12209;CHEM 162;5;0;0;720:900;770:1010;mwrf:r;;Staff
-~12210;CHEM 162;5;0;0;840:780;890:890;mwrf:t;;Staff
-~12211;CHEM 162;5;0;0;840:780;890:890;mwrf:t;;Staff
-~12212;CHEM 162;5;0;0;840:1020;890:1130;mwrf:r;;Staff
-~12213;CHEM 162;5;0;0;840:1020;890:1130;mwrf:r;;Staff
-~12214;CHEM 163;5;0;0;540:660;590:830;mtwf:w;;Staff
-~12215;CHEM 163;5;0;0;540:1020;590:1190;mtwf:r;;Staff
-~12216;CHEM 163;5;0;0;540:720;590:890;mtwf:f;;Staff
-~12217;CHEM 163;5;0;0;720:1020;770:1190;mtwf:t;;Staff
-~12218;CHEM 163;5;0;0;720:1020;770:1190;mtwf:w;;Staff
-~12219;CHEM 163;5;0;0;720:660;770:830;mtwf:r;;Staff
+~12210;CHEM 162;5;0;0;840:780;890:890;mwrf:t;;Rindal, Hope Elizabeth
+~12211;CHEM 162;5;0;0;840:780;890:890;mwrf:t;;Rindal, Hope Elizabeth
+~12212;CHEM 162;5;0;0;840:1020;890:1130;mwrf:r;;Rindal, Hope Elizabeth
+~12213;CHEM 162;5;0;0;840:1020;890:1130;mwrf:r;;Rindal, Hope Elizabeth
+~12214;CHEM 163;5;0;0;540:660;590:830;mtwf:w;;Miller, Aaron
+~12215;CHEM 163;5;0;0;540:1020;590:1190;mtwf:r;;Miller, Aaron
+~12216;CHEM 163;5;0;0;540:720;590:890;mtwf:f;;Miller, Aaron
+~12217;CHEM 163;5;0;0;720:1020;770:1190;mtwf:t;;Abdelrhman, Samir
+~12218;CHEM 163;5;0;0;720:1020;770:1190;mtwf:w;;Abdelrhman, Samir
+~12219;CHEM 163;5;0;0;720:660;770:830;mtwf:r;;Abdelrhman, Samir
 ~12220;CHEM 176;5;0;0;600:840;650:1010;mwf:mw;;Bussell, Mark
 ~11225;CHEM 201;0;0;0;;;;;Rider, David Allen
 ~11226;CHEM 301;0;0;0;;;;;Rider, David Allen
 ~10238;CHEM 333;5;0;0;840:480;890:650;mwf:tr;;Emory, Steven R.
 ~11443;CHEM 333;5;0;0;720:840;795:1010;tr:tr;;Bao, Ying
 ~10288;CHEM 351;4;0;0;600;650;mtwf;;Vyvyan, James R.
-~11967;CHEM 351;4;0;0;660;710;mtwf;;Staff
-~10239;CHEM 352;4;0;0;540;590;mtwf;;Staff
+~11967;CHEM 351;4;0;0;660;710;mtwf;;Markworth, Christopher J.
+~10239;CHEM 352;4;0;0;540;590;mtwf;;Markworth, Christopher J.
 ~11330;CHEM 352;4;0;0;600;650;mtwf;;O'Neil, Gregory William
-~11444;CHEM 352;4;0;0;660;710;mtwf;;Staff
+~11444;CHEM 352;4;0;0;660;710;mtwf;;Griffith, Jennifer Kristine
 ~12084;CHEM 352;4;0;0;720;770;mtwf;;Larsen, Mike
-~11592;CHEM 353;3;0;0;480;530;mwf;;Staff
+~11592;CHEM 353;3;0;0;480;530;mwf;;Markworth, Christopher J.
 ~10158;CHEM 354;3;0;0;840:720;890:890;f:mw;;O'Neil, Gregory William
 ~10159;CHEM 354;3;0;0;840:900;890:1070;f:mw;;O'Neil, Gregory William
 ~10284;CHEM 354;3;0;0;840:720;890:890;f:tr;;Antos, John Matthew
@@ -434,12 +435,12 @@
 ~11345;CHEM 690;0;0;0;;;;;Staff
 ~11346;CHEM 694;0;0;0;;;;;Staff
 ~11347;CHEM 699;2;0;0;;;;;Staff
-~10257;CHIN 102;5;0;0;600;650;mtwrf;;Xing, Janet
+~10257;CHIN 102;5;0;0;600;650;mtwrf;;Carter, Elizabeth Bennett
 ~10258;CHIN 102;5;0;0;660;710;mtwrf;;Su, Wenling
 ~10259;CHIN 202;5;0;0;600;680;mwf;;Wu, Julian Siyuan
-~13596;CHIN 280;5;0;0;780;910;tr;;Staff
+~13596;CHIN 280;5;0;0;780;910;tr;;Carter, Elizabeth Bennett
 ~10260;CHIN 302;5;0;0;780;860;mwf;;Su, Wenling
-~12528;CHIN 330;5;0;0;870;950;mwf;;Staff
+~12528;CHIN 330;5;0;0;870;950;mwf;;Carter, Elizabeth Bennett
 ~11751;CHIN 402;5;0;0;780;890;tr;;Xing, Janet
 ~10863;CHIN 425;2;0;0;;;;;Wu, Julian Siyuan
 ~13602;CLST 350;5;0;0;720;850;tr;;Krause, Miller Stanley
@@ -492,7 +493,7 @@
 ~11773;COMM 220;5;0;0;1110;1250;tr;;Lind, Jason Fredrick
 ~12245;COMM 220;5;0;0;900;1040;tr;;Zhang, Zhengyu
 ~12610;COMM 220;5;0;0;600;680;mwf;;Schwartz-DuPre, Rae Lynn
-~10613;COMM 224;4;0;0;840;940;tr;;Staff
+~10613;COMM 224;4;0;0;840;940;tr;;Razzante, Robert John
 ~10522;COMM 225;4;0;0;720;820;tr;;Harvey, Korry Dennis
 ~12223;COMM 228;5;0;0;960;1070;mw;;Daniels, Rita
 ~13776;COMM 230;5;0;0;720;860;tr;;Woods, Steven Gene
@@ -506,12 +507,12 @@
 ~11676;COMM 240;5;0;0;600;680;tr;;Erickson, Mary P A
 ~13147;COMM 240;5;0;0;690;770;mwf;;Barahona, Max
 ~13149;COMM 260;5;0;0;1110;1220;mw;;Daniels, Rita
-~13150;COMM 260;5;0;0;960;1100;tr;;Staff
+~13150;COMM 260;5;0;0;960;1100;tr;;Razzante, Robert John
 ~11278;COMM 318;5;0;0;600;710;tr;;Blietz, Diane
 ~12069;COMM 318;5;0;0;720;830;tr;;Blietz, Diane
 ~13779;COMM 318;5;0;0;960;1070;tr;;Blietz, Diane
 ~12487;COMM 319;5;0;0;600;680;mwf;;Barahona, Max
-~12611;COMM 325;5;0;0;1110;1250;tr;;Staff
+~12611;COMM 325;5;0;0;1110;1250;tr;;Razzante, Robert John
 ~13157;COMM 325;5;0;0;960;1040;mwf;;Wang, Jianglong
 ~11772;COMM 327;5;0;0;840;950;tr;;Perry, Tara Beatrice
 ~13158;COMM 327;5;0;0;720;860;tr;;Zhang, Zhengyu
@@ -554,27 +555,26 @@
 ~13037;CSCI 141;4;0;0;540:480;590:590;mwf:r;;Fizzano, Perry Joseph
 ~13038;CSCI 141;4;0;0;540:720;590:830;mwf:f;;Fizzano, Perry Joseph
 ~13039;CSCI 141;4;0;0;540:840;590:950;mwf:w;;Fizzano, Perry Joseph
-~10073;CSCI 145;4;0;0;660:480;710:590;mwf:r;;Staff
-~10074;CSCI 145;4;0;0;660:840;710:950;mwf:f;;Staff
-~10678;CSCI 145;4;0;0;660:840;710:950;mwf:t;;Staff
-~11397;CSCI 145;4;0;0;600:480;650:590;mwf:w;;Staff
-~11398;CSCI 145;4;0;0;600:720;650:830;mwf:f;;Staff
-~11399;CSCI 145;4;0;0;600:600;650:710;mwf:r;;Staff
-~13863;CSCI 172;4;0;0;780:480;830:590;mwf:t;;Banson, Justice
-~13864;CSCI 172;4;0;0;780:600;830:710;mwf:t;;Banson, Justice
+~10073;CSCI 145;4;0;0;600:480;675:590;tr:r;;Koepp, Michael James
+~10074;CSCI 145;4;0;0;600:840;675:950;tr:f;;Koepp, Michael James
+~10678;CSCI 145;4;0;0;600:840;675:950;tr:t;;Koepp, Michael James
+~14174;CSCI 202;4;0;0;780:600;830:710;mwf:t;;Banson, Justice
+~14175;CSCI 202;4;0;0;780:480;830:590;mwf:t;;Banson, Justice
 ~11952;CSCI 241;4;0;0;840:720;890:830;mwf:t;;Hutchinson, Brian James
-~11953;CSCI 241;4;0;0;840:480;950:590;mwf:f;;Hutchinson, Brian James
+~11953;CSCI 241;4;0;0;840:480;890:590;mwf:f;;Hutchinson, Brian James
 ~13865;CSCI 241;4;0;0;780:480;830:590;mwf:w;;Hutchinson, Brian James
 ~13866;CSCI 241;4;0;0;780:600;830:710;mwf:f;;Hutchinson, Brian James
 ~11373;CSCI 247;5;0;0;540:720;590:830;mtwf:t;;Akter, Syeda Selina
 ~11761;CSCI 247;5;0;0;540:600;590:710;mtwf:w;;Akter, Syeda Selina
+~13424;CSCI 247;5;0;0;660:720;710:830;mtwf:t;;Thind, Austin
+~13425;CSCI 247;5;0;0;660:480;710:590;mtwf:w;;Thind, Austin
 ~13040;CSCI 301;5;0;0;600:840;650:950;mtwf:w;;Clauson, Aran Vincent
 ~13041;CSCI 301;5;0;0;600:480;650:590;mtwf:f;;Clauson, Aran Vincent
 ~12269;CSCI 305;4;0;0;720;770;mtwf;;Fizzano, Perry Joseph
 ~11954;CSCI 330;4;0;0;540;590;mtwf;;Ahmed, Shameem
 ~12594;CSCI 330;4;0;0;600;650;mtwf;;Ahmed, Shameem
 ~13043;CSCI 342;4;0;0;660;710;mtwf;;Hao, Qiang
-~12270;CSCI 345;4;0;0;780;830;mtwf;;Staff
+~12270;CSCI 345;4;0;0;780;830;mtwf;;Derwish, Abdul Wahab
 ~12537;CSCI 347;4;0;0;720;770;mtwf;;Elglaly, Yasmine Nader Mohamed
 ~13044;CSCI 347;4;0;0;840;890;mtwf;;Nelson, Phil
 ~10281;CSCI 367;4;0;0;600;650;mtwf;;Tsikerdekis, Michael
@@ -588,8 +588,7 @@
 ~11955;CSCI 447;4;0;0;720;770;mtwf;;Jagodzinski, Filip
 ~11956;CSCI 447;4;0;0;780;830;mtwf;;Idriss, Tarek
 ~13870;CSCI 450;4;0;0;720;770;mtwf;;Clauson, Aran Vincent
-~10679;CSCI 491;2;0;0;900;950;wf;;Staff
-~14157;CSCI 491;2;0;0;900;950;wf;;Staff
+~10679;CSCI 491;2;0;0;900;950;wf;;Derwish, Abdul Wahab
 ~10669;CSCI 492;2;0;0;900;950;wf;;Clauson, Aran Vincent
 ~14064;CSCI 492;2;0;0;900;950;wf;;Nelson, Phil
 ~11279;CSCI 493;2;0;0;900;950;wf;;Akter, Syeda Selina
@@ -613,7 +612,7 @@
 ~13446;CSCI 496;0;0;0;;;;;Elglaly, Yasmine Nader Mohamed
 ~13447;CSCI 496;0;0;0;;;;;Mare, Shri
 ~14133;CSCI 497N;4;0;0;840;890;mtwf;;Sharmin, Moushumi
-~14131;CSCI 497W;1;0;0;;;;;Staff
+~14131;CSCI 497W;1;0;0;;;;;Derwish, Abdul Wahab
 ~14063;CSCI 498;2;0;0;780;830;mtwf;;Mare, Shri
 ~11280;CSCI 512;4;0;0;660;710;mwrf;;Meehan, Michael
 ~13872;CSCI 526;4;0;0;660;710;mtwf;;Sharmin, Moushumi
@@ -624,29 +623,29 @@
 ~11679;CISS 301;5;0;0;720:840;770:950;mtwf:t;;Hearne, James William
 ~12125;CISS 301;5;0;0;600;770;r;;Goodrich, Amber Lee
 ~12293;CISS 301;5;0;0;720:480;770:590;mtwf:w;;Hearne, James William
-~13873;CISS 346;4;0;0;840;890;mtwf;;Deschene, Marie
+~13873;CISS 346;4;0;0;480;580;tr;;Deschene, Marie
 ~12126;CISS 360;3;0;0;540;590;mwf;;Staff
-~12291;CISS 360;3;0;0;600;650;mwf;;Fretheim, Erik Jon
+~12291;CISS 360;3;0;0;600:600;650:650;mf:t;;Fretheim, Erik Jon
 ~12325;CISS 361;4;0;0;850;1080;t;;Deschene, Marie
 ~11897;CISS 469;4;0;0;540;590;mtwf;;Tsikerdekis, Michael
 ~12324;CISS 469;4;0;0;540;590;mtwf;;Tsikerdekis, Michael
-~12535;CISS 471;4;0;0;720;770;mwrf;;Deschene, Marie
+~12535;CISS 471;4;0;0;600;700;tr;;Deschene, Marie
 ~12536;CISS 492;2;0;0;900;950;tw;;Fretheim, Erik Jon
 ~12658;CISS 492;2;0;0;900;950;tw;;Fretheim, Erik Jon
-~12070;DNC 101;2;0;0;540;620;mw;;Staff
+~12070;DNC 101;2;0;0;540;620;mw;;Sebastian, Angela Carreon
 ~10933;DNC 102;2;0;0;540;620;tr;;Hutchinson, Penny
 ~10570;DNC 112;2;0;0;660;740;tr;;Kuntz, Pam
 ~10571;DNC 122;3;0;0;660;740;mwf;;Hutchinson, Penny
 ~13421;DNC 200;2;0;0;840;920;tr;;Lee, Jonathan
-~10572;DNC 212;2;0;0;540;620;tr;;Staff
+~10572;DNC 212;2;0;0;540;620;tr;;Sebastian, Angela Carreon
 ~10573;DNC 222;3;0;0;540;620;mwf;;Haines, Susan Elizabeth
 ~12329;DNC 232;3;0;0;;;;;Staff
 ~10574;DNC 312;3;0;0;780;890;tr;;Haines, Susan Elizabeth
-~10575;DNC 322;3;0;0;780;860;mwf;;Staff
+~10575;DNC 322;3;0;0;780;860;mwf;;Sebastian, Angela Carreon
 ~12246;DNC 339;3;0;0;900;980;mw;;Hutchinson, Penny
-~13028;DNC 345;2;0;0;960;1040;tr;;Staff
+~13028;DNC 345;2;0;0;960;1040;tr;;Hreljanovic, Emma
 ~14082;DNC 357;2;0;0;;;;;Haines, Susan Elizabeth
-~13456;DNC 422;3;0;0;780;860;mwf;;Staff
+~13456;DNC 422;3;0;0;780;860;mwf;;Sebastian, Angela Carreon
 ~14032;DNC 433;4;0;0;870;980;mw;;Kuntz, Pam
 ~10359;DSCI 205;4;0;0;510;590;mwf;;Zhang, George
 ~10360;DSCI 205;4;0;0;600;680;mwf;;Zhang, George
@@ -655,7 +654,7 @@
 ~13034;DSCI 305;4;0;0;870;950;mw;;Kim, Ilhyung
 ~11787;DSCI 407;4;0;0;600;710;mw;;Kim, Ilhyung
 ~11760;DSGN 220;4;0;0;840;1010;tr;;Kearsley, Paul Douglas
-~11336;DSGN 240;4;0;0;840;1010;mw;;Airth, Paula Sue
+~11336;DSGN 240;4;0;0;840:840;1010:1010;mw:mw;;Airth, Paula Sue
 ~11024;DSGN 250;4;0;0;660:660;830:830;mw:mw;;Leksen, Andrea Joy
 ~11270;DSGN 260;4;0;0;660;830;tr;;Shaw, Austin
 ~10507;DSGN 300;0;0;0;;;;;Staff
@@ -775,7 +774,7 @@
 ~12840;EECE 495;0;0;0;;;;;Morton, Todd Douglas
 ~12841;EECE 495;0;0;0;;;;;Jiang, Xichen
 ~12842;EECE 495;0;0;0;;;;;Radwan, Amr Ahmed Abdelsalam
-~12843;EECE 495;0;0;0;;;;;Staff
+~12843;EECE 495;0;0;0;;;;;Ramasubramanian, Bhaskar
 ~12844;EECE 495;0;0;0;;;;;Khan, Junaid Ahmed
 ~14121;EECE 495;0;0;0;;;;;Klein, Andy
 ~11476;ELED 303;5;0;0;480;620;mw;;Jones, Alberta June
@@ -784,22 +783,23 @@
 ~11655;ELED 370;5;0;0;690;830;r;;Staff
 ~11200;ELED 401;5;0;0;900;1040;mw;;Dunham, Janelle Lynn
 ~11694;ELED 424;4;0;0;990;1190;t;;Dunham, Janelle Lynn
-~13338;ELED 425;5;0;0;780;860;tr;;Strachan, Steph
+~13338;ELED 425;5;0;0;780;860;tr;;Ferreras-Stone, Jessica D.
 ~11213;ELED 426;4;0;0;1020;1250;r;;Jensen, Kirsten Margaret
-~11202;ELED 456;4;0;0;540;770;w;;Strachan, Steph
+~11202;ELED 456;4;0;0;540;770;w;;Staff
 ~13179;ELED 460;5;0;0;780;920;tr;;Cueto, Desiree Washington
-~13791;ELED 464;4;0;0;600;710;tr;;Staff
+~13791;ELED 464;4;0;0;600;710;tr;;Ferreras-Stone, Jessica D.
 ~13339;ELED 470;5;0;0;870;950;tr;;Fisher, Sarah
 ~11744;ELED 471;5;0;0;780;950;w;;Hanuscin, Debi
 ~11757;ELED 471;5;0;0;990;1160;r;;Oscarson, Melissa Marie
-~13806;ELED 471;5;0;0;780;950;w;;Staff
+~13806;ELED 471;5;0;0;780;950;w;;Carneiro, Elizabeth
 ~10529;ELED 480;5;0;0;480;620;tr;;Lees, Anna
-~11409;ELED 480;5;0;0;900;1040;mw;;Wallace, Jessica
+~11409;ELED 480;5;0;0;930;1070;mw;;Wallace, Jessica
 ~11678;ELED 480;5;0;0;480;620;tr;;Lees, Anna
 ~10528;ELED 481;5;0;0;480;620;mw;;Fisher, Sarah
 ~11286;ELED 481;5;0;0;720;860;tr;;Wiggins, Joy Louise
-~10754;ELED 486;4;0;0;810;950;m;;Staff
+~10754;ELED 486;4;0;0;810;950;m;;Strachan, Steph
 ~12145;ELED 492;4;0;0;;;;;Wiggins, Joy Louise
+~14171;ELED 492;4;0;0;;;;;Wiggins, Joy Louise
 ~11889;ELED 494;5;0;0;;;;;Chu, Marilyn Terese
 ~11890;ELED 494;9;0;0;;;;;Chu, Marilyn Terese
 ~13807;ELED 518;4;0;0;;;;;Chu, Marilyn Terese
@@ -816,23 +816,24 @@
 ~14140;ENRG 380;4;0;0;;;;;Staff
 ~11644;ENRG 384;4;0;0;600;710;tr;;Dorsey-Palmateer, Reid Matthew
 ~12114;ENRG 384;4;0;0;600;710;tr;;Staff
+~14198;ENRG 391;1;0;0;960;1010;t;;Cilinceon, Stefanie Nicole
 ~11646;ENRG 400;0;0;0;;;;;Staff
-~13785;ENRG 440;4;0;0;720;830;mw;;Staff
-~12694;ENRG 459;4;0;0;840;950;tr;;Staff
+~12694;ENRG 459;4;0;0;840;950;tr;;Wang, Xi
 ~12792;ENRG 459;4;0;0;840;950;tr;;Staff
 ~13786;ENRG 461;5;0;0;840;920;m;;Staff
 ~11755;ENRG 472;4;0;0;900;1010;tr;;Jiang, Xichen
 ~13838;ENRG 482;4;0;0;600;710;tr;;Barnhart, Charles Joseph
+~14207;ENRG 482;4;0;0;600;710;tr;;Barnhart, Charles Joseph
 ~12011;ENRG 484;4;0;0;720;830;tr;;Dorsey-Palmateer, Reid Matthew
 ~12050;ENRG 484;4;0;0;720;830;tr;;Staff
 ~13344;ENRG 490;4;0;0;840;950;mw;;Sifuentes, Froylan
 ~11928;ENRG 495;0;0;0;;;;;Swisher, Joel Nelson
-~13839;ENRG 559;4;0;0;840;950;tr;;Staff
+~13839;ENRG 559;4;0;0;840;950;tr;;Wang, Xi
 ~13842;ENRG 582;4;0;0;600;710;tr;;Barnhart, Charles Joseph
 ~13601;ENGR 101;2;0;0;600;650;tr;;Davishahl, Jill C.
 ~13614;ENGR 115;4;0;0;660:600;710:710;tr:w;;Davishahl, Jill C.
 ~13615;ENGR 115;4;0;0;660:600;710:710;tr:f;;Davishahl, Jill C.
-~12120;ENGR 170;4;0;0;990;1100;tr;;Slesinger, Nathan Avery
+~12120;ENGR 170;4;0;0;900;1010;mw;;Misasi, John Michail
 ~11465;ENGR 214;4;0;0;840;950;tr;;Leonhardt, Eric Charles
 ~11466;ENGR 225;4;0;0;840;950;tr;;Glosser, Deborah
 ~13280;ENGR 295;0;0;0;;;;;Davishahl, Jill C.
@@ -891,10 +892,10 @@
 ~11535;ENG 311;5;0;0;720;830;tr;;Heim, Stefania F.
 ~10085;ENG 313;5;0;0;840;950;tr;;Dugger, Julie
 ~13117;ENG 314;5;0;0;510;590;mwf;;Prichard, Tony Alan
-~13118;ENG 314;5;0;0;840;950;tr;;Heim, Stefania F.
+~13118;ENG 314;5;0;0;840;950;tr;;Prichard, Tony Alan
 ~13120;ENG 318;5;0;0;780;860;mwf;;Lester, Mark M.
 ~12298;ENG 320;5;0;0;600;710;tr;;Giffen, Allison A.
-~13900;ENG 321;5;0;0;600;680;mwf;;Rivera, Lysa
+~13900;ENG 321;5;0;0;600;680;mwf;;Lester, Mark M.
 ~13893;ENG 333;5;0;0;;;;;Staff
 ~11274;ENG 334;5;0;0;780;860;mwf;;Gulyas, Lee R.
 ~13894;ENG 335;5;0;0;;;;;Staff
@@ -940,13 +941,15 @@
 ~10142;ENG 500;0;0;0;;;;;Staff
 ~13986;ENG 504;5;0;0;960;1070;tr;;Beasley, Bruce H.
 ~13987;ENG 505;5;0;0;600;710;tr;;Paola, Suzanne
-~10094;ENG 509;0;0;0;;;;;Staff
+~10094;ENG 509;0;0;0;;;;;Paola, Suzanne
 ~10323;ENG 510;5;0;0;720;830;tr;;Brown, Nicole
 ~13141;ENG 515;5;0;0;720;830;tr;;Metzger, Mary J.
-~13143;ENG 540;5;0;0;480;590;tr;;Forsythe, Jenny Marie
-~13988;ENG 575;5;0;0;840;950;tr;;Giffen, Allison A.
+~13143;ENG 540;5;0;0;480;590;tr;;Heim, Stefania F.
+~13988;ENG 575;5;0;0;840;950;tr;;Rivera, Lysa
 ~10095;ENG 594;0;0;0;;;;;Staff
+~14196;ENG 594;0;0;0;;;;;Staff
 ~10143;ENG 690;0;0;0;;;;;Staff
+~14197;ENG 690;0;0;0;;;;;Staff
 ~11295;ELL 431;5;0;0;960;1100;tr;;Zilmer, Caleb
 ~11294;ELL 432;5;0;0;1020;1160;tr;;Green, Jennifer D.
 ~13197;ELL 433;4;0;0;1050;1100;t;;Wiggins, Joy Louise
@@ -959,12 +962,11 @@
 ~11690;ENTR 446;4;0;0;960;1070;mw;;Weber, Meg
 ~10652;ESCI 101;3;0;0;600;680;tr;;Rybczyk, John M.
 ~13369;ESCI 101;3;0;0;;;;;Staff
-~11876;ESCI 204;4;0;0;720;770;mtwr;;Shull, David H.
-~11746;ESCI 321;4;0;0;780;890;tr;;Coleman, Natalie
+~11876;ESCI 204;4;0;0;840;890;mtwr;;Shull, David H.
+~11746;ESCI 321;4;0;0;780;890;tr;;Eisenlord, Morgan
 ~12021;ESCI 325;3;0;0;600;650;mwf;;Hatch, Marco Brandon Allen
-~11342;ESCI 333;4;0;0;600;710;tr;;Sofield, Ruth M.
+~11342;ESCI 333;4;0;0;600;710;tr;;Markiewicz, April Jean
 ~12169;ESCI 340;5;0;0;870;950;mw;;Sobocinski, Kathryn Louise
-~12711;ESCI 340;5;0;0;690;770;mwf;;Staff
 ~13805;ESCI 342;5;0;0;780;830;mtwr;;McPhee-Shaw, Erika Elizabeth
 ~11389;ESCI 361;5;0;0;600:780;680:1010;tr:t;;Hatch, Marco Brandon Allen
 ~11390;ESCI 361;5;0;0;600:780;680:1010;tr:w;;Hatch, Marco Brandon Allen
@@ -973,11 +975,10 @@
 ~12847;ESCI 410;3;0;0;660;710;mwf;;Staff
 ~12567;ESCI 411;2;0;0;720;950;t;;Bodensteiner, Leo R.
 ~12609;ESCI 411;2;0;0;720;950;r;;Bodensteiner, Leo R.
-~13357;ESCI 431;5;0;0;600:780;650:1010;mwf:m;;Staff
 ~11219;ESCI 432;4;0;0;960;1070;mw;;Shull, David H.
 ~10653;ESCI 442;5;0;0;600:780;675:890;tr:tr;;Staff
 ~12254;ESCI 442;5;0;0;600:900;675:1010;tr:tr;;Staff
-~11401;ESCI 453;4;0;0;900;1010;mw;;Staff
+~11401;ESCI 453;4;0;0;900;1010;mw;;Sofield, Ruth M.
 ~12943;ESCI 456;4;0;0;840;950;tr;;Landis, Wayne
 ~10803;ESCI 460;4;0;0;600;700;tr;;Montano, Manuel David
 ~11222;ESCI 463;3;0;0;840:840;950:950;t:r;;Rybczyk, John M.
@@ -986,9 +987,9 @@
 ~13803;ESCI 491;4;0;0;540;590;mtwr;;McPhee-Shaw, Erika Elizabeth
 ~12955;ESCI 492;4;0;0;840;950;tr;;Bunn, Andy
 ~11383;ESCI 493;5;0;0;780;860;mwf;;Bodensteiner, Leo R.
-~11329;ESCI 494;5;0;0;600:780;675:950;tr:w;;Staff
+~11329;ESCI 494;5;0;0;600:780;675:950;tr:w;;Kodner, Robin B.
 ~13479;ESCI 495;1;0;0;;;;;Sobocinski, Kathryn Louise
-~14151;ESCI 497P;2;0;0;600;650;tr;;Strecker, Angela
+~14151;ESCI 497P;2;0;0;780;830;tr;;Strecker, Angela
 ~10382;ESCI 498A;0;0;0;;;;;Bodensteiner, Leo R.
 ~10384;ESCI 498A;0;0;0;;;;;Staff
 ~10386;ESCI 498A;0;0;0;;;;;McLaughlin, John
@@ -1011,6 +1012,8 @@
 ~12816;ESCI 498A;0;0;0;;;;;Sobocinski, Kathryn Louise
 ~12817;ESCI 498A;0;0;0;;;;;Strecker, Angela
 ~12818;ESCI 498A;0;0;0;;;;;Sifuentes, Froylan
+~14185;ESCI 498A;0;0;0;;;;;Kastner, Sam
+~14189;ESCI 498A;0;0;0;;;;;Kodner, Robin B.
 ~10343;ESCI 498B;0;0;0;;;;;Bodensteiner, Leo R.
 ~10344;ESCI 498B;0;0;0;;;;;Staff
 ~10345;ESCI 498B;0;0;0;;;;;McLaughlin, John
@@ -1032,6 +1035,8 @@
 ~12819;ESCI 498B;0;0;0;;;;;Sobocinski, Kathryn Louise
 ~12820;ESCI 498B;0;0;0;;;;;Strecker, Angela
 ~12821;ESCI 498B;0;0;0;;;;;Sifuentes, Froylan
+~14186;ESCI 498B;0;0;0;;;;;Kastner, Sam
+~14190;ESCI 498B;0;0;0;;;;;Kodner, Robin B.
 ~10485;ESCI 498C;0;0;0;;;;;Sofield, Ruth M.
 ~10536;ESCI 498C;0;0;0;;;;;Helfield, James Mark
 ~10672;ESCI 498C;0;0;0;;;;;Bunn, Andy
@@ -1055,16 +1060,18 @@
 ~12822;ESCI 498C;0;0;0;;;;;Sobocinski, Kathryn Louise
 ~12823;ESCI 498C;0;0;0;;;;;Strecker, Angela
 ~12824;ESCI 498C;0;0;0;;;;;Sifuentes, Froylan
+~14187;ESCI 498C;0;0;0;;;;;Kastner, Sam
+~14191;ESCI 498C;0;0;0;;;;;Kodner, Robin B.
 ~10670;ESCI 498D;0;0;0;;;;;Bodensteiner, Leo R.
-~13828;ESCI 499M;2;0;0;720;820;t;;Khan, Alia Lauren
 ~11415;ESCI 503;4;0;0;540;590;mw;;Bunn, Rebecca Anne
 ~13320;ESCI 503;4;0;0;;;;;Staff
 ~10654;ESCI 542;5;0;0;600:780;675:890;tr:tr;;Staff
 ~12290;ESCI 542;5;0;0;600:900;675:1010;tr:tr;;Staff
-~12944;ESCI 556;4;0;0;840;950;tr;;Staff
+~12944;ESCI 556;4;0;0;840;950;tr;;Markiewicz, April Jean
 ~13874;ESCI 582;4;0;0;600;710;tr;;Barnhart, Charles Joseph
 ~12956;ESCI 592;4;0;0;840;950;tr;;Bunn, Andy
 ~10442;ESCI 595;0;0;0;;;;;Bodensteiner, Leo R.
+~14216;ESCI 597P;2;0;0;780;830;tr;;Strecker, Angela
 ~13322;ESCI 599;2;0;0;;;;;Staff
 ~13606;ESCI 599;0;0;0;;;;;Bunn, Andy
 ~10348;ESCI 690;0;0;0;;;;;Bingham, Brian Lynn
@@ -1092,6 +1099,8 @@
 ~13508;ESCI 690;0;0;0;;;;;Montano, Manuel David
 ~13958;ESCI 690;0;0;0;;;;;Montano, Manuel David
 ~14147;ESCI 690;0;0;0;;;;;Strom, Suzanne L.
+~14188;ESCI 690;0;0;0;;;;;Kastner, Sam
+~14192;ESCI 690;0;0;0;;;;;Kodner, Robin B.
 ~10424;ESCI 699;2;0;0;;;;;Patrick, David L.
 ~12577;ESCI 699;2;0;0;;;;;Montano, Manuel David
 ~12581;ESCI 699;2;0;0;;;;;Khan, Alia Lauren
@@ -1106,7 +1115,6 @@
 ~11198;ENVS 203;4;0;0;660;710;mwf;;Bach, Andy
 ~11629;ENVS 204;4;0;0;600;710;tr;;Rossiter, David
 ~12330;ENVS 204;4;0;0;600;710;tr;;Rossiter, David
-~13862;ENVS 204;4;0;0;600;710;tr;;Rossiter, David
 ~11037;ENVS 303;5;0;0;840;950;tr;;Albertson, Zander E.
 ~11990;ENVS 303;5;0;0;840;950;tr;;Albertson, Zander E.
 ~11991;ENVS 303;5;0;0;840;950;tr;;Albertson, Zander E.
@@ -1115,6 +1123,7 @@
 ~11993;ENVS 305;5;0;0;480;590;tr;;Neff, Mark William
 ~11994;ENVS 305;5;0;0;480;590;tr;;Neff, Mark William
 ~11995;ENVS 305;5;0;0;480;590;tr;;Neff, Mark William
+~12079;ENVS 308;4;0;0;;;;;Walker, Wendy Colleen
 ~11612;ENVS 319;3;0;0;780;860;mw;;Berardi, Gigi
 ~11138;ENVS 320;4;0;0;600:660;650:710;tr:tr;;Freelan, Stefan Reid
 ~11240;ENVS 320;4;0;0;600:720;650:770;tr:tr;;Freelan, Stefan Reid
@@ -1136,8 +1145,9 @@
 ~13850;ENVS 450;4;0;0;720;830;wf;;Albertson, Zander E.
 ~13372;ENVS 451;4;0;0;600;710;tr;;Abel, Troy D.
 ~11818;ENVS 457;4;0;0;600;710;tr;;Russell, Sheri
-~13855;ENVS 459;4;0;0;840;950;tr;;Staff
+~13855;ENVS 459;4;0;0;840;950;tr;;Wang, Xi
 ~11998;ENVS 461;4;0;0;720;830;tr;;Russell, Sheri
+~12467;ENVS 484;4;0;0;;;;;Walker, Wendy Colleen
 ~13846;ENVS 484;4;0;0;720;830;mw;;Hayes, Nini Visaya
 ~13848;ENVS 487;4;0;0;600;710;tr;;Myers, Gene
 ~11819;ENVS 492;4;0;0;600;710;mw;;Stanger, Nick
@@ -1156,7 +1166,6 @@
 ~11115;ENVS 495;0;0;0;;;;;Staff
 ~11742;ENVS 495;0;0;0;;;;;Paci-Green, Rebekah Ann
 ~11933;ENVS 495;0;0;0;;;;;Staff
-~13462;ENVS 495;1;0;0;930;980;r;;Staff
 ~14148;ENVS 497X;4;0;0;780;890;mw;;Stanger, Nick
 ~11046;ENVS 498A;0;0;0;;;;;Laninga, Tammi
 ~11047;ENVS 498A;0;0;0;;;;;Bach, Andy
@@ -1225,10 +1234,11 @@
 ~12867;ENVS 499A;1;0;0;990;1040;r;;Freelan, Stefan Reid
 ~11478;ENVS 499B;1;0;0;1020;1130;w;;Myers, Gene
 ~12812;ENVS 499O;1;0;0;840;890;w;;Flower, Aquila Dawn
-~12078;ENVS 499Q;1;0;0;540;950;;;Staff
+~14208;ENVS 499Q;1;0;0;540;960;;;Staff
 ~11411;ENVS 502;3;0;0;960;1100;m;;Medler, Michael
 ~13797;ENVS 520;5;0;0;600;680;mwf;;Flower, Aquila Dawn
-~13856;ENVS 559;4;0;0;840;950;tr;;Staff
+~14213;ENVS 551;4;0;0;600;710;tr;;Abel, Troy D.
+~13856;ENVS 559;4;0;0;840;950;tr;;Wang, Xi
 ~11437;ENVS 595;0;0;0;;;;;Laninga, Tammi
 ~11715;ENVS 595;0;0;0;;;;;Abel, Troy D.
 ~11716;ENVS 595;0;0;0;;;;;Bach, Andy
@@ -1281,15 +1291,15 @@
 ~12081;ENVS 691;0;0;0;;;;;Laninga, Tammi
 ~12082;ENVS 691;0;0;0;;;;;Abel, Troy D.
 ~13605;EUS 210;5;0;0;;;;;Vajda, Edward J.
-~14098;EXCE 101;5;0;0;990;1130;tr;;Staff
+~14098;EXCE 101;5;0;0;990;1130;tr;;Boyd, Linda Sue
 ~13203;EXCE 205;4;0;0;840;950;tr;;Wandke, Daman Lee Michael
 ~13204;EXCE 205;4;0;0;960;1070;tr;;Staff
 ~13202;EXCE 442;0;0;0;;;;;Hart, Jeffery LeRoy
 ~13201;EXCE 495;0;0;0;;;;;Hart, Jeffery LeRoy
 ~12159;FAIR 101A;1;0;0;600;650;f;;Blick, Anna Mirjam
 ~12905;FAIR 201A;5;0;0;900;1040;mw;;Friedland, Yanara
-~12906;FAIR 201A;5;0;0;540;680;tr;;Villicana, Adrian
-~12907;FAIR 202A;5;0;0;900;1020;tr;;Feodorov, John Vincent
+~12906;FAIR 201A;5;0;0;720;860;tr;;Villicana, Adrian
+~12907;FAIR 202A;5;0;0;720;830;mw;;Feodorov, John Vincent
 ~12908;FAIR 203A;5;0;0;900;1040;mw;;O Murchu, Niall F.
 ~12909;FAIR 203A;5;0;0;570;710;tr;;Miyake, Mark Yoshisuke
 ~12910;FAIR 203A;5;0;0;720;860;tr;;Pierce, Clayton Todd
@@ -1298,34 +1308,33 @@
 ~13273;FAIR 221J;5;0;0;540;680;mw;;Simon, Richard
 ~14043;FAIR 235B;2;0;0;780;950;f;;Kempton, Terri Lynne
 ~12161;FAIR 255Y;2;0;0;720;770;tr;;Bower, John
-~13698;FAIR 258W;5;0;0;720;860;tr;;Feodorov, John Vincent
+~13698;FAIR 258W;5;0;0;900;1040;mw;;Feodorov, John Vincent
 ~14047;FAIR 270B;3;0;0;600;710;tr;;Miller, Mark Joseph
-~12931;FAIR 270H;4;0;0;750;860;mw;;Anisman, Elisheva Ruth
+~12931;FAIR 270H;4;0;0;750;860;mw;;Anisman, Ezra
 ~14042;FAIR 301A;3;0;0;660;740;f;;Schwandt, Hilary Megan
 ~12913;FAIR 303A;5;0;0;900;1040;tr;;Delucio, Kevin
 ~13696;FAIR 312;5;0;0;720;860;mw;;Sehman, Steven S.
 ~12915;FAIR 314E;4;0;0;720;830;mw;;Calderon, Dolores
 ~13699;FAIR 334C;5;0;0;900;1040;mw;;Akinrinade, Babafemi A.
 ~13700;FAIR 334J;5;0;0;720;860;mw;;Akinrinade, Babafemi A.
-~13784;FAIR 334P;5;0;0;900:900;1020:1080;m:w;;Bower, John
+~13784;FAIR 334P;5;0;0;780;1070;f;;Bower, John
 ~13701;FAIR 335P;4;0;0;720;830;tr;;Tuxill, John Douglas
-~13704;FAIR 336B;5;0;0;540;680;tr;;Takagi, Midori
+~13704;FAIR 336B;5;0;0;570;710;tr;;Takagi, Midori
 ~13984;FAIR 336N;5;0;0;720:720;800:920;t:r;;Lloyd, Thomas Abraham
-~14044;FAIR 336N;4;0;0;;;;;Hahn, Jennifer Lisa
 ~14045;FAIR 336V;4;0;0;540;650;tr;;Brewer, Chris B.
-~14092;FAIR 336V;5;0;0;540;680;tr;;Snyderman, Robert S.
+~14092;FAIR 336V;5;0;0;720;860;mw;;Snyderman, Robert S.
 ~14159;FAIR 337L;12;0;0;;;;;Staff
 ~13705;FAIR 338P;5;0;0;720;840;mw;;Schwandt, Hilary Megan
 ~13706;FAIR 340U;4;0;0;720;830;tr;;Delucio, Kevin
 ~14046;FAIR 343U;4;0;0;540;650;wf;;Nichols, Scot
 ~12899;FAIR 364;5;0;0;570;710;mw;;Sehman, Steven S.
-~12932;FAIR 370I;4;0;0;750;860;tr;;Anisman, Elisheva Ruth
+~12932;FAIR 370I;4;0;0;750;860;tr;;Anisman, Ezra
 ~12933;FAIR 370J;4;0;0;600;710;mw;;Wallace, Erik Takuichi
 ~12934;FAIR 370K;4;0;0;600;710;tr;;Wallace, Erik Takuichi
-~13378;FAIR 381G;4;0;0;720;830;tr;;Friedland, Yanara
-~12922;FAIR 393B;5;0;0;540;680;tr;;Staff
+~13378;FAIR 381G;4;0;0;540;650;tr;;Friedland, Yanara
+~12922;FAIR 393B;5;0;0;540;680;tr;;Jefferies, Regina Marie
 ~12927;FAIR 403A;4;0;0;600;710;tr;;Tag, Stan
-~13708;FAIR 412E;5;0;0;900;1040;tr;;Staff
+~13708;FAIR 412E;5;0;0;900;1040;tr;;Jefferies, Regina Marie
 ~12923;FAIR 414D;4;0;0;900;1040;mw;;Calderon, Dolores
 ~13709;FAIR 422J;5;0;0;750;890;tr;;Tag, Stan
 ~12924;FAIR 422K;6;0;0;540:660;710:710;mf:w;;Lopez, Ceci
@@ -1338,6 +1347,7 @@
 ~11680;FIN 341;4;0;0;720;830;tr;;Wehrly, Eric William
 ~11887;FIN 341;4;0;0;720;830;tr;;Carabini, Christopher Eugene
 ~12251;FIN 341;4;0;0;870;950;mwf;;Benson, Earl Dean
+~12662;FIN 341;4;0;0;840;950;t;;McClain, Lee
 ~10130;FIN 440;4;0;0;960;1040;mtr;;LaBorde, Pamela M.
 ~10315;FIN 441;4;0;0;510;590;mw;;Wonder, Nicholas Xerxes
 ~12252;FIN 444;4;0;0;840;950;mw;;Knabb, Shawn D.
@@ -1347,13 +1357,13 @@
 ~13608;FIN 456;4;0;0;600;710;tr;;Kong, Sophie
 ~10438;FIN 460;4;0;0;;;;;Benson, Earl Dean
 ~10440;FIN 490;0;0;0;;;;;Benson, Earl Dean
-~10804;FREN 102;5;0;0;600;680;mwf;;Staff
-~11968;FREN 102;5;0;0;690;770;mwf;;Staff
-~10540;FREN 202;5;0;0;780;860;mwf;;Staff
-~10541;FREN 202;5;0;0;870;950;mwf;;Staff
+~10804;FREN 102;5;0;0;600;680;mwf;;Taylor, Scott
+~11968;FREN 102;5;0;0;690;770;mwf;;Taylor, Scott
+~10540;FREN 202;5;0;0;780;860;mwf;;Hanania, Cecile
+~10541;FREN 202;5;0;0;870;950;mwf;;Hanania, Cecile
 ~12175;FREN 331;5;0;0;780;910;tr;;Smith, Lindsey Leigh
-~10542;FREN 341;5;0;0;600;680;mwf;;Staff
-~12176;FREN 385;5;0;0;870;950;mwf;;Hanania, Cecile
+~10542;FREN 341;5;0;0;950;1060;tr;;Smith, Lindsey Leigh
+~12176;FREN 385;5;0;0;780;860;mwf;;Taylor, Scott
 ~13595;FREN 410;5;0;0;1020;1150;mw;;Hanania, Cecile
 ~10543;FREN 425;2;0;0;;;;;Hanania, Cecile
 ~10078;GEOL 101;4;0;0;780:480;860:590;tr:w;;Amos, Colin Burks
@@ -1386,7 +1396,7 @@
 ~11015;GEOL 310;5;0;0;720:720;890:950;t:r;;Clark, Doug
 ~12177;GEOL 316;4;0;0;720:720;830:920;m:w;;Ponton, Camilo
 ~10263;GEOL 318;5;0;0;540;710;tr;;Amos, Colin Burks
-~10629;GEOL 352;5;0;0;480:540;590:590;mf:w;;Staff
+~10629;GEOL 352;5;0;0;480:540;590:590;mf:w;;Boujibar, Asmaa
 ~10208;GEOL 400;0;0;0;;;;;Staff
 ~10083;GEOL 401A;1;0;0;;;;;Housen, Bernard A.
 ~10084;GEOL 401B;2;0;0;;;;;Housen, Bernard A.
@@ -1428,24 +1438,25 @@
 ~13770;GEOL 690;0;0;0;;;;;Staff
 ~10233;GERM 102;5;0;0;510;590;mwf;;Winter, Julie Marie
 ~10454;GERM 102;5;0;0;600;680;mwf;;Winter, Julie Marie
-~10234;GERM 202;5;0;0;;;;;Staff
+~10234;GERM 202;5;0;0;600;680;mwf;;Owlarn, Thiti
 ~10235;GERM 202;5;0;0;780;860;mwf;;Dubenion-Smith, Shannon Andrew
 ~10236;GERM 302;5;0;0;600;680;mwf;;Fiero, Petra S.
 ~12863;GERM 302;5;0;0;780;860;mwf;;Fiero, Petra S.
-~10237;GERM 340;5;0;0;;;;;Staff
+~10237;GERM 340;5;0;0;630;760;tr;;Owlarn, Thiti
 ~10333;GERM 402;5;0;0;900;1030;tr;;Winter, Julie Marie
 ~10075;GERM 425;2;0;0;;;;;Fiero, Petra S.
 ~12086;GRAD 699;0;0;0;;;;;Staff
 ~10539;GREK 102;5;0;0;690;770;mwf;;Stayskal, Byron
+~14211;GREK 202;5;0;0;690;770;mwf;;Stayskal, Byron
 ~10261;HLED 152;2;0;0;840;890;tr;;Hunt, Mary
 ~14015;HLED 335;3;0;0;600;675;mw;;Bennett, Steve Woodrow
 ~14016;HLED 345;4;0;0;780;890;mw;;Li, Ying
-~14099;HLED 397A;4;0;0;600;710;tr;;Bennett, Steve Woodrow
+~14184;HLED 397C;4;0;0;600;710;tr;;Bennett, Steve Woodrow
 ~14017;HLED 405;4;0;0;600;710;mw;;Li, Ying
 ~14018;HLED 425;4;0;0;540;650;tr;;Hunt, Mary
 ~14019;HLED 430;3;0;0;540;710;f;;Bennett, Steve Woodrow
 ~10269;HLED 455;2;0;0;900;1010;r;;Reams, Andrea Putman
-~14100;HLED 497B;1;0;0;1050;1140;t;;Staff
+~14183;HLED 497A;1;0;0;1050;1140;t;;Staff
 ~13001;HIST 103;5;0;0;600;680;mwf;;Price, Hunter
 ~13858;HIST 103;5;0;0;600;710;tr;;Hughes, Michael William
 ~13002;HIST 104;5;0;0;780;860;mwf;;Stewart, Mart A.
@@ -1458,6 +1469,7 @@
 ~12970;HIST 220;5;0;0;480;590;tr;;Bhattacharjee, Dharitri
 ~13635;HIST 233;5;0;0;690;770;mwf;;Zarrow, Sarah
 ~12981;HIST 265;5;0;0;690;770;mwf;;Cerretti, Josh
+~14173;HIST 274;5;0;0;600;710;tr;;Levey, Eben
 ~14030;HIST 277;5;0;0;600;710;tr;;Hay, Stephen Peter
 ~13662;HIST 280;5;0;0;690;770;mwf;;Bushelle, Emi F.
 ~13663;HIST 280;5;0;0;870;950;mwf;;Bushelle, Emi F.
@@ -1475,6 +1487,7 @@
 ~13643;HIST 380;5;0;0;840;960;tr;;Stewart, Mart A.
 ~13644;HIST 382;5;0;0;840;950;tr;;Anderson, Charles W.
 ~13860;HIST 390;5;0;0;690;770;mwf;;Chard, Daniel
+~14172;HIST 390;5;0;0;840;950;tr;;Levey, Eben
 ~14080;HIST 392;5;0;0;600;710;tr;;Friday, Chris
 ~13715;HIST 407;4;0;0;600;710;tr;;Anderson, Charles W.
 ~12995;HIST 490;5;0;0;600;710;tr;;Bhattacharjee, Dharitri
@@ -1483,8 +1496,12 @@
 ~13328;HIST 490;5;0;0;480;590;tr;;Thompson, Roger R.
 ~14023;HIST 490;5;0;0;870;980;mw;;Murphy, Sean Eisen
 ~12994;HIST 499;5;0;0;840;1010;t;;Cameselle-Pesce, Pedro
+~13014;HIST 499;5;0;0;900;1070;r;;Johnston, Christine
 ~13065;HIST 499;5;0;0;840;1010;t;;Zimmerman, Sarah J.
 ~13003;HIST 506;4;0;0;780;950;w;;Pihos, Peter Constantine
+~14215;HIST 597D;4;0;0;840;1010;t;;Seltz, Jennifer
+~14179;HIST 690;0;0;0;;;;;Staff
+~14181;HIST 699;2;0;0;;;;;Patrick, David L.
 ~14013;HGST 301;5;0;0;870;950;mwf;;Zarrow, Sarah
 ~14014;HGST 302;5;0;0;720;860;mw;;Akinrinade, Babafemi A.
 ~10317;HNRS 104;4;0;0;510;580;mwf;;Brian, Kathleen M.
@@ -1496,7 +1513,7 @@
 ~11899;HNRS 104;4;0;0;840;910;mwf;;Martindale, Lori Marie
 ~12323;HNRS 104;4;0;0;930;1000;mwf;;Martindale, Lori Marie
 ~12687;HNRS 104;4;0;0;720;820;wf;;Walker, Ryan Scott
-~13370;HNRS 104;4;0;0;540;590;mtrf;;Staff
+~13370;HNRS 104;4;0;0;540;590;mtrf;;Goldman, Tristan Adaon
 ~14075;HNRS 104;4;0;0;540;640;mw;;Hummel, Thomas
 ~14081;HNRS 104;4;0;0;660;760;mw;;Hummel, Thomas
 ~14060;HNRS 203;5;0;0;600;710;tr;;Bruna, Sean Patrick
@@ -1513,27 +1530,27 @@
 ~13238;HNRS 355;3;0;0;930;1010;tr;;Longoria, A
 ~13239;HNRS 356;3;0;0;840;920;mw;;Villicana, Adrian
 ~12734;HNRS 357;3;0;0;600;680;mw;;Anderson, Katherine J.
-~14067;HNRS 358;3;0;0;600;650;mwf;;Goldman, Tristan Adaon
+~14067;HNRS 358;3;0;0;960;1040;tr;;Gomez, Stephanie
 ~14086;HNRS 359;3;0;0;720;800;tr;;Bowers, Melanie
 ~12614;HNRS 390;1;0;0;960;1010;w;;Brian, Kathleen M.
 ~10076;HNRS 490;0;0;0;;;;;Staff
 ~10743;HRM 322;4;0;0;480;590;tr;;Weston, Jane E.
 ~13271;HRM 425;4;0;0;600;830;m;;Sampel, Pamela Jean
-~10579;HSP 301;5;0;0;600;710;mw;;Chandran, Devyani
+~10579;HSP 301;5;0;0;;;;;Chandran, Devyani
 ~13224;HSP 306;5;0;0;840;950;mw;;Mullins, Carla E.
 ~10581;HSP 325;5;0;0;840;950;tr;;Torres, Nicole
 ~13066;HSP 325;5;0;0;960;1070;tr;;Torres, Nicole
-~13227;HSP 355;5;0;0;720;830;tr;;Thibou, Shurla Delonese
+~13227;HSP 355;5;0;0;720;830;tr;;Rogers-Thibou, Shurla
 ~13665;HSP 371;5;0;0;840;950;mw;;Staff
 ~14137;HSP 371;5;0;0;;;;;Goulet, Gail Marie
 ~14138;HSP 371;5;0;0;;;;;Goulet, Gail Marie
 ~12059;HSP 385;5;0;0;;;;;Sennett, Jackie
-~13213;HSP 385;5;0;0;1080;1230;t;;Blanchard, Anne Lilla
-~11782;HSP 404;5;0;0;600;710;mw;;Staff
+~13213;HSP 385;5;0;0;;;;;Blanchard, Anne Lilla
+~11782;HSP 404;5;0;0;600;710;mw;;Wright, Suzi
 ~11759;HSP 406;5;0;0;600;710;tr;;Mullins, Carla E.
 ~13073;HSP 406;5;0;0;720;830;mw;;Mullins, Carla E.
 ~13210;HSP 406;5;0;0;;;;;Blanchard, Anne Lilla
-~13214;HSP 406;5;0;0;1080;1230;w;;Blanchard, Anne Lilla
+~13214;HSP 406;5;0;0;;;;;Blanchard, Anne Lilla
 ~13226;HSP 420;5;0;0;600;710;tr;;Bordoloi, Samit Dipon
 ~12047;HSP 430;5;0;0;;;;;Dozier, Raine J.
 ~12049;HSP 430;5;0;0;;;;;Dozier, Raine J.
@@ -1542,21 +1559,22 @@
 ~12739;HSP 435;5;0;0;840;950;mw;;Van Wingerden, Christina P.
 ~13211;HSP 435;5;0;0;;;;;Van Wingerden, Christina P.
 ~13256;HSP 435;5;0;0;;;;;Fritts, Heather Renee
-~10580;HSP 440;5;0;0;;;;;Staff
-~10626;HSP 440;5;0;0;;;;;Staff
-~10876;HSP 440;5;0;0;;;;;Staff
+~10580;HSP 440;5;0;0;;;;;Warriax, Lisa Dawn
+~10626;HSP 440;5;0;0;;;;;Warriax, Lisa Dawn
+~10876;HSP 440;5;0;0;;;;;Warriax, Lisa Dawn
 ~12000;HSP 440;5;0;0;720;830;t;;Corbin, Hope
-~13020;HSP 440;5;0;0;;;;;Staff
+~13020;HSP 440;5;0;0;;;;;Warriax, Lisa Dawn
 ~13959;HSP 451;5;0;0;;;;;Corbin, Hope
 ~13971;HSP 451;5;0;0;;;;;Corbin, Hope
 ~13212;HSP 452;5;0;0;;;;;Dozier, Raine J.
 ~13215;HSP 452;5;0;0;;;;;Dozier, Raine J.
-~10583;HSP 485;5;0;0;840;950;tr;;Staff
+~10583;HSP 485;5;0;0;840;950;tr;;Delvalle, Derek
 ~10793;HSP 485;5;0;0;;;;;Fritts, Heather Renee
 ~11333;HSP 485;5;0;0;;;;;Fritts, Heather Renee
-~13648;HUMA 110;5;0;0;600;680;mwf;;Lynn, Kimberly
+~13648;HUMA 110;5;0;0;690;770;mwf;;Dugger, Julie
 ~13375;HUMA 121;5;0;0;870;950;mwf;;Picus, Daniel
 ~12631;HUMA 123;5;0;0;600;710;tr;;Gogrof, Andrea E.
+~14168;HUMA 243;5;0;0;600;680;mwf;;Lynn, Kimberly
 ~12629;HUMA 278;5;0;0;600;710;tr;;Miran, Jonathan
 ~13979;HUMA 281;5;0;0;780;860;mwf;;Brian, Kathleen M.
 ~13088;HUMA 290;5;0;0;720;830;tr;;Carotenuto, Gianna M.
@@ -1583,7 +1601,7 @@
 ~11135;I T 344;1;0;0;;;;;Staff
 ~10603;I T 442;3;0;0;600;680;tr;;Lemmer, Jaime Small
 ~10660;I T 443;3;0;0;840;920;mw;;Lemmer, Jaime Small
-~12620;I T 544;4;0;0;900;1010;t;;Zhao, George Zhao
+~12620;I T 544;4;0;0;900;1010;t;;Zhao, George
 ~12740;IEP 001;5;0;0;;;;;Staff
 ~12741;IEP 002;5;0;0;;;;;Staff
 ~12742;IEP 003;5;0;0;;;;;Staff
@@ -1626,8 +1644,8 @@
 ~10744;IBUS 473;4;0;0;960;1070;mw;;Roehl, Tom
 ~12587;IBUS 474;4;0;0;720;830;mw;;Roehl, Tom
 ~11196;IBUS 490;0;0;0;;;;;Roehl, Tom
-~11244;INTL 201;5;0;0;600;720;tr;;Lippman, Leah Niobe
-~11377;INTL 201;5;0;0;840;960;tr;;Lippman, Leah Niobe
+~11244;INTL 201;5;0;0;600;710;tr;;Lippman, Leah Niobe
+~11377;INTL 201;5;0;0;840;950;tr;;Lippman, Leah Niobe
 ~13804;INTL 340;5;0;0;720;860;mw;;Akinrinade, Babafemi A.
 ~14136;INTL 437;15;0;0;;;;;Staff
 ~10558;JAPN 102;5;0;0;600;680;mwf;;Kusakabe, Madoka
@@ -1648,7 +1666,7 @@
 ~10836;JOUR 207;4;0;0;840;950;mw;;O'Donovan, Betsy
 ~10837;JOUR 207;4;0;0;600;710;tr;;Blackburn, Vanessa Ann
 ~10838;JOUR 207;4;0;0;720;830;tr;;Howie, Stephen S.
-~12250;JOUR 207;4;0;0;840;950;tr;;Keith, Jack
+~12250;JOUR 207;4;0;0;840;950;tr;;Keith, John B.
 ~10839;JOUR 214;4;0;0;840;950;mw;;Relyea, Kie
 ~10843;JOUR 305;4;0;0;840;950;mw;;Gosen, Joe
 ~10844;JOUR 307;5;0;0;840;950;mw;;Watt, Peggy
@@ -1680,8 +1698,8 @@
 ~10684;KIN 312;5;0;0;480;530;mtwf;;San Juan, Jun
 ~11794;KIN 312;5;0;0;720;770;mtwf;;Henrichs, Debbie
 ~11859;KIN 312;5;0;0;720;770;mtwf;;Henrichs, Debbie
-~11828;KIN 320;3;0;0;;;;;Keeler, Linda Ann
-~12018;KIN 320;3;0;0;;;;;Keeler, Linda Ann
+~11828;KIN 320;3;0;0;900;975;tr;;Keeler, Linda Ann
+~12018;KIN 320;3;0;0;900;975;tr;;Keeler, Linda Ann
 ~14155;KIN 320;3;0;0;540;615;tr;;Arthur-Cameselle, Jessyca Nicole
 ~14156;KIN 320;3;0;0;540;615;tr;;Arthur-Cameselle, Jessyca Nicole
 ~11691;KIN 321;3;0;0;720;795;tr;;Arthur-Cameselle, Jessyca Nicole
@@ -1698,7 +1716,7 @@
 ~11018;KIN 416;3;0;0;540;590;mwf;;Chalmers, Gordon R.
 ~11484;KIN 416;3;0;0;600;650;mwf;;Chalmers, Gordon R.
 ~11836;KIN 420;3;0;0;600;650;mwf;;Keeler, Linda Ann
-~10690;KIN 422;3;0;0;;;;;Washburn, Nick
+~10690;KIN 422;3;0;0;900;975;tr;;Washburn, Nick
 ~10696;KIN 491;3;0;0;;;;;Brilla, Lorrie
 ~10697;KIN 491;3;0;0;;;;;Chalmers, Gordon R.
 ~10698;KIN 491;3;0;0;;;;;Keeler, Linda Ann
@@ -1747,6 +1765,8 @@
 ~11669;KIN 520;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
 ~11670;KIN 520;3;0;0;;;;;Buddhadev, Harsh H.
 ~11833;KIN 520;3;0;0;;;;;Hilgendorf, Kari Jo
+~14176;KIN 540;4;0;0;480;530;mwf;;Brilla, Lorrie
+~14177;KIN 544;4;0;0;600;670;mwf;;San Juan, Jun
 ~14154;KIN 551;4;0;0;600;710;tr;;Keeler, Linda Ann
 ~13071;KIN 552;0;0;0;;;;;Keeler, Linda Ann
 ~10725;KIN 592;0;0;0;;;;;Brilla, Lorrie
@@ -1766,7 +1786,8 @@
 ~11674;KIN 690;0;0;0;;;;;Buddhadev, Harsh H.
 ~11835;KIN 690;0;0;0;;;;;Hilgendorf, Kari Jo
 ~10764;KIN 699;2;0;0;;;;;Patrick, David L.
-~10538;LAT 102;5;0;0;600;680;mwf;;Staff
+~10538;LAT 102;5;0;0;600;680;mwf;;Martin, Danielle Elise
+~14209;LAT 202;5;0;0;600;680;mwf;;Martin, Danielle Elise
 ~10857;LDST 101;5;0;0;840;920;tr;;Stout, Karen Louise
 ~10859;LDST 101;5;0;0;840;920;tr;;Stout, Karen Louise
 ~10860;LDST 101;5;0;0;840;920;tr;;Stout, Karen Louise
@@ -1774,6 +1795,7 @@
 ~11945;LDST 341;0;0;0;;;;;Diaz, Holly Diane
 ~12811;LDST 416;4;0;0;840;940;tr;;Russell, Sheri
 ~10856;LDST 450;5;0;0;660;740;tr;;Stout, Karen Louise
+~14206;LDST 452;3;0;0;660;740;tr;;Stout, Karen Louise
 ~13411;LIBR 239;1;0;0;780;830;r;;Maxwell, Caitlan E.
 ~13412;LIBR 239;1;0;0;780;830;r;;Koehler, Abby Suzanne
 ~14108;LIBR 300;0;0;0;;;;;Staff
@@ -1798,16 +1820,15 @@
 ~10597;MGMT 311;4;0;0;840;950;mw;;Kanov, Jason
 ~10598;MGMT 311;4;0;0;600;710;mw;;Kanov, Jason
 ~10599;MGMT 311;4;0;0;960;1010;tr;;Warren, Meg
-~13278;MGMT 311;4;0;0;;;;;Bedi, Akanksha
 ~13773;MGMT 311;4;0;0;1020;1070;tr;;Warren, Meg
 ~10436;MGMT 313;4;0;0;600;710;mw;;Sass, Mary Denise
 ~12052;MGMT 313;4;0;0;600;710;tr;;Bedi, Akanksha
 ~11860;MGMT 315;1;0;0;720;800;r;;Brown, Sandy
 ~12280;MGMT 319;4;0;0;960;1070;tr;;Walker, Lucas Caleb
-~11192;MGMT 382;4;0;0;720;830;mw;;Staff
-~11193;MGMT 382;4;0;0;840;950;mw;;Staff
-~11194;MGMT 382;4;0;0;840;950;tr;;Staff
-~11195;MGMT 382;4;0;0;720;830;tr;;Staff
+~11192;MGMT 382;4;0;0;720;830;mw;;Wilkens, Drew
+~11193;MGMT 382;4;0;0;840;950;mw;;Castle, Ryan C.
+~11194;MGMT 382;4;0;0;840;950;tr;;Castle, Ryan C.
+~11195;MGMT 382;4;0;0;720;830;tr;;Davidson, Nolan Forrest
 ~12281;MGMT 401;4;0;0;720;830;mw;;Sass, Mary Denise
 ~12588;MGMT 405;4;0;0;840;950;tr;;Kanov, Jason
 ~10475;MGMT 414;4;0;0;720;830;mw;;Tyran, Kristi
@@ -1841,13 +1862,13 @@
 ~12890;MFGE 340;4;0;0;480:900;590:1010;wf:w;;Yip-Hoi, Derek
 ~13677;MFGE 340;4;0;0;480:900;590:1010;wf:f;;Yip-Hoi, Derek
 ~11467;MFGE 341;4;0;0;780;890;mwf;;Peyron, Mark
-~13678;MFGE 365;4;0;0;780;890;tr;;Algeddawy, Tarek
+~13678;MFGE 365;4;0;0;600;710;tr;;Algeddawy, Tarek
 ~11542;MFGE 400;0;0;0;;;;;Staff
 ~11657;MFGE 434;4;0;0;480:600;590:770;wf:f;;Gill, David Dennis
 ~11658;MFGE 434;4;0;0;480:840;590:1010;wf:f;;Gill, David Dennis
 ~13437;MFGE 434;4;0;0;480:780;590:950;wf:w;;Gill, David Dennis
 ~13679;MFGE 454;4;0;0;900:900;1010:1010;t:wr;;Algeddawy, Tarek
-~11660;MFGE 492;3;0;0;600;710;tr;;Newcomer, Jeff
+~11660;MFGE 492;3;0;0;720;830;tr;;Newcomer, Jeff
 ~11551;MFGE 495;0;0;0;;;;;Alqudah, Sura Khaled
 ~11552;MFGE 495;0;0;0;;;;;Gill, David Dennis
 ~11553;MFGE 495;0;0;0;;;;;Newcomer, Jeff
@@ -1855,11 +1876,12 @@
 ~12565;MFGE 495;0;0;0;;;;;Algeddawy, Tarek
 ~13293;MACS 111;1;0;0;840;890;t;;Cooper, W. James
 ~13294;MACS 112;1;0;0;900;950;t;;Sobocinski, Kathryn Louise
-~13620;MACS 302;5;0;0;600;680;tr;;Lemkau, Karin Lydia
+~13620;MACS 302;5;0;0;600:840;680:1020;tr:m;;Lemkau, Karin Lydia
 ~13621;MACS 310;3;0;0;840;1010;r;;Staff
+~14212;MACS 492;1;0;0;;;;;Cooper, W. James
 ~10373;MKTG 380;4;0;0;600;710;tr;;Safavi, Farrokh
 ~10374;MKTG 380;4;0;0;600;710;mw;;Purdy, Daniel LaRaine
-~11199;MKTG 380;4;0;0;720;830;tr;;Sekhon, Tejvir Singh
+~11199;MKTG 380;4;0;0;720;830;tr;;Sofield, Ruth M.
 ~12073;MKTG 380;4;0;0;;;;;Staff
 ~14033;MKTG 380;4;0;0;;;;;Purdy, Daniel LaRaine
 ~10375;MKTG 381;4;0;0;840;950;tr;;Purdy, Daniel LaRaine
@@ -1877,14 +1899,14 @@
 ~12848;MBA 505;4;0;0;780;1010;w;;Wehrly, Eric William
 ~12850;MBA 506;4;0;0;600;710;mw;;Li, Jiexun
 ~13853;MBA 506;4;0;0;1020:510;1250:740;f:;;Flittie, Michael David
-~12849;MBA 509;4;0;0;840;950;tr;;Sekhon, Tejvir Singh
 ~13812;MBA 541;4;0;0;1080:1200;1190:1310;t:r;;Lending, Claire E.
 ~13813;MBA 591;4;0;0;1080:1200;1190:1310;r:t;;Samant, Shantala
 ~13851;MBA 594;4;0;0;1020:510;1250:740;f:;;Dunn, Craig P.
+~14178;MBA 594;4;0;0;840;950;tr;;Dunn, Craig P.
 ~11799;MPAC 521;4;0;0;480;590;mw;;Drum, Dawna Marie
 ~13163;MPAC 585;4;0;0;600;710;mw;;Singleton, Ron
 ~11285;MPAC 590;16;0;0;;;;;Taylor, Audrey G.
-~10651;MSCI 201;4;0;0;990;1100;tr;;Staff
+~10651;MSCI 201;4;0;0;900;1010;mw;;Misasi, John Michail
 ~12601;MSCI 340;3;0;0;;;;;Staff
 ~13019;MSCI 420;3;0;0;;;;;Kraft, Michael David
 ~10735;MSCI 491;3;0;0;;;;;Murphy, Amanda Ruth
@@ -1975,8 +1997,8 @@
 ~10035;MATH 331;4;0;0;660;710;mtrf;;Barnard, Rick
 ~11252;MATH 331;4;0;0;720;770;mtrf;;Sarkar, Amites
 ~12642;MATH 331;4;0;0;780;830;mtrf;;Zhang, Jianying
-~10036;MATH 341;4;0;0;540;590;mtrf;;Anderson, Amy Dawn
-~10407;MATH 341;4;0;0;660;710;mtrf;;Piyadi Gamage, Ramadha
+~10036;MATH 341;4;0;0;540;590;mtrf;;Piyadi Gamage, Ramadha
+~10407;MATH 341;4;0;0;660;710;mtrf;;Anderson, Amy Dawn
 ~11029;MATH 341;4;0;0;720;770;mtrf;;Noguchi, Kimihiro
 ~12489;MATH 341;4;0;0;840;890;mtrf;;Noguchi, Kimihiro
 ~10808;MATH 342;4;0;0;840;890;mtrf;;Alcantara, Ida
@@ -1987,10 +2009,10 @@
 ~10038;MATH 382;4;0;0;480;590;mw;;Mock, Janet K.
 ~10627;MATH 382;4;0;0;600;710;mw;;Borowski, Rebecca
 ~10525;MATH 383;4;0;0;720;830;tr;;Cohen, Jessica Strowbridge
-~11439;MATH 383;4;0;0;840;950;mw;;Rupe, Kathryn Mary
+~11439;MATH 383;4;0;0;840;950;mw;;Rupe, Katie
 ~12181;MATH 401;4;0;0;780;830;mtrf;;Meier, Jeffrey Lee
 ~14007;MATH 410;4;0;0;540;590;mtrf;;Barnard, Rick
-~10310;MATH 412;1;0;0;900;950;t;;Ypma, Tjalling Johannes
+~10310;MATH 412;1;0;0;960;1010;t;;Ypma, Tjalling Johannes
 ~11288;MATH 415;4;0;0;660;710;mtrf;;Glimm, Tilmann
 ~10530;MATH 419;3;0;0;660;710;mtr;;Meier, Jeffrey Lee
 ~13155;MATH 419;3;0;0;900;950;mtr;;Sarkar, Amites
@@ -1998,11 +2020,12 @@
 ~14009;MATH 438;4;0;0;720;770;mtrf;;Berget, Andrew
 ~11440;MATH 442;4;0;0;600;650;mtrf;;Anderson, Amy Dawn
 ~14011;MATH 446;4;0;0;780;830;mtrf;;Piyadi Gamage, Ramadha
-~10594;MATH 491;2;0;0;600;650;mw;;Rupe, Kathryn Mary
-~10595;MATH 491;2;0;0;960;1060;w;;Rupe, Kathryn Mary
+~10594;MATH 491;2;0;0;600;650;mw;;Rupe, Katie
+~10595;MATH 491;2;0;0;960;1060;w;;Rupe, Katie
 ~11736;MATH 504;4;0;0;600;650;mtrf;;Benyi, Arpad
 ~14025;MATH 510;4;0;0;540;590;mtrf;;Barnard, Rick
 ~14026;MATH 515;4;0;0;660;710;mtrf;;Glimm, Tilmann
+~14205;MATH 522;4;0;0;900;950;mtrf;;Pei, Yuan
 ~14130;MATH 535;4;0;0;780;830;mtrf;;Amiran, Edoh Y.
 ~14028;MATH 538;4;0;0;720;770;mtrf;;Berget, Andrew
 ~14029;MATH 542;4;0;0;600;650;mtrf;;Anderson, Amy Dawn
@@ -2016,6 +2039,7 @@
 ~13172;M/CS 478;4;0;0;840;890;mtrf;;Treneer, Stephanie Ann
 ~11978;LANG 420;5;0;0;480;610;tr;;Bernardo-Hinesley, Sheryl
 ~11474;MDS 410;4;0;0;600;710;tr;;Sylvester, Charles Davis
+~13978;MDS 410;4;0;0;;;;;Walker, Wendy Colleen
 ~11475;MDS 471;0;0;0;;;;;Staff
 ~11839;MUS 098;0;0;0;;;;;Widrig, Judith L.
 ~11361;MUS 104;3;0;0;840;920;tr;;Ray, Heather
@@ -2029,14 +2053,13 @@
 ~12677;MUS 110;3;0;0;;;;;Staff
 ~11848;MUS 123A;1;0;0;480;530;tr;;Camacho, Gustavo
 ~11849;MUS 123A;1;0;0;540;590;tr;;Camacho, Gustavo
-~13380;MUS 123A;1;0;0;540;590;tr;;Wickell, Jeanette Erin
 ~11850;MUS 123B;1;0;0;480;530;t;;Zavislak, Kay M.
 ~11851;MUS 123B;1;0;0;540;590;t;;Zavislak, Kay M.
 ~11852;MUS 123B;1;0;0;480;530;r;;Zavislak, Kay M.
-~11853;MUS 123B;1;0;0;;;;;Widrig, Judith L.
-~11936;MUS 123B;1;0;0;;;;;Widrig, Judith L.
-~12065;MUS 124;2;0;0;480;530;mwf;;Dudenbostel, Ryan Keith
-~12066;MUS 124;2;0;0;540;590;mwf;;Ray, James
+~11853;MUS 123B;1;0;0;540;590;w;;Widrig, Judith L.
+~11936;MUS 123B;1;0;0;900;950;w;;Widrig, Judith L.
+~12065;MUS 124;2;0;0;480;530;mwf;;Smith, Todd Francis
+~12066;MUS 124;2;0;0;540;590;mwf;;Dudenbostel, Ryan Keith
 ~11483;MUS 205;3;0;0;;;;;Staff
 ~12688;MUS 205;3;0;0;660;710;mwf;;Youngblood, Felicia Kailey
 ~11379;MUS 211;0;0;0;;;;;Widrig, Judith L.
@@ -2056,7 +2079,7 @@
 ~10899;MUS 213B;2;0;0;;;;;Kean, Eric M.
 ~14040;MUS 213B;1;0;0;;;;;Kean, Eric M.
 ~10900;MUS 213C;2;0;0;;;;;Steinberg, Janet Marie
-~10901;MUS 213C;1;0;0;;;;;Donnellan, Grant Jonathan
+~10901;MUS 213C;1;0;0;;;;;Steinberg, Janet Marie
 ~10902;MUS 213D;2;0;0;;;;;Palmer, Dylan
 ~10903;MUS 213D;1;0;0;;;;;Palmer, Dylan
 ~10904;MUS 213E;2;0;0;;;;;Whitman, Jill Stroming
@@ -2097,8 +2120,8 @@
 ~10985;MUS 215;1;0;0;;;;;Rozendaal, Jay C.
 ~10986;MUS 215;2;0;0;;;;;Weld, Kathryn Marie
 ~10987;MUS 215;1;0;0;;;;;Weld, Kathryn Marie
-~10928;MUS 216;2;0;0;;;;;Feingold, David Wallace
-~10929;MUS 216;1;0;0;;;;;Feingold, David Wallace
+~10928;MUS 216;2;0;0;;;;;Schille-Hudson, Eli Adam
+~10929;MUS 216;1;0;0;;;;;Schille-Hudson, Eli Adam
 ~11854;MUS 223A;1;0;0;600;650;tr;;Sommer, Lesley Diane
 ~11855;MUS 223A;1;0;0;660;710;tr;;Sommer, Lesley Diane
 ~11856;MUS 223B;1;0;0;600;650;tr;;Widrig, Judith L.
@@ -2111,7 +2134,7 @@
 ~10392;MUS 261;1;0;0;;;;;Widrig, Judith L.
 ~11921;MUS 263;1;0;0;780;830;r;;Alcorn, Holly Katharine
 ~13633;MUS 264K;1;0;0;660;710;w;;McCarthy, Lisa Marie
-~13834;MUS 264N;1;0;0;;;;;Camacho, Gustavo
+~13834;MUS 264N;1;0;0;600;650;f;;Camacho, Gustavo
 ~12736;MUS 264O;1;0;0;660;710;f;;Staff
 ~13266;MUS 264R;1;0;0;660;710;w;;Williamson, Greg
 ~12313;MUS 264W;1;0;0;;;;;Staff
@@ -2119,13 +2142,11 @@
 ~10513;MUS 271;2;0;0;840;890;mwf;;Kasper, Angie
 ~10097;MUS 272;2;0;0;960;1070;tr;;Bianco, Christopher
 ~12326;MUS 273;2;0;0;900;1010;mf;;Ray, James
-~10098;MUS 274;2;0;0;900;950;mw;;Williamson, Greg
 ~10806;MUS 275;2;0;0;900;950;tr;;Woods, Kevin John
 ~12327;MUS 275;2;0;0;;;;;Overhultz-Feingold, Gregory Edward
 ~11235;MUS 276;2;0;0;;;;;Gilliam, Jeffrey P.
 ~14062;MUS 278;0;0;0;;;;;Staff
 ~14066;MUS 278;0;0;0;;;;;Dudenbostel, Heather Christian
-~10393;MUS 280;0;0;0;;;;;Van Boer, Bertil
 ~11840;MUS 281;0;0;0;960;1070;mwf;;Roulet, Patrick Edward
 ~11842;MUS 281;0;0;0;840;890;f;;McCarthy, Lisa Marie
 ~11843;MUS 281;0;0;0;;;;;Camacho, Gustavo
@@ -2154,7 +2175,7 @@
 ~10944;MUS 314I;0;0;0;;;;;MacLellan, Peder
 ~10945;MUS 314J;0;0;0;;;;;MacLellan, Peder
 ~13407;MUS 314J;0;0;0;720;770;t;;Feeney, Amy Rose
-~10946;MUS 314K;0;0;0;1020;1070;w;;Roulet, Patrick Edward
+~10946;MUS 314K;0;0;0;900;950;w;;Roulet, Patrick Edward
 ~10947;MUS 315;0;0;0;;;;;Alcorn, Holly Katharine
 ~10981;MUS 315;0;0;0;;;;;Davies, Mark Andrew
 ~10988;MUS 315;0;0;0;;;;;Dudenbostel, Heather Christian
@@ -2197,7 +2218,7 @@
 ~10962;MUS 414I;0;0;0;;;;;Camacho, Gustavo
 ~10963;MUS 414J;0;0;0;;;;;Camacho, Gustavo
 ~13389;MUS 414J;0;0;0;720;770;t;;MacLellan, Peder
-~10964;MUS 414K;0;0;0;1020;1070;w;;Roulet, Patrick Edward
+~10964;MUS 414K;0;0;0;900;950;w;;Roulet, Patrick Edward
 ~10965;MUS 415;0;0;0;;;;;Alcorn, Holly Katharine
 ~10991;MUS 415;0;0;0;;;;;Davies, Mark Andrew
 ~10992;MUS 415;0;0;0;;;;;Dudenbostel, Heather Christian
@@ -2224,7 +2245,6 @@
 ~11259;MUS 474;2;0;0;840;890;mwf;;Woods, Kevin John
 ~14112;MUS 475;2;0;0;;;;;Harris, Thomas Erastus
 ~11254;MUS 476;2;0;0;;;;;Gilliam, Jeffrey P.
-~10394;MUS 480;0;0;0;;;;;Van Boer, Bertil
 ~11002;MUS 481;2;0;0;;;;;Donnellan, Grant Jonathan
 ~11846;MUS 481;2;0;0;;;;;McCarthy, Lisa Marie
 ~11893;MUS 481;2;0;0;;;;;Camacho, Gustavo
@@ -2233,7 +2253,7 @@
 ~10104;MUS 499;3;0;0;;;;;Roulet, Patrick Edward
 ~13459;MUS 502;3;0;0;540;620;tr;;Fitzpatrick, Tim
 ~13561;MUS 512;0;0;0;;;;;Zavislak, Kay M.
-~10798;MUS 533;3;0;0;780;830;mwf;;Van Boer, Bertil
+~10798;MUS 533;3;0;0;780;830;mwf;;Nutt, Haley Jo
 ~11008;MUS 534;4;0;0;;;;;Halka, Charles Lawrence
 ~11009;MUS 534;4;0;0;;;;;Hamilton, Bruce Douglas
 ~14110;MUS 541;4;0;0;600;710;tr;;Staff
@@ -2272,12 +2292,12 @@
 ~10338;PHIL 102;3;0;0;960;1010;mwf;;Howard-Snyder, Dan
 ~11704;PHIL 107;3;0;0;600;675;tr;;Staff
 ~11705;PHIL 107;3;0;0;720;795;tr;;Staff
-~11384;PHIL 112;3;0;0;840;915;tr;;Staff
-~11385;PHIL 112;3;0;0;960;1035;tr;;Staff
-~11265;PHIL 113;3;0;0;600;650;mwf;;Howard-Snyder, Frances
-~13363;PHIL 113;3;0;0;660;710;mwf;;Howard-Snyder, Frances
-~11014;PHIL 114;3;0;0;840;890;mwf;;Hudson, Hud
-~13364;PHIL 114;3;0;0;900;950;mwf;;Hudson, Hud
+~11384;PHIL 112;3;0;0;600;650;mwf;;Howard-Snyder, Frances
+~11385;PHIL 112;3;0;0;660;710;mwf;;Howard-Snyder, Frances
+~11265;PHIL 113;3;0;0;840;890;mwf;;Hudson, Hud
+~13363;PHIL 113;3;0;0;900;950;mwf;;Hudson, Hud
+~11014;PHIL 114;3;0;0;840;915;tr;;Lee, Christian Ryan
+~13364;PHIL 114;3;0;0;960;1035;tr;;Lee, Christian Ryan
 ~13611;PHIL 310;3;0;0;960;1035;tr;;Howard-Snyder, Dan
 ~13609;PHIL 340;3;0;0;840;915;tr;;Staff
 ~13365;PHIL 360;3;0;0;600;675;tr;;Staff
@@ -2377,7 +2397,7 @@
 ~12039;PCE 295;0;0;0;;;;;Misasi, John Michail
 ~12041;PCE 295;0;0;0;;;;;Hoekstra, Nicole Lyn
 ~11543;PCE 300;0;0;0;;;;;Staff
-~13616;PCE 342;4;0;0;600;710;tr;;Staff
+~13616;PCE 342;4;0;0;720;830;tr;;Peyron, Mark
 ~11473;PCE 372;5;0;0;480;590;tr;;Larson, Nicole
 ~12042;PCE 395;0;0;0;;;;;Larson, Nicole
 ~12043;PCE 395;0;0;0;;;;;Peyron, Mark
@@ -2396,12 +2416,12 @@
 ~11555;PCE 495;0;0;0;;;;;Misasi, John Michail
 ~11896;PLSC 250;5;0;0;870;950;mwf;;Wineinger, Cathy
 ~12516;PLSC 250;5;0;0;690;770;mwf;;Wineinger, Cathy
-~11402;PLSC 261;5;0;0;600;710;tr;;Staff
+~11402;PLSC 261;5;0;0;600;710;tr;;Thomas, Brian
 ~12226;PLSC 261;5;0;0;720;830;tr;;Thomas, Brian
 ~11267;PLSC 271;5;0;0;690;770;mwf;;Horne, Cynthia M.
 ~11531;PLSC 271;5;0;0;780;860;mwf;;Horne, Cynthia M.
 ~11950;PLSC 291;5;0;0;870;950;mwf;;Wolff, Michael Jerome
-~12680;PLSC 291;5;0;0;600;710;tr;;Tverdova, Yuliya V.
+~12680;PLSC 291;5;0;0;600;710;tr;;Staff
 ~10548;PLSC 300;0;0;0;;;;;Staff
 ~14122;PLSC 307;5;0;0;690;770;mwf;;Parris, Kristen D.
 ~13961;PLSC 313;5;0;0;780;860;mwf;;Chen, Paul H.S.
@@ -2412,7 +2432,7 @@
 ~12229;PLSC 348;5;0;0;840;950;tr;;Salazar, Debra J.
 ~14102;PLSC 357;4;0;0;720;830;tr;;Tverdova, Yuliya V.
 ~13968;PLSC 362;4;0;0;720;830;tr;;Hsueh, Vicki
-~14049;PLSC 370;5;0;0;720;830;tr;;Staff
+~14049;PLSC 370;5;0;0;720;830;tr;;Tverdova, Yuliya V.
 ~13972;PLSC 395;5;0;0;630;710;mwf;;Wolff, Michael Jerome
 ~13973;PLSC 396;5;0;0;600;680;mwf;;Alamillo, Rudy
 ~13983;PLSC 397K;5;0;0;690;770;mwf;;Alamillo, Rudy
@@ -2431,11 +2451,11 @@
 ~13970;PLSC 472;5;0;0;600;680;mwf;;Deylami, Shirin Sedigh
 ~10553;PLSC 496;0;0;0;;;;;Staff
 ~10270;PSY 101;5;0;0;600;680;tr;;Staff
-~11985;PSY 101;5;0;0;690;770;mwf;;Scollon, Christie K.
-~10546;PSY 119;4;0;0;840;950;tr;;Ericksen, Lena K.
+~11985;PSY 101;5;0;0;690;770;mwf;;Scollon, Christie Kaye
+~10546;PSY 119;4;0;0;870;980;mw;;Ericksen, Lena K.
 ~11214;PSY 119;4;0;0;;;;;Staff
 ~11215;PSY 119;4;0;0;;;;;Staff
-~13996;PSY 203;5;0;0;870;1010;mwf;;Scollon, Christie K.
+~13996;PSY 203;5;0;0;870;950;mwf;;Scollon, Christie Kaye
 ~13997;PSY 203;5;0;0;600;710;tr;;Devenport, Jennifer L.
 ~10275;PSY 210;5;0;0;720;830;tr;;Warren, Mike
 ~10584;PSY 210;5;0;0;480;590;tr;;Warren, Mike
@@ -2446,7 +2466,7 @@
 ~10273;PSY 240;5;0;0;510;590;mwf;;Zeidel, Judy
 ~10621;PSY 240;5;0;0;690;770;mwf;;Zeidel, Judy
 ~10277;PSY 250;5;0;0;870;950;mwf;;Olvera, Katie
-~10655;PSY 250;5;0;0;690;770;mwf;;Major, Julie Ann
+~10655;PSY 250;5;0;0;870;980;mw;;Major, Julie Ann
 ~11445;PSY 274;5;0;0;690;770;mwf;;Olvera, Katie
 ~10369;PSY 300;0;0;0;;;;;Staff
 ~13998;PSY 305;5;0;0;870;980;mw;;Warren, Mike
@@ -2454,7 +2474,7 @@
 ~14000;PSY 305;5;0;0;600;710;tr;;Delker, Brianna Clyde
 ~14001;PSY 305;5;0;0;840;950;tr;;Major, Julie Ann
 ~14002;PSY 305;5;0;0;480;590;tr;;Mallinckrodt, Brent Stephen
-~14003;PSY 306;5;0;0;780;860;mwf;;Sattler, David Nathan
+~14003;PSY 306;5;0;0;690;770;mwf;;Sattler, David Nathan
 ~14004;PSY 306;5;0;0;960;1040;mwf;;Seifert, Matthew Steven
 ~14005;PSY 307;5;0;0;690;770;mwf;;Symons, Larry
 ~14006;PSY 307;5;0;0;510;590;mwf;;Czopp, Alex
@@ -2470,7 +2490,7 @@
 ~11788;PSY 351;5;0;0;600;710;tr;;Major, Julie Ann
 ~11946;PSY 351;5;0;0;600;680;mwf;;Olvera, Katie
 ~13623;PSY 359;5;0;0;840;950;tr;;Sowell, Shaun Michelle
-~12570;PSY 375;5;0;0;780;860;mwf;;McCabe, Jennifer
+~12570;PSY 375;5;0;0;600;710;tr;;McCabe, Jennifer
 ~10370;PSY 400;0;0;0;;;;;Staff
 ~13624;PSY 410;5;0;0;510;590;mwf;;Symons, Larry
 ~12264;PSY 411;5;0;0;780;860;mwf;;Hyman, Ira E.
@@ -2514,19 +2534,18 @@
 ~10556;RECR 473;15;0;0;;;;;D'Eloia, Melissa Hough
 ~10557;RECR 473;15;0;0;;;;;Burtz, Randall Tyler
 ~13218;RC 583;6;0;0;1020;1250;w;;Brickham, Dana Marie
-~13219;RC 583;6;0;0;1020;1250;w;;Staff
+~13219;RC 583;6;0;0;1020;1250;w;;Kuwada, Brett Geremy
 ~13220;RC 586;6;0;0;;;;;Bengtson, Kevin Eric
-~13222;RC 588;6;0;0;;;;;Staff
+~13222;RC 588;6;0;0;;;;;Matrone, Kathe
 ~10882;RC 591;4;0;0;1020;1250;t;;Bengtson, Kevin Eric
 ~10883;RC 591;4;0;0;1020;1250;t;;Bengtson, Kevin Eric
-~13223;RC 591;4;0;0;1020;1250;t;;Staff
-~13347;RC 592;0;0;0;;;;;Staff
-~13221;RC 594;4;0;0;;;;;Staff
+~13223;RC 591;4;0;0;1020;1250;t;;Mogharreban, Josef E.
+~13347;RC 592;0;0;0;;;;;Kuwada, Brett Geremy
+~13221;RC 594;4;0;0;;;;;Scriven, Elizabeth Hannah
 ~12689;REL 231;5;0;0;870;950;mwf;;Frost, Carrie Frederick
 ~13335;REL 231;5;0;0;840;950;tr;;Brown, Jason Minton
-~13653;REL 265;5;0;0;720;830;tr;;Ward, Megan Aleah
 ~13336;REL 290;5;0;0;870;950;mwf;;Moore, Tom
-~13981;REL 290;5;0;0;720;830;tr;;Staff
+~13981;REL 290;5;0;0;960;1070;tr;;Brown, Jason Minton
 ~13982;REL 290;5;0;0;690;770;mwf;;Frost, Carrie Frederick
 ~12558;REL 300;0;0;0;;;;;Staff
 ~12549;REL 303;5;0;0;600;710;tr;;Folk, Holly
@@ -2544,6 +2563,7 @@
 ~11351;SCED 201;4;0;0;720;830;trf;;Duffy, Erin
 ~12163;SCED 202;4;0;0;600;710;mwf;;DeBari, Susan M.
 ~11141;SCED 204;4;0;0;840;950;mwf;;Duffy, Erin
+~14217;SCED 397B;4;0;0;720;830;mw;;Melton, Josie
 ~10487;SCED 480;5;0;0;600;710;trf;;Hanuscin, Debi
 ~10488;SCED 480;5;0;0;600;710;mwf;;Morrison, Whitney Anne
 ~10489;SCED 481;2;0;0;960;1070;t;;Donovan, Deborah A.
@@ -2553,43 +2573,44 @@
 ~11621;SEC 303;4;0;0;990;1100;tr;;Dade, Karen B.
 ~11777;SEC 303;4;0;0;720;830;mw;;Staff
 ~11367;SEC 310;4;0;0;840;950;mw;;Roxas, Kevin C.
-~11778;SEC 310;4;0;0;600;710;mw;;Velez, Veronica
+~11778;SEC 310;4;0;0;990;1100;mw;;Velez, Veronica
 ~10209;SEC 400;0;0;0;;;;;Staff
 ~12592;SEC 410;2;0;0;;;;;McClanahan, Lauren G.
 ~10519;SEC 411;4;0;0;930;1130;t;;Pyscher, Tracey Michelle
-~10968;SEC 411;4;0;0;960;1070;w;;Staff
-~11305;SEC 425;4;0;0;;;;;Burgess, Don
+~10968;SEC 411;4;0;0;960;1070;w;;Rodgers, Shannon
+~11305;SEC 425;4;0;0;;;;;Davis, Janel
 ~11627;SEC 425;4;0;0;;;;;Blue, Amanda Moran
 ~12593;SEC 430;4;0;0;780;950;tr;;McClanahan, Lauren G.
-~10089;SEC 431;4;0;0;480;710;tr;;Burgess, Don
+~10089;SEC 431;4;0;0;480;710;tr;;Davis, Janel
 ~10866;SEC 431;4;0;0;480;710;tr;;Blue, Amanda Moran
-~10607;SEC 435;2;0;0;;;;;Staff
+~10607;SEC 435;2;0;0;;;;;Faughnan, John
 ~11372;SEC 495;18;0;0;;;;;Roxas, Kevin C.
-~11780;SEC 501;4;0;0;840;950;tr;;Staff
-~12296;SEC 512;4;0;0;960;1070;r;;Staff
-~12718;SEC 515;1;0;0;;;;;Staff
+~11780;SEC 501;4;0;0;840;950;tr;;Lewis, Craig D.
+~12296;SEC 512;4;0;0;960;1070;r;;Rodgers, Shannon
+~12718;SEC 515;1;0;0;;;;;Waxman, Barbara L.
 ~12621;SEC 525;4;0;0;600;710;tr;;Pyscher, Tracey Michelle
-~10865;SEC 533;4;0;0;480;710;tr;;Staff
+~10865;SEC 533;4;0;0;480;710;tr;;Lewis, Craig D.
 ~10362;SEC 595;18;0;0;;;;;Roxas, Kevin C.
 ~12708;SEC 692;2;0;0;780;890;t;;Longoria, A
 ~10608;SEC 699;2;0;0;;;;;Patrick, David L.
+~14163;SMNR 197B;2;0;0;900;1010;w;;Douglas, Tania M.
+~14164;SMNR 197B;2;0;0;900;1010;t;;Senger, Lucas G.
+~14165;SMNR 197B;2;0;0;840;950;r;;Senger, Lucas G.
+~14167;SMNR 385;2;0;0;960;1070;r;;Ware, Molly Noelle
 ~12531;SOC 251;5;0;0;600;710;tr;;Lois, Jen
 ~14160;SOC 251;5;0;0;600;710;tr;;Lois, Jen
 ~14161;SOC 251;5;0;0;600;710;tr;;Lois, Jen
 ~13991;SOC 255;5;0;0;;;;;Staff
 ~10544;SOC 269;5;0;0;780;860;mwf;;Tsunokai, Glenn Thomas
-~10633;SOC 302;5;0;0;600;680;mwf;;Osborne, Melissa
+~10633;SOC 302;5;0;0;870;950;mwf;;Osborne, Melissa
 ~13787;SOC 302;5;0;0;780;860;mwf;;Osborne, Melissa
-~11161;SOC 304;5;0;0;780;860;mwf;;Anderson, Kristin Lee
-~11166;SOC 304;5;0;0;720;830;tr;;Cunningham, Mick
+~11166;SOC 304;5;0;0;690;770;mwf;;Ten Eyck, Toby
+~14200;SOC 304;5;0;0;840;950;tr;;Zaidi, Batool
 ~11171;SOC 306;5;0;0;600;710;tr;;Whitley, Cameron Thomas
 ~11173;SOC 306;5;0;0;690;770;mwf;;Feinberg, Seth L.
 ~13789;SOC 306;5;0;0;510;590;mwf;;Ten Eyck, Toby
-~12738;SOC 321;5;0;0;840;950;tr;;Zaidi, Batool
+~14199;SOC 320;5;0;0;600;710;tr;;Nguyen, Jenny
 ~12532;SOC 322;5;0;0;510;590;mwf;;Feinberg, Seth L.
-~13098;SOC 332;5;0;0;480;590;tr;;Bulcroft, Rick
-~13790;SOC 333;5;0;0;900;1050;tr;;Luo, Baozhen
-~13816;SOC 334;5;0;0;900;1050;mw;;Luo, Baozhen
 ~13251;SOC 340;5;0;0;840;950;tr;;Freeman, Sabrina Karen
 ~13818;SOC 341;5;0;0;600;680;mwf;;Gillham, Pat
 ~14094;SOC 347;5;0;0;600;710;tr;;Zaidi, Batool
@@ -2602,10 +2623,9 @@
 ~13824;SOC 374;5;0;0;480;590;tr;;Whitley, Cameron Thomas
 ~13825;SOC 376;5;0;0;690;770;mwf;;Helms, Ron
 ~13826;SOC 378;5;0;0;870;950;mwf;;Helms, Ron
-~14095;SOC 389;5;0;0;600;710;tr;;Nguyen, Jenny
-~13827;SOC 426;5;0;0;600;680;mwf;;Morris, Julie
+~14180;SOC 380;5;0;0;840;950;tr;;Overstreet, Laura Irene
 ~10813;SOC 430;5;0;0;840;950;tr;;Lois, Jen
-~12534;SOC 460;5;0;0;840;950;tr;;Bulcroft, Rick
+~12534;SOC 460;5;0;0;600;680;mwf;;Anderson, Kristin Lee
 ~10177;SOC 480;0;0;0;;;;;Anderson, Kristin Lee
 ~12793;SOC 480;0;0;0;;;;;Tsunokai, Glenn Thomas
 ~10414;SOC 481;0;0;0;;;;;Anderson, Kristin Lee
@@ -2641,7 +2661,7 @@
 ~10587;SPED 420;4;0;0;720;830;mw;;Stickley, Beth A.
 ~10590;SPED 440;4;0;0;480;930;r;;Stickley, Beth A.
 ~11703;SPED 441;0;0;0;;;;;Coulter, Gail Ann
-~10589;SPED 443;4;0;0;1020;1250;t;;Staff
+~10589;SPED 443;4;0;0;1020;1250;t;;Peters, Mary-Peck H.
 ~12287;SPED 452;5;0;0;600;710;tr;;Styer, Candice
 ~14034;SPED 457;5;0;0;840;950;mw;;Staff
 ~10093;SPED 460;4;0;0;840;950;mw;;Hanson, Richard Marcus
@@ -2668,7 +2688,7 @@
 ~10576;THTR 160;3;0;0;510;590;wf;;St John, Adam
 ~10755;THTR 160;3;0;0;510;590;tr;;Dudenbostel, Heather Christian
 ~11323;THTR 201;3;0;0;900;950;tr;;Chapman, Kamarie A.
-~10648;THTR 210;3;0;0;780;860;wf;;Merrill, DeLisle Susan
+~10648;THTR 210;3;0;0;780;860;wf;;Staff
 ~11140;THTR 228;3;0;0;780;860;tr;;Chapman, Kamarie A.
 ~10737;THTR 255;1;0;0;720;770;t;;VanCurler, Ashley Nichole
 ~11116;THTR 256;0;0;0;;;;;Brown, Rich
@@ -2676,26 +2696,26 @@
 ~12244;THTR 264;4;0;0;600;710;wf;;Brown, Rich
 ~14069;THTR 311;3;0;0;780;860;mw;;Staff
 ~11537;THTR 313;3;0;0;600;710;tr;;McCroom, Darren Winther
-~13672;THTR 316;3;0;0;900;980;tr;;Merrill, DeLisle Susan
+~13672;THTR 316;3;0;0;600;680;wf;;Staff
 ~14070;THTR 320;3;0;0;600;680;mw;;Staff
-~12685;THTR 322;3;0;0;720;770;mwf;;Currier, Deb
+~12685;THTR 322;3;0;0;720;770;mwf;;Midgley, Patrick Edward
 ~11227;THTR 330;0;0;0;;;;;VanCurler, Ashley Nichole
 ~10096;THTR 355;2;0;0;;;;;McCroom, Darren Winther
-~11281;THTR 355;2;0;0;;;;;Merrill, DeLisle Susan
+~11281;THTR 355;2;0;0;;;;;Staff
 ~11027;THTR 356;0;0;0;;;;;Brown, Rich
 ~10568;THTR 360;4;0;0;780;890;wf;;St John, Adam
 ~13299;THTR 360;4;0;0;780;890;tr;;St John, Adam
 ~13780;THTR 362;1;0;0;720;770;wf;;Mueller, Evan M.
 ~10169;THTR 370;3;0;0;600;710;mwf;;Kuntz, Mark T.
 ~10748;THTR 371;0;0;0;;;;;Kuntz, Mark T.
-~10320;THTR 381;4;0;0;600;710;tr;;Currier, Deb
+~10320;THTR 381;4;0;0;600;710;tr;;Midgley, Patrick Edward
 ~11241;THTR 384;4;0;0;480;590;tr;;Chapman, Kamarie A.
 ~13781;THTR 414;4;0;0;780;860;tr;;McCroom, Darren Winther
 ~11756;THTR 428;3;0;0;540;590;mwf;;Chapman, Kamarie A.
-~13301;THTR 450;3;0;0;900;1010;tr;;Currier, Deb
+~13301;THTR 450;3;0;0;900;1010;tr;;Midgley, Patrick Edward
 ~10321;THTR 455;4;0;0;;;;;Staff
 ~11261;THTR 455;4;0;0;;;;;McCroom, Darren Winther
-~11282;THTR 455;4;0;0;;;;;Merrill, DeLisle Susan
+~11282;THTR 455;4;0;0;;;;;Staff
 ~13302;THTR 461;5;0;0;900;1010;wf;;Mueller, Evan M.
 ~11735;THTR 470;4;0;0;480;590;wf;;Kuntz, Mark T.
 ~10749;THTR 471;0;0;0;;;;;Kuntz, Mark T.
@@ -2703,8 +2723,8 @@
 ~10665;THTR 495;0;0;0;;;;;Brown, Rich
 ~10322;THTR 496;1;0;0;;;;;Brown, Rich
 ~10646;THTR 496;1;0;0;;;;;Kuntz, Mark T.
-~10647;THTR 496;1;0;0;;;;;Currier, Deb
-~10649;THTR 496;1;0;0;;;;;Merrill, DeLisle Susan
+~10647;THTR 496;1;0;0;;;;;Staff
+~10649;THTR 496;1;0;0;;;;;Staff
 ~11706;THTR 496;1;0;0;;;;;Mueller, Evan M.
 ~11707;THTR 496;1;0;0;;;;;McCroom, Darren Winther
 ~13875;UEPP 110;2;0;0;600;710;t;;Berardi, Gigi
@@ -2766,15 +2786,17 @@
 ~13938;UEPP 498D;0;0;0;;;;;Stangl, Paul Alfred
 ~13943;UEPP 498D;0;0;0;;;;;Wang, Grace A.
 ~13948;UEPP 498D;0;0;0;;;;;Zaferatos, Nicholas C.
-~11681;WGSS 211;5;0;0;600;680;mwf;;Thibou, Shurla Delonese
-~11888;WGSS 211;5;0;0;780;860;mwf;;Thibou, Shurla Delonese
-~11682;WGSS 212;5;0;0;840;950;tr;;Staff
+~14214;UEPP 551;4;0;0;600;710;tr;;Abel, Troy D.
+~11681;WGSS 211;5;0;0;600;680;mwf;;Rogers-Thibou, Shurla
+~11888;WGSS 211;5;0;0;780;860;mwf;;Rogers-Thibou, Shurla
+~11682;WGSS 212;5;0;0;840;950;tr;;Abustan, Paulina Theresa Banas
 ~12810;WGSS 212;5;0;0;;;;;Staff
 ~12962;WGSS 212;5;0;0;600;710;tr;;Martindale, Lori Marie
-~12311;WGSS 213;5;0;0;870;950;mwf;;Staff
+~12311;WGSS 213;5;0;0;870;950;mwf;;Abustan, Paulina Theresa Banas
 ~12980;WGSS 213;5;0;0;510;590;mwf;;Tilland-Stafford, Anika Oceana
 ~12312;WGSS 310;5;0;0;690;770;mwf;;Tilland-Stafford, Anika Oceana
 ~13977;WGSS 314;5;0;0;;;;;Staff
 ~12046;WGSS 320;5;0;0;840;950;tr;;Colen, Elizabeth Jane
 ~12603;WGSS 350;5;0;0;720;830;tr;;Juarez, Melina
+~14170;WGSS 358;5;0;0;600;710;tr;;Abustan, Paulina Theresa Banas
 ~12285;WGSS 450;5;0;0;840;950;mw;;Schwartz-DuPre, Rae Lynn
