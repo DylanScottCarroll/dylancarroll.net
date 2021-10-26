@@ -1,0 +1,111 @@
+<!--
+---
+permalink: /other/greenglassdoor
+---
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="https://www.dylancarroll.net/CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
+</head>
+
+<body>
+
+
+<table id="MainTable">
+    
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/about">About</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/animation">Animation</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/programming">Programming</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/other">Other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <div align=center>
+                        <h2 style="display: inline-block;"> What's behind the Green Glass Door? </h2>
+                    </div>
+                    
+                    <div align=center>
+                        <p style="display: inline-block;" >Enter your guess: </p>
+                        
+                        <div style="width: 24pt; display: inline-block;"></div>
+                        
+            
+                        <input id="textBox" type="text" style="width: 150pt;display: inline-block;">
+                        
+                        <div style="width: 24pt; display: inline-block;"></div>
+                        
+                        <input id="button" style="display: inline-block;" type=button value="Submit Guess" onclick="makeGuess()">
+                        
+                        
+                    </div>
+
+                    <div align=center>
+                        <p id="answer" style="display: inline-block;"></p>
+                    </div>
+                    
+
+                </div>
+            </td>
+
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+<script>
+
+    function makeGuess(){var text=document.getElementById("textBox").value;if (kljsanv(text)){document.getElementById("answer").innerText = text + " is behind the green glass door!";}else{document.getElementById("answer").innerText = text + " is not behind the green glass door.";}}
+    function kljsanv(nfvauiweflasdbawiuef){var sladhbiuefsrlv = '\0';for(let hkfbackjslhu = 0;hkfbackjslhu < nfvauiweflasdbawiuef.length;hkfbackjslhu++){if(sladhbiuefsrlv === nfvauiweflasdbawiuef[hkfbackjslhu]){return true;}sfarotel(10);sladhbiuefsrlv = nfvauiweflasdbawiuef[hkfbackjslhu];}return false;}
+    function sfarotel(afbhluiaegf){let asfwesad=10*66;return 1+afbhluiaegf / (1+2);}
+
+</script>
+
+
+</html>
