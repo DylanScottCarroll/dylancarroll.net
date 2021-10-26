@@ -717,7 +717,6 @@ permalink: /other/scheduler
             }
         }
 
-        console.log(layers);
         //Add all valid schedules to the allSchedules array;
 
         allSchedules = []
@@ -732,8 +731,6 @@ permalink: /other/scheduler
                 }
             }
         }
-
-        console.log(allSchedules);
 
         //Draw the correct schedules
         currentOptionViewed = 0;
@@ -800,7 +797,7 @@ permalink: /other/scheduler
     function extractCRNData(allCourses){
         var crnStr = document.getElementById("crnList").value;
         var crns = crnStr.split("\n");
-        console.log(crns)
+
         
         var loadString = "";
 
@@ -1170,7 +1167,9 @@ permalink: /other/scheduler
         canvas.height = HEIGHT;
 
         var dayWidth = (WIDTH*(1-SIDE_MARGIN))/DAY_COUNT;
-        var hourCount = (endTime - startTime)/60
+        
+        var hourCount = (endTime - startTime)/60.0;
+        
         var hourHeight = (HEIGHT*(1-TOP_MARGIN)) / hourCount;
 
         var topMarginOffset = HEIGHT*TOP_MARGIN
@@ -1198,7 +1197,6 @@ permalink: /other/scheduler
 
         }
         else{
-            console.log(schedule.IDString);
 
             ctx.fillStyle = "#FFFFFF";
             ctx.fillRect(0, 0, WIDTH, HEIGHT);
@@ -1206,6 +1204,7 @@ permalink: /other/scheduler
             ctx.lineWidth = MAJOR_LINE_WIDTH;
             ctx.fillStyle = "#000000";
             
+            //Create top margin
             ctx.beginPath();
             ctx.moveTo(sideMarginOffset , 0);
             ctx.lineTo(sideMarginOffset, HEIGHT);
@@ -1234,6 +1233,8 @@ permalink: /other/scheduler
             var fontSize = Math.floor(topMarginOffset / 2);
             ctx.font = fontSize + "px Arial";
 
+
+            //Draw Vertical Lines
             for(let day = 1; day <= DAY_COUNT; day++){
                 let xPos = sideMarginOffset + dayWidth*day;
 
@@ -1244,18 +1245,22 @@ permalink: /other/scheduler
                 ctx.lineTo(xPos, HEIGHT);
                 ctx.stroke();
             }
-            console.log(hourHeight)
-            console.log(dayWidth)
             var fontSize = Math.floor(dayWidth / 11) + "px";
             ctx.font = fontSize + " Arial";
-
             ctx.lineWidth = MINOR_LINE_WIDTH;
-            for(let hour = 1; hour < hourCount+1; hour++){
-                let yPos = topMarginOffset + hourHeight*hour;
 
-                
-                var time = minsToPrettyTime(startTime + (hour-1)*60);
-                ctx.fillText(time, sideMarginOffset*0.22, yPos-(hourHeight*0.75) );
+            var startHourOffset = (Math.ceil(startTime/60)-(startTime/60)) * hourHeight
+
+            console.log( Math.ceil(startTime/60) - (startTime/60));
+            console.log(startHourOffset);
+            //Draw horizontal lines
+            for(let hour = 0; hour < hourCount+1; hour++){
+                let yPos = topMarginOffset + hourHeight*hour + startHourOffset;
+
+                if(hour != 0){
+                    var time = minsToPrettyTime( (Math.ceil(startTime/60) + (hour-1)) *60);
+                    ctx.fillText(time, sideMarginOffset*0.22, yPos-hourHeight+ 2*Math.floor(dayWidth / 11) );
+                }
 
                 ctx.beginPath();
                 ctx.moveTo(0 , yPos);
@@ -1292,9 +1297,13 @@ permalink: /other/scheduler
                     ctx.fillRect(xPos + MAJOR_LINE_WIDTH/2, yPos, dayWidth - MAJOR_LINE_WIDTH, duration*hourHeight);
 
                     ctx.fillStyle = findTextColor(color);
+                    
 
-                    var fontSize = Math.floor(hourHeight /4);
+                    
+                    //var fontSize = Math.floor(hourHeight /4);
+                    var fontSize = Math.floor(dayWidth / 11);
                     ctx.font = fontSize + "px Arial";
+                
                     
                     var notes = course.notes;
                     var notes2 = ""
