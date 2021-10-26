@@ -1307,10 +1307,12 @@ permalink: /other/scheduler
                     
                     var notes = course.notes;
                     var notes2 = ""
-                    if(notes.length > 17){
-                        let temp = notes;
-                        notes = temp.slice(0, 17);
-                        notes2 = temp.slice(15, temp.length);
+
+                    console.log(ctx.measureText(notes));
+
+                    while(ctx.measureText(notes).width >= dayWidth*.9){
+                        notes2 = notes[notes.length-1] + notes2;
+                        notes = notes.substr(0, notes.length-1);
                     }
 
                     ctx.fillText(course.name, xPos + fontSize/2, yPos + fontSize*1.1);
