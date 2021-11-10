@@ -828,10 +828,10 @@ permalink: /other/scheduler
 
         loadString = "\n" + loadString; 
 
-        populateFields(loadString, false);
+        populateFields(loadString, false, true);
     }
 
-    function populateFields(text, overwriteSettings){
+    function populateFields(text, overwriteSettings, loadCNameIntoGroup){
         
         var courseList = text.split("\n");
 
@@ -909,7 +909,10 @@ permalink: /other/scheduler
                 currentDiv.children[4].value = days[i]; //day
             }
             
+            if(loadNameIntoGroup){currentCourse[8] = currentCourse[1]}
             div4.children[1].value = currentCourse[8]; //group
+            
+
             div4.children[2].children[1].value = currentCourse[9]; //notes
 
         }
