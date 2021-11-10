@@ -116,68 +116,77 @@ permalink: /other/scheduler
                             <tr>
                                 <td> <h3 style="line-height: 0pt;"> Settings </td>
                             </tr>
-
+                            
                             <tr>
-                                <td > <p>Start Time: </p> </td>
-                                <td> <input class=StartTime type="time">  </td>
-                                    
+
+                                <td > <p>CRN Load </p> </td>
+                                <td>
+                                    <select id="termSelect" class="inline">
+                                        <option value="">Select Term...</option>
+                                        <option value="Fall_2021.txt">Fall 2021</option>
+                                        <option value="Winter_2022.txt">Winter 2022</option>
+                                    </select>
+                                </td>
+
+                                <td>
+                                    <div class="inline" style="width: 12pt;"></div>
+                                    <textarea  id="crnList" cols=10 rows=2 style="vertical-align:middle; resize: vertical;"></textarea>
+                                </td>
                                 
-                                
-                                <td> <p>End Time: </p> </td>
-                                <td> <input class=EndTime type="time" >  </td>
+                                <td>
+                                    <input class="inline"  type="button" value="Import CRNs" onclick="importCRNs()">
+                                </td>
                             </tr>
                             
                             <tr>
+                                <td > <p>Save/Load: </p> </td>
+               
+                                <td><input class="inline" style="width: 150pt;" type="file" id="saveFile" name="saveFile" onchange="fileSelected()"></td>
+                                
+                                <td><input class="inline" type=button value="Download Save" onclick="downloadSave()"></td>
+                                    
+                            </tr>
+
+                            <tr>
                                 <td> <p>Min Courses</p> </td>
-                                <td> <input type="number" min=1 value="1" style="width: 48pt"> </td>
+                                <td> <input id="MinCourseBox" type="number" min=1 value="1" style="width: 48pt"> </td>
 
 
                                 <td> <p>Max Courses</p> </td>
-                                <td> <input type="number" min=1 style="width: 48pt"> </td>
+                                <td> <input  id="MaxCourseBox" type="number" min=1 style="width: 48pt"> </td>
 
                                     
                             </tr>
                             
                             <tr>
                                 <td> <p>Min Credits</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                <td> <input id="MinCreditsBox" type="number" min=0 style="width: 48pt"> </td>
                                     
                                 
                                 
                                 <td> <p>Max Credits</p> </td>
-                                <td> <input type="number" min=0 style="width: 48pt"> </td>
+                                <td> <input id="MaxCreditsBox" type="number" min=0 style="width: 48pt"> </td>
                                 
                                 
                             </tr>
+
+                            <tr>
+                                <td > <p>Start Time: </p> </td>
+                                <td> <input id="StartTimeBox" class=StartTime type="time">  </td>
+                                    
+                                
+                                
+                                <td> <p>End Time: </p> </td>
+                                <td> <input id="EndTimeBox" class=EndTime type="time" >  </td>
+                            </tr>
                         </tbody>
+                        
                         </table>
 
                         <div align=center>
                             <p class="inline" >Mandatory Groups: </p>
                             <div class="inline" style="width: 24pt;"></div>
                             <textarea id="mandatoryGroups" cols=20 rows=3 style="vertical-align:middle; resize: vertical;"></textarea>
-                        </div>
-
-                        <br>
-
-                        <div align=center>
-                            <input class="inline"  type="button" value="Import CRNs" onclick="importCRNs()">
-                            <select id="termSelect" class="inline" style="margin-left: 12pt;">
-                                <option value="">Select Term...</option>
-                                <option value="Fall_2021.txt">Fall 2021</option>
-                                <option value="Winter_2022.txt">Winter 2022</option>
-                            </select>
-                            <div class="inline" style="width: 12pt;"></div>
-                            <textarea  id="crnList" cols=10 rows=2 style="vertical-align:middle; resize: vertical;"></textarea>
-                        </div>
-
-                        <br>
-
-                        <div align=center>
-                            <input class="inline" style="width: 150pt;" type="file" id="saveFile" name="saveFile" onchange="fileSelected()">
-                            <input class="inline" type=button value="Download Save" onclick="downloadSave()">
-                            
-                            
                         </div>
 
                         &nbsp;
@@ -837,13 +846,13 @@ permalink: /other/scheduler
             var row1 = settingsTbody.children[1];
             var row2 = settingsTbody.children[2];
             var row3 = settingsTbody.children[3];
-
-            row1.children[1].children[0].value = minsToTime(parseInt(settings[0]));
-            row1.children[3].children[0].value = minsToTime(parseInt(settings[1])); 
-            row2.children[1].children[0].value = parseInt(settings[2]);
-            row2.children[3].children[0].value = parseInt(settings[3]);
-            row3.children[1].children[0].value = parseInt(settings[4]);
-            row3.children[3].children[0].value = parseInt(settings[5]);
+            
+            document.getElementById("StartTimeBox").value = minsToTime(parseInt(settings[0]));
+            document.getElementById("EndTimeBox").value = minsToTime(parseInt(settings[1])); 
+            document.getElementById("MinCourseBox").value = parseInt(settings[2]);
+            document.getElementById("MaxCourseBox").value = parseInt(settings[3]);
+            document.getElementById("MinCreditsBox").value = parseInt(settings[4]);
+            document.getElementById("MaxCreditsBox").value = parseInt(settings[5]);
 
             document.getElementById("mandatoryGroups").value = settings[6].replace(":", "\n");
         }
@@ -913,12 +922,12 @@ permalink: /other/scheduler
         var row2 = settingsTbody.children[2];
         var row3 = settingsTbody.children[3];
 
-        var newStart = row1.children[1].children[0].value;
-        var newEnd = row1.children[3].children[0].value;
-        var newMinCourses = row2.children[1].children[0].value;
-        var newMaxCourses = row2.children[3].children[0].value;
-        var newMinCredits = row3.children[1].children[0].value;
-        var newMaxCredits = row3.children[3].children[0].value;
+        var newStart = document.getElementById("StartTimeBox").value;
+        var newEnd =  document.getElementById("EndTimeBox").value;
+        var newMinCourses =  document.getElementById("MinCourseBox").value;
+        var newMaxCourses = document.getElementById("MaxCourseBox").value
+        var newMinCredits = document.getElementById("MinCreditsBox").value
+        var newMaxCredits = document.getElementById("MaxCreditsBox").value
 
         mandatoryGroups = document.getElementById("mandatoryGroups").value.split("\n");
 
@@ -928,7 +937,7 @@ permalink: /other/scheduler
            }
        }
 
-        if(! validateSettings(newStart, newEnd, newMinCourses, newMaxCourses, newMinCredits, newMaxCredits) ){
+        if(! validateSettings(newMinCourses, newMaxCourses, newMinCredits, newMaxCredits) ){
             return false;
         }
         else{
@@ -946,15 +955,7 @@ permalink: /other/scheduler
 
     //TODO: Check the bounds of the values
     function validateSettings(start, end, minCourses, maxCourses, minCredits, maxCredits){
-        if(start === ""){
-            alert("Start Time can't be empty");
-            return false;
-        }
-        else if(end === ""){
-            alert("End time can't be empty");
-            return false;
-        }
-        else if(minCourses === ""){
+        if(minCourses === ""){
             alert("Min courses can't be empty");
             return false;
         }
@@ -1015,6 +1016,9 @@ permalink: /other/scheduler
 
         var courses = []
 
+        var minStart = null;
+        var maxEnd = null;
+
         for(let i = 0; i < courseTDs.length; i++){
             var borderDiv = courseTDs[i].children[0].children[0];
 
@@ -1055,8 +1059,21 @@ permalink: /other/scheduler
             var ends = [];
 
             for(let i = 0; i < rawStarts.length; i++){
-                starts.push(timeToMins(rawStarts[i]));
-                ends.push(timeToMins(rawEnds[i]));
+                var startMins = timeToMins(rawStarts[i]);
+                var endMins = timeToMins(rawEnds[i]);
+                
+                
+
+                starts.push(startMins);
+                ends.push(endMins);
+
+                //If the times weren't selected, automatically fill them in with the min and maxes.
+                if(startTime === null && (minStart===null || minStart>startMins)){
+                    minStart = startMins;
+                }
+                if(endTime === null && (maxEnd===null || maxEnd<endMins)){
+                    maxEnd = endMins;
+                }
             }
 
             if(group == ""){
@@ -1068,10 +1085,21 @@ permalink: /other/scheduler
 
         }
 
+        if(startTime===null){
+            startTime = minStart - 15;
+        }
+        if(endTime===null){
+            endTime = maxEnd + 15;
+        }
+
         return courses;
     }
 
     function timeToMins(time){
+        if(time == ""){
+            return null;
+        }
+        
         var splitTime = time.split(":");
         var hour = splitTime[0];
         var minute = splitTime[1];
