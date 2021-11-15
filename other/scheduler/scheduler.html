@@ -1065,15 +1065,12 @@ permalink: /other/scheduler
                 var startMins = timeToMins(rawStarts[i]);
                 var endMins = timeToMins(rawEnds[i]);
                 
-                
-
                 starts.push(startMins);
                 ends.push(endMins);
 
                 console.log(startMins, endMins);
                 //If the times weren't selected, automatically fill them in with the min and maxes.
                 if(startTime === null && (minStart===null || minStart>startMins) && startMins!=endMins){
-                    
                     minStart = startMins;
                 }
                 if(endTime === null && (maxEnd===null || maxEnd<endMins && startMins!=endMins)){
@@ -1152,7 +1149,7 @@ permalink: /other/scheduler
         var colors = [ [[212, 21, 21], [150,0,0], [255,128,128]], //Red
                        [[255,128,0], [148,74,0], [255, 175, 94]], //Orange
                        [[255, 230, 0], [224, 183, 0], [255, 255, 92]], //Yellow
-                       [ [43,179,43], [83,219,83], [0,130,0]], //Green
+                       [ [43,179,43], [0,130,0], [83,219,83] ], //Green
                        [[11,230,226], [23,156,153], [161, 255, 252]], //Teal
                        [[0,115,255], [0,78,194], [74,167,255]], //Blue
                        [[162,23,255], [83,0,138], [223,64,255]], //Purple
