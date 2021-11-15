@@ -1070,11 +1070,13 @@ permalink: /other/scheduler
                 starts.push(startMins);
                 ends.push(endMins);
 
+                console.log(startMins, endMins);
                 //If the times weren't selected, automatically fill them in with the min and maxes.
-                if(startTime === null && (minStart===null || minStart>startMins)){
+                if(startTime === null && (minStart===null || minStart>startMins) && startMins!=endMins){
+                    
                     minStart = startMins;
                 }
-                if(endTime === null && (maxEnd===null || maxEnd<endMins)){
+                if(endTime === null && (maxEnd===null || maxEnd<endMins && startMins!=endMins)){
                     maxEnd = endMins;
                 }
             }
