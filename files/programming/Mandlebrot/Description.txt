@@ -1,7 +1,0 @@
-May 2019
-
-I wrote both the Mandlebrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.
-
-In addition to the fractal renderers I wrote a program in C that takes 24-bit color data in the form of an array pointer and saves a bitmap file. I wrote the bitmap program while I was teaching myself C as a way to practice file I/O and simple memory management. Similarily, 
-
-The example julia fractal is the fractal for c = -0.65 + 0.45i.
