@@ -14,6 +14,14 @@ permalink: /programming
     <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
 </head>
 
+<style>
+    h4.project {margin: 3pt; margin-left: 20pt;}
+    p.project {margin: 3pt; margin-left: 40pt;}
+    p.tech {margin: 3pt; margin-left: 0pt;}
+
+    img.thumb {height: 72pt; width: auto; float: right; margin-left: auto; margin-top: -6pt; border-radius: 12pt; margin: 6pt}
+</style>
+
 <body>
 
 <table id="MainTable">
@@ -71,236 +79,146 @@ permalink: /programming
                     <p>That same year, I learned how to write BASIC for my TI-84 plus mainly as a way to program in math class. I wrote simple games, math tools, and tech demos. Some of the programs I wrote include: Snake, a program that factors quadratics, and a Mandelbrot fractal renderer. This is not an important skill, but it was a fun part of the hobby to mess around in such a limited language with limited hardware and to see what I could get it to do.</p>
                     <p>In 2019 I began to teach myself C and C++ to familiarize myself with lower-level programming concepts, increase the number of languages knew, and gain access to a faster language for resource-heavy projects.</p>
                     <p>2019 was my freshman year at Western Washington University. I was accepted into the “Computer Science Distinguished Scholars Program" freshman year and was admitted into the computer science major in Winter Quarter 2020.</p>
-                    <p>Having a few years of personal projects before beginning my has definitely helped me with my studies and I feel that I am a better and much more well-rounded programmer because of it. Since then, I have been learning a lot more interesting and advanced computer science topics that I have been able to apply to my hobby projects.</p>
+                    <p>Having a few years of personal projects before beginning my has definitely helped me with my studies and I feel that I am a better and much more well-rounded programmer because of it. Since then, I have been learning a lot more interesting and advanced computer science topics in my courses that I have been able to apply to my hobby projects.</p>
                     <br>
 
                     <h2>Personal projects</h2>
                     
                     <p> This is an incomplete list of my favorite projects that I have completed in my own time as a hobby. I am still working on documenting the rest of my projects. Most of them are just simple projects that I worked on out of curiosity, mainly to explore a new concept or idea. </p>
 
+                    <p> Click on the titles for more details</p>
+
                     <br>
 
-                    <p class = "InvisibleDesktop"> <b>--Click images for details--</b> </p>
-
                     <!-- Mandelbrot -->
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/mandelbrot-julia-bmp">
-                            Mandelbrot and Julia renderers with custom bmp exporter
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <div  style="width: 50vw; height: 25vw; background-color: black;">
-                                    <a href="https://www.dylancarroll.net/programming/mandelbrot-julia-bmp">
-                                        <img src="https://www.dylancarroll.net/files/programming/Mandelbrot/image.png" 
-                                        style = "width: 100%; height: 100%;">
-                                    </a>
-                                </div>
-                            </td>
-                            
-                            <td style="width: 1%;"></td>
-                        </tr>
+                    <img src="https://www.dylancarroll.net/files/programming/Mandelbrot/image.png" 
+                        class="thumb" style="margin-top: -12pt;">
 
-                        <tr>
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">May 2019</p></b>
-                                <p>
-                                    I wrote both the Mandelbrot and Julia renderers in C. I played around with rendering the fractals in various color patterns, but I settled on this greyscale version because I thought it looked the best. The programs take command-line inputs for the viewport scale and position. I wrote the fractal renderers to practice as I familiarized myself with the syntax of C.<br><br>
-                                    In addition to the fractal renderers I wrote a program in C that takes 24-bit color data in the form of an array pointer and saves a bitmap file without using any extra libraries. I wrote the bitmap program while I was teaching myself C as a way to practice file I/O and simple memory management.<br><br>
-                                    The example julia fractal is the fractal for c = -0.65 + 0.45i.<br>
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/mandelbrot-julia-bmp">
+                                Mandelbrot and Julia renderers
+                            </a>
+                        </h4></td>
+
+                        <td class="InvisibleMobile"><b><p class="tech"> — C and C++</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop"> C and C++</p></b>
+                    <p class="project">Simple fractal rendering programs.</p>
                     
                     <!-- Command-Line Calculator -->
+
                     <br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/clc">
-                            Command-Line Calculator
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
 
-                            <div class="InvisibleDesktop">
-                                <p><a class="NavLink" href="https://www.dylancarroll.net/programming/clc">Click for details</a></p>
-                            </div>
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/clc">
+                                Command Line Calculator
+                            </a>
+                        </h4></td>
 
-
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">Nov 2020</p></b>
-
-                                <p>This is a calculator written in python that runs in the terminal. The program uses python data types and math functions, but I wrote all of the parsing logic myself. This calculator has largely been an exercise in parsing user input and parsing mathematical expressions using regular expressions and finite context-free grammars.</p>
-
-                                <p><a class="GenericLink" href="https://www.dylancarroll.net/programming/clc">
-                                    Click to see the rest...<p>
-                                </a></p>
-
-                            </td>
-                        </tr>
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — Python</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop">Python</p></b>
+                    <p class="project">A simple yet powerful scientific calculator that exists only in the terminal.</p>
                     
 
-                    
                     <!-- Neural Network Driving -->
-                    <br><br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/nn-racer">
-                            Neural Network Driving Trained with Genetic Algorithm
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <div class = "ImageDiv" style="width: 50vw; height: 25vw;">
-                                    <a href="https://www.dylancarroll.net/programming/nn-racer">
-                                        <img src="https://www.dylancarroll.net/files/programming/nn-racer/Track0NNApng.png" 
-                                        style = "width: 100%; height: 100%;">
-                                    </a>
-                                </div>
-                            </td>
-                            
-                            <td style="width: 1%;"></td>
-                        </tr>
+                    <br><br>
+                    
+                    <img src="https://www.dylancarroll.net/files/programming/nn-racer/Track0NNApng.png" 
+                            class="thumb">
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/nn-racer">
+                                Neural Network Driving
+                            </a>
+                        </h4></td>
 
-                        <tr>
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">November 2020</p></b>
-
-                                <p>I have long been interested in neural networks and have wanted to try implementing one for a while. I decided to use the neural network to play a simple racing game because I thought that it was an application that wouldn't be too difficult for my first time using neural networks. I decided to use a genetic algorithm to train the network for a similar reason: I have done minimal research on how to implement neural networks and thought that a genetic algorithm would be easy to figure out for myself.</p>
-
-                                <p>I wrote the program in <a class="GenericLink" href="https://processing.org">Processing</a>, which is a language/application that is intended to make writing simple graphical apps easy to write. Processing is essentially identical to Java since Java code will run in  Processing without modification. I do have plans to reuse this code in future Java projects...</p>
-
-
-                                <p><a class="GenericLink" href="https://www.dylancarroll.net/programming/nn-racer">
-                                    Click to see the rest...<p>
-                                </a></p>
-                            </td>
-                        </tr>
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — Java and Processing 3</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop"> Java and Processing 3</p></b>
+                    <p class="project">A simple neural network trained with a genetic algorithm to race around a track.</p>
+                    
 
 
                     <!-- Markov-Chain Text Generation -->
                     <br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/markov">
-                            Markov-Chain Text Generator
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
 
-                            <div class="InvisibleDesktop">
-                                <p><a class="NavLink" href="https://www.dylancarroll.net/programming/markov">Click for details</a></p>
-                            </div>
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/markov">
+                                Markov-Chain Text Generator
+                            </a>
+                        </h4></td>
 
-
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">June 2020</p></b>
-
-                                <p>I had the idea for this text generator a few months before I decided to try to implement it. At the time, I wasn't thinking about it in terms of a Markov-chain, but I have since decided that that is the best way to describe the way it functions.</p>
-                                <p>In the training stage, the program analyzes a text document with the training data. For each character in the data, the program looks at the previous 6 characters. For each combination of 5 characters present in the data, the program keeps a tally of the number of occurrences of the character that came next. Essentially, the program creates a probability distribution of all characters based on the previous 6 characters. The number 6 is arbitrary, and the value can be assigned at runtime by a command-line argument. I chose 6 because it resulted in the best speed for how coherent the output text was. </p>
-                                
-                                <p><a class="GenericLink" href="https://www.dylancarroll.net/programming/markov">
-                                    Click to see the rest...<p>
-                                </a></p>
-
-                            </td>
-                        </tr>
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — Java</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop"> Java</p></b>
+                    <p class="project">A trained Markov-chain model that generates new text based on a training text.</p>
 
                     <!-- 3D Ray Tracing Engine -->
                     <br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/ray-tracing">
-                            3D Ray Tracing Engine
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <div class = "ImageDiv">
-                                    <a href="https://www.dylancarroll.net/programming/ray-tracing">
-                                        <img src="https://www.dylancarroll.net/files/programming/ray-tracing/RotatingSphere.gif" 
-                                        style = "width: 100%; height: 100%;">
-                                    </a>
-                                </div>
-                            </td>
+                    <img src="https://www.dylancarroll.net/files/programming/ray-tracing/RotatingSphere.gif" 
+                        class="thumb" style="margin: 3pt;">
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/ray-tracing">
+                                3D Ray Tracing Engine
+                            </a>
+                        </h4></td>
 
-                            <td style="width: 1%;"></td>
-
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">May 2019</p></b>
-
-                                <p>I wrote this engine as a way to further understand 3D computer graphics. Additionally, I was learning about vectors and planes in my pre-calculus class, which is what got me to finally begin the project. I was not intending to use the program as an actual graphical engine, I just wrote it to experiment with 3D graphics and the vector math that I was learning in school. The program takes a single .obj as an input. The engine runs on a single processor thread in Python, as such it is very slow. I indented to add more complex lighting and reflections, but I decided not to continue with the project, because it takes a very long time to render one frame with even slightly complex meshes even at very low resoluton. The shading of each face is based off of the angle relative to the plane of the camera.</p>
-                                <p>The example is an animation of an icosphere rotating to demonstrate the engine.</p>
-                            </td>
-                        </tr>
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — Python</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop">Python</p></b>
+                    <p class="project">A slow ray-tracer written in python to experiment with some math.</p>
 
                     <!-- Perlin Noise -->
-                    <br><br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net/programming/perlin">
-                            Perlin Noise Generator
-                        </a>
-                    </h3>
+                    <br><br>
+                    <img src="https://www.dylancarroll.net/files/programming/perlin/PerlinScroll.gif" 
+                        class="thumb" style="margin: 3pt;">
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/perlin">
+                                Perlin Noise Generator
+                            </a>
+                        </h4></td>
 
-                    <table>
-                        <tr>
-                            <td>
-                                <div class = "ImageDiv">
-                                    <a href="https://www.dylancarroll.net/programming/perlin">
-                                        <img src="https://www.dylancarroll.net/files/programming/perlin/PerlinScroll.gif" 
-                                        style = "width: 100%; height: 100%;">
-                                    </a>
-                                </div>
-                            </td>
-                            
-                            <td style="width: 1%;"></td>
-
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">March 2019</p></b>
-
-                                <p> I became interested in noise generation because I saw it being applied in procedural terrain and textures of the games that I played and was curious about how it worked. After researching the Perlin noise algorithm, I wrote an implementation of the algorithm in Python to understand it further. The visuals are rendered using a python library called Pygame.</p>
-                                <p>The render below is a 500x500 grid of 1 octave of Perlin noise.</p>
-                            </td>
-                        </tr>
-
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — Python</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop">Python</p></b>
+                    <p class="project">A Perlin noise generator written from scratch.</p>
+                    
 
                     <!-- dylancarroll.net -->
                     <br><br>
-                    <h3>
-                        <a class ="text" href="https://www.dylancarroll.net">
-                            dylancarroll.net
-                        </a>
-                    </h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <div class = "ImageDiv">
-                                    <a href="https://www.dylancarroll.net/programming/dylancarrollnet">
-                                        
-                                        <img src="https://www.dylancarroll.net/files/programming/dylancarrollnet/image.jpg" 
-                                        style = "width: 100%; height: 100%;">
-                                    </a>
-                                </div>
-                            </td>
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net">
+                                dylancarroll.net
+                            </a>
+                        </h4></td>
 
-                            <td style="width: 1%;"></td>
+                        <td class="InvisibleMobile"><b><p class="tech"> — HTML, CSS, and Javascript</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop">HTML, CSS, and Javascript</p></b>
+                    <p class="project">Woah, that's the page you're on right now!.</p>
 
-                            <td style = "vertical-align: top;" class="InvisibleMobile">
-                                <b><p style="line-height: 1;">July 2020</p></b>
+                    <!-- Generic -->
+                    <br><br>
+                    <!--
+                    <table><tr>
+                        <td><h4 class="project">
+                            <a class ="text" href="https://www.dylancarroll.net/programming/[NAME]">
+                                [TITLE]
+                            </a>
+                        </h4></td>
 
-                                <p>I first purchased this domain because I was curious about how HTML and CSS development works and I wanted to have some place to learn where I would end up with a useful product. The purpose of this site is to act as a portfolio of my hobby programming projects, sell myself to potential employers, and mess around with</p>
-                                <p>The site is hosted on github, and thus must be mostly comprised of static webpages with no server-side processing. As such, I have had to do some workarounds for things that would probably otherwise be done on the server-side. <a class="GenericLink" href="https://github.com/DylanScottCarroll/dylancarroll.net">Here</a> is a link to the github repo with all of the files for the site.</p>
-                            </td>
-                        </tr>
-                    </table>
+                        <td class="InvisibleMobile"><b><p class="tech"> — [LANGUAGE]</p></b></td>
+                    </tr></table>
+                    <b><p class="project InvisibleDesktop">[LANGUAGE]]</p></b>
+                    <p class="project">[DESCRIPTION]</p>
+                    -->
                     
                 </div>
             </td>
