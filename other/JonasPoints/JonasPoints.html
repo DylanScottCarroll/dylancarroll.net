@@ -1,0 +1,369 @@
+permalink: /JonasPoints
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="https://www.dylancarroll.net/CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+
+<style>
+    .rangeButton {width: 18%; height: auto; margin-bottom: 10pt;
+        background-color: lightgray; stroke: none; padding: 5pt 5pt; 
+        margin-left: auto; margin-right: auto; font-size: 1.75vw; color: #505050; 
+        font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI"}
+</style>
+
+<body onload="load()">
+
+
+<table id="MainTable">
+    
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/about">About</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/programming">Programming</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/animation">Animation</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/other">Other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <h1 style="margin-left: 5%; margin-bottom: 5pt;">Jonas Points</h1>
+                    <h2 id="PointDisplay" style="margin-left: 5%; margin-bottom: 5pt; margin-top: 5pt;">--</h2>
+                    <h3 id="PointDeltaDisplay" style="margin-left: 8%; margin-top: 5pt;">-- (--)</h3>
+                   
+                    
+                    <input type="button" class="rangeButton" value="One Day" style="margin-left: 5%;" onclick="updateRange(1, false, false);draw()">
+                    <input type="button" class="rangeButton" value="One Week" onclick="updateRange(7, false, false);draw()">
+                    <input type="button" class="rangeButton" value="One Month" onclick="updateRange(30, false, false);draw()">
+                    <input type="button" class="rangeButton" value="Six Months" onclick="updateRange(183, false, false);draw()">
+                    <input id="maxRangeButton" type="button" class="rangeButton" value="Max" onclick="updateRange(365, false, true);draw()">
+
+
+                    <div id="slidecontainer">
+                        <input id="slider" type="range" min="1" max="365" value="1" 
+                            style="width: 93%; margin-left: 5%;" oninput="updateRange(NaN,true, false);draw()">
+                    </div>
+
+
+                    <canvas id="DrawCanvas" width="2200px", height="1200px" style="width: 100%; height:auto; margin-bottom: 100px;">
+
+                        <p>Error, could not display javascript</p>
+
+                    </canvas>
+
+                    
+
+                </div>
+            </td>
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="noisejs/perlin.js"></script>
+
+<script>
+    var pointDisplayDensity = 10 / (24*60*60);
+    var displayTimeRange = 1;
+    var jonasEpoch = 1609527600; //Jan 4 2021
+    var maxRangeDays = NaN;
+    
+
+
+    var noiseScale = (365*24*60*60);
+    var octaves = 20;
+    var seed = 11;
+    var pointScale = 500;
+    var pointShift = 100;
+
+
+    var displayWidth = 2000;
+    var leftPad = 200;
+    var displayHeight = 1000;
+    var bottomPad = 200;
+
+    var horizontalLabelCount = 5;
+    
+    function load(){
+        var time = new Date();
+        var seconds = Math.floor((new Date()).getTime()/1000) - jonasEpoch
+        maxRangeDays = Math.floor(seconds / (60*60*24))
+        document.getElementById("slider").max = maxRangeDays;
+
+        updateRange(1, false, false)
+        draw();
+    }
+
+    function draw(){
+        var canvas = document.getElementById("DrawCanvas");
+        var ctx = canvas.getContext("2d");
+        var pointDisplay = document.getElementById("PointDisplay");
+
+    
+        // Calculate Values   
+        
+        var pointsList = getPoints();
+        
+        var max = Math.max(...pointsList);
+        var min = Math.min(...pointsList)
+        
+        var span = max-min;
+        max += span*0.1;
+        min -= span*0.1;
+        span = max-min;
+
+        console.log(min, max);
+
+        //Clear display
+        ctx.fillStyle = "white";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+        drawAxisLabels(ctx, min, max);
+        
+        drawPlot(ctx, pointsList, min, max, span);
+        
+        updatePointCounter(pointsList);
+        
+
+    }
+
+    function dateToString(timestamp){
+        var date = new Date(timestamp*1000);
+
+        //console.log(timestamp, date.getFullYear(), date.getMonth(), date.getDate(), date.getDay(), date.getHours(), date.getMinutes())
+
+        if(displayTimeRange <= 2*60*60*24){
+            let hours = date.getHours();
+            let ampm = " am";
+            if(hours > 12){
+                hours-=12;
+                ampm = " pm"
+            }
+            if(hours == 0){hours = 12;}
+
+            let minutes = date.getMinutes().toString()
+            if(minutes.length < 2){minutes = "0"+minutes;}
+
+            return hours + ":" + minutes + ampm;
+        }
+        else if(displayTimeRange < 183*60*60*24){
+            let month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][date.getMonth()]
+            return  month + " " + date.getDate()
+        }
+        else{
+            let month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][date.getMonth()]
+            return month + " " + date.getFullYear();
+            
+        }
+        
+    }
+
+
+    function getPoints(){
+        var dataPointsDisplayed = pointDisplayDensity*displayTimeRange;
+        
+        var array = []
+        array.length = dataPointsDisplayed;
+        array.fill(0);
+        
+
+        let currentScale = 1;
+        let currentMagnitude = 1;
+        for(let i = 0; i < octaves; i++){
+            noise.seed(i+seed);
+            for(let j = 0; j < dataPointsDisplayed; j++){
+                let currentTimeOffset =   (j / dataPointsDisplayed) * displayTimeRange;
+                let currentTime = displayStartTime + currentTimeOffset;
+
+                array[j] += noise.perlin2(currentTime/(noiseScale*currentScale), 0.5) * currentMagnitude;
+            }
+            currentScale = currentScale/2;
+            currentMagnitude *= 0.6;
+        }
+
+        for(let j = 0; j < dataPointsDisplayed; j++){
+            array[j] = rescalePoints(array[j]);
+        }
+        
+
+        return array;
+    }
+
+    function getPointFromTimestamp(timestamp){
+        let currentScale = 1;
+        let currentMagnitude = 1;
+        let value = 0;
+
+        let currentTime = timestamp - jonasEpoch;
+        for(let i = 0; i < octaves; i++){
+            noise.seed(i+seed);
+
+            value += noise.perlin2(currentTime/(noiseScale*currentScale), 0.5) * currentMagnitude;
+            
+            currentScale = currentScale/2;
+            currentMagnitude *= 0.6;
+        }
+        return rescalePoints(value);
+    }
+
+    function drawAxisLabels(ctx, min, max){
+        //Draw Axis labels
+                
+        ctx.font = "30pt Arial";
+        ctx.fillStyle = "black";
+
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "grey";
+
+        let verticalLabelCount = 3 + ((displayTimeRange*1.2 + (50*24*60*60))%(100*24*60*60) )*(7/(100*24*60*60))
+
+        var currentTimestamp = (new Date()).getTime()/1000;
+        for(let i = 0; i <= verticalLabelCount; i++){
+            let currentTimeOffset =  (i / verticalLabelCount) * displayTimeRange;
+            
+            let labelLeftPad = (verticalLabelCount % 1)*displayWidth/verticalLabelCount
+            let xPos =  labelLeftPad + leftPad + displayWidth * (i/verticalLabelCount);
+
+            ctx.beginPath();
+            ctx.moveTo(xPos , displayHeight);
+            ctx.lineTo(xPos, 0);
+            ctx.stroke();
+
+            ctx.fillText(dateToString(displayStartTime + currentTimeOffset + jonasEpoch), xPos, displayHeight+50);
+        }
+
+        //Draw horizontal lines
+        for(let i = 0; i <= horizontalLabelCount; i++){
+            let yPos = displayHeight - i*displayHeight/horizontalLabelCount
+
+            ctx.beginPath();
+            ctx.moveTo(leftPad , yPos);
+            ctx.lineTo(displayWidth+leftPad, yPos);
+            ctx.stroke();
+
+            let displayPoint = Math.round(100*(min*(1 - i/horizontalLabelCount) + max*(i/horizontalLabelCount)))/100
+            ctx.fillText(displayPoint, 0, yPos);
+        }
+    }
+
+    function drawPlot(ctx, pointsList, min, max, span){
+        //Draw Plot
+        
+        var dataPointsDisplayed = pointDisplayDensity*displayTimeRange;
+
+        if(pointsList[0] < pointsList[dataPointsDisplayed-1]){
+            ctx.strokeStyle = "Green";
+        }
+        else{
+            ctx.strokeStyle = "Red";
+        }
+        ctx.lineWidth = 5;
+
+        ctx.moveTo(leftPad , pointsList[0]);
+        ctx.beginPath();
+        
+        
+        for(let i = 0; i <= dataPointsDisplayed; i++){
+            let x =  leftPad + displayWidth * i / dataPointsDisplayed
+            let y =  displayHeight - displayHeight * (pointsList[i] - min)/span ;
+            
+            ctx.lineTo(x , y);
+            
+        }
+        ctx.stroke();
+    }
+
+    function updatePointCounter(pointsList){
+        // Update Point Counter
+        var dataPointsDisplayed = pointDisplayDensity*displayTimeRange;
+        var currentPoints = getPointFromTimestamp( (new Date()).getTime() );
+        var pointDelta =  pointsList[dataPointsDisplayed-1] - pointsList[0]
+        var pointDisplay = document.getElementById("PointDisplay");
+        pointDisplay.innerText = Math.floor(100*currentPoints)/100 + " points"
+    
+        var deltaDisplay =  document.getElementById("PointDeltaDisplay");
+        var deltaString = Math.floor(100*pointDelta)/100 + " (" + Math.floor(10000*pointDelta/Math.abs(pointsList[0]) )/100 + "%)"
+        if(pointDelta >= 0){
+            deltaString = "+" + deltaString;
+            deltaDisplay.style.color = "Green";
+        }
+        else{
+            deltaDisplay.style.color = "Red";
+        }
+        deltaDisplay.innerText = deltaString
+    }
+
+    function rescalePoints(value){
+        return value * pointScale + pointShift;
+    }
+
+    function updateRange(days, slider, max){
+        
+        
+        if(max){
+            days = maxRangeDays;
+        }
+        if(slider){
+            let slider = document.getElementById("slider");
+            days = Math.round(slider.value)
+        }
+        else{
+            let slider = document.getElementById("slider");
+            slider.value = days;
+        }
+
+        //update globals
+        displayTimeRange = days*60*60*24;
+
+        var seconds = Math.floor((new Date()).getTime()/1000);
+        displayStartTime = seconds - displayTimeRange - jonasEpoch;
+
+        
+    }
+
+</script>

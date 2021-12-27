@@ -34,7 +34,7 @@ body {padding: 0; margin: 0;}
 
 #BodyDiv {top: 100px; height: 100%;}
 
-input.act[type=button] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
+input.act[type="button"] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
     margin-left: auto; margin-right: auto; font-size: 15pt; color: #505050; 
     font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI";}
 
