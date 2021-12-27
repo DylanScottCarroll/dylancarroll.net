@@ -1,4 +1,6 @@
+---
 permalink: /JonasPoints
+---
 
 <!DOCTYPE html>
 <html>
@@ -128,6 +130,7 @@ permalink: /JonasPoints
     var bottomPad = 200;
 
     var horizontalLabelCount = 5;
+    var verticalLabelCount = 10;
     
     function load(){
         var time = new Date();
@@ -259,8 +262,6 @@ permalink: /JonasPoints
 
         ctx.lineWidth = 2;
         ctx.strokeStyle = "grey";
-
-        let verticalLabelCount = 3 + ((displayTimeRange*1.2 + (50*24*60*60))%(100*24*60*60) )*(7/(100*24*60*60))
 
         var currentTimestamp = (new Date()).getTime()/1000;
         for(let i = 0; i <= verticalLabelCount; i++){
