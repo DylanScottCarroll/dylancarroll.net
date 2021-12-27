@@ -117,11 +117,11 @@ permalink: /JonasPoints
     
 
 
-    var noiseScale = (365*24*60*60);
+    var noiseScale = (100*24*60*60);
     var octaves = 20;
-    var seed = 11;
-    var pointScale = 500;
-    var pointShift = 100;
+    var seed = 20 * 20;
+    var pointScale = 300;
+    var pointShift = -350;
 
 
     var displayWidth = 2000;
@@ -159,8 +159,6 @@ permalink: /JonasPoints
         max += span*0.1;
         min -= span*0.1;
         span = max-min;
-
-        console.log(min, max);
 
         //Clear display
         ctx.fillStyle = "white";
@@ -223,7 +221,7 @@ permalink: /JonasPoints
                 let currentTimeOffset =   (j / dataPointsDisplayed) * displayTimeRange;
                 let currentTime = displayStartTime + currentTimeOffset;
 
-                array[j] += noise.perlin2(currentTime/(noiseScale*currentScale), 0.5) * currentMagnitude;
+                array[j] += (noise.perlin2(currentTime/(noiseScale*currentScale), 0.5)+1) * currentMagnitude;
             }
             currentScale = currentScale/2;
             currentMagnitude *= 0.6;
@@ -246,7 +244,7 @@ permalink: /JonasPoints
         for(let i = 0; i < octaves; i++){
             noise.seed(i+seed);
 
-            value += noise.perlin2(currentTime/(noiseScale*currentScale), 0.5) * currentMagnitude;
+            value += (noise.perlin2(currentTime/(noiseScale*currentScale), 0.5)+1) * currentMagnitude;
             
             currentScale = currentScale/2;
             currentMagnitude *= 0.6;
