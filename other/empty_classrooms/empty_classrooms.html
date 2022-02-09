@@ -1,0 +1,261 @@
+<!--
+---
+permalink: /empty_classrooms
+---
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="https://www.dylancarroll.net/CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
+</head>
+
+<body onload="on_load()">
+
+
+<table id="MainTable">
+    
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/about">About</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/programming">Programming</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/animation">Animation</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/other">Other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+                    
+                    <table>
+                        <tr>
+                            <td>Select your building(s):</td>
+                            <td><select id="building_input">
+                                <option value="">Select Building...</option>
+                             </select></td>
+                        </tr>
+
+                        <tr><br></tr>
+                        
+                        <tr>
+                            <td>Enter the time:</td>
+                            <td><input type="datetime-local" id="time_input"></td>
+                        </tr>
+
+                        <tr><br></tr>
+
+                        <tr>
+                            <td><input type="button" id="get_rooms" value="Find Rooms" onclick="get_rooms()" ></td>
+                        </tr>
+                    </table>
+                    
+
+
+                    <p id="class_list_p"></p>
+
+                </div>
+            </td>
+
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
+
+
+<script>
+
+    const buildingMap = new Map();
+    const weekdays = ["m", "t", "w", "r", "f", "s", "s"] 
+
+    class Section{
+        constructor(roomName, className, startTime, endTime, days){
+            
+            this.roomName = roomName;
+            this.className = className;
+            this.startTime = startTime;
+            this.endTime = endTime;
+            this.days = days;
+        }
+
+        timeConflicts(time, day){
+            if(this.roomName === "CF 226"){
+                console.log(time, day, this.startTime, this.endTime, this.days, (this.days.includes(day) && this.startTime <= time && time <= this.endTime))
+            }
+            return (this.days.includes(day) && this.startTime <= time && time <= this.endTime);
+        }
+    }
+
+    function on_load(){
+        importData()
+    }
+
+    function importData(){
+        url = "https://www.dylancarroll.net/other/empty_classrooms/data/Winter_2022.txt"
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => blob.text())
+            .then(function(text) {extractData(text)} );
+    }
+
+    function extractData(text){
+        let rooms = text.split("\n");
+
+        for(let i = 0; i < rooms.length; i++){
+            if(rooms[i] === ""){continue;}
+            
+            let roomName = rooms[i].split(":")[0]
+            let building = roomName.split(" ")[0]
+            let sections = rooms[i].split(":")[1].split(";");
+
+            if(!buildingMap.has(building)){
+                buildingMap.set(building, [])
+            }
+            
+
+            for(let j = 0; j < sections.length; j++){
+                if(sections[j] === ""){continue;}
+                secList = sections[j].split(",");
+                secObj = new Section(roomName, secList[0], secList[1], secList[2], secList[3])
+                
+                buildingMap.get(building).push(secObj)
+            }
+        }
+
+        let selector = document.getElementById("building_input");
+
+        let buildings = Array.from( buildingMap.keys())
+
+        for(let i = 0; i < buildings.length; i++){
+            let option = document.createElement("option")
+            option.innerText = buildings[i]
+            option.value = buildings[i]
+
+            selector.appendChild(option);
+        }
+    }
+
+    function get_rooms(){
+        let building = document.getElementById("building_input").value
+        let time = document.getElementById("time_input").value
+        let class_list_p = document.getElementById("class_list_p")
+
+        let date = new Date(time);
+        let weekday =  weekdays[date.getDay()];
+        
+        let timeInMins = date.getHours()*60 + date.getMinutes();
+
+        console.log(timeInMins + " " + weekday)
+
+        let classes = buildingMap.get(building)
+    
+        let notHappeningRooms = []
+        for(let i = 0; i < classes.length; i++){
+            let room = classes[i].roomName;
+            if(!notHappeningRooms.includes(room)){
+                notHappeningRooms.push(room)
+            }
+            
+        }
+
+        for(let i = 0; i < classes.length; i++){
+            if(classes[i].timeConflicts(timeInMins, weekday)){
+                
+                let room = classes[i].roomName;
+                let index = notHappeningRooms.indexOf(room);
+                if (index !== -1) {
+                    notHappeningRooms.splice(index, 1);
+                }
+            }
+        }
+
+        console.log(notHappeningRooms)
+
+        notHappeningRooms.sort()
+        
+        let displayHTML = ""
+        for(const room of notHappeningRooms){
+            displayHTML += room + "<br>"
+        }
+
+        class_list_p.innerHTML = displayHTML;
+
+    }
+
+    
+
+    function timeToMins(time){
+        if(time == ""){
+            return null;
+        }
+        
+        var splitTime = time.split(":");
+        var hour = splitTime[0];
+        var minute = splitTime[1];
+        return parseInt(hour)*60 + parseInt(minute);
+    }
+
+    function minsToPrettyTime(mins){
+        var hours = Math.floor(mins/60);
+        var minutes = mins - (hours*60);
+        
+        var AMPM = "";
+        if(hours > 12){
+            hours -= 12;
+            AMPM = "PM"
+        }
+        else{
+            AMPM = "AM"
+        }
+
+        var minutesString = minutes.toString();
+        if(minutesString.length ==1 )(minutesString = 0 + minutesString)
+        
+        var hoursString = hours.toString()
+        if(hoursString.length ==1 )(hoursString = " " + hoursString)
+
+        return hoursString + ":" + minutesString + " " + AMPM; 
+    }
+
+</script>
