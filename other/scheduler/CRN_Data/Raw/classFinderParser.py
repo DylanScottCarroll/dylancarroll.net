@@ -132,8 +132,9 @@ def tupleToSaveString(dataTuple):
 
 if __name__ == "__main__":
     #Read the html text from the file
-    f = open("Winter_2022_Classes.html", "r")
-    allText = f.read().replace("\n", "")
+    f = open("Spring_2022_Classes.html", "r", encoding="utf8")
+    allText = f.read()
+    allText = allText.replace("\n", "")
     f.close()
 
     #Create the soup object
