@@ -107,6 +107,8 @@ permalink: /empty_classrooms
 <script>
 
     const buildingMap = new Map();
+    const buildingLocattionMap = new Map();
+
     const weekdays = ["m", "t", "w", "r", "f", "s", "s"] 
 
     class Section{
@@ -129,6 +131,7 @@ permalink: /empty_classrooms
 
     function on_load(){
         importData()
+        importCoordinates()
     }
 
     function importData(){
@@ -173,6 +176,25 @@ permalink: /empty_classrooms
             option.value = buildings[i]
 
             selector.appendChild(option);
+        }
+    }
+
+    function importCoordinates(){
+        url = "https://www.dylancarroll.net/other/empty_classrooms/map_locations.txt"
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => blob.text())
+            .then(function(text) {extractCoordinates(text)} );
+    }
+
+    function extractCoordinates(text){
+        let buildings = text.split("\n");
+
+        for(let i = 0; i < buildings.length; i++){
+            let split = buildings.split(",")
+            
+            buildingLocattionMap.set(split[0], new Array(parseInt(split[1]), parseInt(split[2])) )
+
         }
     }
 
@@ -223,7 +245,13 @@ permalink: /empty_classrooms
 
     }
 
-    
+    function update(){
+        var ctx = document.getElementById("DrawCanvas").getContext("2d");
+        
+        for(const building of buildingLocattionMap.keys()){
+            buildingLocattionMap.get(building)
+        }
+        requestAnimationFrame(update) 
 
     function timeToMins(time){
         if(time == ""){
