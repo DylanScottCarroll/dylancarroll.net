@@ -197,7 +197,14 @@ permalink: /other/scheduler
                         <tbody id="CourseTableBody">
                         <tr><td>
                             <div class="border" style="line-height: 0pt;"> 
-                                <div align="center">
+                                <input class="act" value="X" type="button"
+                                    style="width: 20px; height: 20px; padding: 0pt 0pt;   font-size: 10pt;
+                                    vertical-align:middle; margin-left: 20px; margin-top: 20px;"
+                                    onclick="removeCourse(this)">
+                                
+                                <div align="center" style="margin-top: -35px;">
+                                    
+                                        
                                     <h3 class="inline" style="line-height: 0pt;">Course</h3>
 
                                     <span style="white-space: nowrap;"> 
@@ -252,8 +259,10 @@ permalink: /other/scheduler
                                     <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
                                     
                                     <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 100pt; margin-left: 12pt;">
                                     </span>
+
+                                    
 
                                 </div>
                             </div>
@@ -266,7 +275,7 @@ permalink: /other/scheduler
 
                     &nbsp;
                     <div align=center style="margin-left: auto; margin-right: auto; display: block;">
-                        <input class="act" type="button" onclick="removeCourse()" value="Remove Course">
+                        <input class="act" type="button" onclick="removeCourse(null)" value="Remove Course">
                         <input class="act" type="button" onclick="copyCourse()" value="Copy Course">
                         <input class="act" type="button" onclick="addCourse()" value="Add Course">
                     </div>
@@ -307,27 +316,25 @@ permalink: /other/scheduler
 <script>
     var blankCourseElement = `<tr><td>
                             <div class="border" style="line-height: 0pt;"> 
-                                <div align="center">
+                                <input class="act" value="X" type="button"
+                                    style="width: 20px; height: 20px; padding: 0pt 0pt;   font-size: 10pt;
+                                    vertical-align:middle; margin-left: 20px; margin-top: 20px;"
+                                    onclick="removeCourse(this)">
+                                <div align="center" style="margin-top: -35px;">
                                     <h3 class="inline" style="line-height: 0pt;">Course</h3>
-
                                     <span style="white-space: nowrap;"> 
                                         <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
                                         <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;"> 
                                     </span>
-
                                 </div>
-                                
-                                
                                 <div align="center">
                                     <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
-                                
                                     <p class="inline" style="margin-left: 12pt;">Shade:</p>
                                     <select>
                                         <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
-
                                     <p class="inline" style="margin-left: 12pt;">Color:</p>
                                     <select>
                                         <option value="0">Red</option>
@@ -340,31 +347,22 @@ permalink: /other/scheduler
                                         <option value="7">Grey</option>
                                     </select>
                                 </div>
-
                                 <div>
                                     <div align="center">
                                         <p class="inline">Start:</p> <input type="time">
-
                                         <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
-
                                         <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
                                     </div>
-
                                     <div align="center">
                                         <input type="button" value="Add Time Slot" onclick= "addTimeSlot(this)" style="margin-left: 6pt;">
                                         <input type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)" style="margin-left: 6pt;"> 
                                     </div>
-
-                                    
                                 </div>
-
                                 <div align="center">
                                     <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
-                                    
                                     <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 150pt; margin-left: 12pt;">
+                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 100pt; margin-left: 12pt;">
                                     </span>
-
                                 </div>
                             </div>
                         </td></tr>`;
@@ -552,7 +550,7 @@ permalink: /other/scheduler
     function fileSelected(){
         var file = document.getElementById("saveFile").files[0];
         var text = file.text();
-        text.then(function(text) { populateFields(text, true) })
+        text.then(function(text) { populateFields(text, true, false, true) })
     }
 
     function downloadSave(){
@@ -653,15 +651,21 @@ permalink: /other/scheduler
         }
     }
 
-    function removeCourse(){
-        if(courseCount>1){
-            var courseTableBody = document.getElementById("CourseTableBody");
-            var lastCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
-
-            lastCourse.remove();
-
-            courseCount -= 1;
+    function removeCourse(buttonObj){
+        var removeCourse;
+        
+        if(buttonObj == null){
+            if(courseCount>0){
+                var courseTableBody = document.getElementById("CourseTableBody");
+                removeCourse = courseTableBody.childNodes[courseTableBody.childNodes.length - 2];
+            }
         }
+        else{
+            removeCourse = buttonObj.parentElement.parentElement.parentElement;
+        }
+        
+        removeCourse.remove();
+        courseCount -= 1;
     }
 
     function copyCourse(){
@@ -826,13 +830,12 @@ permalink: /other/scheduler
 
         loadString = "\n" + loadString; 
 
-        populateFields(loadString, false, true);
+        populateFields(loadString, false, true, false);
     }
 
-    function populateFields(text, overwriteSettings, loadNameIntoGroup){
+    function populateFields(text, overwriteSettings, loadNameIntoGroup, removeExistingCourses){
         
         var courseList = text.split("\n");
-
 
         if(overwriteSettings){
             //Update Settings Field
@@ -855,11 +858,17 @@ permalink: /other/scheduler
             document.getElementById("mandatoryGroups").value = settings[6].replace(":", "\n");
         }
 
+        let totalNewCourses = courseList.length-1;
+        let oldCourseCount = courseCount;
+        if(!removeExistingCourses){
+            totalNewCourses += courseCount;
+        }
+
         //Get to the correct number of courses
-        while(courseCount < courseList.length-1){
+        while(courseCount < totalNewCourses-1){
             addCourse();
         }
-        while(courseCount > courseList.length-1){
+        while(courseCount > totalNewCourses-1){
             removeCourse();
         }
         
@@ -868,18 +877,20 @@ permalink: /other/scheduler
         var courseTableBody = document.getElementById("CourseTableBody");
         var courseTDs = courseTableBody.children;
 
-        for(let i = 0; i < courseList.length-1; i++){
-            var currentCourse = courseList[i+1].split(";");
+        console.log(courseTDs);
+
+        for(let i = oldCourseCount-1; i < courseList.length-1 + oldCourseCount; i++){
+            var currentCourse = courseList[i+1 - (oldCourseCount-1)].split(";");
             
             var borderDiv = courseTDs[i].children[0].children[0];
 
-            var div1 = borderDiv.children[0];
-            var div2 = borderDiv.children[1];
-            var div3 = borderDiv.children[2];
-            var div4 = borderDiv.children[3];
+            var div1 = borderDiv.children[1];
+            var div2 = borderDiv.children[2];
+            var div3 = borderDiv.children[3];
+            var div4 = borderDiv.children[4];
 
-            div1.children[1].children[1].value = currentCourse[1]; //crn
             div1.children[1].children[3].value = currentCourse[0]; //name
+            div1.children[1].children[1].value = currentCourse[1]; //crn
             div2.children[1].value = currentCourse[2]; //credits
             div2.children[3].value = currentCourse[3]; //shade
             div2.children[5].value = currentCourse[4]; //color
@@ -1023,10 +1034,10 @@ permalink: /other/scheduler
         for(let i = 0; i < courseTDs.length; i++){
             var borderDiv = courseTDs[i].children[0].children[0];
 
-            var div1 = borderDiv.children[0];
-            var div2 = borderDiv.children[1];
-            var div3 = borderDiv.children[2];
-            var div4 = borderDiv.children[3];
+            var div1 = borderDiv.children[1];
+            var div2 = borderDiv.children[2];
+            var div3 = borderDiv.children[3];
+            var div4 = borderDiv.children[4];
 
             var name = div1.children[1].children[1].value;
             var crn = div1.children[1].children[3].value;
