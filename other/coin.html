@@ -63,8 +63,8 @@ permalink: /other/coin
             <td>
                 <div id="BodyDiv">
 
-                    <h1 style="margin-left: 84pt">Toss a Coin!</h1>
-                    <canvas id="DrawCanvas" width="500px", height="500px" onclick="beginFlip()">
+                    <h1 style="margin: auto; padding: 10px; text-align: center;" id="Label">Toss a Coin!</h1>
+                    <canvas style="margin-left: auto;  margin-right: auto; display: block;" id="DrawCanvas" width="500px", height="500px" onclick="beginFlip()">
 
                         <p>Error, could not display javascript</p>
 
@@ -85,63 +85,108 @@ permalink: /other/coin
 </body>
 
 <script>
-    const SIZE = 100;
-    const MAXSIZE = 1.25
-    const FLIPPINGTIME = 200;
+    const SIZE = 75;
+    const SIZE_MULT = 2
+    const FLIP_TIME = 200;
+    const CENTER_OFFSET = 5;
+    const TEXT_SCALE = 0.8;
 
-    const MINFLIPS = 5;
-    const FLIPRANGE = 6;
+    const MIN_FLIPS = 3;
+    const MAX_FLIPS = 6;
     var center = 500 - 250
 
     
     var canvas = document.getElementById("DrawCanvas");
     var ctx = canvas.getContext("2d");
 
-    var dt = 0;
-    var t = 2*Math.PI;
-    var flipDistance = 2*Math.PI;
+    var last_angle = 0
+    var target_angle = 0;
+    var flip_progress = 0;
 
-    draw(t);
+    draw(flip_progress);
     update(ctx);
     beginFlip()
 
     function beginFlip(){
-        t = 0
-        flipDistance = Math.floor(Math.random()*FLIPRANGE + MINFLIPS) * Math.PI;
-
-        dt = flipDistance/FLIPPINGTIME;
-
+        flip_progress = 0;
+        target_angle += Math.floor(Math.random()*(MAX_FLIPS - MIN_FLIPS) + MIN_FLIPS+1) * Math.PI;
+        document.getElementById("Label").innerText = "Tossing a coin!";
     }
 
     function update(){
-        if(t < flipDistance){
-            draw(t)
-            t += dt;
+        if(flip_progress < FLIP_TIME){
+            
+            draw(flip_progress);
+            flip_progress ++;
         }
         else{
-            t = flipDistance;
+            flip_progress = FLIP_TIME;
+            last_angle=target_angle;
+            document.getElementById("Label").innerText = Math.cos(target_angle)>=0 ? "Heads!" : "Tails!";
         }
 
         requestAnimationFrame(update)
     }
 
-    function draw(t){
+    function draw(flip_progress){
         //fill the screen white
         ctx.fillStyle = "rgb(255, 255, 255)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
-        var color =  (Math.cos(t) < 0) ? "rgb(0, 128, 255)" : "rgb(0, 192, 255)";
+        var t = flip_progress/FLIP_TIME;
+        var current_angle = last_angle*(1 - t) + target_angle*(t);
         
-        var currentSize = SIZE * (Math.sin(Math.PI* (t/flipDistance) )*MAXSIZE + 1)
-        var coinWidth = Math.floor(Math.abs(Math.cos(t) * currentSize));
+        
+        var currentSize = (4*t - 4*t*t) * SIZE*SIZE_MULT + SIZE;
+        var coinWidth = Math.floor(Math.abs(Math.cos(current_angle) * currentSize));
         
 
-        console.log(t/flipDistance, currentSize);
+        //Draw the walls of the coin
+        let color1 = "rgb(0, 160, 255)"
+        let color2 =  Math.cos(current_angle)>=0 ? "rgb(0, 128, 255)" : "rgb(0, 192, 255)";
 
-        ctx.fillStyle = color;
+        let current_offset = Math.abs(Math.sin(current_angle)*CENTER_OFFSET) *  (Math.tan(current_angle)>=0 ? -1 : 1) * ((4*t - 4*t*t)*SIZE_MULT + 1);
+
+
+        ctx.fillStyle = color1;
         ctx.beginPath();
-        ctx.ellipse(center, center, coinWidth, currentSize, 0, 0, 2 * Math.PI);
+        ctx.ellipse(center - current_offset , center, coinWidth, currentSize, 0, 0, 2 * Math.PI);
         ctx.fill()
+
+        ctx.fillStyle = color1;
+        ctx.fillRect(center-current_offset, center-currentSize, current_offset*2, currentSize*2);
+
+        ctx.fillStyle = color2;
+        ctx.beginPath();
+        ctx.ellipse(center+current_offset, center, coinWidth, currentSize, 0, 0, 2 * Math.PI);
+        ctx.fill()
+
+
+        //Draw the heads/tails text
+        
+        let fac = 5; 
+
+        let text = Math.cos(current_angle)>=0 ? "Heads" : "Tails";
+        
+
+        var temp = document.createElement('canvas');
+        oc = temp.getContext('2d');
+       
+        temp.width = (Math.cos(current_angle)>=0 ? 200 : 140)*fac;
+        temp.height = 50*fac;
+        
+        oc.fillStyle = Math.cos(current_angle)<0 ? "rgb(0, 128, 255)" : "rgb(0, 192, 255)";
+        
+        oc.font = (50*fac) +  "pt Arial";
+        oc.fillText(text, 10, temp.height-5);
+
+        let text_width = (TEXT_SCALE*coinWidth) * 2;
+        let text_height= (TEXT_SCALE*currentSize) * (temp.height/temp.width) * 2;
+        let text_x = center+current_offset - text_width/2;
+        let text_y =  center - text_height/2;
+
+        ctx.drawImage(temp, 0, 0, temp.width, temp.height, text_x, text_y, text_width, text_height);
+        temp.remove();
     }
 </script>
 
