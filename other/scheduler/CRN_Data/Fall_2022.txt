@@ -1,0 +1,2789 @@
+~40001;ACCT 240;4;0;0;840;950;tr;;Hao, Yamin
+~40003;ACCT 240;4;0;0;600;710;mw;;Dolar, Burak
+~40004;ACCT 240;4;0;0;720;830;mw;;Dales, Ryan
+~40005;ACCT 245;4;0;0;840;950;tr;;Dales, Ryan
+~40006;ACCT 245;4;0;0;600;710;tr;;Liu, Zander
+~40397;ACCT 245;4;0;0;600;710;mw;;Smith, Steve
+~42391;ACCT 321;4;0;0;600;710;mw;;Drum, Dawna Marie
+~40007;ACCT 331;4;0;0;840;950;tr;;Mann, Ann Renee
+~40008;ACCT 341;4;0;0;720;830;mw;;Li, Shuo
+~40009;ACCT 341;4;0;0;840;950;mw;;Li, Shuo
+~40010;ACCT 342;4;0;0;600;710;tr;;Chen, Hanmei
+~40637;ACCT 343;4;0;0;480;590;mw;;Moore, Jared Allen
+~40011;ACCT 375;4;0;0;720;830;mw;;Singleton, Ron
+~42199;ACCT 421;4;0;0;480;590;mw;;Drum, Dawna Marie
+~40708;ACCT 435;4;0;0;720;830;mw;;Taylor, Audrey G.
+~41579;ACCT 441;4;0;0;840;950;tr;;Chen, Hanmei
+~42614;ACCT 447;4;0;0;720;830;tr;;Okinaka, Mark Yutaka
+~40638;ACCT 461;4;0;0;600;710;tr;;Hao, Yamin
+~40188;ACCT 470;4;0;0;480;590;tr;;Newman, Shawn T.
+~42392;ACCT 477;4;0;0;840;950;mw;;Moore, Jared Allen
+~44073;ACCT 484;4;0;0;600;710;mw;;Singleton, Ron
+~40324;ACCT 490;1;0;0;;;;;Taylor, Audrey G.
+~40423;ACCT 490;2;0;0;;;;;Taylor, Audrey G.
+~44075;ACCT 491;0;0;0;;;;;Smith, Steve
+~41915;AHE 518;4;0;0;1080;1310;t;;Goto, Stan
+~41510;AHE 577;4;0;0;1080;1310;m;;Goto, Stan
+~44122;AHE 581;4;0;0;1080;1310;r;;Cuban, Sondra
+~41371;AHE 588;4;0;0;1080;1310;w;;Goto, Stan
+~43096;AMST 202;4;0;0;660;770;mw;;Staff
+~43084;AMST 203;4;0;0;480;590;tr;;Gutierrez Najera, Lourdes
+~42826;AMST 204;4;0;0;600;710;mw;;Takagi, Midori
+~42068;AMST 242;4;0;0;900;1010;mw;;Spira, Tamara Lea
+~43085;AMST 252;4;0;0;780;890;mw;;Elia, Nada
+~41890;AMST 301;4;0;0;540;650;mw;;Staff
+~43407;AMST 301;4;0;0;660;770;tr;;Sisay, Brukab
+~44135;AMST 397K;4;0;0;840;950;tr;;Sisay, Brukab
+~42503;AMST 464;4;0;0;600;710;tr;;Ferreras-Stone, Jessica D.
+~43426;ANTH 102;5;0;0;870;950;mwf;;Rollins, Alyson Marie
+~43446;ANTH 102;5;0;0;;;;;Rollins, Alyson Marie
+~41534;ANTH 201;5;0;0;600;680;mwf;;Shepard, Michael Andrew
+~44267;ANTH 201;5;0;0;;;;;Shepard, Michael Andrew
+~40496;ANTH 210;5;0;0;780;860;mwf;;Koetje, Todd A.
+~42174;ANTH 210;5;0;0;690;770;mwf;;Ek, Jerry
+~41421;ANTH 215;5;0;0;510;590;mwf;;Rollins, Alyson Marie
+~41422;ANTH 215;5;0;0;510;590;mwf;;Rollins, Alyson Marie
+~41423;ANTH 215;5;0;0;510;590;mwf;;Rollins, Alyson Marie
+~42084;ANTH 215;5;0;0;540;680;tr;;Monson, Tesla A.
+~42125;ANTH 215;5;0;0;540;680;tr;;Monson, Tesla A.
+~42126;ANTH 215;5;0;0;540;680;tr;;Monson, Tesla A.
+~40092;ANTH 247;5;0;0;600;680;mwf;;Pine, Judith M.S.
+~41746;ANTH 247;5;0;0;600;680;mwf;;Pine, Judith M.S.
+~40542;ANTH 301;5;0;0;780;860;mwf;;Shepard, Michael Andrew
+~43009;ANTH 303;5;0;0;780;860;mwf;;Pine, Judith M.S.
+~43010;ANTH 335;5;0;0;870;950;mwf;;Ek, Jerry
+~43448;ANTH 366;5;0;0;;;;;Coulet du Gard, Dominique Renee
+~43013;ANTH 406;5;0;0;600;710;tr;;Ek, Jerry
+~40157;ANTH 410;5;0;0;600;680;mwf;;Koetje, Todd A.
+~43014;ANTH 420;5;0;0;840;980;tr;;Monson, Tesla A.
+~42861;ANTH 456;4;0;0;900;1010;tr;;Young, Kathleen
+~40728;ANTH 469;0;0;0;;;;;Pine, Judith M.S.
+~40613;ANTH 470;0;0;0;;;;;Pine, Judith M.S.
+~41709;ANTH 479;0;0;0;;;;;Pine, Judith M.S.
+~44146;ANTH 490;5;0;0;600;710;tr;;Baloy, Natalie JK
+~40620;ANTH 496;1;0;0;;;;;Koetje, Todd A.
+~41301;ANTH 496;1;0;0;;;;;Baloy, Natalie JK
+~41387;ANTH 496;1;0;0;;;;;Pine, Judith M.S.
+~41811;ANTH 496;1;0;0;;;;;Young, Kathleen
+~43463;ANTH 496;1;0;0;;;;;Bruna, Sean Patrick
+~42085;ANTH 502;5;0;0;780;920;tr;;Bruna, Sean Patrick
+~43380;ANTH 506;5;0;0;600;710;tr;;Ek, Jerry
+~42674;ANTH 510;5;0;0;600;680;mwf;;Koetje, Todd A.
+~43016;ANTH 520;5;0;0;840;980;tr;;Monson, Tesla A.
+~41535;ANTH 585;2;0;0;480;590;t;;Bruna, Sean Patrick
+~40093;ANTH 690;0;0;0;;;;;Bruna, Sean Patrick
+~40228;ANTH 699;2;0;0;;;;;Patrick, David L.
+~40586;ARAB 101;5;0;0;690;770;mwf;;Hussein Abdelbaki, Tamer
+~40587;ARAB 101;5;0;0;780;860;mwf;;Hussein Abdelbaki, Tamer
+~40630;ARAB 201;5;0;0;870;950;mwf;;Hussein Abdelbaki, Tamer
+~41668;ART 109;3;0;0;;;;;Gour, Pierre Leon
+~41669;ART 110;5;0;0;920;1080;tr;;Bernhardt, Paul
+~42800;ART 111;5;0;0;540;700;mw;;Nguyen, Vian Mai
+~42130;ART 120;5;0;0;540;700;tr;;Myers, Margot
+~43864;ART 140;5;0;0;920;1080;mw;;Anable, Jennifer Diane
+~43019;ART 170;5;0;0;;;;;Ollestad, Dana A.
+~44244;ART 170;5;0;0;;;;;Ollestad, Dana A.
+~42689;ART 230;5;0;0;540;700;tr;;Kelly, Ryan Wilson
+~43020;ART 280;5;0;0;540;700;mw;;Petrenko, Sasha
+~40171;ART 300;0;0;0;;;;;Staff
+~41617;ART 302;0;0;0;;;;;Staff
+~42716;ART 302;0;0;0;;;;;Amundson, Garth
+~42717;ART 302;0;0;0;;;;;Camlin, Cynthia E.
+~42718;ART 302;0;0;0;;;;;Gour, Pierre Leon
+~42719;ART 302;0;0;0;;;;;Turner, Lisa Michelle
+~42720;ART 302;0;0;0;;;;;Petrenko, Sasha
+~42721;ART 302;0;0;0;;;;;Kelly, Ryan Wilson
+~42722;ART 302;0;0;0;;;;;Jaye, Cara E.
+~42723;ART 302;0;0;0;;;;;Purdue, Seiko
+~42724;ART 302;0;0;0;;;;;Vargas, Chris
+~43021;ART 303;5;0;0;730;890;tr;;Bernhardt, Paul
+~42388;ART 304;5;0;0;540;700;tr;;Hartshorne, Christopher Andrew
+~42517;ART 316;0;0;0;;;;;Staff
+~43022;ART 328;5;0;0;730;890;mw;;Petrenko, Sasha
+~43869;ART 337;0;0;0;540;700;mw;;Camlin, Cynthia E.
+~41367;ART 340;5;0;0;730;890;tr;;Kelly, Ryan Wilson
+~43872;ART 351;5;0;0;920;1080;tr;;Hartshorne, Christopher Andrew
+~43870;ART 360;5;0;0;540;700;tr;;Purdue, Seiko
+~43871;ART 362;5;0;0;730;890;tr;;Purdue, Seiko
+~41903;ART 370;5;0;0;920;1080;mw;;Amundson, Garth
+~42390;ART 398;3;0;0;600;680;tr;;Staff
+~41369;ART 400;0;0;0;;;;;Staff
+~41218;ART 492;3;0;0;;;;;Gour, Pierre Leon
+~42511;ART 494;5;0;0;730;890;mw;;Camlin, Cynthia E.
+~42695;ART 495;5;0;0;730;890;mw;;Amundson, Garth
+~41801;ART 496A;2;0;0;920;1010;mw;;Gour, Pierre Leon
+~43850;A/HI 201;3;0;0;;;;;Thomas, Shelley Falk
+~43025;A/HI 230;3;0;0;;;;;Berzal de Dios, Jimena Ines
+~43852;A/HI 241;3;0;0;840;920;tr;;Staff
+~43854;A/HI 270;3;0;0;780;860;mw;;Sapin, Julia Elizabeth
+~40745;A/HI 275;5;0;0;780;890;tr;;Kerman, Monique Michelle Fowler Paul
+~40168;A/HI 300;0;0;0;;;;;Staff
+~43857;A/HI 301;5;0;0;600;680;mw;;Staff
+~42728;A/HI 302;0;0;0;;;;;Berzal de Dios, Jimena Ines
+~42729;A/HI 302;0;0;0;;;;;Kerman, Monique Michelle Fowler Paul
+~43856;A/HI 302;0;0;0;;;;;Sapin, Julia Elizabeth
+~40170;A/HI 305;0;0;0;960;1020;m;;Staff
+~40435;A/HI 306;0;0;0;;;;;Camlin, Cynthia E.
+~43858;A/HI 335;5;0;0;900;1010;mw;;Berzal de Dios, Jimena Ines
+~43859;A/HI 337;0;0;0;600;710;tr;;Kerman, Monique Michelle Fowler Paul
+~40169;A/HI 400;0;0;0;;;;;Staff
+~43860;A/HI 450;5;0;0;600;710;mw;;Sapin, Julia Elizabeth
+~42715;A/HI 489;5;0;0;780;890;mw;;Podesva, Kristina
+~41808;AECI 301;4;0;0;960;1070;mw;;Senger, Lucas G.
+~41815;AECI 405;4;0;0;840;950;mw;;Senger, Lucas G.
+~42079;ASTR 103;4;0;0;780;830;mtwf;;Rines, Ken
+~41694;ASTR 300;0;0;0;;;;;Staff
+~40329;ASTR 315;3;0;0;840;915;tr;;Boujibar, Asmaa
+~42736;BNS 300;0;0;0;;;;;Staff
+~43005;BNS 301;5;0;0;600;680;mwf;;Jantzen, Kelly Joseph
+~43006;BNS 302;5;0;0;600;680;mwf;;Rose, Jackie
+~42183;BNS 305;5;0;0;780;860;mwf;;Carroll, Jeff
+~42739;BNS 328;4;0;0;480;710;r;;Mana, Mike
+~42737;BNS 400;0;0;0;;;;;Staff
+~42741;BNS 428;4;0;0;780;1010;t;;Kaplan, Josh
+~41466;BIOL 101;4;0;0;510:600;590:710;tr:t;;Connell, Georgianne Leana
+~41467;BIOL 101;4;0;0;510:720;590:830;tr:t;;Connell, Georgianne Leana
+~41468;BIOL 101;4;0;0;510:840;590:950;tr:t;;Connell, Georgianne Leana
+~41469;BIOL 101;4;0;0;510:600;590:710;tr:r;;Connell, Georgianne Leana
+~41470;BIOL 101;4;0;0;510:720;590:830;tr:r;;Connell, Georgianne Leana
+~41471;BIOL 101;4;0;0;510:840;590:950;tr:r;;Connell, Georgianne Leana
+~41472;BIOL 101;4;0;0;660:840;740:950;tr:t;;Staff
+~41473;BIOL 101;4;0;0;660:720;740:830;tr:w;;Staff
+~41474;BIOL 101;4;0;0;660:840;740:950;tr:w;;Staff
+~41475;BIOL 101;4;0;0;660:840;740:950;tr:r;;Staff
+~41476;BIOL 101;4;0;0;660:600;740:710;tr:f;;Staff
+~41477;BIOL 101;4;0;0;660:720;740:830;tr:f;;Staff
+~41478;BIOL 101;4;0;0;840:600;920:710;tr:t;;Connell, Georgianne Leana
+~41479;BIOL 101;4;0;0;840:600;920:710;tr:w;;Connell, Georgianne Leana
+~41480;BIOL 101;4;0;0;840:720;920:830;tr:w;;Connell, Georgianne Leana
+~41481;BIOL 101;4;0;0;840:600;920:710;tr:r;;Connell, Georgianne Leana
+~44130;BIOL 101;4;0;0;840:720;920:830;tr:f;;Connell, Georgianne Leana
+~44131;BIOL 101;4;0;0;840:840;920:950;tr:f;;Connell, Georgianne Leana
+~44270;BIOL 197E;1;0;0;720;770;m;;Olson, Brady
+~41500;BIOL 204;5;0;0;510:480;590:650;mwf:t;;Schwarz, Carrie Anne
+~41714;BIOL 204;5;0;0;510:660;590:830;mwf:t;;Schwarz, Carrie Anne
+~41715;BIOL 204;5;0;0;510:480;590:650;mwf:r;;Schwarz, Carrie Anne
+~41716;BIOL 204;5;0;0;510:660;590:830;mwf:r;;Schwarz, Carrie Anne
+~41717;BIOL 204;5;0;0;690:840;770:1010;mwf:t;;van Hees, Dan
+~41718;BIOL 204;5;0;0;690:840;770:1010;mwf:w;;van Hees, Dan
+~41719;BIOL 204;5;0;0;690:840;770:1010;mwf:r;;van Hees, Dan
+~41720;BIOL 204;5;0;0;690:840;770:1010;mwf:f;;van Hees, Dan
+~41721;BIOL 204;5;0;0;870:480;950:650;mwf:w;;Peterson, Merrill Alan
+~41722;BIOL 204;5;0;0;870:660;950:830;mwf:w;;Peterson, Merrill Alan
+~41723;BIOL 204;5;0;0;870:480;950:650;mwf:f;;Peterson, Merrill Alan
+~41724;BIOL 204;5;0;0;870:660;950:830;mwf:f;;Peterson, Merrill Alan
+~40432;BIOL 205;5;0;0;510:480;590:650;mwf:t;;Pillitteri, Lynn J.
+~40433;BIOL 205;5;0;0;510:660;590:830;mwf:t;;Pillitteri, Lynn J.
+~40434;BIOL 205;5;0;0;510:660;590:830;mwf:w;;Pillitteri, Lynn J.
+~40838;BIOL 205;5;0;0;600:840;680:1010;mwf:w;;Serrano-Moreno, Jose R.
+~40839;BIOL 205;5;0;0;600:840;680:1010;mwf:t;;Serrano-Moreno, Jose R.
+~40920;BIOL 205;5;0;0;600:840;680:1010;mwf:r;;Serrano-Moreno, Jose R.
+~41198;BIOL 205;5;0;0;510:480;590:650;mwf:r;;Pillitteri, Lynn J.
+~41643;BIOL 205;5;0;0;600:720;680:890;mwf:f;;Serrano-Moreno, Jose R.
+~40389;BIOL 206;5;0;0;600:660;680:830;mwf:t;;Binney, Elizabeth
+~40390;BIOL 206;5;0;0;780:840;860:1010;mwf:t;;Singh-Cundy, Anu
+~40391;BIOL 206;5;0;0;480:600;650:680;r:mwf;;Binney, Elizabeth
+~41194;BIOL 206;5;0;0;780:600;950:680;w:mwf;;Binney, Elizabeth
+~41957;BIOL 206;5;0;0;660:600;830:680;r:mwf;;Binney, Elizabeth
+~41998;BIOL 206;5;0;0;780:840;860:1010;mwf:r;;Singh-Cundy, Anu
+~42920;BIOL 206;5;0;0;780:540;860:710;mwf:w;;Singh-Cundy, Anu
+~40181;BIOL 300;0;0;0;;;;;Staff
+~40541;BIOL 321;4;0;0;690;770;mwf;;McDonald, John Howard
+~42131;BIOL 321;4;0;0;510;590;mwf;;Wilkinson, George Albert
+~42776;BIOL 321;4;0;0;870;950;mwf;;Schulze, Sandra
+~41976;BIOL 322;4;0;0;780:600;830:770;m:tr;;Pollard, Dan
+~42777;BIOL 322;4;0;0;780:840;830:1010;m:tr;;Wang, Adrienne Marie
+~40537;BIOL 323;4;0;0;780;860;mwf;;Wilkinson, George Albert
+~40489;BIOL 324;4;0;0;720:840;770:1010;m:tr;;Staff
+~40538;BIOL 324;4;0;0;720:840;770:1010;m:wf;;Staff
+~41922;BIOL 324;4;0;0;720:600;770:770;m:tr;;Galati, Nick
+~42538;BIOL 324;4;0;0;720:600;770:770;m:wf;;Dahlberg, Lina
+~40145;BIOL 325;4;0;0;600;680;mwf;;Olson, Brady
+~40412;BIOL 326;3;0;0;540:780;590:1010;t:r;;Hooper, David U.
+~42039;BIOL 326;3;0;0;540:780;590:1010;t:t;;Hooper, David U.
+~42778;BIOL 340;5;0;0;870:780;950:860;mw:f;;Zinkgraf, Matthew Steven
+~42779;BIOL 340;5;0;0;870:870;950:950;mw:f;;Zinkgraf, Matthew Steven
+~40581;BIOL 345;4;0;0;480;590;tr;;Brodhagen, Marion L.
+~40582;BIOL 346;4;0;0;900:600;950:770;m:tr;;Moyer, Craig L.
+~40601;BIOL 346;4;0;0;900:840;950:1010;m:tr;;Moyer, Craig L.
+~40146;BIOL 348;5;0;0;720:480;770:590;mwf:tr;;Scheer, Jaci
+~40147;BIOL 348;5;0;0;720:600;770:710;mwf:tr;;Scheer, Jaci
+~40148;BIOL 348;5;0;0;720:720;770:830;mwf:tr;;Scheer, Jaci
+~40149;BIOL 348;5;0;0;720:840;770:950;mwf:tr;;Scheer, Jaci
+~40392;BIOL 348;5;0;0;720:960;770:1070;mwf:tr;;Scheer, Jaci
+~41222;BIOL 349;5;0;0;660:480;740:710;tr:w;;Freedman, Gregory
+~41223;BIOL 349;5;0;0;660:780;740:1010;tr:w;;Freedman, Gregory
+~42439;BIOL 349;5;0;0;660:480;740:710;tr:f;;Freedman, Gregory
+~42440;BIOL 349;5;0;0;660:780;740:1010;tr:f;;Freedman, Gregory
+~40322;BIOL 395;0;0;0;900;950;w;;Acevedo-Gutierrez, Alejandro
+~40954;BIOL 395;0;0;0;;;;;Brodhagen, Marion L.
+~40955;BIOL 395;0;0;0;;;;;DeChaine, Eric Gerald
+~40956;BIOL 395;0;0;0;;;;;Donovan, Deborah A.
+~40957;BIOL 395;0;0;0;;;;;Hooper, David U.
+~40958;BIOL 395;0;0;0;;;;;Miner, Benjamin Gregory
+~40959;BIOL 395;0;0;0;;;;;Moyer, Craig L.
+~40960;BIOL 395;0;0;0;;;;;Peterson, Merrill Alan
+~40961;BIOL 395;0;0;0;;;;;Pillitteri, Lynn J.
+~40962;BIOL 395;0;0;0;;;;;Schulze, Sandra
+~40963;BIOL 395;0;0;0;;;;;Schwarz, Dietmar
+~40964;BIOL 395;0;0;0;;;;;Serrano-Moreno, Jose R.
+~40965;BIOL 395;0;0;0;;;;;Singh-Cundy, Anu
+~40966;BIOL 395;0;0;0;;;;;Cooper, W. James
+~40967;BIOL 395;0;0;0;;;;;Young, Jeff
+~41231;BIOL 395;0;0;0;;;;;Kodner, Robin B.
+~41385;BIOL 395;0;0;0;;;;;Arellano, Shawn M.
+~41393;BIOL 395;0;0;0;;;;;Dahlberg, Lina
+~41483;BIOL 395;0;0;0;;;;;Lee, Suzanne Rebecca
+~41484;BIOL 395;0;0;0;;;;;Pollard, Dan
+~41995;BIOL 395;0;0;0;;;;;Galati, Nick
+~42040;BIOL 395;0;0;0;;;;;Wang, Adrienne Marie
+~42041;BIOL 395;0;0;0;;;;;Zinkgraf, Matthew Steven
+~42530;BIOL 395;0;0;0;;;;;Olson, Brady
+~40150;BIOL 400;0;0;0;;;;;Staff
+~44268;BIOL 410;4;0;0;840;950;tr;;Shekelle, Myron Browne
+~43377;BIOL 424;3;0;0;900;980;tr;;Schwarz, Dietmar
+~40814;BIOL 432;4;0;0;690;770;mwf;;DeChaine, Eric Gerald
+~41228;BIOL 432;4;0;0;690;770;mwf;;DeChaine, Eric Gerald
+~40968;BIOL 444;1;0;0;960;1010;w;;Singh-Cundy, Anu
+~43217;BIOL 460;5;0;0;600:690;680:800;tr:tr;;Donovan, Deborah A.
+~43991;BIOL 480;4;0;0;780:780;830:950;m:wf;;Schwarz, Dietmar
+~40332;BIOL 494;0;0;0;;;;;Acevedo-Gutierrez, Alejandro
+~40970;BIOL 494;0;0;0;;;;;Brodhagen, Marion L.
+~40971;BIOL 494;0;0;0;;;;;DeChaine, Eric Gerald
+~40972;BIOL 494;0;0;0;;;;;Donovan, Deborah A.
+~40973;BIOL 494;0;0;0;;;;;Hooper, David U.
+~40975;BIOL 494;0;0;0;;;;;Miner, Benjamin Gregory
+~40976;BIOL 494;0;0;0;;;;;Moyer, Craig L.
+~40977;BIOL 494;0;0;0;;;;;Peterson, Merrill Alan
+~40978;BIOL 494;0;0;0;;;;;Pillitteri, Lynn J.
+~40979;BIOL 494;0;0;0;;;;;Schulze, Sandra
+~40980;BIOL 494;0;0;0;;;;;Schwarz, Dietmar
+~40981;BIOL 494;0;0;0;;;;;Serrano-Moreno, Jose R.
+~40982;BIOL 494;0;0;0;;;;;Singh-Cundy, Anu
+~40984;BIOL 494;0;0;0;;;;;Young, Jeff
+~41394;BIOL 494;0;0;0;;;;;Dahlberg, Lina
+~41501;BIOL 494;0;0;0;;;;;Pollard, Dan
+~41502;BIOL 494;0;0;0;;;;;Lee, Suzanne Rebecca
+~41616;BIOL 494;0;0;0;;;;;Arellano, Shawn M.
+~41996;BIOL 494;0;0;0;;;;;Galati, Nick
+~42042;BIOL 494;0;0;0;;;;;Wang, Adrienne Marie
+~42043;BIOL 494;0;0;0;;;;;Zinkgraf, Matthew Steven
+~42531;BIOL 494;0;0;0;;;;;Olson, Brady
+~40333;BIOL 495;0;0;0;;;;;Acevedo-Gutierrez, Alejandro
+~40986;BIOL 495;0;0;0;;;;;Brodhagen, Marion L.
+~40987;BIOL 495;0;0;0;;;;;DeChaine, Eric Gerald
+~40988;BIOL 495;0;0;0;;;;;Donovan, Deborah A.
+~40989;BIOL 495;0;0;0;;;;;Hooper, David U.
+~40991;BIOL 495;0;0;0;;;;;Miner, Benjamin Gregory
+~40992;BIOL 495;0;0;0;;;;;Moyer, Craig L.
+~40993;BIOL 495;0;0;0;;;;;Peterson, Merrill Alan
+~40994;BIOL 495;0;0;0;;;;;Pillitteri, Lynn J.
+~40995;BIOL 495;0;0;0;;;;;Schulze, Sandra
+~40996;BIOL 495;0;0;0;;;;;Schwarz, Dietmar
+~40997;BIOL 495;0;0;0;;;;;Serrano-Moreno, Jose R.
+~40998;BIOL 495;0;0;0;;;;;Singh-Cundy, Anu
+~40999;BIOL 495;0;0;0;;;;;Staff
+~41000;BIOL 495;0;0;0;;;;;Young, Jeff
+~41395;BIOL 495;0;0;0;;;;;Dahlberg, Lina
+~41503;BIOL 495;0;0;0;;;;;Lee, Suzanne Rebecca
+~41504;BIOL 495;0;0;0;;;;;Pollard, Dan
+~41817;BIOL 495;0;0;0;;;;;Arellano, Shawn M.
+~41997;BIOL 495;0;0;0;;;;;Galati, Nick
+~42044;BIOL 495;0;0;0;;;;;Wang, Adrienne Marie
+~42045;BIOL 495;0;0;0;;;;;Zinkgraf, Matthew Steven
+~42532;BIOL 495;0;0;0;;;;;Olson, Brady
+~44036;BIOL 495;0;0;0;;;;;Staff
+~40183;BIOL 496;0;0;0;;;;;Staff
+~44269;BIOL 497S;3;0;0;600;650;mwf;;Cooper, W. James
+~40151;BIOL 498;0;0;0;;;;;Staff
+~40221;BIOL 498;0;0;0;;;;;Connell, Georgianne Leana
+~40222;BIOL 498;0;0;0;;;;;Lapsansky, Janice Marie
+~41412;BIOL 498;0;0;0;;;;;Scheer, Jaci
+~40187;BIOL 500;0;0;0;;;;;Staff
+~42543;BIOL 520;3;0;0;1020;1100;w;;Hooper, David U.
+~42542;BIOL 521;1;0;0;900;950;m;;Donovan, Deborah A.
+~44138;BIOL 580;4;0;0;780:780;830:950;m:wf;;Schwarz, Dietmar
+~40152;BIOL 690;0;0;0;;;;;Acevedo-Gutierrez, Alejandro
+~41002;BIOL 690;0;0;0;;;;;Brodhagen, Marion L.
+~41003;BIOL 690;0;0;0;;;;;DeChaine, Eric Gerald
+~41004;BIOL 690;0;0;0;;;;;Donovan, Deborah A.
+~41005;BIOL 690;0;0;0;;;;;Hooper, David U.
+~41007;BIOL 690;0;0;0;;;;;Miner, Benjamin Gregory
+~41008;BIOL 690;0;0;0;;;;;Moyer, Craig L.
+~41009;BIOL 690;0;0;0;;;;;Peterson, Merrill Alan
+~41010;BIOL 690;0;0;0;;;;;Pillitteri, Lynn J.
+~41011;BIOL 690;0;0;0;;;;;Schulze, Sandra
+~41012;BIOL 690;0;0;0;;;;;Schwarz, Dietmar
+~41013;BIOL 690;0;0;0;;;;;Serrano-Moreno, Jose R.
+~41014;BIOL 690;0;0;0;;;;;Singh-Cundy, Anu
+~41015;BIOL 690;0;0;0;;;;;Staff
+~41016;BIOL 690;0;0;0;;;;;Young, Jeff
+~41233;BIOL 690;0;0;0;;;;;Kodner, Robin B.
+~41396;BIOL 690;0;0;0;;;;;Kodner, Robin B.
+~41505;BIOL 690;0;0;0;;;;;Lee, Suzanne Rebecca
+~41506;BIOL 690;0;0;0;;;;;Pollard, Dan
+~41664;BIOL 690;0;0;0;;;;;Strom, Suzanne L.
+~41816;BIOL 690;0;0;0;;;;;Dahlberg, Lina
+~42046;BIOL 690;0;0;0;;;;;Wang, Adrienne Marie
+~42047;BIOL 690;0;0;0;;;;;Zinkgraf, Matthew Steven
+~42250;BIOL 690;0;0;0;;;;;Arellano, Shawn M.
+~42251;BIOL 690;0;0;0;;;;;Olson, Brady
+~42886;BIOL 690;0;0;0;;;;;Galati, Nick
+~43504;BIOL 690;0;0;0;;;;;Cooper, W. James
+~40343;BIOL 699;2;0;0;;;;;Patrick, David L.
+~44088;BUS 310;1;0;0;540;590;t;;Staff
+~44089;BUS 310;1;0;0;600;650;f;;Staff
+~43992;C/AM 277;5;0;0;690;770;mwf;;Staff
+~43994;C/AM 302;0;0;0;870;950;mwf;;Staff
+~43120;C/AM 368;3;0;0;840;915;tr;;Baker, Mary Tuti
+~40200;C/AM 400;0;0;0;;;;;Staff
+~40070;C/AM 401;3;0;0;;;;;Keppie, Christina L.
+~40071;C/AM 402;3;0;0;;;;;Staff
+~43995;C/AM 441;4;0;0;720;830;tr;;Rossiter, David
+~41211;C/AM 444;0;0;0;;;;;Keppie, Christina L.
+~42086;CHEM 161;5;0;0;480:660;530:770;mtwf:t;;Staff
+~42087;CHEM 161;5;0;0;480:660;530:770;mtwf:t;;Staff
+~42088;CHEM 161;5;0;0;480:780;530:890;mtwf:w;;Staff
+~42089;CHEM 161;5;0;0;480:780;530:890;mtwf:w;;Staff
+~42090;CHEM 161;5;0;0;540:540;590:650;mwrf:t;;Staff
+~42091;CHEM 161;5;0;0;540:540;590:650;mwrf:t;;Staff
+~42092;CHEM 161;5;0;0;540:660;590:770;mwrf:r;;Staff
+~42093;CHEM 161;5;0;0;540:660;590:770;mwrf:r;;Staff
+~42094;CHEM 161;5;0;0;600:900;650:1010;mtwf:w;;Duffy, Erin
+~42095;CHEM 161;5;0;0;600:900;650:1010;mtwf:w;;Duffy, Erin
+~42096;CHEM 161;5;0;0;600:780;650:890;mtwf:r;;Duffy, Erin
+~42097;CHEM 161;5;0;0;600:780;650:890;mtwf:r;;Duffy, Erin
+~42098;CHEM 161;5;0;0;720:540;770:650;mwrf:m;;Clark, Catherine Dawne
+~42099;CHEM 161;5;0;0;720:540;770:650;mwrf:m;;Clark, Catherine Dawne
+~42100;CHEM 161;5;0;0;720:780;770:890;mwrf:t;;Clark, Catherine Dawne
+~42101;CHEM 161;5;0;0;720:780;770:890;mwrf:t;;Clark, Catherine Dawne
+~42102;CHEM 161;5;0;0;900:1020;950:1130;mtwf:r;;Staff
+~42103;CHEM 161;5;0;0;900:1020;950:1130;mtwf:r;;Staff
+~42104;CHEM 161;5;0;0;900:660;950:770;mtwf:w;;Staff
+~42105;CHEM 161;5;0;0;900:660;950:770;mtwf:w;;Staff
+~42106;CHEM 161;5;0;0;840:660;890:770;mtwf:m;;Staff
+~42107;CHEM 161;5;0;0;840:660;890:770;mtwf:m;;Staff
+~42108;CHEM 161;5;0;0;840:1020;890:1130;mtwf:w;;Staff
+~42109;CHEM 161;5;0;0;840:1020;890:1130;mtwf:w;;Staff
+~42110;CHEM 162;5;0;0;600:780;650:890;mtwf:m;;Scheuermann, Margaret
+~42111;CHEM 162;5;0;0;600:900;650:1010;mtwf:m;;Scheuermann, Margaret
+~42112;CHEM 162;5;0;0;600:1020;650:1130;mtwf:m;;Scheuermann, Margaret
+~42113;CHEM 162;5;0;0;600:900;650:1010;mtwf:t;;Scheuermann, Margaret
+~42114;CHEM 162;5;0;0;660:780;710:890;mwrf:m;;Staff
+~42115;CHEM 162;5;0;0;660:900;710:1010;mwrf:m;;Staff
+~42116;CHEM 162;5;0;0;660:1020;710:1130;mwrf:m;;Staff
+~42117;CHEM 162;5;0;0;660:900;710:1010;mwrf:t;;Staff
+~42118;CHEM 163;5;0;0;480:660;530:830;mtwf:t;;Staff
+~42119;CHEM 163;5;0;0;480:840;530:1010;mtwf:w;;Staff
+~42120;CHEM 163;5;0;0;480:660;530:830;mtwf:r;;Staff
+~42121;CHEM 163;5;0;0;540:840;590:1010;mtwf:t;;Staff
+~42122;CHEM 163;5;0;0;540:660;590:830;mtwf:w;;Staff
+~42123;CHEM 163;5;0;0;540:840;590:1010;mtwf:r;;Staff
+~42124;CHEM 175;5;0;0;600:720;650:890;mtwf:w;;Gilbertson, John D.
+~41235;CHEM 201;0;0;0;;;;;Larsen, Mike
+~40072;CHEM 251;5;0;0;480:1020;530:1190;mtwf:m;;Staff
+~40073;CHEM 251;5;0;0;480:840;530:1010;mtwf:w;;Staff
+~40074;CHEM 251;5;0;0;480:480;530:650;mtwf:r;;Staff
+~41179;CHEM 251;5;0;0;540:660;590:830;mtwf:w;;Staff
+~41180;CHEM 251;5;0;0;540:660;590:830;mtwf:m;;Staff
+~41181;CHEM 251;5;0;0;540:840;590:1010;mtwf:m;;Staff
+~41236;CHEM 301;0;0;0;;;;;Larsen, Mike
+~41877;CHEM 333;5;0;0;720:840;795:1010;tr:tr;;Lemkau, Karin Lydia
+~40075;CHEM 351;4;0;0;540;590;mtwf;;Vyvyan, James R.
+~40076;CHEM 351;4;0;0;660;710;mtwf;;Larsen, Mike
+~41878;CHEM 351;4;0;0;600;650;mtwf;;Antos, John Matthew
+~43203;CHEM 351;4;0;0;720;770;mtwf;;Staff
+~41683;CHEM 352;4;0;0;540;590;mtwf;;Staff
+~40636;CHEM 353;3;0;0;600;650;mwf;;Staff
+~40782;CHEM 355;4;0;0;840:780;1010:830;tr:r;;Murphy, Amanda Ruth
+~40783;CHEM 356;2;0;0;660:600;830:650;r:r;;Antos, John Matthew
+~41684;CHEM 375;4;0;0;720;770;mwrf;;Staff
+~43897;CHEM 381;3;0;0;720;770;mwf;;O'Neil, Gregory William
+~41173;CHEM 401;0;0;0;;;;;Vyvyan, James R.
+~41261;CHEM 405;1;0;0;;;;;Staff
+~42946;CHEM 425R;3;0;0;660;735;tr;;Bussell, Mark
+~40077;CHEM 434;3;0;0;660;710;mwf;;Bao, Ying
+~40784;CHEM 436;2;0;0;540:840;590:1010;r:t;;Enright, Michael
+~40785;CHEM 436;2;0;0;540:840;590:1010;r:w;;Bao, Ying
+~41681;CHEM 454;5;0;0;720;830;tr;;O'Neil, Gregory William
+~40635;CHEM 461;4;0;0;600;650;mtwf;;Berger, Robert F.
+~43899;CHEM 463;3;0;0;480;530;mwf;;Kowalczyk, Tim
+~41582;CHEM 466;4;0;0;510;590;mwf;;McCarty, Jay
+~40078;CHEM 471;4;0;0;510;590;mwf;;Anthony-Cahill, Spencer J.
+~40439;CHEM 471;4;0;0;510;590;mwf;;Anthony-Cahill, Spencer J.
+~41674;CHEM 471;4;0;0;600;680;mwf;;Amacher, Jeanine Faye
+~41675;CHEM 471;4;0;0;600;680;mwf;;Amacher, Jeanine Faye
+~43900;CHEM 473;3;0;0;600;650;mwf;;Spiegel, P. Clint
+~40779;CHEM 474;5;0;0;840:780;890:1010;f:mw;;Smirnov, Serge
+~40780;CHEM 474;5;0;0;840:780;890:1010;f:tr;;Anthony-Cahill, Spencer J.
+~41139;CHEM 494;3;0;0;;;;;Staff
+~44293;CHEM 497H;3;0;0;720;770;mwf;;Amacher, Jeanine Faye
+~41140;CHEM 498;3;0;0;;;;;Staff
+~41264;CHEM 501;0;0;0;;;;;Staff
+~41265;CHEM 502;1;0;0;;;;;Staff
+~44157;CHEM 505;1;0;0;1020;1070;m;;Smirnov, Serge
+~41266;CHEM 510;0;0;0;;;;;Staff
+~41267;CHEM 511;0;0;0;;;;;Staff
+~41144;CHEM 534;3;0;0;660;710;mwf;;Bao, Ying
+~41146;CHEM 536;2;0;0;540;590;r;;Bao, Ying
+~41147;CHEM 536;2;0;0;540;590;f;;Bao, Ying
+~41682;CHEM 554;5;0;0;720;830;tr;;O'Neil, Gregory William
+~42947;CHEM 565;3;0;0;660;735;tr;;Bussell, Mark
+~41268;CHEM 595;1;0;0;900;980;f;;Emory, Steven R.
+~40421;CHEM 596;1;0;0;900;980;f;;Emory, Steven R.
+~44294;CHEM 597H;3;0;0;720;770;mwf;;Amacher, Jeanine Faye
+~41298;CHEM 690;0;0;0;;;;;Staff
+~41299;CHEM 694;0;0;0;;;;;Staff
+~41300;CHEM 699;2;0;0;;;;;Staff
+~40079;CHIN 101;5;0;0;600;650;mtwrf;;Su, Wenling
+~40080;CHIN 101;5;0;0;660;710;mtwrf;;Carter, Elizabeth Bennett
+~40081;CHIN 201;5;0;0;600;680;mwf;;Su, Wenling
+~40082;CHIN 301;5;0;0;780;860;mwf;;Wu, Julian Siyuan
+~41411;CHIN 401;5;0;0;870;950;mwf;;Carter, Elizabeth Bennett
+~40939;CHIN 425;2;0;0;;;;;Wu, Julian Siyuan
+~41603;CLST 350;5;0;0;510;590;mwf;;Stayskal, Byron
+~43884;CLST 450;0;0;0;780;910;mw;;Engelsing, Eduardo Marcant
+~40699;CD 381;3;0;0;600;650;mwf;;Dominguez, Tony
+~42544;CSEC 121;2;0;0;720;770;tr;;Raymond, Elizabeth Anne
+~42545;CSEC 121;2;0;0;780;830;tr;;Sandelin, Kate
+~42546;CSEC 121;2;0;0;840;890;tr;;Thomas, Paul Allen
+~42547;CSEC 121;2;0;0;900;950;tr;;Donovan, Deborah A.
+~40269;CSD 251;3;0;0;600;680;tr;;Evans, Kelli Jo
+~40270;CSD 352;5;0;0;540;590;mtwrf;;Evans, David L.
+~44137;CSD 356;4;0;0;840;950;tr;;Thistle, Jennifer Joy
+~40182;CSD 463;4;0;0;600;650;mtwf;;Sladen, Douglas Paul
+~43427;CSD 490;3;0;0;720;810;tr;;Brewer, Chung Hwa Lorraine
+~41642;CSD 491;2;0;0;;;;;Staff
+~42641;CSD 502;3;0;0;540;710;tr;;Moore, Heather
+~42176;CSD 505;1;0;0;480;530;w;;Staff
+~42367;CSD 507;0;0;0;;;;;Staff
+~43901;CSD 508;4;0;0;510;740;f;;Diedesch, Anna C.
+~42855;CSD 543;1;0;0;780;830;f;;Moore, Heather
+~40606;CSD 549;2;0;0;540;590;t;;Stephens, Lesley Elaine
+~42652;CSD 550;5;0;0;780;890;mw;;Evans, David L.
+~42856;CSD 551;4;0;0;780;890;tr;;Moore, Heather
+~40184;CSD 552;2;0;0;540;710;tr;;Stephens, Lesley Elaine
+~40185;CSD 558;0;0;0;720;770;r;;Stephens, Lesley Elaine
+~40186;CSD 559;2;0;0;;;;;Stephens, Lesley Elaine
+~41892;CSD 561;5;0;0;780;930;w;;Staff
+~41143;CSD 564;2;0;0;720;770;w;;Peters, Kimberly Ann
+~41893;CSD 566;3;0;0;780;950;r;;Diedesch, Anna C.
+~41894;CSD 568;2;0;0;720;770;t;;Staff
+~41895;CSD 570;4;0;0;780;950;t;;Staff
+~40734;CSD 580;2;0;0;780;890;m;;Burgess, Dawn
+~41891;CSD 585;4;0;0;780;890;tr;;Evans, Kelli Jo
+~42655;CSD 588;4;0;0;600;710;mw;;Thistle, Jennifer Joy
+~43902;CSD 590;3;0;0;780;950;w;;Peters, Kimberly Ann
+~42368;CSD 595;3;0;0;;;;;Theodoroff, Sarah M.
+~42668;CSD 596;4;0;0;;;;;Bennett, Megan Joanne
+~40226;CSD 690;0;0;0;;;;;Staff
+~42669;CSD 692;8;0;0;;;;;Bennett, Megan Joanne
+~40299;CSD 699;2;0;0;;;;;Patrick, David L.
+~40196;COMM 101;4;0;0;540;590;mwf;;Hays, Jennifer
+~40197;COMM 101;4;0;0;660;710;mwf;;Hays, Jennifer
+~40198;COMM 101;4;0;0;720;770;mwf;;Hays, Jennifer
+~40199;COMM 101;4;0;0;780;855;mw;;Gomez, Stephanie
+~43982;COMM 101;4;0;0;480;530;mwf;;Vohs, Rosemary Amanda Scott
+~43989;COMM 101;4;0;0;540;590;mwf;;Vohs, Rosemary Amanda Scott
+~41693;COMM 220;5;0;0;960;1100;tr;;Lind, Jason Fredrick
+~42768;COMM 220;5;0;0;600;710;tr;;Razzante, Robert John
+~44197;COMM 220;5;0;0;600;710;tr;;Staff
+~44212;COMM 220;5;0;0;960;1100;tr;;Lind, Jason Fredrick
+~40567;COMM 224;4;0;0;840;950;tr;;Staff
+~40513;COMM 225;4;0;0;720;820;tr;;Harvey, Korry Dennis
+~42769;COMM 228;5;0;0;1050;1130;mwf;;Daniels, Rita
+~42770;COMM 230;5;0;0;780;860;mwf;;Woods, Steven Gene
+~40040;COMM 235;4;0;0;480;580;tr;;Henman, Carter
+~40312;COMM 235;4;0;0;720;820;tr;;Henman, Carter
+~40436;COMM 235;4;0;0;840;940;tr;;Staff
+~40578;COMM 235;4;0;0;840;940;mw;;Harvey, Korry Dennis
+~40579;COMM 235;4;0;0;720;820;mw;;Harvey, Korry Dennis
+~41906;COMM 235;4;0;0;960;1070;tr;;Staff
+~40193;COMM 236;3;0;0;930;1040;mtwf;;Cram, Travis John
+~42172;COMM 240;5;0;0;510;590;mwf;;Erickson, Mary P A
+~42771;COMM 240;5;0;0;600;680;mwf;;Erickson, Mary P A
+~42208;COMM 260;5;0;0;720;830;tr;;Staff
+~42773;COMM 260;5;0;0;600;710;tr;;Perry, Tara Beatrice
+~41212;COMM 318;5;0;0;690;770;mwf;;Blietz, Diane
+~43115;COMM 318;5;0;0;870;950;mwf;;Blietz, Diane
+~43116;COMM 319;5;0;0;600;680;mwf;;Zhang, Zhengyu
+~44035;COMM 319;5;0;0;870;950;mwf;;Zhang, Zhengyu
+~41810;COMM 325;5;0;0;960;1070;tr;;Wang, Jianglong
+~42429;COMM 325;5;0;0;480;590;tr;;Razzante, Robert John
+~41905;COMM 327;5;0;0;840;950;tr;;Perry, Tara Beatrice
+~42173;COMM 330;5;0;0;600;710;tr;;Cram, Travis John
+~44037;COMM 331;3;0;0;660;710;mwf;;Vohs, Rosemary Amanda Scott
+~41832;COMM 350;5;0;0;1080;1220;mw;;Lind, Jason Fredrick
+~44038;COMM 350;5;0;0;1110;1250;tr;;Lind, Jason Fredrick
+~41370;COMM 398;5;0;0;960;1040;mwf;;Daniels, Rita
+~42772;COMM 398;5;0;0;720;830;tr;;Lee, Ee Lin
+~43118;COMM 416;5;0;0;960;1070;tr;;Karlberg, Michael R.
+~42225;COMM 425;5;0;0;840;950;tr;;Wang, Jianglong
+~44041;COMM 435;5;0;0;600;680;mwf;;Woods, Steven Gene
+~40195;COMM 436;2;0;0;930;1040;mtwf;;Cram, Travis John
+~42444;COMM 440;5;0;0;1080;1220;tr;;Karlberg, Michael R.
+~40042;COMM 442;3;0;0;1020;1095;tr;;Miller, Mark Joseph
+~41981;COMM 498;5;0;0;720;830;tr;;Schwartz-DuPre, Rae Lynn
+~41743;C2C 201;3;0;0;840;920;tr;;Burkhart, Michelle
+~41744;C2C 201;3;0;0;720;800;tr;;Burkhart, Michelle
+~41745;C2C 202;3;0;0;600;680;mw;;Cochran, Heather Michelle
+~41590;C2C 203;5;0;0;510;590;tr;;Durias, Joshua
+~41591;C2C 203;5;0;0;870;950;mw;;Durias, Joshua
+~43953;C2C 203;5;0;0;720;900;f;;Durias, Joshua
+~42201;CSCI 101;4;0;0;540:600;590:710;mwf:m;;Banson, Justice
+~42202;CSCI 101;4;0;0;540:720;590:830;mwf:m;;Banson, Justice
+~42203;CSCI 101;4;0;0;540:840;590:950;mwf:m;;Banson, Justice
+~42204;CSCI 101;4;0;0;540:600;590:710;mwf:t;;Banson, Justice
+~42205;CSCI 101;4;0;0;540:720;590:830;mwf:m;;Banson, Justice
+~40286;CSCI 102;4;0;0;720:840;770:950;mwf:w;;Banson, Justice
+~40287;CSCI 102;4;0;0;720:840;770:950;mwf:t;;Banson, Justice
+~40288;CSCI 102;4;0;0;720:600;770:710;mwf:w;;Banson, Justice
+~40289;CSCI 102;4;0;0;720:600;770:710;mwf:t;;Banson, Justice
+~44052;CSCI 102;4;0;0;720:600;770:710;mwf:w;;Banson, Justice
+~42746;CSCI 103;4;0;0;780:600;830:710;mwf:m;;Banson, Justice
+~43325;CSCI 103;4;0;0;780:480;830:590;mwf:t;;Banson, Justice
+~44055;CSCI 103;4;0;0;780:480;830:590;mwf:m;;Banson, Justice
+~44056;CSCI 140;4;0;0;540:600;590:710;mwf:m;;Koepp, Michael James
+~44057;CSCI 140;4;0;0;540:720;590:830;mwf:m;;Koepp, Michael James
+~44058;CSCI 140;4;0;0;540:480;590:590;mwf:t;;Koepp, Michael James
+~44059;CSCI 140;4;0;0;540:600;590:710;mwf:t;;Koepp, Michael James
+~40309;CSCI 141;4;0;0;720:600;770:710;mwf:m;;Hardin, Caroline Dobbe
+~40310;CSCI 141;4;0;0;720:720;770:830;mwf:t;;Hardin, Caroline Dobbe
+~40311;CSCI 141;4;0;0;720:480;770:590;mwf:t;;Hardin, Caroline Dobbe
+~41310;CSCI 141;4;0;0;720:480;770:590;mwf:m;;Hardin, Caroline Dobbe
+~41311;CSCI 141;4;0;0;720:840;770:950;mwf:m;;Hardin, Caroline Dobbe
+~44307;CSCI 141;4;0;0;720:720;770:830;mwf:t;;Hardin, Caroline Dobbe
+~41867;CSCI 145;4;0;0;600:720;650:830;mwf:t;;Sharmin, Moushumi
+~41868;CSCI 145;4;0;0;600:720;650:830;mwf:w;;Sharmin, Moushumi
+~41869;CSCI 145;4;0;0;600:840;650:950;mwf:t;;Sharmin, Moushumi
+~42519;CSCI 145;4;0;0;600:840;650:950;mwf:w;;Sharmin, Moushumi
+~40740;CSCI 202;4;0;0;660:480;710:590;mwf:w;;O'Hara, Dustin Streams
+~40741;CSCI 202;4;0;0;660:840;710:950;mwf:m;;O'Hara, Dustin Streams
+~40083;CSCI 241;4;0;0;540:600;590:710;mwf:t;;Hao, Qiang
+~41314;CSCI 241;4;0;0;540:720;590:830;mwf:t;;Hao, Qiang
+~41870;CSCI 241;4;0;0;600:600;700:710;tr:w;;Elglaly, Yasmine Nader Mohamed
+~41871;CSCI 241;4;0;0;600:480;700:590;tr:w;;Elglaly, Yasmine Nader Mohamed
+~44308;CSCI 241;4;0;0;600:600;700:710;tr:w;;Elglaly, Yasmine Nader Mohamed
+~41845;CSCI 247;5;0;0;660:480;710:590;mtwf:t;;Tan, See-Mong
+~41872;CSCI 247;5;0;0;660:720;710:830;mtwf:m;;Tan, See-Mong
+~42382;CSCI 247;5;0;0;600:720;650:830;mwrf:w;;Meehan, Michael
+~42383;CSCI 247;5;0;0;600:480;650:590;mwrf:m;;Meehan, Michael
+~41142;CSCI 301;5;0;0;540:720;590:830;mtwf:t;;Clauson, Aran Vincent
+~41316;CSCI 301;5;0;0;540:720;590:830;mtwf:w;;Clauson, Aran Vincent
+~41317;CSCI 301;5;0;0;660:480;710:590;mtwf:w;;Clauson, Aran Vincent
+~41873;CSCI 301;5;0;0;660:720;710:830;mtwf:w;;Clauson, Aran Vincent
+~40547;CSCI 305;4;0;0;720;770;mtwf;;Fizzano, Perry Joseph
+~43156;CSCI 305;4;0;0;660;710;mtwf;;Fizzano, Perry Joseph
+~41874;CSCI 321;4;0;0;660;710;mtwf;;Deneke, Wesley Stanton
+~40742;CSCI 330;4;0;0;660;710;mtwf;;Ahmed, Shameem
+~44060;CSCI 330;4;0;0;540;590;mtwf;;Ahmed, Shameem
+~41583;CSCI 345;4;0;0;600;700;tr;;Idriss, Tarek
+~41875;CSCI 347;4;0;0;780;830;mtwf;;Akter, Syeda Selina
+~43157;CSCI 347;4;0;0;840;890;mtwf;;Tan, See-Mong
+~44064;CSCI 348;4;0;0;660;710;mtwf;;Woodcock, Jeff
+~40284;CSCI 367;4;0;0;540;590;mtwf;;Staff
+~41318;CSCI 367;4;0;0;600;650;mtwf;;Koepp, Michael James
+~44065;CSCI 402;4;0;0;720;830;tr;;Deneke, Wesley Stanton
+~41584;CSCI 405;4;0;0;780;830;mtwf;;Hearne, James William
+~42384;CSCI 410;4;0;0;840;890;mwrf;;Meehan, Michael
+~44066;CSCI 426;4;0;0;780;830;mtwf;;Sharmin, Moushumi
+~41876;CSCI 447;4;0;0;720;770;mtwf;;Mare, Shri
+~42385;CSCI 461;4;0;0;840;890;mtwf;;Mare, Shri
+~44260;CSCI 463;1;0;0;960;1010;m;;Fretheim, Erik Jon
+~44067;CSCI 480;4;0;0;540;590;mtwf;;Wehrwein, Scott Glen
+~43161;CSCI 491;2;0;0;900;950;mw;;Tan, See-Mong
+~43366;CSCI 491;2;0;0;900;950;mw;;Staff
+~41320;CSCI 492;2;0;0;900;950;mw;;Clauson, Aran Vincent
+~40648;CSCI 493;2;0;0;900;950;mw;;Akter, Syeda Selina
+~41920;CSCI 496;0;0;0;;;;;Hutchinson, Brian James
+~42035;CSCI 496;0;0;0;;;;;Tsikerdekis, Michael
+~42049;CSCI 496;0;0;0;;;;;Fizzano, Perry Joseph
+~42052;CSCI 496;0;0;0;;;;;Nelson, Phil
+~42053;CSCI 496;0;0;0;;;;;Idriss, Tarek
+~42054;CSCI 496;0;0;0;;;;;Ahmed, Shameem
+~42055;CSCI 496;0;0;0;;;;;Deneke, Wesley Stanton
+~42056;CSCI 496;0;0;0;;;;;Hao, Qiang
+~42057;CSCI 496;0;0;0;;;;;Hardin, Caroline Dobbe
+~42058;CSCI 496;0;0;0;;;;;Jagodzinski, Filip
+~42059;CSCI 496;0;0;0;;;;;Liu, Yudong
+~42060;CSCI 496;0;0;0;;;;;Sharmin, Moushumi
+~42765;CSCI 496;0;0;0;;;;;Wehrwein, Scott Glen
+~42766;CSCI 496;0;0;0;;;;;Harris, Kameron Decker
+~43168;CSCI 496;0;0;0;;;;;Elglaly, Yasmine Nader Mohamed
+~43169;CSCI 496;0;0;0;;;;;Mare, Shri
+~44258;CSCI 497U;4;0;0;840;940;tr;;Idriss, Tarek
+~41220;CSCI 510;4;0;0;840;940;tr;;Jagodzinski, Filip
+~44068;CSCI 511;4;0;0;600;700;tr;;Harris, Kameron Decker
+~44070;CSCI 526;4;0;0;780;830;mtwf;;Sharmin, Moushumi
+~44071;CSCI 580;4;0;0;540;590;mtwf;;Wehrwein, Scott Glen
+~41812;CSCI 590;1;0;0;960;1010;t;;Nelson, Phil
+~41993;CSCI 591;2;0;0;960;1010;t;;Nelson, Phil
+~44259;CSCI 597U;4;0;0;840;940;tr;;Idriss, Tarek
+~41992;CSCI 692;5;0;0;;;;;Nelson, Phil
+~44240;CISS 247;5;0;0;600;650;mwrf;;Staff
+~44262;CISS 247;5;0;0;900:480;950:590;mwrf:m;;Staff
+~44263;CISS 247;5;0;0;900:720;950:830;mwrf:r;;Staff
+~42198;CISS 340;3;0;0;720;770;mtf;;Fretheim, Erik Jon
+~42229;CISS 340;3;0;0;720:720;770:770;t:mf;;Fretheim, Erik Jon
+~43185;CISS 346;4;0;0;720;770;mtwf;;Koepp, Michael James
+~43186;CISS 346;4;0;0;840;890;mtwr;;Woodcock, Jeff
+~42228;CISS 470;4;0;0;540;590;mtwf;;Staff
+~42376;CISS 470;4;0;0;540;590;mtwf;;Tsikerdekis, Michael
+~42509;CISS 478;4;0;0;600;710;tr;;Goodrich, Amber Lee
+~43459;CISS 478;4;0;0;600;710;tr;;Goodrich, Amber Lee
+~42375;CISS 491;2;0;0;900;950;mw;;Fretheim, Erik Jon
+~42508;CISS 491;2;0;0;840:840;890:890;mw:mw;;Fretheim, Erik Jon
+~41443;DNC 100;2;0;0;780;860;tr;;Staff
+~41597;DNC 101;2;0;0;780;860;mw;;Sebastian, Angela Carreon
+~40551;DNC 111;2;0;0;780;860;tr;;Sebastian, Angela Carreon
+~40552;DNC 121;3;0;0;780;860;mwf;;Haines, Susan Elizabeth
+~41589;DNC 211;2;0;0;660;740;tr;;Haines, Susan Elizabeth
+~40553;DNC 221;3;0;0;660;740;mwf;;Sebastian, Angela Carreon
+~40554;DNC 232;3;0;0;900;980;mw;;Kuntz, Pam
+~44050;DNC 240;2;0;0;660;740;mw;;Staff
+~40555;DNC 242;3;0;0;900;1010;tr;;Kuntz, Pam
+~43392;DNC 257;2;0;0;;;;;Haines, Susan Elizabeth
+~40556;DNC 311;3;0;0;540;650;tr;;Sebastian, Angela Carreon
+~40557;DNC 321;3;0;0;540;620;mwf;;Hreljanovic, Emma
+~44045;DNC 397H;2;0;0;720;830;w;;Staff
+~42743;DNC 403;1;0;0;;;;;Kuntz, Pam
+~40558;DNC 421;3;0;0;540;620;mwf;;Hreljanovic, Emma
+~42744;DNC 442;4;0;0;900;1010;mw;;Haines, Susan Elizabeth
+~43187;DATA 311;4;0;0;600:720;650:830;mwf:w;;Staff
+~44087;DATA 491;2;0;0;840;890;mw;;Hutchinson, Brian James
+~40366;DSCI 205;4;0;0;510;590;mw;;Zhang, George
+~40367;DSCI 205;4;0;0;600;680;mw;;Zhang, George
+~43139;DSCI 207;4;0;0;;;;;Springer, Mark C.
+~40368;DSCI 305;4;0;0;870;950;mw;;Kim, Ilhyung
+~40369;DSCI 305;4;0;0;780;860;r;;McClain, Lee
+~43412;DSCI 305;4;0;0;;;;;McClain, Lee
+~43167;DSGN 111;3;0;0;900;980;mw;;Schade, Brittany
+~44248;DSGN 197A;3;0;0;720;800;tr;;Kearsley, Paul Douglas
+~43908;DSGN 210;5;0;0;;;;;Shaw, Austin
+~43909;DSGN 212;5;0;0;480:480;650:650;tr:tr;;Staff
+~43910;DSGN 212;5;0;0;660:660;830:830;tr:tr;;Staff
+~43911;DSGN 212;5;0;0;840:840;1010:1010;tr:tr;;Airth, Paula Sue
+~41457;DSGN 300;0;0;0;;;;;Staff
+~42436;DSGN 310;3;0;0;900;980;tr;;Staff
+~41017;DSGN 330;5;0;0;480:480;650:650;mw:mw;;Egner, Alex
+~41018;DSGN 330;5;0;0;660:660;830:830;mw:mw;;Schade, Brittany
+~41019;DSGN 330;5;0;0;840:840;1010:1010;mw:mw;;Egner, Alex
+~42457;DSGN 348;3;0;0;1080;1250;w;;Negley, Keith Alvin
+~41520;DSGN 351;5;0;0;480:480;650:650;mw:mw;;Gialanella, John Andrew
+~41521;DSGN 351;5;0;0;660:660;830:830;mw:mw;;Gialanella, John Andrew
+~41522;DSGN 351;5;0;0;840:840;1010:1010;mw:mw;;Gialanella, John Andrew
+~41523;DSGN 389;0;0;0;;;;;Airth, Paula Sue
+~41537;DSGN 389;0;0;0;;;;;de Almeida, Cristina
+~41538;DSGN 389;0;0;0;;;;;Schade, Brittany
+~41539;DSGN 389;0;0;0;;;;;Morrow, Kacey Lynn
+~42506;DSGN 389;0;0;0;;;;;Gialanella, John Andrew
+~42512;DSGN 389;0;0;0;;;;;Egner, Alex
+~43173;DSGN 389;0;0;0;;;;;Shaw, Austin
+~44239;DSGN 397C;3;0;0;1080;1250;t;;Lockhart, Brad
+~40491;DSGN 400;0;0;0;;;;;Staff
+~41524;DSGN 460;5;0;0;660:660;830:830;tr:tr;;Shaw, Austin
+~41606;DSGN 485;5;0;0;480:480;650:650;tr:tr;;Airth, Paula Sue
+~41332;ECE 380;4;0;0;540;650;tr;;Lees, Anna
+~43388;ECE 380;4;0;0;540;650;tr;;Lees, Anna
+~40849;ECE 390;4;0;0;540;650;tr;;Staff
+~40639;ECE 431;4;0;0;720;830;tr;;Ruiz Guerrero, Margarita Guadalupe
+~43389;ECE 431;4;0;0;720;830;tr;;Ruiz Guerrero, Margarita Guadalupe
+~41331;ECE 434;4;0;0;780;1010;r;;Jin, Meilan
+~42985;EAST 201;5;0;0;690;770;mwf;;Wu, Julian Siyuan
+~43978;EAST 375;5;0;0;600;680;mwf;;Bushelle, Ethan David
+~42731;ECON 101;4;0;0;690;770;mwf;;Knabb, Shawn D.
+~42791;ECON 101;4;0;0;690;770;mwf;;Knabb, Shawn D.
+~44203;ECON 101;4;0;0;690;770;mwf;;Knabb, Shawn D.
+~40047;ECON 206;4;0;0;960;1070;mw;;Kahnamoui, Farrokh
+~40049;ECON 206;4;0;0;840;950;tr;;Wright, Adam Charles
+~40724;ECON 206;4;0;0;720;830;tr;;Kahnamoui, Farrokh
+~42459;ECON 206;4;0;0;840;950;tr;;Wright, Adam Charles
+~42873;ECON 206;4;0;0;870;950;mwf;;Oertel, Ronald R.
+~42874;ECON 206;4;0;0;600;680;mwf;;Query, Jason Alan
+~44209;ECON 206;4;0;0;840;950;tr;;Wright, Adam Charles
+~40057;ECON 207;4;0;0;840;950;tr;;Martin, Darius Daniel
+~40512;ECON 207;4;0;0;720;830;tr;;Martin, Darius Daniel
+~40744;ECON 207;4;0;0;780;860;mwf;;Sirbu, Anca
+~41329;ECON 207;4;0;0;870;950;mwf;;Sirbu, Anca
+~40223;ECON 300;0;0;0;;;;;Staff
+~40060;ECON 303;4;0;0;840;950;mw;;Kahnamoui, Farrokh
+~44048;ECON 303;4;0;0;600;710;tr;;Dupont, Brandon R.
+~40062;ECON 306;4;0;0;870;950;mwf;;Query, Jason Alan
+~40549;ECON 306;4;0;0;600;710;tr;;Durham, Yvonne
+~40063;ECON 307;4;0;0;600;680;mwf;;Nelson, David M.
+~42146;ECON 307;4;0;0;690;770;mwf;;Sirbu, Anca
+~41214;ECON 310;4;0;0;600;680;mwf;;Oertel, Ronald R.
+~40064;ECON 311;4;0;0;600;710;mw;;Sula, Ozan
+~42726;ECON 325;4;0;0;600;710;tr;;Wright, Adam Charles
+~41691;ECON 333;4;0;0;720;830;tr;;Roelofs, Matthew R.
+~40816;ECON 360;4;0;0;780;860;mwf;;Query, Jason Alan
+~42419;ECON 361;4;0;0;840;950;tr;;Alden, Edward H.
+~40712;ECON 375;4;0;0;690;770;mwf;;Staff
+~41213;ECON 383;4;0;0;720;830;mw;;Shewmake, Sharon Anne
+~42420;ECON 383;4;0;0;840;950;mw;;Shewmake, Sharon Anne
+~40949;ECON 384;4;0;0;720;830;tr;;Dorsey-Palmateer, Reid Matthew
+~42541;ECON 389;4;0;0;720;830;mw;;Roehl, Tom
+~40224;ECON 400;0;0;0;;;;;Staff
+~43007;ECON 430;4;0;0;840;950;tr;;Durham, Yvonne
+~41692;ECON 463;4;0;0;720;830;mw;;Sula, Ozan
+~42727;ECON 470;4;0;0;870;950;mwf;;Hodges, Hart
+~41904;ECON 482;4;0;0;720;830;tr;;Staff
+~42725;ECON 484;4;0;0;600;710;tr;;Dorsey-Palmateer, Reid Matthew
+~44049;ECON 491;4;0;0;840;950;tr;;Dupont, Brandon R.
+~40580;EDUC 108;2;0;0;720;770;tr;;Wuhr, Cameron Ali
+~40927;EDUC 108;2;0;0;720;770;mw;;Wang, Jeremy
+~40928;EDUC 108;2;0;0;780;830;tr;;Perez de Henderson, Maria B.
+~41148;EDUC 109;4;0;0;600;710;tr;;Staff
+~41149;EDUC 109;4;0;0;840;950;tr;;Douglas, Tania M.
+~42410;EDUC 115;4;0;0;870;1100;w;;Velez, Veronica
+~41187;EDUC 309;4;0;0;;;;;Vohs, Rosemary Amanda Scott
+~42507;EDUC 311;1;0;0;720;830;m;;Wright, Suzi
+~42514;EDUC 311;1;0;0;600;710;m;;Wright, Suzi
+~42857;EDUC 311;1;0;0;600;710;w;;Wright, Suzi
+~42780;EDUC 414;4;0;0;900;1000;tr;;Pierce, Clayton Todd
+~44273;ESJ 397;0;0;0;1020;1130;m;;Ruiz Guerrero, Margarita Guadalupe
+~44153;EDAD 501;4;0;0;1020;1250;m;;Hunter, Joseph E.
+~42885;EDAD 512;5;0;0;1020;1250;r;;Bruce, Tim
+~40425;EDAD 553;4;0;0;1020;1250;t;;Larsen, Donald Edward
+~40517;EDAD 592;4;0;0;;;;;Larsen, Donald Edward
+~44160;EDAD 640;4;0;0;;;;;Staff
+~44161;EDAD 692;1;0;0;;;;;Penner, Duane Joseph
+~40574;EDAD 699;2;0;0;;;;;Patrick, David L.
+~42595;EECE 210;4;0;0;750:900;830:1010;tr:t;;Lin, Ying
+~43095;EECE 210;4;0;0;750:900;830:1010;tr:r;;Lin, Ying
+~42596;EECE 233;4;0;0;960:900;1010:1010;mwf:t;;Lund, John A.
+~42675;EECE 233;4;0;0;960:900;1010:1010;mwf:r;;Lund, John A.
+~42597;EECE 300;0;0;0;;;;;Staff
+~42598;EECE 311;4;0;0;600;710;tr;;Lin, Ying
+~43867;EECE 333;4;0;0;780:780;830:890;mwf:t;;Smilkstein, Tina
+~43868;EECE 333;4;0;0;780:780;830:890;mwf:t;;Smilkstein, Tina
+~42600;EECE 344;4;0;0;600:840;650:950;mwf:m;;Morton, Todd Douglas
+~42860;EECE 344;4;0;0;600:840;650:950;mwf:f;;Morton, Todd Douglas
+~43873;EECE 362;4;0;0;540:840;590:950;mwf:w;;Khan, Junaid Ahmed
+~42602;EECE 372;4;0;0;660:720;710:830;mwf:m;;Jiang, Xichen
+~42677;EECE 372;4;0;0;660:720;710:830;mwf:t;;Jiang, Xichen
+~43457;EECE 372;4;0;0;660:720;710:830;mwf:r;;Jiang, Xichen
+~44284;EECE 384;4;0;0;900:720;980:830;tr:r;;Ramasubramanian, Bhaskar
+~42603;EECE 400;0;0;0;;;;;Staff
+~42604;EECE 471;2;0;0;540;590;tr;;Radwan, Amr Ahmed Abdelsalam
+~42605;EECE 480;4;0;0;600:720;650:830;mwf:m;;Lund, John A.
+~43874;EECE 480;4;0;0;600:840;650:950;mwf:m;;Lund, John A.
+~42606;EECE 491;2;0;0;540;590;tr;;Morton, Todd Douglas
+~43875;EECE 491;2;0;0;540;590;tr;;Khan, Junaid Ahmed
+~42607;EECE 495;0;0;0;;;;;Morton, Todd Douglas
+~42608;EECE 495;0;0;0;;;;;Lund, John A.
+~42609;EECE 495;0;0;0;;;;;Lin, Ying
+~42610;EECE 495;0;0;0;;;;;Jiang, Xichen
+~42611;EECE 495;0;0;0;;;;;Radwan, Amr Ahmed Abdelsalam
+~42612;EECE 495;0;0;0;;;;;Klein, Andy
+~43107;EECE 495;0;0;0;;;;;Khan, Junaid Ahmed
+~43108;EECE 495;0;0;0;;;;;Ramasubramanian, Bhaskar
+~43876;EECE 495;0;0;0;;;;;Staff
+~43877;EECE 495;0;0;0;;;;;Staff
+~44145;ELED 305;5;0;0;480;560;mw;;Jones, Alberta June
+~41605;ELED 310;5;0;0;900;1040;mw;;Wright, Suzi
+~42548;ELED 310;5;0;0;600;740;tr;;Wright, Suzi
+~41602;ELED 424;4;0;0;960;1070;r;;Dunham, Janelle Lynn
+~40640;ELED 425;5;0;0;780;860;tr;;Lees, Anna
+~42528;ELED 425;5;0;0;780;860;tr;;Ferreras-Stone, Jessica D.
+~41281;ELED 426;4;0;0;1020;1250;r;;Jensen, Kirsten Margaret
+~40714;ELED 456;5;0;0;570;710;mw;;Strachan, Steph
+~44113;ELED 460;5;0;0;1020;1130;tr;;Staff
+~42502;ELED 464;4;0;0;600;710;tr;;Ferreras-Stone, Jessica D.
+~40711;ELED 470;5;0;0;870;950;tr;;Oscarson, Melissa Marie
+~41145;ELED 470;5;0;0;;;;;Robbins, Kirk Gary
+~40575;ELED 471;5;0;0;780;950;w;;Hanuscin, Debi
+~40519;ELED 480;5;0;0;480;650;tr;;Miller, Matthew James
+~41403;ELED 480;5;0;0;840;1085;mw;;Staff
+~41278;ELED 481;5;0;0;510;680;mw;;Fisher, Sarah
+~41945;ELED 481;5;0;0;510;680;tr;;Davis, Janel
+~41601;ELED 491;2;0;0;;;;;Oscarson, Melissa Marie
+~44245;ELED 491;2;0;0;;;;;Carneiro, Elizabeth
+~44246;ELED 491;2;0;0;;;;;Fisher, Sarah
+~44247;ELED 491;2;0;0;;;;;Saling, Laurie
+~44271;ELED 491;2;0;0;;;;;Staff
+~43088;ELED 492;4;0;0;;;;;Miller, Matthew James
+~41836;ELED 494;5;0;0;;;;;Staff
+~41947;ELED 494;9;0;0;;;;;Staff
+~41239;ELED 691;2;0;0;;;;;Coskie, Tracy Lynn
+~41542;ENRG 101;3;0;0;660;710;mwf;;Barnhart, Charles Joseph
+~43140;ENRG 101;3;0;0;660;710;mwf;;Barnhart, Charles Joseph
+~41551;ENRG 300;0;0;0;;;;;Staff
+~43101;ENRG 320;4;0;0;540;590;mtwf;;Kowalczyk, Tim
+~42448;ENRG 330;4;0;0;600;680;tr;;Glosser, Deborah
+~41546;ENRG 350;4;0;0;840;950;tr;;Glosser, Deborah
+~41963;ENRG 350;4;0;0;840;950;tr;;Glosser, Deborah
+~44061;ENRG 352;4;0;0;600;710;tr;;Wang, Xi
+~41898;ENRG 360;4;0;0;840;950;mw;;Sheikh, Imran Anees
+~42226;ENRG 360;4;0;0;;;;;Sheikh, Imran Anees
+~41549;ENRG 372;4;0;0;660:720;710:830;mwf:t;;Jiang, Xichen
+~41550;ENRG 372;4;0;0;660:720;710:830;mwf:r;;Jiang, Xichen
+~41544;ENRG 380;4;0;0;720;830;mw;;Sheikh, Imran Anees
+~42080;ENRG 380;4;0;0;720;830;mw;;Sheikh, Imran Anees
+~43505;ENRG 380;4;0;0;;;;;Sheikh, Imran Anees
+~43835;ENRG 381;3;0;0;720;770;mwf;;O'Neil, Gregory William
+~41545;ENRG 384;4;0;0;720;830;tr;;Dorsey-Palmateer, Reid Matthew
+~41964;ENRG 384;4;0;0;720;830;tr;;Dorsey-Palmateer, Reid Matthew
+~42354;ENRG 391;1;0;0;960;1010;t;;Cilinceon, Stefanie Nicole
+~41552;ENRG 400;0;0;0;;;;;Staff
+~43100;ENRG 466;4;0;0;780;830;mw;;Barnhart, Charles Joseph
+~41686;ENRG 471;2;0;0;540;590;tr;;Radwan, Amr Ahmed Abdelsalam
+~42640;ENRG 484;4;0;0;600;710;tr;;Dorsey-Palmateer, Reid Matthew
+~42827;ENRG 484;4;0;0;600;710;tr;;Dorsey-Palmateer, Reid Matthew
+~43103;ENRG 486;4;0;0;720;830;tr;;Sifuentes, Froylan
+~41919;ENRG 495;0;0;0;;;;;Staff
+~43144;ENRG 586;4;0;0;720;830;tr;;Sifuentes, Froylan
+~42933;ENGR 101;2;0;0;660;710;tr;;Davishahl, Jill C.
+~42934;ENGR 101;2;0;0;780;830;tr;;Davishahl, Jill C.
+~43491;ENGR 101;2;0;0;660;710;tr;;Davishahl, Jill C.
+~43881;ENGR 130;4;0;0;840;950;mw;;Leonhardt, Eric Charles
+~41374;ENGR 170;4;0;0;720;830;mw;;Staff
+~41343;ENGR 214;4;0;0;840;950;tr;;Goel, Nipun
+~42846;ENGR 295;0;0;0;;;;;Davishahl, Jill C.
+~42847;ENGR 295;0;0;0;;;;;Alqudah, Sura Khaled
+~43849;ENGR 351;4;0;0;870:840;950:950;mw:f;;Smilkstein, Tina
+~40039;ENG 100;5;0;0;540;590;mtwrf;;Bell, Michael Patrick
+~40291;ENG 100;5;0;0;690;770;mwf;;Lucchesi, Andrew John
+~40041;ENG 101;5;0;0;510:510;590:590;mf:w;;Staff
+~40045;ENG 101;5;0;0;510:510;590:590;mw:f;;Staff
+~40046;ENG 101;5;0;0;510:510;590:590;m:wf;;Staff
+~40048;ENG 101;5;0;0;510:510;590:590;mf:w;;Staff
+~40050;ENG 101;5;0;0;510:510;590:590;mw:f;;Staff
+~40051;ENG 101;5;0;0;600:600;680:680;m:wf;;Staff
+~40052;ENG 101;5;0;0;600:600;680:680;mf:w;;Staff
+~40053;ENG 101;5;0;0;600:600;680:680;mw:f;;Staff
+~40054;ENG 101;5;0;0;600:600;680:680;m:wf;;Staff
+~40055;ENG 101;5;0;0;600:600;680:680;mf:w;;Staff
+~40056;ENG 101;5;0;0;600:600;680:680;mw:f;;Staff
+~40058;ENG 101;5;0;0;690:690;770:770;m:wf;;Staff
+~40059;ENG 101;5;0;0;690:690;770:770;mf:w;;Staff
+~40061;ENG 101;5;0;0;690:690;770:770;mw:f;;Staff
+~40065;ENG 101;5;0;0;690:690;770:770;wf:m;;Staff
+~40163;ENG 101;5;0;0;690:690;770:770;mf:w;;Staff
+~40164;ENG 101;5;0;0;690:690;770:770;mw:f;;Staff
+~40272;ENG 101;5;0;0;780:780;860:860;wf:m;;Staff
+~40273;ENG 101;5;0;0;780:780;860:860;mf:w;;Staff
+~40274;ENG 101;5;0;0;780:780;860:860;mw:f;;Staff
+~40276;ENG 101;5;0;0;780:780;860:860;wf:m;;Staff
+~40277;ENG 101;5;0;0;780:780;860:860;mf:w;;Staff
+~40338;ENG 101;5;0;0;780:780;860:860;mw:f;;Staff
+~40550;ENG 101;5;0;0;870:870;950:950;mf:w;;Staff
+~40650;ENG 101;5;0;0;870:870;950:950;mw:f;;Staff
+~41205;ENG 101;5;0;0;870:870;950:950;mf:w;;Staff
+~40751;ENG 201;5;0;0;720;830;tr;;Weed, Katie
+~40165;ENG 202;5;0;0;510;590;mwf;;Steele, S. Hayley
+~40293;ENG 202;5;0;0;600;680;mwf;;Lee, Jean
+~40427;ENG 202;5;0;0;690;770;mwf;;Steele, S. Hayley
+~40750;ENG 202;5;0;0;480;590;tr;;Guess, Carol
+~41514;ENG 202;5;0;0;600;710;tr;;Dietrich, Dawn Y.
+~41855;ENG 202;5;0;0;720;830;tr;;Prichard, Tony Alan
+~42214;ENG 202;5;0;0;840;950;tr;;Yu, Ning
+~43170;ENG 203;5;0;0;720;830;tr;;Brown, Nicole
+~44083;ENG 216;5;0;0;690;770;mwf;;Hardman, Pam
+~41206;ENG 227;5;0;0;600;680;mwf;;Colen, Elizabeth Jane
+~44201;ENG 227;5;0;0;600;680;mwf;;Staff
+~41856;ENG 235;5;0;0;720;830;tr;;Gulyas, Lee R.
+~44196;ENG 235;5;0;0;720;830;tr;;Gulyas, Lee R.
+~41210;ENG 238;5;0;0;510;590;mwf;;McGuire, Simon Leonard
+~42425;ENG 282;5;0;0;840;950;tr;;Wise, Christopher
+~40101;ENG 301;5;0;0;720;830;tr;;Qualley, Donna Jeanne
+~40102;ENG 302;5;0;0;600;710;tr;;Bell, Michael Patrick
+~40337;ENG 302;5;0;0;600;710;tr;;Sarkar, Rachel Diane
+~40400;ENG 302;5;0;0;720;830;tr;;Forsberg, Geri
+~40416;ENG 302;5;0;0;720;830;tr;;McGuire, Simon Leonard
+~40499;ENG 302;5;0;0;840;950;tr;;Forsberg, Geri
+~40548;ENG 302;5;0;0;840;950;tr;;Bell, Michael Patrick
+~41975;ENG 302;5;0;0;;;;;Lewis, Justin A.
+~41461;ENG 307;5;0;0;510;590;mwf;;Amendt-Raduege, Amy Michelle
+~41463;ENG 309;5;0;0;840;950;tr;;Loar, Christopher F.
+~41464;ENG 310;5;0;0;960;1070;tr;;Yu, Ning
+~41465;ENG 311;5;0;0;780;860;mwf;;Heim, Stefania F.
+~40103;ENG 313;5;0;0;600;710;tr;;Amendt-Raduege, Amy Michelle
+~42749;ENG 314;5;0;0;870;950;mwf;;Lester, Mark M.
+~42750;ENG 317;5;0;0;690;770;mwf;;Amendt-Raduege, Amy Michelle
+~41858;ENG 319;5;0;0;720;830;tr;;Loar, Christopher F.
+~43176;ENG 331;5;0;0;780;860;mwf;;Lee, Jean
+~41859;ENG 334;5;0;0;720;830;tr;;Trueblood, Kathryn R.
+~43177;ENG 339;5;0;0;510;590;mwf;;Weed, Katie
+~40559;ENG 347;5;0;0;480;590;tr;;Qualley, Donna Jeanne
+~40167;ENG 350;5;0;0;510;590;mwf;;Staff
+~40815;ENG 350;5;0;0;600;680;mwf;;Staff
+~42752;ENG 350;5;0;0;780;860;mwf;;McGuire, Simon Leonard
+~42753;ENG 350;5;0;0;600;710;tr;;Staff
+~42910;ENG 350;5;0;0;480;590;tr;;Staff
+~40520;ENG 351;5;0;0;690;770;mwf;;Westhoff, Kami Dawn Marie
+~42235;ENG 351;5;0;0;840;950;tr;;Araki-Kawaguchi, Kiik
+~40104;ENG 353;5;0;0;600;680;mwf;;Wong, Jane
+~40105;ENG 354;5;0;0;960;1040;mwf;;Yeasting, Jeanne Ellen
+~44312;ENG 354;5;0;0;780;860;mwf;;Staff
+~40330;ENG 364;5;0;0;690:1020;770:1190;mwf:w;;Odabasi, Eren
+~42431;ENG 364;5;0;0;600:1020;710:1190;tr:w;;Youmans, Greg
+~41491;ENG 365;5;0;0;840:960;950:1130;tr:t;;Youmans, Greg
+~43178;ENG 401;5;0;0;870;950;mwf;;Lucchesi, Andrew John
+~40456;ENG 418;5;0;0;780;860;mwf;;Lester, Mark M.
+~40457;ENG 418;5;0;0;480;590;tr;;Prichard, Tony Alan
+~40458;ENG 423;5;0;0;600;680;mwf;;Anderson, Katherine J.
+~42434;ENG 423;5;0;0;600;710;tr;;Lester, Mark M.
+~44093;ENG 427;5;0;0;780;860;mwf;;Shipley, Ely
+~42758;ENG 441;5;0;0;510;590;mwf;;VanderStaay, Steven L.
+~40703;ENG 443;5;0;0;690;770;mwf;;Staff
+~40331;ENG 444;5;0;0;600;680;mwf;;VanderStaay, Steven L.
+~40405;ENG 451;5;0;0;690;770;mwf;;Colen, Elizabeth Jane
+~40603;ENG 451;5;0;0;840;950;tr;;Magee, Kelly Elizabeth
+~40365;ENG 453;5;0;0;600;680;mwf;;Shipley, Ely
+~40406;ENG 454;5;0;0;720;830;tr;;Pagh, Nancy
+~44096;ENG 456;5;0;0;780;860;mwf;;Westhoff, Kami Dawn Marie
+~40422;ENG 458;5;0;0;600;710;tr;;Teer, Kaitlyn Jo
+~40599;ENG 459;5;0;0;480;590;tr;;Gulyas, Lee R.
+~40505;ENG 460;5;0;0;780;860;mwf;;Yeasting, Jeanne Ellen
+~42232;ENG 460;5;0;0;960;1070;tr;;Pagh, Nancy
+~41499;ENG 462;5;0;0;600;710;tr;;Brown, Nicole
+~40506;ENG 464;5;0;0;870:960;950:1130;mwf:m;;Odabasi, Eren
+~40177;ENG 500;0;0;0;;;;;Staff
+~40002;ENG 501;5;0;0;600;710;tr;;Wise, Christopher
+~42441;ENG 506;5;0;0;720;830;tr;;Araki-Kawaguchi, Kiik
+~40121;ENG 509;0;0;0;;;;;Staff
+~40122;ENG 513;5;0;0;480;590;tr;;Cushman, Jeremy W.
+~43196;ENG 525;5;0;0;840;950;tr;;Dietrich, Dawn Y.
+~44098;ENG 535;5;0;0;960;1070;tr;;Staff
+~44099;ENG 550;5;0;0;720;830;tr;;Giffen, Allison A.
+~40123;ENG 594;0;0;0;;;;;Staff
+~40172;ENG 690;0;0;0;;;;;Staff
+~41599;ENTR 246;4;0;0;900;1080;mw;;Weber, Meg
+~41600;ENTR 346;4;0;0;960;1080;mw;;Weber, Meg
+~42210;ENTR 398;2;0;0;780;990;f;;Sherwood, Art
+~43444;ENTR 398;2;0;0;780;990;f;;Sherwood, Art
+~41678;ENTR 446;4;0;0;960;1080;mw;;Weber, Meg
+~40614;ESCI 101;3;0;0;600;680;tr;;Staff
+~42840;ESCI 101;3;0;0;600;680;tr;;Staff
+~42849;ESCI 101;3;0;0;;;;;Staff
+~42435;ESCI 225;4;0;0;600;710;tr;;Bunn, Andy
+~43277;ESCI 302;4;0;0;720;830;tr;;Staff
+~40627;ESCI 321;4;0;0;600;710;tr;;Shull, David H.
+~40628;ESCI 322;2;0;0;780;1010;t;;Shull, David H.
+~40629;ESCI 325;3;0;0;540;590;mwf;;Wallin, David O.
+~40626;ESCI 330;4;0;0;840:780;890:950;w:f;;McLaughlin, John
+~41921;ESCI 330;4;0;0;900:780;950:950;w:r;;Staff
+~40625;ESCI 340;5;0;0;600;680;mw;;Bunn, Rebecca Anne
+~42637;ESCI 340;5;0;0;780;860;mw;;Kodner, Robin B.
+~43906;ESCI 342;5;0;0;780;830;mtwr;;McPhee-Shaw, Erika Elizabeth
+~41935;ESCI 360;4;0;0;840;950;mw;;Sheikh, Imran Anees
+~41304;ESCI 361;5;0;0;600:810;680:1040;mw:m;;Love, Brooke
+~41305;ESCI 361;5;0;0;600:810;680:1040;mw:w;;Love, Brooke
+~40836;ESCI 380;4;0;0;720;830;mw;;Sheikh, Imran Anees
+~43024;ESCI 393;4;0;0;600;710;tr;;McPhee-Shaw, Erika Elizabeth
+~44286;ESCI 397N;3;0;0;720;795;tr;;Kodner, Robin B.
+~42828;ESCI 412;5;0;0;600;680;mwf;;Sobocinski, Kathryn Louise
+~40617;ESCI 430;5;0;0;660:780;710:1010;mwf:m;;Bodensteiner, Leo R.
+~41607;ESCI 430;5;0;0;660:780;710:1010;mwf:w;;Bodensteiner, Leo R.
+~43840;ESCI 435;4;0;0;840;950;tr;;Bunn, Andy
+~42242;ESCI 439;4;0;0;720;830;tr;;McLaughlin, John
+~43480;ESCI 440;5;0;0;780:870;860:1070;tr:r;;Rybczyk, John M.
+~40622;ESCI 455;4;0;0;600;710;tr;;Montano, Manuel David
+~40624;ESCI 457;4;0;0;780;1010;tr;;Staff
+~43003;ESCI 466;4;0;0;780;830;mw;;Barnhart, Charles Joseph
+~43830;ESCI 470;5;0;0;540:540;590:770;t:r;;Helfield, James Mark
+~43561;ESCI 480;4;0;0;660;1010;f;;Goel, Nipun
+~41419;ESCI 495;0;0;0;;;;;Bodensteiner, Leo R.
+~42558;ESCI 495;0;0;0;;;;;Bunn, Rebecca Anne
+~43981;ESCI 497Z;3;0;0;780;1010;t;;Wallin, David O.
+~40388;ESCI 498A;0;0;0;;;;;Bodensteiner, Leo R.
+~40471;ESCI 498A;0;0;0;;;;;Rybczyk, John M.
+~40523;ESCI 498A;0;0;0;;;;;Sofield, Ruth M.
+~40592;ESCI 498A;0;0;0;;;;;Bunn, Andy
+~40646;ESCI 498A;0;0;0;;;;;Bodensteiner, Leo R.
+~40795;ESCI 498A;0;0;0;;;;;Shull, David H.
+~40923;ESCI 498A;0;0;0;;;;;Love, Brooke
+~40925;ESCI 498A;0;0;0;;;;;Bunn, Rebecca Anne
+~41444;ESCI 498A;0;0;0;;;;;Barnhart, Charles Joseph
+~41525;ESCI 498A;0;0;0;;;;;Helfield, James Mark
+~41526;ESCI 498A;0;0;0;;;;;McLaughlin, John
+~41570;ESCI 498A;0;0;0;;;;;Bauman, Jenise Michelle
+~41571;ESCI 498A;0;0;0;;;;;Wallin, David O.
+~41942;ESCI 498A;0;0;0;;;;;Hatch, Marco Brandon Allen
+~42070;ESCI 498A;0;0;0;;;;;Sheikh, Imran Anees
+~42074;ESCI 498A;0;0;0;;;;;McPhee-Shaw, Erika Elizabeth
+~42411;ESCI 498A;0;0;0;;;;;Montano, Manuel David
+~42415;ESCI 498A;0;0;0;;;;;Khan, Alia Lauren
+~42583;ESCI 498A;0;0;0;;;;;Sobocinski, Kathryn Louise
+~42584;ESCI 498A;0;0;0;;;;;Strecker, Angela
+~42585;ESCI 498A;0;0;0;;;;;Sifuentes, Froylan
+~43647;ESCI 498A;0;0;0;;;;;Kastner, Sam
+~43651;ESCI 498A;0;0;0;;;;;Kodner, Robin B.
+~40352;ESCI 498B;0;0;0;;;;;Bodensteiner, Leo R.
+~40353;ESCI 498B;0;0;0;;;;;Bunn, Andy
+~40354;ESCI 498B;0;0;0;;;;;McLaughlin, John
+~40355;ESCI 498B;0;0;0;;;;;Rybczyk, John M.
+~40356;ESCI 498B;0;0;0;;;;;Wallin, David O.
+~40417;ESCI 498B;0;0;0;;;;;Shull, David H.
+~40418;ESCI 498B;0;0;0;;;;;Sofield, Ruth M.
+~40492;ESCI 498B;0;0;0;;;;;Helfield, James Mark
+~40924;ESCI 498B;0;0;0;;;;;Love, Brooke
+~41420;ESCI 498B;0;0;0;;;;;Bunn, Rebecca Anne
+~41445;ESCI 498B;0;0;0;;;;;Barnhart, Charles Joseph
+~41572;ESCI 498B;0;0;0;;;;;Bauman, Jenise Michelle
+~41943;ESCI 498B;0;0;0;;;;;Hatch, Marco Brandon Allen
+~42071;ESCI 498B;0;0;0;;;;;Sheikh, Imran Anees
+~42075;ESCI 498B;0;0;0;;;;;McPhee-Shaw, Erika Elizabeth
+~42412;ESCI 498B;0;0;0;;;;;Montano, Manuel David
+~42416;ESCI 498B;0;0;0;;;;;Khan, Alia Lauren
+~42586;ESCI 498B;0;0;0;;;;;Sobocinski, Kathryn Louise
+~42587;ESCI 498B;0;0;0;;;;;Strecker, Angela
+~42588;ESCI 498B;0;0;0;;;;;Sifuentes, Froylan
+~43648;ESCI 498B;0;0;0;;;;;Kastner, Sam
+~43652;ESCI 498B;0;0;0;;;;;Kodner, Robin B.
+~40431;ESCI 498C;0;0;0;;;;;McLaughlin, John
+~40591;ESCI 498C;0;0;0;;;;;Sofield, Ruth M.
+~40733;ESCI 498C;0;0;0;;;;;Helfield, James Mark
+~40796;ESCI 498C;0;0;0;;;;;Rybczyk, John M.
+~41186;ESCI 498C;0;0;0;;;;;Bunn, Rebecca Anne
+~41201;ESCI 498C;0;0;0;;;;;Bunn, Andy
+~41446;ESCI 498C;0;0;0;;;;;Barnhart, Charles Joseph
+~41527;ESCI 498C;0;0;0;;;;;Bodensteiner, Leo R.
+~41529;ESCI 498C;0;0;0;;;;;Shull, David H.
+~41530;ESCI 498C;0;0;0;;;;;Love, Brooke
+~41531;ESCI 498C;0;0;0;;;;;Wallin, David O.
+~41573;ESCI 498C;0;0;0;;;;;Bauman, Jenise Michelle
+~41944;ESCI 498C;0;0;0;;;;;Hatch, Marco Brandon Allen
+~42072;ESCI 498C;0;0;0;;;;;Sheikh, Imran Anees
+~42076;ESCI 498C;0;0;0;;;;;McPhee-Shaw, Erika Elizabeth
+~42413;ESCI 498C;0;0;0;;;;;Montano, Manuel David
+~42417;ESCI 498C;0;0;0;;;;;Khan, Alia Lauren
+~42589;ESCI 498C;0;0;0;;;;;Sobocinski, Kathryn Louise
+~42590;ESCI 498C;0;0;0;;;;;Strecker, Angela
+~42591;ESCI 498C;0;0;0;;;;;Sifuentes, Froylan
+~43609;ESCI 498C;0;0;0;;;;;Sofield, Ruth M.
+~43649;ESCI 498C;0;0;0;;;;;Kastner, Sam
+~43653;ESCI 498C;0;0;0;;;;;Kodner, Robin B.
+~43890;ESCI 499A;1;0;0;990;1040;r;;Staff
+~42639;ESCI 501;3;0;0;540;590;mwf;;Strecker, Angela
+~40616;ESCI 502;4;0;0;480;590;tr;;Sobocinski, Kathryn Louise
+~42889;ESCI 502;4;0;0;;;;;Bauman, Jenise Michelle
+~43111;ESCI 512;5;0;0;600;680;mwf;;Sobocinski, Kathryn Louise
+~40618;ESCI 530;5;0;0;660:780;710:1010;mwf:w;;Bodensteiner, Leo R.
+~43842;ESCI 535;4;0;0;840;950;tr;;Bunn, Andy
+~42243;ESCI 539;5;0;0;720;830;tr;;McLaughlin, John
+~43481;ESCI 540;5;0;0;780:870;860:1070;tr:r;;Rybczyk, John M.
+~40623;ESCI 555;4;0;0;600;710;tr;;Montano, Manuel David
+~40426;ESCI 595;0;0;0;;;;;Staff
+~42888;ESCI 599;2;0;0;;;;;Bunn, Rebecca Anne
+~40357;ESCI 690;0;0;0;;;;;Bingham, Brian Lynn
+~40358;ESCI 690;0;0;0;;;;;Bodensteiner, Leo R.
+~40359;ESCI 690;0;0;0;;;;;Love, Brooke
+~40360;ESCI 690;0;0;0;;;;;Landis, Wayne
+~40361;ESCI 690;0;0;0;;;;;McLaughlin, John
+~40362;ESCI 690;0;0;0;;;;;Rybczyk, John M.
+~40363;ESCI 690;0;0;0;;;;;Wallin, David O.
+~40419;ESCI 690;0;0;0;;;;;Sofield, Ruth M.
+~40420;ESCI 690;0;0;0;;;;;Shull, David H.
+~40493;ESCI 690;0;0;0;;;;;Helfield, James Mark
+~40540;ESCI 690;0;0;0;;;;;Bunn, Andy
+~41183;ESCI 690;0;0;0;;;;;Bunn, Rebecca Anne
+~41447;ESCI 690;0;0;0;;;;;Barnhart, Charles Joseph
+~41574;ESCI 690;0;0;0;;;;;Bauman, Jenise Michelle
+~41941;ESCI 690;0;0;0;;;;;Hatch, Marco Brandon Allen
+~42065;ESCI 690;0;0;0;;;;;McPhee-Shaw, Erika Elizabeth
+~42073;ESCI 690;0;0;0;;;;;Sheikh, Imran Anees
+~42592;ESCI 690;0;0;0;;;;;Sobocinski, Kathryn Louise
+~42593;ESCI 690;0;0;0;;;;;Strecker, Angela
+~42594;ESCI 690;0;0;0;;;;;Sifuentes, Froylan
+~42884;ESCI 690;0;0;0;;;;;Khan, Alia Lauren
+~42919;ESCI 690;0;0;0;;;;;Montano, Manuel David
+~43506;ESCI 690;0;0;0;;;;;Strom, Suzanne L.
+~43650;ESCI 690;0;0;0;;;;;Kastner, Sam
+~43654;ESCI 690;0;0;0;;;;;Kodner, Robin B.
+~41844;ESCI 699;2;0;0;;;;;Patrick, David L.
+~42414;ESCI 699;2;0;0;;;;;Montano, Manuel David
+~42418;ESCI 699;2;0;0;;;;;Khan, Alia Lauren
+~44106;ENVS 115;3;0;0;600;680;tr;;Darby, Kate Jenifer
+~44124;ENVS 115;3;0;0;600;680;tr;;Darby, Kate Jenifer
+~41039;ENVS 201;3;0;0;840;920;tr;;Medler, Michael
+~44133;ENVS 201;3;0;0;840;920;tr;;Medler, Michael
+~41250;ENVS 202;3;0;0;600;680;tr;;MacIntyre Witt, Jill Marie
+~41021;ENVS 203;4;0;0;660;710;mwf;;Albertson, Zander E.
+~43145;ENVS 203;4;0;0;660;710;mwf;;Albertson, Zander E.
+~43146;ENVS 203;4;0;0;660;710;mwf;;Albertson, Zander E.
+~43147;ENVS 203;4;0;0;660;710;mwf;;Albertson, Zander E.
+~41022;ENVS 204;4;0;0;720;770;mtwf;;Buckley, Patrick Henry
+~41713;ENVS 303;5;0;0;840;950;mw;;Albertson, Zander E.
+~41912;ENVS 303;5;0;0;840;950;mw;;Albertson, Zander E.
+~41913;ENVS 303;5;0;0;840;950;mw;;Albertson, Zander E.
+~42008;ENVS 308;4;0;0;;;;;Walker, Wendy Colleen
+~43486;ENVS 319;3;0;0;510;590;tr;;Rossiter, David
+~41023;ENVS 320;4;0;0;600:660;650:710;tr:tr;;Waldo, Tyson Zane
+~44313;ENVS 320;4;0;0;600:720;650:770;tr:tr;;Waldo, Tyson Zane
+~43926;ENVS 325;4;0;0;540;590;mtwf;;Bach, Andy
+~42373;ENVS 355;4;0;0;840;950;tr;;Albertson, Zander E.
+~41608;ENVS 359;4;0;0;720;830;mw;;Berardi, Gigi
+~41040;ENVS 362;4;0;0;600;710;mw;;Paci-Green, Rebekah Ann
+~41752;ENVS 368;4;0;0;;;;;Buckley, Patrick Henry
+~41041;ENVS 381;4;0;0;720;830;tr;;Myers, Gene
+~44311;ENVS 381;4;0;0;720;830;tr;;Stanger, Nick
+~43946;ENVS 410;4;0;0;660;1010;f;;Berardi, Gigi
+~41024;ENVS 413;4;0;0;840;920;mw;;Loomis, Eli Stuart
+~43274;ENVS 413;4;0;0;840;920;mw;;Loomis, Eli Stuart
+~41025;ENVS 414;5;0;0;840;920;mw;;Loomis, Eli Stuart
+~43090;ENVS 418;5;0;0;720;800;mwf;;Freelan, Stefan Reid
+~44110;ENVS 420;5;0;0;600;680;mwf;;Flower, Aquila Dawn
+~44014;ENVS 441;4;0;0;720;830;tr;;Rossiter, David
+~44115;ENVS 442;4;0;0;900;1010;wf;;Buckley, Patrick Henry
+~41020;ENVS 450;4;0;0;720;830;mw;;Albertson, Zander E.
+~43492;ENVS 450;4;0;0;720;830;mw;;Albertson, Zander E.
+~41280;ENVS 457;4;0;0;600;710;tr;;Russell, Sheri
+~41740;ENVS 461;4;0;0;720;830;tr;;Melious, Jean O.
+~42224;ENVS 463;3;0;0;840;920;tr;;Zaferatos, Nicholas C.
+~41043;ENVS 471;3;0;0;840;920;mw;;MacIntyre Witt, Jill Marie
+~42016;ENVS 484;4;0;0;;;;;Walker, Wendy Colleen
+~42859;ENVS 493;5;0;0;600;680;mwf;;Laninga, Tammi
+~41051;ENVS 495;0;0;0;;;;;Staff
+~41045;ENVS 498A;0;0;0;;;;;Staff
+~41048;ENVS 498B;0;0;0;;;;;Staff
+~41049;ENVS 498C;0;0;0;;;;;Staff
+~41050;ENVS 498D;0;0;0;;;;;Staff
+~44125;ENVS 499D;1;0;0;600;650;w;;Hayes, Nini Visaya
+~42005;ENVS 499Q;1;0;0;540;950;;;Rishel, Branden Stuart
+~41712;ENVS 501;3;0;0;960;1100;f;;Medler, Michael
+~42825;ENVS 510;1;0;0;720;830;r;;Laninga, Tammi
+~44213;ENVS 517;4;0;0;600;650;tr;;Waldo, Tyson Zane
+~43094;ENVS 518;5;0;0;720;800;mwf;;Freelan, Stefan Reid
+~44127;ENVS 520;5;0;0;600;680;mwf;;Flower, Aquila Dawn
+~44126;ENVS 550;4;0;0;720;830;mw;;Albertson, Zander E.
+~41364;ENVS 595;0;0;0;;;;;Staff
+~42714;ENVS 599D;1;0;0;600;650;w;;Hayes, Nini Visaya
+~41346;ENVS 690;0;0;0;;;;;Staff
+~41615;ENVS 691;0;0;0;;;;;Staff
+~43825;EUS 201;5;0;0;780;860;mwf;;Vajda, Edward J.
+~43885;EUS 210;5;0;0;;;;;Vajda, Edward J.
+~43417;EXCE 101;5;0;0;780;930;mw;;Boyd, Linda Sue
+~43519;EXCE 101;5;0;0;780;930;mw;;Boyd, Linda Sue
+~43539;EXCE 101;5;0;0;990;1140;mw;;Boyd, Linda Sue
+~44047;EXCE 101;5;0;0;990;1140;mw;;Boyd, Linda Sue
+~42798;EXCE 205;4;0;0;840;950;t;;Wandke, Daman Lee Michael
+~42799;EXCE 205;4;0;0;960;1070;t;;Wandke, Daman Lee Michael
+~43537;EXCE 205;4;0;0;840;950;w;;Wandke, Daman Lee Michael
+~42797;EXCE 442;0;0;0;;;;;Hart, Jeffery LeRoy
+~42796;EXCE 495;0;0;0;;;;;Hart, Jeffery LeRoy
+~41670;FAIR 101A;1;0;0;570:570;650:650;f:f;;Blick, Anna Mirjam
+~42642;FAIR 201A;5;0;0;720;850;mw;;Spira, Tamara Lea
+~42643;FAIR 201A;5;0;0;720;860;tr;;Takagi, Midori
+~42644;FAIR 201A;5;0;0;720;860;mw;;Simon, Richard
+~42645;FAIR 201A;5;0;0;720;860;tr;;Friedland, Yanara
+~42646;FAIR 201A;5;0;0;570;710;tr;;Sehman, Steven S.
+~43028;FAIR 201A;5;0;0;600;710;tr;;Villicana, Adrian
+~42647;FAIR 202A;5;0;0;720;860;mw;;Feodorov, John Vincent
+~42648;FAIR 203A;5;0;0;570;700;tr;;O Murchu, Niall F.
+~42649;FAIR 203A;5;0;0;570;710;tr;;Estrada, Lawrence J.
+~43029;FAIR 203A;5;0;0;900;1030;tr;;Jefferies, Regina Marie
+~42650;FAIR 206A;5;0;0;900:900;1010:1130;m:w;;Bower, John
+~42651;FAIR 210A;5;0;0;660:660;800:800;mw:mw;;Akinrinade, Babafemi A.
+~43955;FAIR 222G;4;0;0;600;710;tr;;Tag, Stan
+~43956;FAIR 222G;4;0;0;570;650;tr;;Friedland, Yanara
+~43356;FAIR 235A;2;0;0;780;890;f;;Kempton, Terri Lynne
+~43354;FAIR 243U;4;0;0;540;640;wf;;Nichols, Scot
+~42661;FAIR 246;3;0;0;1080:1080;1160:1160;mw:mw;;Miyake, Mark Yoshisuke
+~43957;FAIR 252V;4;0;0;900;1040;mw;;Feodorov, John Vincent
+~41889;FAIR 255Y;2;0;0;720:720;770:770;tr:tr;;Bower, John
+~42664;FAIR 270H;4;0;0;600:600;710:710;mw:mw;;Anisman, Ezra
+~43355;FAIR 301A;3;0;0;660;740;f;;Schwandt, Hilary Megan
+~42653;FAIR 303A;5;0;0;900;1040;mw;;O Murchu, Niall F.
+~43958;FAIR 308;5;0;0;720;860;mw;;Miyake, Mark Yoshisuke
+~43959;FAIR 311B;5;0;0;540;660;tr;;Lopez, Ceci
+~44171;FAIR 314E;4;0;0;720;830;tr;;Pierce, Clayton Todd
+~44178;FAIR 322K;5;0;0;720;860;tr;;Lopez, Ceci
+~42663;FAIR 334C;5;0;0;870;980;mw;;Akinrinade, Babafemi A.
+~42656;FAIR 335C;5;0;0;900;1040;tr;;Delucio, Kevin
+~43983;FAIR 335Q;5;0;0;540;680;tr;;Delucio, Kevin
+~44249;FAIR 336N;5;0;0;750;860;mw;;Kempton, Terri Lynne
+~43984;FAIR 353Y;4;0;0;930;1030;mw;;Russell, Caskey
+~44144;FAIR 368;3;0;0;840;915;tr;;Baker, Mary Tuti
+~42665;FAIR 370I;4;0;0;720;830;tr;;Anisman, Ezra
+~42666;FAIR 370J;4;0;0;600;710;tr;;Wallace, Erik Takuichi
+~42667;FAIR 370K;4;0;0;720;830;mw;;Wallace, Erik Takuichi
+~42657;FAIR 380A;4;0;0;780;890;tr;;Sehman, Steven S.
+~43985;FAIR 384J;5;0;0;570;710;mw;;Simon, Richard
+~43987;FAIR 403A;4;0;0;900;1010;tr;;Tag, Stan
+~42659;FAIR 412E;5;0;0;720;860;mw;;Jefferies, Regina Marie
+~42660;FAIR 414D;4;0;0;900;1000;tr;;Pierce, Clayton Todd
+~42991;FAIR 432Q;5;0;0;540:540;770:590;r:t;;Tuxill, John Douglas
+~43988;FAIR 433P;3;0;0;900;1070;r;;Bower, John
+~40707;FIN 215;4;0;0;720;830;mw;;McClain, Lee
+~41175;FIN 215;4;0;0;;;;;McClain, Lee
+~41251;FIN 216;4;0;0;840;950;mw;;Joyce, Ben
+~40461;FIN 341;4;0;0;600;710;tr;;Carabini, Christopher Eugene
+~41176;FIN 341;4;0;0;;;;;Kong, Sophie
+~41196;FIN 341;4;0;0;960;1070;mw;;McClain, Lee
+~41667;FIN 341;4;0;0;870;950;mwf;;Benson, Earl Dean
+~42871;FIN 341;4;0;0;720;830;tr;;Carabini, Christopher Eugene
+~40563;FIN 345;4;0;0;780;860;mwf;;Nelson, David M.
+~40378;FIN 440;4;0;0;600;710;tr;;LaBorde, Pamela M.
+~40379;FIN 441;4;0;0;870;950;wf;;Wonder, Nicholas Xerxes
+~41933;FIN 442;4;0;0;600;710;tr;;Wehrly, Eric William
+~40380;FIN 444;4;0;0;960;1040;mwf;;Knabb, Shawn D.
+~40749;FIN 449;4;0;0;720;830;tr;;Wehrly, Eric William
+~42523;FIN 450;4;0;0;720;830;tr;;LaBorde, Pamela M.
+~44186;FIN 454;4;0;0;600;680;mwf;;Wonder, Nicholas Xerxes
+~42524;FIN 455;4;0;0;960;1070;tr;;Benson, Earl Dean
+~40424;FIN 460;4;0;0;;;;;Benson, Earl Dean
+~40383;FIN 490;0;0;0;;;;;Benson, Earl Dean
+~40066;FREN 101;5;0;0;600;680;mwf;;Jehan, Aude
+~41885;FREN 101;5;0;0;690;770;mwf;;Taylor, Scott
+~42930;FREN 101;5;0;0;780;860;mwf;;Taylor, Scott
+~40067;FREN 201;5;0;0;600;680;mwf;;Taylor, Scott
+~40844;FREN 201;5;0;0;780;860;mwf;;Hanania, Cecile
+~40525;FREN 301;5;0;0;600;680;mwf;;Smith, Lindsey Leigh
+~40526;FREN 301;5;0;0;780;860;mwf;;Jehan, Aude
+~41886;FREN 314;5;0;0;630;760;tr;;Keppie, Christina L.
+~40527;FREN 340;5;0;0;870;950;mwf;;Hanania, Cecile
+~41887;FREN 401;5;0;0;780;860;mwf;;Smith, Lindsey Leigh
+~41888;FREN 425;2;0;0;;;;;Staff
+~40095;GEOL 101;4;0;0;600:480;680:590;tr:w;;Walowski, Kristina
+~40096;GEOL 101;4;0;0;600:600;680:710;tr:w;;Walowski, Kristina
+~40097;GEOL 101;4;0;0;660:480;710:590;mwf:t;;Thomas, Paul Allen
+~40735;GEOL 101;4;0;0;600:720;680:830;tr:w;;Walowski, Kristina
+~40799;GEOL 101;4;0;0;660:600;710:710;mwf:t;;Thomas, Paul Allen
+~40800;GEOL 101;4;0;0;660:720;710:830;mwf:t;;Thomas, Paul Allen
+~40801;GEOL 101;4;0;0;660:840;710:950;mwf:t;;Thomas, Paul Allen
+~40802;GEOL 101;4;0;0;600:840;680:950;tr:w;;Walowski, Kristina
+~40803;GEOL 101;4;0;0;840:480;920:590;tr:f;;Thomas, Paul Allen
+~40804;GEOL 101;4;0;0;840:600;920:710;tr:f;;Thomas, Paul Allen
+~40805;GEOL 101;4;0;0;840:720;920:830;tr:f;;Thomas, Paul Allen
+~40806;GEOL 101;4;0;0;840:480;890:590;mwf:r;;Saenger, Casey
+~40807;GEOL 101;4;0;0;840:840;920:950;tr:f;;Thomas, Paul Allen
+~40808;GEOL 101;4;0;0;840:600;890:710;mwf:r;;Saenger, Casey
+~40809;GEOL 101;4;0;0;840:720;890:830;mwf:r;;Saenger, Casey
+~40810;GEOL 101;4;0;0;840:840;890:950;mwf:r;;Saenger, Casey
+~41688;GEOL 204;3;0;0;;;;;Hansen, Thor A.
+~40098;GEOL 211;5;0;0;600:480;650:590;mwf:tr;;Ponton, Camilo
+~40154;GEOL 211;5;0;0;600:600;650:710;mwf:tr;;Ponton, Camilo
+~42064;GEOL 211;5;0;0;600:720;650:830;mwf:tr;;Ponton, Camilo
+~42357;GEOL 211;5;0;0;600:840;650:950;mwf:tr;;Ponton, Camilo
+~43387;GEOL 211A;2;0;0;840;950;wf;;Ponton, Camilo
+~40594;GEOL 212;4;0;0;780:600;830:710;mwf:t;;Dahl, Robyn Mieko
+~40595;GEOL 212;4;0;0;780:840;830:950;mwf:t;;Dahl, Robyn Mieko
+~40596;GEOL 212;4;0;0;780:600;830:710;mwf:r;;Dahl, Robyn Mieko
+~40718;GEOL 213;3;0;0;480;560;tr;;Staff
+~41197;GEOL 213;3;0;0;480;560;mw;;Staff
+~42961;GEOL 252;4;0;0;600;740;tr;;Thomas, Paul Allen
+~42438;GEOL 300;0;0;0;;;;;Staff
+~42066;GEOL 301;1;0;0;;;;;Staff
+~41755;GEOL 303;3;0;0;;;;;Hansen, Thor A.
+~40934;GEOL 306;4;0;0;540;650;mwf;;Walowski, Kristina
+~40597;GEOL 310;5;0;0;720:720;890:950;m:w;;Pfeiffer, Allison M.
+~42422;GEOL 311;5;0;0;780;950;tr;;Sas, Mai
+~42962;GEOL 314;4;0;0;720:720;830:770;m:w;;Mitchell, Robert John
+~42456;GEOL 315;4;0;0;;;;;Rusk, Brian Geoffrey
+~44039;GEOL 316;4;0;0;720:720;830:920;m:w;;Ponton, Camilo
+~42963;GEOL 318;5;0;0;;;;;Schermer, Liz
+~40528;GEOL 352;5;0;0;480:540;590:590;mf:w;;Caplan-Auerbach, Jackie
+~40155;GEOL 400;0;0;0;;;;;Staff
+~40099;GEOL 401A;1;0;0;;;;;Housen, Bernard A.
+~40100;GEOL 401B;2;0;0;;;;;Housen, Bernard A.
+~40653;GEOL 406;5;0;0;600;710;mwf;;DeBari, Susan M.
+~42623;GEOL 412;4;0;0;600:600;710:710;mw:mw;;Amos, Colin Burks
+~43862;GEOL 457;4;0;0;660;770;tr;;Garcia Lasanta, Cristina
+~42377;GEOL 472;4;0;0;900:900;1010:1010;m:w;;Mitchell, Robert John
+~42629;GEOL 490;0;0;0;;;;;Staff
+~43878;GEOL 497U;4;0;0;540;650;tr;;Saenger, Casey
+~43880;GEOL 497X;4;0;0;720;830;mw;;Mulcahy, Sean R.
+~40156;GEOL 500;0;0;0;;;;;Staff
+~40307;GEOL 501;2;0;0;;;;;Housen, Bernard A.
+~43057;GEOL 502;0;0;0;;;;;Staff
+~42180;GEOL 503;0;0;0;;;;;Staff
+~42624;GEOL 512;4;0;0;600:600;710:710;mw:mw;;Amos, Colin Burks
+~42964;GEOL 518;3;0;0;;;;;Schermer, Liz
+~43863;GEOL 557;4;0;0;660;770;tr;;Garcia Lasanta, Cristina
+~42378;GEOL 572;4;0;0;900:900;1010:1010;m:w;;Mitchell, Robert John
+~40106;GEOL 595;3;0;0;900:720;1010:770;m:f;;Amos, Colin Burks
+~43879;GEOL 597U;4;0;0;540;650;tr;;Saenger, Casey
+~43882;GEOL 597X;4;0;0;720;830;mw;;Mulcahy, Sean R.
+~40474;GEOL 690;0;0;0;;;;;Amos, Colin Burks
+~40475;GEOL 690;0;0;0;;;;;Boujibar, Asmaa
+~40476;GEOL 690;0;0;0;;;;;Caplan-Auerbach, Jackie
+~40477;GEOL 690;0;0;0;;;;;Clark, Doug
+~40478;GEOL 690;0;0;0;;;;;Dahl, Robyn Mieko
+~40479;GEOL 690;0;0;0;;;;;DeBari, Susan M.
+~40480;GEOL 690;0;0;0;;;;;Foreman, Brady Zangs
+~40917;GEOL 690;0;0;0;;;;;Garcia Lasanta, Cristina
+~41200;GEOL 690;0;0;0;;;;;Grossman, Eric
+~41309;GEOL 690;0;0;0;;;;;Housen, Bernard A.
+~41453;GEOL 690;0;0;0;;;;;Mitchell, Robert John
+~41689;GEOL 690;0;0;0;;;;;Mulcahy, Sean R.
+~42048;GEOL 690;0;0;0;;;;;Pfeiffer, Allison M.
+~42067;GEOL 690;0;0;0;;;;;Ponton, Camilo
+~42187;GEOL 690;0;0;0;;;;;Rice, Melissa Susanne
+~42188;GEOL 690;0;0;0;;;;;Roland, Emily Carlson
+~42630;GEOL 690;0;0;0;;;;;Rusk, Brian Geoffrey
+~43080;GEOL 690;0;0;0;;;;;Saenger, Casey
+~43081;GEOL 690;0;0;0;;;;;Sas, Mai
+~43082;GEOL 690;0;0;0;;;;;Schermer, Liz
+~43083;GEOL 690;0;0;0;;;;;Walowski, Kristina
+~40084;GERM 101;5;0;0;600;680;mwf;;Fiero, Petra S.
+~40085;GERM 101;5;0;0;780;860;mwf;;Staff
+~40086;GERM 201;5;0;0;600;680;mwf;;Winter, Julie Marie
+~41498;GERM 201;5;0;0;690;770;mwf;;Winter, Julie Marie
+~40087;GERM 301;5;0;0;510;590;mwf;;Partsch, Cornelius
+~42625;GERM 301;5;0;0;690;770;mwf;;Partsch, Cornelius
+~40394;GERM 401;5;0;0;780;860;mwf;;Fiero, Petra S.
+~40936;GERM 425;2;0;0;;;;;Dubenion-Smith, Shannon Andrew
+~40393;GREK 101;5;0;0;510;590;mwf;;Krause, Miller Stanley
+~41203;GREK 101;5;0;0;690;770;mwf;;Krause, Miller Stanley
+~43499;GREK 201;5;0;0;690;770;mwf;;Stayskal, Byron
+~40275;HLED 151;2;0;0;540;590;tr;;Bennett, Steve Woodrow
+~41225;HLED 201;2;0;0;600;650;mw;;Hunt, Mary
+~41983;HLED 210;4;0;0;780;890;mw;;Bennett, Steve Woodrow
+~40345;HLED 350;3;0;0;720;795;tr;;Staff
+~43337;HLED 355;4;0;0;780;890;mw;;Li, Ying
+~43338;HLED 401;4;0;0;780;890;tr;;Bennett, Steve Woodrow
+~43339;HLED 415;4;0;0;600;710;mw;;Li, Ying
+~43340;HLED 419;4;0;0;540;650;tr;;Hunt, Mary
+~44195;HLED 419;4;0;0;780;890;tr;;Hunt, Mary
+~42244;HLED 455;2;0;0;840;950;r;;Staff
+~44053;HLED 482;1;0;0;1050;1140;t;;Staff
+~42619;HIST 103;5;0;0;600;680;mwf;;Price, Hunter
+~43163;HIST 103;5;0;0;720;830;tr;;Hughes, Michael William
+~43934;HIST 103;0;0;0;600;710;tr;;Hughes, Michael William
+~44116;HIST 103;0;0;0;600;680;mwf;;Price, Hunter
+~44117;HIST 103;0;0;0;600;680;mwf;;Price, Hunter
+~42705;HIST 104;5;0;0;780;860;mwf;;Stewart, Mart A.
+~43164;HIST 104;5;0;0;840;950;tr;;Chard, Daniel
+~44185;HIST 104;5;0;0;780;860;mwf;;Stewart, Mart A.
+~42701;HIST 111;5;0;0;600;680;mwf;;Staff
+~42694;HIST 112;5;0;0;600;680;mwf;;Diehl, Peter D.
+~43165;HIST 141;5;0;0;600;680;mwf;;Seltz, Jennifer
+~42685;HIST 220;5;0;0;480;590;tr;;Bhattacharjee, Dharitri
+~42977;HIST 232;5;0;0;780;860;mwf;;Zarrow, Sarah
+~43516;HIST 262;5;0;0;720;830;tr;;Pihos, Peter Constantine
+~43374;HIST 273;5;0;0;690;770;mwf;;López-Pedreros, Ricardo
+~42698;HIST 275;5;0;0;600;710;tr;;Friday, Chris
+~43935;HIST 277;5;0;0;690;770;mwf;;Staff
+~42708;HIST 285;5;0;0;690;770;mwf;;Zimmerman, Sarah J.
+~43936;HIST 287;5;0;0;720;830;tr;;Anderson, Charles W.
+~43937;HIST 315;5;0;0;780;860;mwf;;Diehl, Peter D.
+~43938;HIST 321;5;0;0;720;830;tr;;Eurich, Amanda
+~43939;HIST 326;5;0;0;600;710;tr;;Cameselle-Pesce, Pedro
+~43940;HIST 331;5;0;0;870;950;mwf;;Zarrow, Sarah
+~43941;HIST 349;5;0;0;840;950;tr;;Stewart, Mart A.
+~42883;HIST 350;5;0;0;600;680;mwf;;Hardesty, Jared Ross
+~44261;HIST 360;5;0;0;870;950;mwf;;Price, Hunter
+~42979;HIST 364;5;0;0;870;950;mwf;;López-Pedreros, Ricardo
+~42707;HIST 372;5;0;0;600;710;tr;;Thompson, Roger R.
+~43942;HIST 375;5;0;0;600;710;tr;;Bushelle, Emi F.
+~43943;HIST 385;5;0;0;780;860;mwf;;Zimmerman, Sarah J.
+~42686;HIST 390;5;0;0;600;710;tr;;Bhattacharjee, Dharitri
+~43944;HIST 390;5;0;0;870;950;mwf;;Staff
+~44069;HIST 390;5;0;0;840;950;tr;;Folk, Holly
+~44072;HIST 390;5;0;0;840;950;tr;;Miran, Jonathan
+~44276;HIST 390;5;0;0;780;860;mwf;;Staff
+~43166;HIST 391;5;0;0;780;860;mwf;;Seltz, Jennifer
+~42981;HIST 393;5;0;0;840;950;tr;;Friday, Chris
+~42693;HIST 401;5;0;0;720;830;tr;;Costanzo, Susan
+~43945;HIST 408;5;0;0;840;950;tr;;Thompson, Roger R.
+~42982;HIST 474;5;0;0;840;950;tr;;Cameselle-Pesce, Pedro
+~43188;HIST 483;5;0;0;840;950;tr;;Bushelle, Emi F.
+~42692;HIST 490;5;0;0;720;830;tr;;Johnston, Christine
+~42696;HIST 499;5;0;0;840;1010;t;;Pihos, Peter Constantine
+~42704;HIST 499;5;0;0;900;1070;t;;Johnston, Christine
+~42706;HIST 499;5;0;0;840;1010;t;;Eurich, Amanda
+~42684;HIST 505;4;0;0;840;1010;t;;Anderson, Charles W.
+~44297;HIST 597B;4;0;0;720;830;tr;;Lynn, Kimberly
+~44296;HIST 597Y;4;0;0;870;1050;m;;Hardesty, Jared Ross
+~44295;HIST 597Z;4;0;0;720;830;tr;;Johnston, Christine
+~43616;HIST 690;0;0;0;;;;;Costanzo, Susan
+~43617;HIST 699;2;0;0;;;;;Patrick, David L.
+~44108;HGST 301;5;0;0;870;950;mwf;;Zarrow, Sarah
+~41751;HNRS 101;1;0;0;960;1040;m;;Linneman, Scott R.
+~40088;HNRS 103;4;0;0;;;;;Goldman, Tristan Adaon
+~40334;HNRS 103;4;0;0;780;830;mtrf;;Goldman, Tristan Adaon
+~40381;HNRS 103;4;0;0;540;640;mw;;Brian, Kathleen M.
+~40407;HNRS 103;4;0;0;660;760;mw;;Brian, Kathleen M.
+~41154;HNRS 103;4;0;0;780;850;mwf;;Martindale, Lori Marie
+~41841;HNRS 103;4;0;0;870;940;mwf;;Martindale, Lori Marie
+~42222;HNRS 103;4;0;0;840;890;mtwr;;Dugger, Julie
+~42877;HNRS 103;4;0;0;540;640;mw;;Hummel, Thomas
+~42878;HNRS 103;4;0;0;660;760;mw;;Hummel, Thomas
+~42879;HNRS 103;4;0;0;600;700;tr;;Dunn, Paul Richard
+~43357;HNRS 103;4;0;0;840;940;tr;;Dunn, Paul Richard
+~43358;HNRS 103;4;0;0;720;820;tr;;Staff
+~43915;HNRS 103;4;0;0;900;950;mtwr;;Staff
+~42764;HNRS 201;4;0;0;840;950;tr;;Hudson, Hud
+~42217;HNRS 204;5;0;0;600;710;mw;;Scollon, Christie Kaye
+~43399;HNRS 206;5;0;0;780;860;mwf;;Bowers, Melanie
+~43916;HNRS 211;4;0;0;780:720;830:830;mwf:t;;Peden, Brandon March
+~43921;HNRS 212;5;0;0;660:660;830:830;m:w;;Housen, Bernard A.
+~43917;HNRS 213;4;0;0;600;710;mwf;;Connell, Georgianne Leana
+~43361;HNRS 217;5;0;0;780;860;mwf;;Sandoval, Jordan Beth
+~41908;HNRS 350;3;0;0;660;710;mwf;;Martindale, Lori Marie
+~43922;HNRS 350;3;0;0;840;920;mw;;Dunn, Paul Richard
+~43923;HNRS 350;3;0;0;600;680;tr;;Albertson, Zander E.
+~43924;HNRS 350;3;0;0;720;800;tr;;Chard, Daniel
+~43925;HNRS 350;3;0;0;720;770;mw;;Hartwell, Ernest Rafael
+~43927;HNRS 350;3;0;0;600;650;mwf;;Osborne, Melissa
+~43929;HNRS 350;3;0;0;840;920;tr;;Moore, Tom
+~43930;HNRS 350;3;0;0;600;770;f;;Tilland-Stafford, Anika Oceana
+~43931;HNRS 350;3;0;0;930;1010;tr;;Hearne, James William
+~44257;HNRS 350;3;0;0;930;1010;mw;;Staff
+~42447;HNRS 390;1;0;0;960;1010;t;;Goldman, Tristan Adaon
+~41247;HNRS 490;0;0;0;;;;;Staff
+~40704;HRM 322;4;0;0;480;590;tr;;Weston, Jane E.
+~44136;HRM 424;4;0;0;600;830;m;;Sampel, Pamela Jean
+~40560;HSP 301;5;0;0;840;950;mw;;Staff
+~40561;HSP 301;5;0;0;600;710;tr;;Korsmo, John N.
+~41547;HSP 301;5;0;0;;;;;Chandran, Devyani
+~44281;HSP 301;5;0;0;;;;;Chandran, Devyani
+~42802;HSP 306;5;0;0;;;;;Blanchard, Anne Lilla
+~42816;HSP 306;5;0;0;600;710;mw;;Dozier, Raine J.
+~42817;HSP 306;5;0;0;720;830;tr;;Staff
+~44280;HSP 306;5;0;0;;;;;Sennett, Jackie
+~42803;HSP 355;5;0;0;;;;;Blanchard, Anne Lilla
+~42820;HSP 355;5;0;0;840;950;tr;;Staff
+~44279;HSP 355;5;0;0;;;;;Staff
+~42999;HSP 371;5;0;0;;;;;Staff
+~43496;HSP 371;5;0;0;840;950;mw;;Dozier, Raine J.
+~44277;HSP 371;5;0;0;;;;;Mullins, Carla E.
+~44278;HSP 371;5;0;0;;;;;Mullins, Carla E.
+~42409;HSP 385;5;0;0;600;710;mw;;Staff
+~40562;HSP 402;5;0;0;720;830;mw;;Staff
+~42998;HSP 404;5;0;0;840;950;mw;;Torres, Nicole
+~43264;HSP 404;5;0;0;;;;;Torres, Nicole
+~43265;HSP 404;5;0;0;;;;;Blanchard, Anne Lilla
+~42818;HSP 420;5;0;0;600;710;tr;;Bordoloi, Samit Dipon
+~43263;HSP 420;5;0;0;;;;;Delvalle, Derek
+~43266;HSP 420;5;0;0;;;;;Delvalle, Derek
+~41155;HSP 440;5;0;0;960;1070;m;;Staff
+~41178;HSP 440;5;0;0;;;;;Fritts, Heather Renee
+~41182;HSP 440;5;0;0;;;;;Sennett, Jackie
+~42821;HSP 440;5;0;0;960;1070;t;;Staff
+~43000;HSP 485;5;0;0;720;830;tr;;Corbin, Hope
+~42446;HUMA 121;5;0;0;600;680;mwf;;Murphy, Sean Eisen
+~44107;HUMA 123;5;0;0;840;950;tr;;Gogrof, Andrea E.
+~42986;HUMA 271;5;0;0;600;680;mwf;;Slouber, Michael
+~44189;HUMA 271;5;0;0;600;680;mwf;;Slouber, Michael
+~43996;HUMA 275;5;0;0;780;860;mwf;;Bushelle, Ethan David
+~44199;HUMA 275;5;0;0;780;860;mwf;;Bushelle, Ethan David
+~43997;HUMA 281;5;0;0;840;950;tr;;Carotenuto, Gianna M.
+~44191;HUMA 290;5;0;0;600;710;tr;;Carotenuto, Gianna M.
+~42504;HUMA 300;0;0;0;;;;;Staff
+~43998;HUMA 325;5;0;0;600;710;tr;;Gogrof, Andrea E.
+~42987;HUMA 329;5;0;0;780;860;mwf;;Murphy, Sean Eisen
+~42455;HUMA 362;5;0;0;840;950;tr;;Miran, Jonathan
+~42399;HUMA 400;0;0;0;;;;;Staff
+~43993;HUMA 425;5;0;0;720;830;tr;;Lynn, Kimberly
+~42402;HUMA 498;3;0;0;;;;;Lynn, Kimberly
+~42671;HUMA 499;3;0;0;;;;;Lynn, Kimberly
+~41388;ID 110;4;0;0;480;650;tr;;Kearsley, Paul Douglas
+~41671;ID 120;4;0;0;600;710;mwf;;Morris, Jason A.
+~41389;ID 210;4;0;0;780;890;mwf;;Staff
+~41390;ID 210;4;0;0;900;1010;mwf;;Staff
+~41486;ID 300;0;0;0;;;;;Staff
+~41391;ID 310;4;0;0;900;1070;tr;;Kearsley, Paul Douglas
+~42386;ID 330;4;0;0;840;950;mwf;;Staff
+~43919;ID 340;4;0;0;840;1010;tr;;Oslapas, Arunas P.
+~41448;ID 350;5;0;0;540;710;mw;;Oslapas, Arunas P.
+~41487;ID 400;0;0;0;;;;;Staff
+~41392;ID 410;5;0;0;540;710;tr;;Morris, Jason A.
+~41851;ID 440;4;0;0;;;;;Morris, Jason A.
+~40569;I T 344;1;0;0;;;;;Walcheff, Tyler Christian
+~40570;I T 344;1;0;0;;;;;Staff
+~40571;I T 344;1;0;0;540;590;w;;Walcheff, Tyler Christian
+~40723;I T 344;1;0;0;;;;;Lemmer, Jaime Small
+~43408;I T 344;1;0;0;600;650;m;;Staff
+~40572;I T 442;3;0;0;820:885;985:962;w:m;;Zhao, George
+~42525;I T 442;3;0;0;820;1030;t;;Dagnon, Paula Rae
+~40573;I T 443;3;0;0;840;920;mw;;Lemmer, Jaime Small
+~41679;I T 444;2;0;0;;;;;Lemmer, Jaime Small
+~42767;I T 525;4;0;0;;;;;Dagnon, Paula Rae
+~40501;I T 546;4;0;0;1050;1280;t;;Zhao, George
+~40705;IBUS 370;4;0;0;720;830;mw;;Powell, Skylar
+~42192;IBUS 370;4;0;0;600;710;tr;;Lim, Eunah
+~41327;IBUS 372;4;0;0;480;590;mw;;Powell, Skylar
+~40706;IBUS 470;4;0;0;840;950;mw;;Samant, Shantala
+~40840;IBUS 473;4;0;0;960;1070;mw;;Roehl, Tom
+~42423;IBUS 474;4;0;0;720;830;mw;;Roehl, Tom
+~43267;IBUS 490;0;0;0;;;;;Roehl, Tom
+~40522;INTL 201;5;0;0;600;710;tr;;Lippman, Leah Niobe
+~40938;INTL 201;5;0;0;840;950;tr;;Lippman, Leah Niobe
+~41260;INTL 201;5;0;0;600;710;tr;;Lippman, Leah Niobe
+~40089;JAPN 101;5;0;0;510;590;mwf;;Staff
+~40090;JAPN 101;5;0;0;600;680;mwf;;Deguchi, Masanori
+~41680;JAPN 101;5;0;0;690;770;mwf;;Kusakabe, Madoka
+~42931;JAPN 101;5;0;0;780;860;mwf;;Deguchi, Masanori
+~43883;JAPN 101;5;0;0;870;950;mwf;;Bond, Nathaniel
+~40533;JAPN 201;5;0;0;690;770;mwf;;Tomasi, Massimiliano
+~40534;JAPN 201;5;0;0;870;950;mwf;;Tomasi, Massimiliano
+~40535;JAPN 301;5;0;0;690;770;mwf;;Bond, Nathaniel
+~40600;JAPN 301;5;0;0;780;860;mwf;;Kusakabe, Madoka
+~42732;JAPN 403;5;0;0;690;770;mwf;;Staff
+~40935;JAPN 425;2;0;0;;;;;Deguchi, Masanori
+~40817;JOUR 106;2;0;0;720;770;mw;;Sarkar, Rachel Diane
+~41297;JOUR 106;2;0;0;480;530;tr;;Wise, Judi L.
+~40818;JOUR 190;5;0;0;540;590;mtwrf;;Howard, Bradley P.
+~40819;JOUR 190;5;0;0;540;590;mtwrf;;McLeod, Maria L.
+~42792;JOUR 190;5;0;0;540;590;mtwrf;;Howard, Bradley P.
+~40820;JOUR 207;4;0;0;720;830;mw;;Bowe, Brian J
+~40821;JOUR 207;4;0;0;600;710;mw;;Staff
+~40822;JOUR 207;4;0;0;840;950;mw;;Staff
+~40823;JOUR 207;4;0;0;720;830;tr;;Staff
+~41042;JOUR 207;4;0;0;840;950;tr;;Staff
+~41910;JOUR 207;4;0;0;600;710;tr;;Relyea, Kie
+~40824;JOUR 214;4;0;0;840;950;mw;;Relyea, Kie
+~40828;JOUR 305;4;0;0;720;770;mw;;Staff
+~41169;JOUR 307;5;0;0;720;830;tr;;Bowe, Brian J
+~41911;JOUR 307;5;0;0;840;950;mw;;Nielsen, Carolyn E.
+~41424;JOUR 309;5;0;0;600;710;mw;;O'Donovan, Betsy
+~42004;JOUR 309;5;0;0;840;950;tr;;Webb, Sheila M.
+~40825;JOUR 314;4;0;0;840;950;mw;;Relyea, Kie
+~40829;JOUR 321;4;0;0;840;950;mw;;Connell, Joan Marie
+~40832;JOUR 330;4;0;0;600;710;tr;;Keller, Jennifer Margaret
+~40833;JOUR 346;5;0;0;840;950;mw;;Gosen, Joe
+~40834;JOUR 350;5;0;0;720;830;mw;;Staff
+~41044;JOUR 351;4;0;0;600;710;mw;;Connell, Joan Marie
+~41410;JOUR 351;4;0;0;540;650;tr;;Webb, Sheila M.
+~41384;JOUR 380;5;0;0;600;710;tr;;McLeod, Maria L.
+~41458;JOUR 404;4;0;0;840;950;tr;;O'Donovan, Betsy
+~40826;JOUR 414;4;0;0;840;950;mw;;Relyea, Kie
+~40827;JOUR 415;5;0;0;840;950;mw;;Relyea, Kie
+~40830;JOUR 421;4;0;0;840;950;mw;;Connell, Joan Marie
+~40831;JOUR 422;5;0;0;840;950;mw;;Connell, Joan Marie
+~40843;JOUR 430;6;0;0;;;;;Bowe, Brian J
+~41702;JOUR 440;5;0;0;840;950;tr;;Keller, Jennifer Margaret
+~41700;JOUR 446;5;0;0;720;830;tr;;Gosen, Joe
+~40835;JOUR 480;5;0;0;720;830;tr;;Nielsen, Carolyn E.
+~41916;KIN 306;5;0;0;840;890;mtwrf;;Buddhadev, Harsh H.
+~41917;KIN 306;5;0;0;720;770;mtwrf;;Robey, Nathan
+~42189;KIN 308;3;0;0;480;530;mwf;;Robey, Nathan
+~42683;KIN 308;3;0;0;480;530;mwf;;Robey, Nathan
+~40651;KIN 311;5;0;0;660:600;710:650;mtwf:tr;;Suprak, Dave
+~40652;KIN 311;5;0;0;660:720;710:770;mtwf:tr;;Suprak, Dave
+~41585;KIN 311;5;0;0;720:660;770:710;mtwf:tr;;San Juan, Jun
+~41609;KIN 311;5;0;0;720:780;770:830;mtwf:tr;;San Juan, Jun
+~40654;KIN 312;5;0;0;480:540;530:650;mtwf:t;;San Juan, Jun
+~40655;KIN 312;5;0;0;480:720;530:830;mtwf:r;;San Juan, Jun
+~40656;KIN 315;2;0;0;780;830;mw;;Washburn, Nick
+~40657;KIN 320;3;0;0;780;855;tr;;Keeler, Linda Ann
+~41937;KIN 320;3;0;0;780;855;tr;;Keeler, Linda Ann
+~43351;KIN 320;3;0;0;900;975;tr;;Keeler, Linda Ann
+~43352;KIN 320;3;0;0;900;975;tr;;Keeler, Linda Ann
+~42712;KIN 321;3;0;0;780;855;tr;;Arthur-Cameselle, Jessyca Nicole
+~43353;KIN 321;3;0;0;780;855;tr;;Arthur-Cameselle, Jessyca Nicole
+~40658;KIN 410;3;0;0;720;770;mwf;;Chalmers, Gordon R.
+~44043;KIN 410;3;0;0;660;710;mwf;;Buddhadev, Harsh H.
+~40659;KIN 413;5;0;0;480:600;530:710;mtwf:r;;Brilla, Lorrie
+~40660;KIN 413;5;0;0;480:480;530:590;mtwf:r;;Brilla, Lorrie
+~44134;KIN 414;3;0;0;780;830;mwf;;Brilla, Lorrie
+~40662;KIN 416;3;0;0;540;590;mwr;;Suprak, Dave
+~41934;KIN 421;3;0;0;540;615;tr;;Keeler, Linda Ann
+~40663;KIN 422;3;0;0;660;735;tr;;Arthur-Cameselle, Jessyca Nicole
+~41548;KIN 422;3;0;0;780;855;wf;;Staff
+~40664;KIN 491;3;0;0;;;;;Brilla, Lorrie
+~40665;KIN 491;3;0;0;;;;;Chalmers, Gordon R.
+~40666;KIN 491;3;0;0;;;;;San Juan, Jun
+~40667;KIN 491;3;0;0;;;;;Suprak, Dave
+~41174;KIN 491;3;0;0;;;;;Keeler, Linda Ann
+~41553;KIN 491;3;0;0;;;;;Buddhadev, Harsh H.
+~41554;KIN 491;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41767;KIN 491;3;0;0;;;;;Robey, Nathan
+~41188;KIN 492;3;0;0;;;;;Brilla, Lorrie
+~41189;KIN 492;3;0;0;;;;;Chalmers, Gordon R.
+~41190;KIN 492;3;0;0;;;;;Suprak, Dave
+~41191;KIN 492;3;0;0;;;;;Keeler, Linda Ann
+~41192;KIN 492;3;0;0;;;;;San Juan, Jun
+~41555;KIN 492;3;0;0;;;;;Buddhadev, Harsh H.
+~41556;KIN 492;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41768;KIN 492;3;0;0;;;;;Robey, Nathan
+~40668;KIN 493;3;0;0;;;;;Brilla, Lorrie
+~40669;KIN 493;3;0;0;;;;;Chalmers, Gordon R.
+~40670;KIN 493;3;0;0;;;;;San Juan, Jun
+~40671;KIN 493;3;0;0;;;;;Keeler, Linda Ann
+~40672;KIN 493;3;0;0;;;;;Suprak, Dave
+~41557;KIN 493;3;0;0;;;;;Buddhadev, Harsh H.
+~41558;KIN 493;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41769;KIN 493;3;0;0;;;;;Robey, Nathan
+~40673;KIN 494;3;0;0;;;;;Brilla, Lorrie
+~40674;KIN 494;3;0;0;;;;;Chalmers, Gordon R.
+~40675;KIN 494;3;0;0;;;;;San Juan, Jun
+~40676;KIN 494;3;0;0;;;;;Keeler, Linda Ann
+~40677;KIN 494;3;0;0;;;;;Suprak, Dave
+~41559;KIN 494;3;0;0;;;;;Buddhadev, Harsh H.
+~41560;KIN 494;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~42223;KIN 494;3;0;0;;;;;Robey, Nathan
+~40678;KIN 502;0;0;0;;;;;Brilla, Lorrie
+~40679;KIN 502;0;0;0;;;;;Chalmers, Gordon R.
+~40680;KIN 502;0;0;0;;;;;San Juan, Jun
+~40681;KIN 502;0;0;0;;;;;Keeler, Linda Ann
+~40682;KIN 502;0;0;0;;;;;Suprak, Dave
+~41561;KIN 502;0;0;0;;;;;Buddhadev, Harsh H.
+~41562;KIN 502;0;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41977;KIN 502;0;0;0;;;;;Robey, Nathan
+~42748;KIN 505;2;0;0;900;950;mf;;Chalmers, Gordon R.
+~43343;KIN 506;2;0;0;960;1010;mf;;Chalmers, Gordon R.
+~44194;KIN 510;4;0;0;600;710;mw;;San Juan, Jun
+~40683;KIN 520;3;0;0;;;;;Brilla, Lorrie
+~40684;KIN 520;3;0;0;;;;;Chalmers, Gordon R.
+~40685;KIN 520;3;0;0;;;;;San Juan, Jun
+~40686;KIN 520;3;0;0;;;;;Keeler, Linda Ann
+~40687;KIN 520;3;0;0;;;;;Suprak, Dave
+~41563;KIN 520;3;0;0;;;;;Buddhadev, Harsh H.
+~41564;KIN 520;3;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41770;KIN 520;3;0;0;;;;;Robey, Nathan
+~42738;KIN 552;0;0;0;;;;;Keeler, Linda Ann
+~40688;KIN 592;0;0;0;;;;;Brilla, Lorrie
+~40689;KIN 592;0;0;0;;;;;Chalmers, Gordon R.
+~40690;KIN 592;0;0;0;;;;;San Juan, Jun
+~40691;KIN 592;0;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~40692;KIN 592;0;0;0;;;;;Suprak, Dave
+~41565;KIN 592;0;0;0;;;;;Buddhadev, Harsh H.
+~41566;KIN 592;0;0;0;;;;;Keeler, Linda Ann
+~41771;KIN 592;0;0;0;;;;;Robey, Nathan
+~40693;KIN 690;0;0;0;;;;;Brilla, Lorrie
+~40694;KIN 690;0;0;0;;;;;Chalmers, Gordon R.
+~40695;KIN 690;0;0;0;;;;;San Juan, Jun
+~40696;KIN 690;0;0;0;;;;;Keeler, Linda Ann
+~40697;KIN 690;0;0;0;;;;;Suprak, Dave
+~41567;KIN 690;0;0;0;;;;;Buddhadev, Harsh H.
+~41568;KIN 690;0;0;0;;;;;Arthur-Cameselle, Jessyca Nicole
+~41772;KIN 690;0;0;0;;;;;Robey, Nathan
+~40746;KIN 699;2;0;0;;;;;Patrick, David L.
+~40091;LAT 101;5;0;0;600;680;mwf;;Martin, Danielle Elise
+~40524;LAT 101;5;0;0;690;770;mwf;;Martin, Danielle Elise
+~43501;LAT 201;5;0;0;600;680;mwf;;Engelsing, Eduardo Marcant
+~41269;LDST 100;2;0;0;960;1060;t;;Diaz, Holly Diane
+~43350;LDST 100;2;0;0;960;1060;t;;Diaz, Holly Diane
+~43815;LDST 101;5;0;0;840:660;920:740;tr:f;;Stout, Karen Louise
+~43816;LDST 101;5;0;0;840:660;920:740;tr:w;;Stout, Karen Louise
+~43817;LDST 101;5;0;0;840:780;920:860;tr:w;;Stout, Karen Louise
+~43818;LDST 101;5;0;0;840:780;920:860;tr:f;;Stout, Karen Louise
+~43822;LDST 201;3;0;0;720;800;tr;;Diaz, Holly Diane
+~41413;LDST 341;0;0;0;;;;;Diaz, Holly Diane
+~43819;LDST 450;5;0;0;660;740;tr;;Stout, Karen Louise
+~43821;LDST 451;5;0;0;660;740;tr;;Stout, Karen Louise
+~43820;LDST 452;3;0;0;660;740;t;;Stout, Karen Louise
+~43403;LIBR 300;0;0;0;;;;;Staff
+~44103;LIBR 325;5;0;0;;;;;Taylor, Michael Lee
+~43404;LIBR 400;0;0;0;;;;;Staff
+~40068;LING 201;5;0;0;690;770;mwf;;Vajda, Edward J.
+~40069;LING 201;5;0;0;600;680;mwf;;Dawson, Virginia
+~44121;LING 201;5;0;0;690;770;mwf;;Vajda, Edward J.
+~44309;LING 201;5;0;0;690;770;mwf;;Vajda, Edward J.
+~40153;LING 204;5;0;0;840;950;tr;;Curtis, Emily KJ
+~43814;LING 207;5;0;0;870;950;mwf;;Jantzen, McNeel Gordon
+~43888;LING 305;5;0;0;690;770;mwf;;Jantzen, McNeel Gordon
+~41315;LING 310;5;0;0;780;860;mwf;;Dubenion-Smith, Shannon Andrew
+~41482;LING 311;5;0;0;600;680;mwf;;Sandoval, Jordan Beth
+~40649;LING 321;5;0;0;600;710;tr;;Lobeck, Anne C.
+~42369;LING 331;5;0;0;780;860;mwf;;Dawson, Virginia
+~43889;LING 370;5;0;0;840;950;tr;;Lobeck, Anne C.
+~43886;LING 402;5;0;0;720;830;tr;;Mata, R.
+~43887;LING 421;5;0;0;780;860;mwf;;Denham, Kristin E.
+~40634;MGMT 202;2;0;0;540;650;f;;Senger, Lucas G.
+~40038;MGMT 271;4;0;0;1050;1160;mw;;Doucet, Randy Allen
+~40292;MGMT 271;4;0;0;1050;1160;tr;;Doucet, Randy Allen
+~41909;MGMT 271;4;0;0;1050;1160;tr;;Schermetzler, Timothy Daniel
+~41946;MGMT 271;4;0;0;720;830;tr;;Castle, Ryan C.
+~40502;MGMT 311;4;0;0;600;710;tr;;Kanov, Jason
+~40503;MGMT 311;4;0;0;;;;;Warren, Meg
+~40504;MGMT 311;4;0;0;;;;;Bedi, Akanksha
+~41279;MGMT 311;4;0;0;840;950;t;;Freeman, Sabrina Karen
+~41966;MGMT 311;4;0;0;;;;;Bedi, Akanksha
+~42867;MGMT 311;4;0;0;840;950;t;;Freeman, Sabrina Karen
+~40403;MGMT 313;4;0;0;600;710;mw;;Sass, Mary Denise
+~40404;MGMT 313;4;0;0;720;830;mw;;Sass, Mary Denise
+~42424;MGMT 319;4;0;0;840;950;tr;;Walker, Lucas Caleb
+~41368;MGMT 359;4;0;0;720;830;mw;;Dunn, Craig P.
+~41132;MGMT 382;4;0;0;720;830;mw;;Wilkens, Drew
+~41133;MGMT 382;4;0;0;600;710;mw;;Castle, Ryan C.
+~41134;MGMT 382;4;0;0;720;830;mw;;Castle, Ryan C.
+~41135;MGMT 382;4;0;0;840;950;tr;;Davidson, Nolan Forrest
+~44062;MGMT 405;4;0;0;840;950;tr;;Kanov, Jason
+~41328;MGMT 413;4;0;0;720;830;mw;;Daniels, Lori
+~41131;MGMT 414;4;0;0;720;830;mw;;Tyran, Kristi
+~44063;MGMT 481;4;0;0;600;710;tr;;Warren, Meg
+~40253;MGMT 490;4;0;0;;;;;Staff
+~41968;MGMT 491;4;0;0;600;830;w;;Vogel, Joseph Otto
+~40372;MGMT 495;4;0;0;480;590;tr;;Nordin, David
+~40566;MGMT 495;4;0;0;600;710;tr;;Nordin, David
+~41252;MGMT 495;4;0;0;480;590;tr;;Lim, Eunah
+~41705;MGMT 495;4;0;0;960;1070;mw;;Samant, Shantala
+~40189;MIS 220;2;0;0;;;;;Baker, Katherine Rose
+~40278;MIS 220;2;0;0;540;590;f;;Baker, Katherine Rose
+~40279;MIS 320;4;0;0;600;680;w;;Califf, Christopher
+~40280;MIS 320;4;0;0;600;680;w;;Califf, Christopher
+~43807;MIS 320;4;0;0;720;800;w;;Califf, Christopher
+~43808;MIS 320;4;0;0;720;800;w;;Califf, Christopher
+~40281;MIS 321;4;0;0;720;830;tr;;Tyran, Craig Kenneth
+~40282;MIS 322;4;0;0;960;1070;tr;;Morgans, Brian Lee
+~40283;MIS 421;4;0;0;600;710;tr;;Chen, Xiaofeng
+~40921;MIS 422;4;0;0;840;950;tr;;Chen, Xiaofeng
+~44042;MIS 433;4;0;0;840;950;mw;;Li, Jiexun
+~42952;MFGE 231;4;0;0;600:780;710:890;tr:t;;Leonhardt, Eric Charles
+~42953;MFGE 231;4;0;0;600:780;710:890;tr:r;;Leonhardt, Eric Charles
+~42954;MFGE 231;4;0;0;600:900;710:1010;tr:t;;Leonhardt, Eric Charles
+~41672;MFGE 300;0;0;0;;;;;Staff
+~41400;MFGE 332;4;0;0;480:600;590:710;tr:t;;Yip-Hoi, Derek
+~41401;MFGE 332;4;0;0;480:600;590:710;tr:r;;Yip-Hoi, Derek
+~41402;MFGE 332;4;0;0;480:600;590:710;tr:f;;Yip-Hoi, Derek
+~41398;MFGE 341;4;0;0;840;950;mwf;;Alqudah, Sura Khaled
+~41673;MFGE 400;0;0;0;;;;;Staff
+~42955;MFGE 453;4;0;0;600:600;710:710;m:tr;;Algeddawy, Tarek
+~42956;MFGE 453;4;0;0;600:600;710:710;m:wf;;Algeddawy, Tarek
+~41543;MFGE 463;4;0;0;480:840;590:950;tr:m;;Gill, David Dennis
+~42400;MFGE 463;4;0;0;480:840;590:950;tr:f;;Gill, David Dennis
+~41577;MFGE 491;3;0;0;780;890;tr;;Yip-Hoi, Derek
+~41488;MFGE 495;0;0;0;;;;;Alqudah, Sura Khaled
+~41489;MFGE 495;0;0;0;;;;;Gill, David Dennis
+~41490;MFGE 495;0;0;0;;;;;Yip-Hoi, Derek
+~42403;MFGE 495;0;0;0;;;;;Algeddawy, Tarek
+~42404;MFGE 495;0;0;0;;;;;Newcomer, Jeff
+~42672;MACS 110;3;0;0;780;950;m;;Arellano, Shawn M.
+~42858;MACS 112;1;0;0;900;950;t;;Cooper, W. James
+~42948;MACS 301;4;0;0;600:780;680:890;tr:t;;Roland, Emily Carlson
+~43933;MACS 304;4;0;0;600;650;mwf;;Kastner, Sam
+~43780;MACS 492;1;0;0;;;;;Cooper, W. James
+~44003;MACS 492;0;0;0;;;;;Dimond, James Longfellow
+~44004;MACS 492;0;0;0;;;;;Arellano, Shawn M.
+~44005;MACS 492;0;0;0;;;;;Olson, Brady
+~44007;MACS 492;0;0;0;;;;;Saenger, Casey
+~44008;MACS 492;0;0;0;;;;;Kastner, Sam
+~44009;MACS 492;0;0;0;;;;;Sobocinski, Kathryn Louise
+~44011;MACS 492;0;0;0;;;;;Lemkau, Karin Lydia
+~44012;MACS 492;0;0;0;;;;;Roland, Emily Carlson
+~44013;MACS 492;0;0;0;;;;;Whitney, Nina Millicent
+~44285;MACS 493;4;0;0;540;1010;r;;Strom, Suzanne L.
+~43961;MACS 494;0;0;0;;;;;Arellano, Shawn M.
+~43962;MACS 494;0;0;0;;;;;Olson, Brady
+~43963;MACS 494;0;0;0;;;;;Saenger, Casey
+~43964;MACS 494;0;0;0;;;;;Kastner, Sam
+~43965;MACS 494;0;0;0;;;;;Sobocinski, Kathryn Louise
+~43966;MACS 494;0;0;0;;;;;Cooper, W. James
+~43967;MACS 494;0;0;0;;;;;Roland, Emily Carlson
+~43968;MACS 494;0;0;0;;;;;Lemkau, Karin Lydia
+~43969;MACS 494;0;0;0;;;;;Whitney, Nina Millicent
+~44002;MACS 494;0;0;0;;;;;Dimond, James Longfellow
+~43970;MACS 495;0;0;0;;;;;Arellano, Shawn M.
+~43971;MACS 495;0;0;0;;;;;Olson, Brady
+~43972;MACS 495;0;0;0;;;;;Saenger, Casey
+~43973;MACS 495;0;0;0;;;;;Kastner, Sam
+~43974;MACS 495;0;0;0;;;;;Sobocinski, Kathryn Louise
+~43975;MACS 495;0;0;0;;;;;Cooper, W. James
+~43976;MACS 495;0;0;0;;;;;Roland, Emily Carlson
+~43977;MACS 495;0;0;0;;;;;Lemkau, Karin Lydia
+~44147;MACS 495;0;0;0;;;;;Whitney, Nina Millicent
+~40373;MKTG 380;4;0;0;840;950;mw;;Purdy, Daniel LaRaine
+~40460;MKTG 380;4;0;0;;;;;Baskentli, Sara
+~41177;MKTG 380;4;0;0;;;;;Purdy, Daniel LaRaine
+~42841;MKTG 380;4;0;0;720;830;mw;;Safavi, Farrokh
+~43332;MKTG 380;4;0;0;;;;;Baskentli, Sara
+~40374;MKTG 381;4;0;0;720;830;tr;;Purdy, Daniel LaRaine
+~40375;MKTG 382;4;0;0;840;950;tr;;Armstrong Soule, Cat
+~42218;MKTG 384;4;0;0;720;830;tr;;Baskentli, Sara
+~42219;MKTG 474;4;0;0;720;830;tr;;Baskentli, Sara
+~44174;MKTG 475;4;0;0;840;950;mw;;Sekhon, Tejvir Singh
+~41666;MKTG 476;4;0;0;960;1070;tr;;Staton, Mark Gambrell
+~41150;MKTG 480;4;0;0;;;;;Armstrong Soule, Cat
+~44173;MKTG 481;4;0;0;600;710;mw;;Love, Ed
+~44310;MKTG 482;4;0;0;840;950;tr;;Miller, Bill
+~40376;MKTG 483;4;0;0;600;710;tr;;Purdy, Daniel LaRaine
+~41932;MKTG 486;4;0;0;600;710;mw;;Safavi, Farrokh
+~40377;MKTG 489;4;0;0;720;830;mw;;Sekhon, Tejvir Singh
+~40382;MKTG 490;0;0;0;;;;;Armstrong Soule, Cat
+~44172;MKTG 499;4;0;0;720;830;tr;;Armstrong Soule, Cat
+~42615;MBA 502;4;0;0;840;950;tr;;Kahnamoui, Farrokh
+~43823;MBA 502;4;0;0;1080:1200;1190:1310;t:r;;Roelofs, Matthew R.
+~42616;MBA 504;4;0;0;600;710;mw;;McClain, Lee
+~43824;MBA 506;4;0;0;1200:1080;1310:1190;t:r;;Li, Jiexun
+~43123;MBA 507;4;0;0;840;950;mw;;Cook, Michael F.
+~42617;MBA 510;4;0;0;600;710;tr;;Dolar, Burak
+~43124;MBA 591;4;0;0;600;710;mw;;Kim, Jongwook
+~44237;MBA 591;4;0;0;1020:510;1260:750;f:;;Kim, Jongwook
+~42618;MBA 594;4;0;0;840;950;mw;;Dunn, Craig P.
+~44238;MBA 598;4;0;0;750:780;990:1020;f:;;Mayer, Aric
+~43125;MBA 599;4;0;0;600;710;tr;;Mayer, Aric
+~42200;MPAC 521;4;0;0;480;590;mw;;Drum, Dawna Marie
+~41229;MPAC 535;4;0;0;720;830;mw;;Taylor, Audrey G.
+~41580;MPAC 541;4;0;0;840;950;tr;;Chen, Hanmei
+~42781;MPAC 547;4;0;0;720;830;tr;;Okinaka, Mark Yutaka
+~42831;MPAC 564;2;0;0;;;;;Dolar, Burak
+~42393;MPAC 577;4;0;0;840;950;mw;;Moore, Jared Allen
+~44078;MPAC 585;4;0;0;600;710;mw;;Singleton, Ron
+~41240;MPAC 595;2;0;0;600;710;f;;Liu, Zander
+~40602;MSCI 201;4;0;0;;;;;Staff
+~41706;MSCI 321;1;0;0;;;;;McGrew, G I.
+~41707;MSCI 322;1;0;0;;;;;Staff
+~41708;MSCI 323;1;0;0;;;;;Staff
+~40701;MSCI 491;3;0;0;;;;;Murphy, Amanda Ruth
+~40702;MSCI 492;3;0;0;;;;;Murphy, Amanda Ruth
+~41695;MATH 099;5;0;0;480;590;tr;;Brones, John Earl
+~41696;MATH 099;5;0;0;480;590;wf;;Brones, John Earl
+~42346;MATH 099;5;0;0;540;590;mtwrf;;Clark, Katie
+~42421;MATH 099;5;0;0;600;650;mtwrf;;Clark, Katie
+~43376;MATH 099;5;0;0;780;830;mtwrf;;Staff
+~43564;MATH 099;5;0;0;840;890;mtwrf;;Staff
+~43205;MATH 106;4;0;0;720;770;mtwrf;;Staff
+~40399;MATH 107;4;0;0;600;650;mtrf;;Deeney, Megan
+~40428;MATH 107;4;0;0;660;710;mtrf;;Deeney, Megan
+~41687;MATH 107;4;0;0;720;770;mtrf;;Clark, Katie
+~43458;MATH 108;4;0;0;660;710;mtrf;;Staff
+~42077;MATH 110;3;0;0;840;890;mwf;;Good, Andrew D.
+~43154;MATH 111;5;0;0;840;950;trf;;Rupe, Katie
+~40441;MATH 112;5;0;0;540;590;mtwrf;;Gort, Annie
+~40442;MATH 112;5;0;0;540;590;mtwrf;;Schivitz, Beth
+~40443;MATH 112;5;0;0;540;590;mtwrf;;Staff
+~40444;MATH 112;5;0;0;600;650;mtwrf;;Staff
+~40445;MATH 112;5;0;0;600;650;mtwrf;;Staff
+~40446;MATH 112;5;0;0;660;710;mtwrf;;Gort, Annie
+~40447;MATH 112;5;0;0;720;770;mtwrf;;Anderson, Victoria Pauline
+~40448;MATH 112;5;0;0;720;770;mtwrf;;Staff
+~40449;MATH 112;5;0;0;780;830;mtwrf;;Staff
+~40450;MATH 112;5;0;0;780;830;mtwrf;;Staff
+~40929;MATH 112;5;0;0;780;830;mtwrf;;Nimtz, Jen
+~40941;MATH 112;5;0;0;780;830;mtwrf;;Anderson, Victoria Pauline
+~40942;MATH 112;5;0;0;780;830;mtwrf;;Staff
+~41641;MATH 112;5;0;0;840;890;mtwrf;;Staff
+~41754;MATH 112;5;0;0;840;890;mtwrf;;Staff
+~44206;MATH 112;5;0;0;720;770;mtwrf;;Anderson, Victoria Pauline
+~40012;MATH 114;5;0;0;540;590;mtwrf;;Staff
+~40013;MATH 114;5;0;0;540;590;mtwrf;;Staff
+~40014;MATH 114;5;0;0;540;590;mtwrf;;Staff
+~40015;MATH 114;5;0;0;600;650;mtwrf;;Staff
+~40016;MATH 114;5;0;0;600;650;mtwrf;;McMullen, Jamie Lynn
+~40017;MATH 114;5;0;0;660;710;mtwrf;;McMullen, Jamie Lynn
+~40018;MATH 114;5;0;0;660;710;mtwrf;;Staff
+~40019;MATH 114;5;0;0;720;770;mtwrf;;Staff
+~40020;MATH 114;5;0;0;720;770;mtwrf;;Staff
+~43461;MATH 114;5;0;0;780;830;mtwrf;;Fetherolf, Allyn Edward
+~44207;MATH 114;5;0;0;660;710;mtwrf;;McMullen, Jamie Lynn
+~40227;MATH 115;5;0;0;660;710;mtwrf;;Schivitz, Beth
+~41224;MATH 115;5;0;0;720;770;mtwrf;;Schivitz, Beth
+~41339;MATH 115;5;0;0;780;830;mtwrf;;Richardson, Andrew Garrett
+~40201;MATH 118;5;0;0;600;650;mtwrf;;Fetherolf, Allyn Edward
+~40202;MATH 118;5;0;0;660;710;mtwrf;;Fetherolf, Allyn Edward
+~43110;MATH 118;5;0;0;720;770;mtwrf;;Gort, Annie
+~40021;MATH 124;5;0;0;480;530;mtwrf;;Scott, Daphne Ann
+~40022;MATH 124;5;0;0;540;590;mtwrf;;Scott, Daphne Ann
+~40203;MATH 124;5;0;0;540;590;mtwrf;;Hixson, Amber Lynn
+~40204;MATH 124;5;0;0;600;650;mtwrf;;Hixson, Amber Lynn
+~40205;MATH 124;5;0;0;660;710;mtwrf;;Nuckolls, Seth Joseph
+~40604;MATH 124;5;0;0;720;770;mtwrf;;Nuckolls, Seth Joseph
+~40732;MATH 124;5;0;0;720;770;mtwrf;;Amiran, Edoh Y.
+~40791;MATH 124;5;0;0;780;830;mtwrf;;Marley, Tom
+~40842;MATH 124;5;0;0;840;890;mtwrf;;Marley, Tom
+~40206;MATH 125;5;0;0;480;530;mtwrf;;Banham, Timothy S.
+~40207;MATH 125;5;0;0;540;590;mtwrf;;Banham, Timothy S.
+~40208;MATH 125;5;0;0;600;650;mtwrf;;Richardson, Andrew Garrett
+~40509;MATH 125;5;0;0;660;710;mtwrf;;Richardson, Andrew Garrett
+~40605;MATH 125;5;0;0;840;890;mtwrf;;Nuckolls, Seth Joseph
+~40510;MATH 134;5;0;0;660;710;mtwrf;;Ragsdale, Kim
+~40610;MATH 138;5;0;0;660;710;mtwrf;;Scott, Daphne Ann
+~40028;MATH 156;4;0;0;540;590;mtrf;;Good, Andrew D.
+~40210;MATH 156;4;0;0;660;710;mtrf;;Good, Andrew D.
+~40209;MATH 157;4;0;0;600;650;mtrf;;Marley, Tom
+~40211;MATH 157;4;0;0;660;710;mtrf;;Schwartz, Greg
+~43400;MATH 157;4;0;0;840;890;mtrf;;Deeney, Megan
+~40029;MATH 204;4;0;0;540;590;mtrf;;Amiran, Edoh Y.
+~40290;MATH 204;4;0;0;600;650;mtrf;;Kim, Hee Jung
+~40726;MATH 204;4;0;0;660;710;mtrf;;Ypma, Tjalling Johannes
+~40919;MATH 204;4;0;0;720;770;mtrf;;Pei, Yuan
+~41417;MATH 204;4;0;0;780;830;mtrf;;Nyman, Adam
+~40212;MATH 224;5;0;0;540;590;mtwrf;;Schwartz, Greg
+~40213;MATH 224;5;0;0;660;710;mtwrf;;Banham, Timothy S.
+~40931;MATH 224;5;0;0;720;770;mtwrf;;Banham, Timothy S.
+~41340;MATH 224;5;0;0;780;830;mtwrf;;Kim, Hee Jung
+~40944;MATH 225;4;0;0;840;890;mtrf;;McDowall, Stephen
+~40030;MATH 226;4;0;0;780;830;mtrf;;Hartenstine, David Ashley
+~42082;MATH 226;4;0;0;840;890;mtrf;;Pei, Yuan
+~40451;MATH 240;4;0;0;480;530;mtrf;;Kean, Eric M.
+~40930;MATH 240;4;0;0;540;590;mtrf;;Kean, Eric M.
+~43398;MATH 240;4;0;0;840;890;mtrf;;Chan, Victor
+~40031;MATH 302;4;0;0;660;710;mtrf;;Nyman, Adam
+~41230;MATH 302;4;0;0;780;830;mtrf;;Sarkar, Amites
+~40364;MATH 304;4;0;0;600;650;mtrf;;Berget, Andrew
+~42900;MATH 304;4;0;0;840;890;mtrf;;Zhang, Jianying
+~40946;MATH 309;4;0;0;720;770;mtrf;;Parshall, Hans
+~40798;MATH 312;4;0;0;840;890;mtrf;;Curgus, Branko
+~40214;MATH 331;4;0;0;600;650;mtrf;;Zhang, Jianying
+~41341;MATH 331;4;0;0;780;860;mw;;Smit Vega Garcia, Mariana
+~40215;MATH 341;4;0;0;540;590;mtrf;;Alcantara, Ida
+~40792;MATH 341;4;0;0;600;650;mtrf;;Alcantara, Ida
+~41334;MATH 341;4;0;0;780;830;mtrf;;Anderson, Amy Dawn
+~42742;MATH 341;4;0;0;840;890;mtrf;;Cohen, Jessica Strowbridge
+~41335;MATH 342;4;0;0;720;770;mtrf;;Chan, Victor
+~41336;MATH 345;4;0;0;960;1070;mw;;Piyadi Gamage, Ramadha
+~40216;MATH 360;4;0;0;900;950;mtrf;;Parshall, Hans
+~43155;MATH 372;4;0;0;480;590;mw;;Mock, Janet K.
+~40032;MATH 381;4;0;0;480;590;tr;;Mock, Janet K.
+~40033;MATH 381;4;0;0;720;830;mw;;Mock, Janet K.
+~40034;MATH 382;4;0;0;600;710;tr;;Borowski, Rebecca
+~41337;MATH 382;4;0;0;840;950;tr;;Borowski, Rebecca
+~40515;MATH 383;4;0;0;600;710;mw;;Rupe, Katie
+~40631;MATH 383;4;0;0;720;830;tr;;Cohen, Jessica Strowbridge
+~40776;MATH 409;2;0;0;;;;;Sarkar, Amites
+~40752;MATH 419;3;0;0;900;950;mtf;;Anderson, Amy Dawn
+~40218;MATH 421;4;0;0;600;650;mtrf;;McDowall, Stephen
+~40811;MATH 430;4;0;0;660;710;mtrf;;Curgus, Branko
+~44158;MATH 438;4;0;0;870;950;mwf;;Smit Vega Garcia, Mariana
+~40035;MATH 441;4;0;0;720;770;mtrf;;Alcantara, Ida
+~44082;MATH 444;4;0;0;780;830;mtrf;;Piyadi Gamage, Ramadha
+~44090;MATH 451;4;0;0;780;830;mtrf;;Treneer, Stephanie Ann
+~40607;MATH 491;2;0;0;1020;1130;w;;Neyman, Sarah
+~41338;MATH 521;4;0;0;600;650;mtrf;;McDowall, Stephen
+~44101;MATH 525;4;0;0;720;770;mtrf;;Berget, Andrew
+~40812;MATH 530;4;0;0;660;710;mtrf;;Curgus, Branko
+~44159;MATH 538;4;0;0;870;950;mwf;;Smit Vega Garcia, Mariana
+~40036;MATH 541;4;0;0;720;770;mtrf;;Alcantara, Ida
+~44095;MATH 551;4;0;0;780;830;mtrf;;Treneer, Stephanie Ann
+~44102;MATH 570;4;0;0;660;710;mtrf;;Barnard, Rick
+~40037;MATH 595;2;0;0;;;;;Ragsdale, Kim
+~43478;MATH 691;0;0;0;;;;;Amiran, Edoh Y.
+~43479;MATH 699;2;0;0;;;;;Patrick, David L.
+~40568;M/CS 335;4;0;0;540;590;mtrf;;Barnard, Rick
+~40948;M/CS 375;4;0;0;840;890;mtrf;;Ypma, Tjalling Johannes
+~41900;LANG 410;5;0;0;630;760;tr;;Bernardo-Hinesley, Sheryl
+~43269;MDS 410;4;0;0;;;;;Walker, Wendy Colleen
+~44114;MDS 410;4;0;0;600;710;tr;;Staff
+~41404;MDS 471;0;0;0;;;;;Walker, Wendy Colleen
+~44170;MLE 436;4;0;0;990;1100;w;;Wiggins, Joy Louise
+~44192;MLE 436;4;0;0;990;1100;w;;Staff
+~44162;MLE 441;5;0;0;960;1100;t;;Zilmer, Caleb
+~44167;MLE 442;5;0;0;960;1100;tr;;Wiggins, Joy Louise
+~44169;MLE 443;5;0;0;930;1100;w;;Zilmer, Caleb
+~41784;MUS 098;0;0;0;;;;;Widrig, Judith L.
+~41418;MUS 101;2;0;0;720;770;mw;;Schille-Hudson, Eli Adam
+~40508;MUS 104;3;0;0;630;710;tr;;Donnellan, Grant Jonathan
+~41594;MUS 104;3;0;0;;;;;Camacho, Laura Marie
+~40521;MUS 105;3;0;0;600;650;mwf;;Smith, Todd Francis
+~41277;MUS 105;3;0;0;;;;;Smith, Todd Francis
+~44118;MUS 105;3;0;0;600;650;mwf;;Smith, Todd Francis
+~44120;MUS 105;3;0;0;600;650;mwf;;Smith, Todd Francis
+~41518;MUS 106;3;0;0;;;;;Senger, Lucas G.
+~42344;MUS 106;3;0;0;;;;;Senger, Lucas G.
+~41519;MUS 107;3;0;0;;;;;Smart, Amy Lynne
+~41742;MUS 108;3;0;0;;;;;Wooten, D'Anthoni M.
+~42680;MUS 109;3;0;0;;;;;Camacho, Gustavo
+~42526;MUS 110;3;0;0;;;;;Watson, Jordan Craig
+~41791;MUS 121A;1;0;0;480;530;tr;;Camacho, Gustavo
+~41792;MUS 121A;1;0;0;540;590;tr;;Camacho, Gustavo
+~41793;MUS 121B;1;0;0;480;530;t;;Zavislak, Kay M.
+~41794;MUS 121B;1;0;0;540;590;t;;Zavislak, Kay M.
+~41795;MUS 121B;1;0;0;480;530;r;;Zavislak, Kay M.
+~44274;MUS 121B;1;0;0;;;;;Widrig, Judith L.
+~44275;MUS 121B;1;0;0;;;;;Widrig, Judith L.
+~41988;MUS 122;2;0;0;480;530;mwf;;Dudenbostel, Ryan Keith
+~41989;MUS 122;2;0;0;540;590;mwf;;Ray, James
+~41509;MUS 166A;2;0;0;600;650;tr;;Dudenbostel, Heather Christian
+~40129;MUS 205;3;0;0;540;590;mwf;;Nutt, Haley Jo
+~43106;MUS 205;3;0;0;;;;;Wickell, Jeanette Erin
+~41416;MUS 211;1;0;0;;;;;Widrig, Judith L.
+~40850;MUS 212;2;0;0;720:960;770:1070;w:t;;Jelaca Jovanovic, Milica
+~40851;MUS 212;1;0;0;720:960;770:1070;w:t;;Jelaca Jovanovic, Milica
+~41162;MUS 212;2;0;0;840:960;890:1070;r:t;;Widrig, Judith L.
+~41163;MUS 212;1;0;0;;;;;Widrig, Judith L.
+~42822;MUS 212;2;0;0;;;;;Zavislak, Kay M.
+~42880;MUS 212;1;0;0;;;;;Zavislak, Kay M.
+~44139;MUS 212;2;0;0;960:990;1070:1040;t:r;;Gilliam, Jeffrey P.
+~44140;MUS 212;1;0;0;960:990;1070:1040;t:r;;Gilliam, Jeffrey P.
+~41026;MUS 213A;2;0;0;840;950;t;;Donnellan, Grant Jonathan
+~41027;MUS 213A;1;0;0;;;;;Donnellan, Grant Jonathan
+~42965;MUS 213A;2;0;0;;;;;Camacho, Laura Marie
+~42966;MUS 213A;1;0;0;;;;;Camacho, Laura Marie
+~40854;MUS 213B;2;0;0;780;830;r;;Gottesman, Joseph
+~40855;MUS 213B;1;0;0;780;830;r;;Gottesman, Joseph
+~40856;MUS 213C;2;0;0;;;;;Steinberg, Janet Marie
+~40857;MUS 213C;1;0;0;;;;;Steinberg, Janet Marie
+~40858;MUS 213D;2;0;0;;;;;Palmer, Dylan
+~40859;MUS 213D;1;0;0;;;;;Palmer, Dylan
+~40860;MUS 213E;2;0;0;;;;;Whitman, Jill Stroming
+~40861;MUS 213E;1;0;0;;;;;Whitman, Jill Stroming
+~40870;MUS 214A;2;0;0;;;;;McCarthy, Lisa Marie
+~40871;MUS 214A;1;0;0;900;950;w;;McCarthy, Lisa Marie
+~40511;MUS 214B;2;0;0;;;;;Weeks, Jennifer Karin
+~40793;MUS 214B;1;0;0;;;;;Weeks, Jennifer Karin
+~40872;MUS 214C;2;0;0;810;860;m;;Block, Erika Kristin
+~40873;MUS 214C;1;0;0;;;;;Block, Erika Kristin
+~40874;MUS 214D;2;0;0;;;;;Nelson, Pat
+~40875;MUS 214D;1;0;0;;;;;Nelson, Pat
+~40876;MUS 214E;2;0;0;;;;;Winkler, Fred A.
+~40877;MUS 214E;1;0;0;;;;;Winkler, Fred A.
+~40878;MUS 214F;2;0;0;;;;;Camacho, Gustavo
+~40879;MUS 214F;1;0;0;;;;;Camacho, Gustavo
+~40880;MUS 214G;2;0;0;;;;;Green, Vincent Bryan
+~40881;MUS 214G;1;0;0;;;;;Green, Vincent Bryan
+~40882;MUS 214H;2;0;0;660;710;t;;Cox, Gregory Allen
+~40883;MUS 214H;1;0;0;;;;;Cox, Gregory Allen
+~40884;MUS 214I;2;0;0;;;;;MacLellan, Peder
+~40885;MUS 214I;1;0;0;;;;;MacLellan, Peder
+~43783;MUS 214I;2;0;0;;;;;Feeney, Amy Rose
+~43784;MUS 214I;1;0;0;;;;;Feeney, Amy Rose
+~40886;MUS 214J;2;0;0;;;;;MacLellan, Peder
+~40887;MUS 214J;1;0;0;;;;;MacLellan, Peder
+~42912;MUS 214J;2;0;0;;;;;Feeney, Amy Rose
+~42913;MUS 214J;1;0;0;;;;;Feeney, Amy Rose
+~40888;MUS 214K;2;0;0;;;;;Roulet, Patrick Edward
+~40889;MUS 214K;1;0;0;;;;;Roulet, Patrick Edward
+~41028;MUS 215;2;0;0;;;;;Alcorn, Holly Katharine
+~41029;MUS 215;1;0;0;;;;;Alcorn, Holly Katharine
+~41030;MUS 215;2;0;0;;;;;Davies, Mark Andrew
+~41031;MUS 215;1;0;0;;;;;Davies, Mark Andrew
+~41032;MUS 215;2;0;0;;;;;Dudenbostel, Heather Christian
+~41033;MUS 215;1;0;0;;;;;Dudenbostel, Heather Christian
+~41034;MUS 215;2;0;0;;;;;Plagemann, Melissa
+~41035;MUS 215;1;0;0;;;;;Plagemann, Melissa
+~41036;MUS 215;2;0;0;;;;;Rozendaal, Jay C.
+~41164;MUS 215;1;0;0;;;;;Rozendaal, Jay C.
+~43494;MUS 215;1;0;0;;;;;Weld, Kathryn Marie
+~43495;MUS 215;2;0;0;;;;;Weld, Kathryn Marie
+~43553;MUS 215;2;0;0;;;;;Staff
+~44283;MUS 215;1;0;0;;;;;Staff
+~40912;MUS 216;2;0;0;;;;;Schille-Hudson, Eli Adam
+~40913;MUS 216;1;0;0;;;;;Schille-Hudson, Eli Adam
+~41796;MUS 221A;1;0;0;600;650;tr;;Sommer, Lesley Diane
+~41797;MUS 221A;1;0;0;660;710;tr;;Sommer, Lesley Diane
+~43436;MUS 221B;1;0;0;600;650;tr;;Widrig, Judith L.
+~43438;MUS 221B;1;0;0;660;710;tr;;Widrig, Judith L.
+~42945;MUS 221C;2;0;0;540;590;r;;Widrig, Judith L.
+~41990;MUS 222;2;0;0;600;650;mwf;;Hamilton, Bruce Douglas
+~41991;MUS 222;2;0;0;660;710;mwf;;Hamilton, Bruce Douglas
+~41171;MUS 231;2;0;0;;;;;Hamilton, Bruce Douglas
+~42006;MUS 231;2;0;0;;;;;Halka, Charles Lawrence
+~43626;MUS 231;2;0;0;990;1070;m;;Smith, Todd Francis
+~41415;MUS 232;2;0;0;840;950;f;;Hamilton, Bruce Douglas
+~40350;MUS 261;1;0;0;;;;;Widrig, Judith L.
+~44152;MUS 263;1;0;0;540;590;r;;Alcorn, Holly Katharine
+~41272;MUS 264M;1;0;0;540;590;f;;Nelson, Pat
+~41273;MUS 264N;1;0;0;540;590;t;;Green, Vincent Bryan
+~42830;MUS 264P;1;0;0;540;590;m;;Folsom, Gunnar Richard
+~42754;MUS 265C;1;0;0;480;530;t;;Ray, James
+~41227;MUS 268;2;0;0;540;590;mw;;Bourne, Patty
+~40725;MUS 271;2;0;0;840;890;mf;;Kasper, Angie
+~40589;MUS 272;2;0;0;960;1070;r;;Staff
+~42236;MUS 273;2;0;0;810;890;mf;;Ray, James
+~40130;MUS 274;2;0;0;900;950;mwf;;Williamson, Greg
+~40794;MUS 275;2;0;0;;;;;Asher, Emily
+~42061;MUS 275;2;0;0;1080;1130;m;;Staff
+~41184;MUS 276;2;0;0;960;1070;w;;Gilliam, Jeffrey P.
+~41741;MUS 278;0;0;0;;;;;Davies, Mark Andrew
+~41785;MUS 281;0;0;0;960;1040;mf;;Roulet, Patrick Edward
+~41786;MUS 281;0;0;0;720;770;tr;;Camacho, Gustavo
+~41787;MUS 281;0;0;0;720;770;tr;;McCarthy, Lisa Marie
+~41788;MUS 281;0;0;0;;;;;Donnellan, Grant Jonathan
+~41789;MUS 281;0;0;0;840;890;w;;McCarthy, Lisa Marie
+~44265;MUS 281;0;0;0;960;1010;f;;Nelson, Pat
+~42347;MUS 284;2;0;0;900;980;tr;;Fitzpatrick, Tim
+~44148;MUS 302;4;0;0;900;1010;tr;;Youngblood, Felicia Kailey
+~40852;MUS 312;0;0;0;;;;;Jelaca Jovanovic, Milica
+~41037;MUS 312;0;0;0;;;;;Widrig, Judith L.
+~42823;MUS 312;0;0;0;960:660;1070:710;t:t;;Zavislak, Kay M.
+~44141;MUS 312;0;0;0;960:990;1070:1070;t:r;;Gilliam, Jeffrey P.
+~41038;MUS 313A;0;0;0;;;;;Donnellan, Grant Jonathan
+~42003;MUS 313A;0;0;0;;;;;Camacho, Laura Marie
+~40862;MUS 313B;0;0;0;;;;;Gottesman, Joseph
+~40863;MUS 313C;0;0;0;;;;;Steinberg, Janet Marie
+~40864;MUS 313D;0;0;0;;;;;Palmer, Dylan
+~40865;MUS 313E;0;0;0;;;;;Whitman, Jill Stroming
+~40890;MUS 314A;0;0;0;;;;;McCarthy, Lisa Marie
+~40891;MUS 314B;0;0;0;;;;;Weeks, Jennifer Karin
+~40892;MUS 314C;0;0;0;;;;;Block, Erika Kristin
+~40893;MUS 314D;0;0;0;1020:960;1070:1010;f:f;;Nelson, Pat
+~40894;MUS 314E;0;0;0;;;;;Winkler, Fred A.
+~40895;MUS 314F;0;0;0;;;;;Camacho, Gustavo
+~40896;MUS 314G;0;0;0;;;;;Green, Vincent Bryan
+~40897;MUS 314H;0;0;0;660;710;t;;Cox, Gregory Allen
+~40898;MUS 314I;0;0;0;;;;;MacLellan, Peder
+~43424;MUS 314I;0;0;0;;;;;Feeney, Amy Rose
+~40899;MUS 314J;0;0;0;;;;;MacLellan, Peder
+~43425;MUS 314J;0;0;0;;;;;Feeney, Amy Rose
+~40900;MUS 314K;0;0;0;;;;;Roulet, Patrick Edward
+~42747;MUS 314K;1;0;0;;;;;Roulet, Patrick Edward
+~41125;MUS 315;0;0;0;;;;;Alcorn, Holly Katharine
+~41126;MUS 315;0;0;0;;;;;Davies, Mark Andrew
+~41127;MUS 315;0;0;0;;;;;Dudenbostel, Heather Christian
+~41128;MUS 315;0;0;0;;;;;Plagemann, Melissa
+~41129;MUS 315;0;0;0;;;;;Rozendaal, Jay C.
+~41818;MUS 315;0;0;0;;;;;Weld, Kathryn Marie
+~40914;MUS 316;0;0;0;;;;;Schille-Hudson, Eli Adam
+~41814;MUS 326;3;0;0;660;710;mwf;;Halka, Charles Lawrence
+~42196;MUS 331;3;0;0;990;1070;m;;Halka, Charles Lawrence
+~42958;MUS 331;3;0;0;990;1070;m;;Hamilton, Bruce Douglas
+~41813;MUS 334;3;0;0;900;950;mwf;;Woods, Kevin John
+~40351;MUS 341;3;0;0;600;650;mwf;;Youngblood, Felicia Kailey
+~40500;MUS 352;3;0;0;540;620;tr;;Staff
+~43914;MUS 366A;1;0;0;900;950;mw;;Staff
+~42453;MUS 371;2;0;0;780;830;mrf;;Kasper, Angie
+~44149;MUS 398;3;0;0;960;1040;tr;;Asher, Emily
+~42951;MUS 399;1;0;0;;;;;Roulet, Patrick Edward
+~40853;MUS 412;0;0;0;720:960;770:1070;w:t;;Jelaca Jovanovic, Milica
+~41130;MUS 412;0;0;0;;;;;Widrig, Judith L.
+~42824;MUS 412;0;0;0;660:960;710:1070;w:t;;Zavislak, Kay M.
+~44142;MUS 412;0;0;0;960:990;1070:1040;t:r;;Gilliam, Jeffrey P.
+~41151;MUS 413A;0;0;0;;;;;Donnellan, Grant Jonathan
+~42343;MUS 413A;0;0;0;;;;;Camacho, Laura Marie
+~40866;MUS 413B;0;0;0;;;;;Gottesman, Joseph
+~40867;MUS 413C;0;0;0;;;;;Steinberg, Janet Marie
+~40868;MUS 413D;0;0;0;;;;;Palmer, Dylan
+~40869;MUS 413E;0;0;0;;;;;Whitman, Jill Stroming
+~40901;MUS 414A;0;0;0;;;;;McCarthy, Lisa Marie
+~40902;MUS 414B;0;0;0;;;;;Weeks, Jennifer Karin
+~40903;MUS 414C;0;0;0;;;;;Block, Erika Kristin
+~40904;MUS 414D;0;0;0;;;;;Nelson, Pat
+~40905;MUS 414E;0;0;0;;;;;Winkler, Fred A.
+~40906;MUS 414F;0;0;0;;;;;Camacho, Gustavo
+~40907;MUS 414G;0;0;0;;;;;Green, Vincent Bryan
+~40908;MUS 414H;0;0;0;660;710;t;;Cox, Gregory Allen
+~40909;MUS 414I;0;0;0;;;;;MacLellan, Peder
+~43423;MUS 414I;0;0;0;;;;;Feeney, Amy Rose
+~40910;MUS 414J;0;0;0;;;;;MacLellan, Peder
+~43422;MUS 414J;0;0;0;;;;;Feeney, Amy Rose
+~40911;MUS 414K;0;0;0;;;;;Roulet, Patrick Edward
+~41152;MUS 415;0;0;0;;;;;Alcorn, Holly Katharine
+~41153;MUS 415;0;0;0;;;;;Davies, Mark Andrew
+~41160;MUS 415;0;0;0;;;;;Dudenbostel, Heather Christian
+~41161;MUS 415;0;0;0;;;;;Plagemann, Melissa
+~41202;MUS 415;0;0;0;;;;;Rozendaal, Jay C.
+~41662;MUS 415;0;0;0;;;;;Weld, Kathryn Marie
+~40915;MUS 416;0;0;0;;;;;Schille-Hudson, Eli Adam
+~42213;MUS 418;0;0;0;;;;;Woods, Kevin John
+~41172;MUS 431;3;0;0;;;;;Hamilton, Bruce Douglas
+~42007;MUS 431;3;0;0;990;1070;m;;Halka, Charles Lawrence
+~40131;MUS 442;4;0;0;540;620;tr;;Nutt, Haley Jo
+~40194;MUS 451;0;0;0;;;;;Fitzpatrick, Tim
+~43518;MUS 451;0;0;0;;;;;Dudenbostel, Ryan Keith
+~42678;MUS 460;2;0;0;600;650;mw;;Bourne, Patty
+~43913;MUS 466A;2;0;0;840;890;tr;;Jelaca Jovanovic, Milica
+~40132;MUS 469;2;0;0;660;710;f;;Bourne, Patty
+~40133;MUS 471;2;0;0;720;770;mtrf;;Fitzpatrick, Tim
+~40497;MUS 472;2;0;0;840;950;t;;Staff
+~40498;MUS 473;2;0;0;720;800;mf;;Dudenbostel, Ryan Keith
+~41204;MUS 474;2;0;0;840;890;mwf;;Woods, Kevin John
+~42062;MUS 475;2;0;0;1020;1070;mw;;Woods, Kevin John
+~41185;MUS 476;2;0;0;960;1070;w;;Gilliam, Jeffrey P.
+~40730;MUS 478;0;0;0;;;;;Davies, Mark Andrew
+~41790;MUS 481;2;0;0;720;770;tr;;McCarthy, Lisa Marie
+~41848;MUS 481;2;0;0;720;770;tr;;Camacho, Gustavo
+~42245;MUS 481;2;0;0;;;;;Donnellan, Grant Jonathan
+~44282;MUS 483;2;0;0;840;890;tr;;Kasper, Angie
+~44298;MUS 485;0;0;0;840;890;w;;Dudenbostel, Ryan Keith
+~40135;MUS 490;3;0;0;;;;;Youngblood, Felicia Kailey
+~42959;MUS 498;3;0;0;;;;;Halka, Charles Lawrence
+~40136;MUS 499;3;0;0;;;;;Roulet, Patrick Edward
+~41842;MUS 501;3;0;0;;;;;Dudenbostel, Ryan Keith
+~40137;MUS 503;3;0;0;600;650;mwf;;Dudenbostel, Ryan Keith
+~44143;MUS 507;2;0;0;540;590;mw;;Bourne, Patty
+~43601;MUS 512;0;0;0;;;;;Zavislak, Kay M.
+~43602;MUS 512;0;0;0;;;;;Jelaca Jovanovic, Milica
+~43603;MUS 513;0;0;0;;;;;Donnellan, Grant Jonathan
+~43466;MUS 514;0;0;0;;;;;Roulet, Patrick Edward
+~43737;MUS 514;0;0;0;720:720;770:770;t:t;;Staff
+~43604;MUS 515;0;0;0;;;;;Dudenbostel, Heather Christian
+~44299;MUS 516;1;0;0;;;;;Rozendaal, Jay C.
+~40190;MUS 519;0;0;0;;;;;Fitzpatrick, Tim
+~42009;MUS 519;0;0;0;;;;;Dudenbostel, Ryan Keith
+~43517;MUS 531;3;0;0;660;710;mwf;;Halka, Charles Lawrence
+~41451;MUS 534;4;0;0;990;1070;m;;Hamilton, Bruce Douglas
+~42358;MUS 534;4;0;0;990;1070;m;;Halka, Charles Lawrence
+~44272;MUS 541;4;0;0;600;710;tr;;Youngblood, Felicia Kailey
+~42679;MUS 560;3;0;0;600;650;mw;;Bourne, Patty
+~40138;MUS 571;2;0;0;720;770;mtwrf;;Fitzpatrick, Tim
+~40139;MUS 572;2;0;0;840;950;tr;;Staff
+~40140;MUS 573;2;0;0;720;800;mwf;;Dudenbostel, Ryan Keith
+~43606;MUS 574;2;0;0;840;890;mwf;;Woods, Kevin John
+~40141;MUS 575;2;0;0;960;1010;mw;;Woods, Kevin John
+~43622;MUS 576;0;0;0;960;1070;w;;Zavislak, Kay M.
+~41450;MUS 578;0;0;0;;;;;Davies, Mark Andrew
+~43612;MUS 581;2;0;0;;;;;Donnellan, Grant Jonathan
+~44300;MUS 581;2;0;0;;;;;Roulet, Patrick Edward
+~44301;MUS 585;2;0;0;840;950;w;;Dudenbostel, Ryan Keith
+~40179;MUS 690;0;0;0;;;;;Dudenbostel, Ryan Keith
+~40472;MUS 699;2;0;0;;;;;Patrick, David L.
+~41803;NURS 301;5;0;0;510;740;t;;Espina, Christine Renee
+~41969;NURS 301;5;0;0;510;740;r;;Espina, Christine Renee
+~41804;NURS 305;5;0;0;780;980;t;;Lonneman, Bill
+~41970;NURS 305;5;0;0;780;980;r;;Lonneman, Bill
+~41805;NURS 307;1;0;0;;;;;Goulet, Gail Marie
+~41806;NURS 401;1;0;0;;;;;Espina, Christine Renee
+~40370;OPS 360;4;0;0;840;950;tr;;Fok, Lillian Y.
+~40747;OPS 360;4;0;0;720;830;mw;;Hua, Stella
+~41409;OPS 460;4;0;0;960;1070;mw;;Haug, Peter
+~40398;OPS 461;4;0;0;720;830;tr;;Campbell, Gerard Michael
+~40922;OPS 461;4;0;0;960;1070;mw;;Winters, Stephen D.
+~42397;OPS 461;4;0;0;840;950;tr;;Campbell, Gerard Michael
+~42740;OPS 462;4;0;0;720;830;mw;;Springer, Mark C.
+~40748;OPS 463;4;0;0;600;710;tr;;Fok, Lillian Y.
+~40371;OPS 464;4;0;0;;;;;Springer, Mark C.
+~42178;OPS 466;4;0;0;840;950;mw;;Hua, Stella
+~40348;PHIL 102;3;0;0;900;950;mwf;;Howard-Snyder, Dan
+~43462;PHIL 102;3;0;0;960;1010;mwf;;Howard-Snyder, Dan
+~41460;PHIL 107;3;0;0;720;770;mwf;;Tognazzini, Neal Abram
+~41610;PHIL 107;3;0;0;780;830;mwf;;Tognazzini, Neal Abram
+~41306;PHIL 112;3;0;0;600;650;mwf;;Howard-Snyder, Frances
+~42081;PHIL 112;3;0;0;660;710;mwf;;Howard-Snyder, Frances
+~44205;PHIL 112;3;0;0;600;650;mwf;;Howard-Snyder, Frances
+~42461;PHIL 113;3;0;0;840;890;mwf;;Hudson, Hud
+~42462;PHIL 113;3;0;0;900;950;mwf;;Hudson, Hud
+~40736;PHIL 114;3;0;0;600;650;mwf;;Lee, Christian Ryan
+~41382;PHIL 114;3;0;0;660;710;mwf;;Lee, Christian Ryan
+~44187;PHIL 114;3;0;0;600;650;mwf;;Lee, Christian Ryan
+~41459;PHIL 115;3;0;0;720;795;tr;;Crawford, Berry
+~42938;PHIL 202;3;0;0;960;1035;tr;;Howard-Snyder, Dan
+~42370;PHIL 320;3;0;0;780;830;mwf;;Howard-Snyder, Frances
+~42939;PHIL 330;3;0;0;720;795;tr;;Wasserman, Ryan Jon
+~43918;PHIL 360;3;0;0;900;950;mwf;;Lee, Christian Ryan
+~42366;PHIL 417;3;0;0;600;650;mwf;;Tognazzini, Neal Abram
+~42488;PA 101;1;0;0;540;590;mw;;Morton, Tiffany Michelle
+~42489;PA 101;1;0;0;600;650;mw;;Morton, Tiffany Michelle
+~42490;PA 101;1;0;0;540;590;tr;;Morton, Tiffany Michelle
+~42492;PA 104;1;0;0;600;650;mw;;Aceves, Melanie Paloma
+~42493;PA 104;1;0;0;660;710;mw;;Aceves, Melanie Paloma
+~44287;PA 104;1;0;0;600;650;tr;;Aceves, Melanie Paloma
+~44288;PA 104;1;0;0;660;710;tr;;Aceves, Melanie Paloma
+~42850;PA 107;1;0;0;480;530;tr;;Williams, Richelle Catherine
+~42494;PA 108;1;0;0;600;650;tr;;Morton, Tiffany Michelle
+~42495;PA 108;1;0;0;660;710;tr;;Morton, Tiffany Michelle
+~42496;PA 108;1;0;0;660;710;mw;;Morton, Tiffany Michelle
+~43379;PA 110;1;0;0;480;590;f;;Clift, Liz
+~42851;PA 111;1;0;0;480;530;tr;;Stahler, Tatyana Krista
+~42498;PA 125;1;0;0;600;650;mw;;Jenkins, Maria C.
+~44291;PA 132;1;0;0;600;650;mw;;MacIntyre Witt, Jill Marie
+~43473;PA 134;1;0;0;780;830;mw;;MacIntyre Witt, Jill Marie
+~44292;PA 134;1;0;0;660;710;mw;;MacIntyre Witt, Jill Marie
+~44302;PA 139;1;0;0;900:900;950:950;tr:tr;;MacIntyre Witt, Jill Marie
+~42499;PA 144;1;0;0;840;890;tr;;MacIntyre Witt, Jill Marie
+~43474;PA 145;1;0;0;540;590;mw;;MacIntyre Witt, Jill Marie
+~42500;PA 149;1;0;0;780;830;tr;;MacIntyre Witt, Jill Marie
+~42852;PA 152;1;0;0;660;710;tr;;Eis, Rob
+~44304;PA 153;1;0;0;660;710;tr;;Golden, Gene
+~44306;PA 155;1;0;0;780;830;tr;;Golden, Gene
+~42501;PA 168;1;0;0;660;710;mw;;Eis, Rob
+~42853;PA 169;1;0;0;990;1040;mw;;Eis, Rob
+~42854;PA 177;1;0;0;870;980;tr;;Staff
+~41757;PE 101;1;0;0;540;590;mw;;Morton, Tiffany Michelle
+~41960;PE 101;1;0;0;600;650;mw;;Morton, Tiffany Michelle
+~42463;PE 101;1;0;0;540;590;tr;;Morton, Tiffany Michelle
+~41759;PE 104;1;0;0;600;650;tr;;Aceves, Melanie Paloma
+~41760;PE 104;1;0;0;660;710;tr;;Aceves, Melanie Paloma
+~41764;PE 104;1;0;0;600;650;mw;;Aceves, Melanie Paloma
+~42237;PE 107;1;0;0;480;530;tr;;Williams, Richelle Catherine
+~41773;PE 108;1;0;0;600;650;tr;;Morton, Tiffany Michelle
+~41774;PE 108;1;0;0;660;710;tr;;Morton, Tiffany Michelle
+~41775;PE 108;1;0;0;660;710;mw;;Morton, Tiffany Michelle
+~43428;PE 110;1;0;0;480;590;f;;Clift, Liz
+~41776;PE 111;1;0;0;480;530;tr;;Stahler, Tatyana Krista
+~43429;PE 115;1;0;0;;;;;MacIntyre Witt, Jill Marie
+~44289;PE 115;1;0;0;;;;;MacIntyre Witt, Jill Marie
+~41777;PE 125;1;0;0;600;650;mw;;Jenkins, Maria C.
+~44290;PE 132;1;0;0;600;650;mw;;MacIntyre Witt, Jill Marie
+~41778;PE 134;1;0;0;780;830;mw;;MacIntyre Witt, Jill Marie
+~41779;PE 134;1;0;0;660;710;mw;;MacIntyre Witt, Jill Marie
+~42014;PE 139;1;0;0;900:900;950:950;tr:tr;;MacIntyre Witt, Jill Marie
+~42468;PE 144;1;0;0;840;890;tr;;MacIntyre Witt, Jill Marie
+~42445;PE 145;1;0;0;540;590;mw;;MacIntyre Witt, Jill Marie
+~41595;PE 149;1;0;0;780;830;tr;;MacIntyre Witt, Jill Marie
+~41962;PE 152;1;0;0;660;710;tr;;Eis, Rob
+~44303;PE 153;1;0;0;660;710;tr;;Golden, Gene
+~44305;PE 155;1;0;0;780;830;tr;;Golden, Gene
+~41780;PE 168;1;0;0;660;710;mw;;Eis, Rob
+~41781;PE 169;1;0;0;990;1040;mw;;Eis, Rob
+~41782;PE 170;1;0;0;870;980;tr;;Staff
+~41783;PE 177;1;0;0;870;980;tr;;Staff
+~40789;PE 181;2;0;0;;;;;Dominguez, Tony
+~40790;PE 181;2;0;0;;;;;Dolfo, Carmen Annette
+~42582;PE 183;2;0;0;;;;;Halsell, PeeWee
+~41376;PE 189;2;0;0;;;;;Halsell, PeeWee
+~41377;PE 189;2;0;0;;;;;Halsell, PeeWee
+~41378;PE 192;2;0;0;;;;;Flick-Williams, Diane M.
+~41379;PE 193;2;0;0;;;;;Connell, Travis
+~41380;PE 193;2;0;0;;;;;Brisbon, Greg
+~41381;PE 194;2;0;0;;;;;Gilmore, Sheryl Lynn
+~40543;PE 345;3;0;0;480;530;mwf;;Robey, Hillary May
+~42206;PE 345;3;0;0;480;530;mwf;;Robey, Hillary May
+~42233;PE 345;3;0;0;540;590;mwf;;Robey, Hillary May
+~44253;PEH 340;5;0;0;600;710;mwf;;Robey, Hillary May
+~44254;PEH 440;5;0;0;600;710;trf;;Washburn, Nick
+~44255;PEH 440P;3;0;0;840;950;m;;Washburn, Nick
+~44256;PEH 442P;2;0;0;;;;;Washburn, Nick
+~41879;PHYS 101;4;0;0;840:600;890:710;mwf:t;;Boudreaux, Andrew
+~41880;PHYS 101;4;0;0;840:720;890:830;mwf:t;;Boudreaux, Andrew
+~43475;PHYS 101;4;0;0;840:960;890:1070;mwf:t;;Boudreaux, Andrew
+~43393;PHYS 102;3;0;0;900;975;tr;;Covey, Kevin R.
+~40325;PHYS 114;5;0;0;660;710;mtwrf;;Rines, Ken
+~40326;PHYS 114;5;0;0;600;650;mtwrf;;Roe, Ellis Turnbull
+~40347;PHYS 114;5;0;0;540;590;mtwrf;;Roe, Ellis Turnbull
+~41882;PHYS 116;5;0;0;780:600;830:710;mwrf:t;;From, Milton
+~41883;PHYS 116;5;0;0;780:720;830:830;mwrf:t;;From, Milton
+~41884;PHYS 116;5;0;0;780:840;830:950;mwrf:t;;From, Milton
+~43477;PHYS 116;5;0;0;780:960;830:1070;mwrf:t;;From, Milton
+~41156;PHYS 161;5;0;0;540:480;590:590;mtwf:r;;Roser, Philipp Alexander
+~41157;PHYS 161;5;0;0;540:600;590:710;mtwf:r;;Roser, Philipp Alexander
+~41158;PHYS 161;5;0;0;540:720;590:830;mtwf:r;;Roser, Philipp Alexander
+~41725;PHYS 161;5;0;0;600:480;650:590;mtwf:r;;Roser, Philipp Alexander
+~41726;PHYS 161;5;0;0;600:600;650:710;mtwf:r;;Roser, Philipp Alexander
+~41727;PHYS 161;5;0;0;600:960;650:1070;mtwf:r;;Roser, Philipp Alexander
+~41728;PHYS 161;5;0;0;660:480;710:590;mtwf:r;;Larson, Kristen A.
+~41729;PHYS 161;5;0;0;660:600;710:710;mtwf:r;;Larson, Kristen A.
+~41730;PHYS 161;5;0;0;660:720;710:830;mtwf:r;;Larson, Kristen A.
+~41731;PHYS 161;5;0;0;780:480;830:590;mwrf:t;;Seda, Takele Bedassa
+~41732;PHYS 161;5;0;0;780:600;830:710;mwrf:t;;Seda, Takele Bedassa
+~41733;PHYS 161;5;0;0;780:840;830:950;mwrf:t;;Seda, Takele Bedassa
+~41734;PHYS 161;5;0;0;840:720;890:830;mwrf:t;;Fleischer, Svenja Marie
+~41735;PHYS 161;5;0;0;840:840;890:950;mwrf:t;;Fleischer, Svenja Marie
+~41736;PHYS 161;5;0;0;840:960;890:1070;mwrf:t;;Fleischer, Svenja Marie
+~41823;PHYS 161;5;0;0;900:720;950:830;mwrf:t;;Fleischer, Svenja Marie
+~41824;PHYS 161;5;0;0;900:840;950:950;mwrf:t;;Fleischer, Svenja Marie
+~41857;PHYS 161;5;0;0;900:840;950:950;mwrf:t;;Fleischer, Svenja Marie
+~41737;PHYS 163;5;0;0;600:600;650:710;mtwf:r;;Sandelin, Kate
+~41738;PHYS 163;5;0;0;600:720;650:830;mtwf:r;;Sandelin, Kate
+~41739;PHYS 163;5;0;0;600:840;650:950;mtwf:r;;Sandelin, Kate
+~41864;PHYS 220;4;0;0;540:480;590:650;mwf:r;;Sandelin, Kate
+~41865;PHYS 220;4;0;0;540:660;590:830;mwf:r;;Sandelin, Kate
+~41866;PHYS 220;4;0;0;540:840;590:1010;mwf:r;;Sandelin, Kate
+~41861;PHYS 335;4;0;0;540;590;mtwf;;Seda, Takele Bedassa
+~40327;PHYS 363;4;0;0;780;830;mtwf;;Riemann, Andreas
+~41860;PHYS 365;4;0;0;600;710;tr;;Le, Thanh Kim
+~40225;PHYS 400;0;0;0;;;;;Staff
+~41862;PHYS 444;4;0;0;690;770;mwf;;Covey, Kevin R.
+~40328;PHYS 455;3;0;0;600;650;mwf;;Peden, Brandon March
+~40341;PHYS 491;0;0;0;;;;;Boudreaux, Andrew
+~40463;PHYS 491;0;0;0;;;;;From, Milton
+~40464;PHYS 491;0;0;0;;;;;Seda, Takele Bedassa
+~40465;PHYS 491;0;0;0;;;;;Le, Thanh Kim
+~40466;PHYS 491;0;0;0;;;;;Larson, Kristen A.
+~40467;PHYS 491;0;0;0;;;;;Rines, Ken
+~40507;PHYS 491;0;0;0;;;;;Riemann, Andreas
+~40729;PHYS 491;0;0;0;;;;;Leger, Janelle Maureen
+~41454;PHYS 491;0;0;0;;;;;Rice, Melissa Susanne
+~41455;PHYS 491;0;0;0;;;;;Covey, Kevin R.
+~41849;PHYS 491;0;0;0;;;;;Rahmani, Armin
+~42927;PHYS 491;0;0;0;;;;;Fleischer, Svenja Marie
+~43468;PLSC 101;5;0;0;600;650;mtwr;;Parris, Kristen D.
+~43469;PLSC 101;5;0;0;600;650;mtwr;;Parris, Kristen D.
+~43470;PLSC 101;5;0;0;600;650;mtwr;;Parris, Kristen D.
+~41307;PLSC 250;5;0;0;510;590;mwf;;Alamillo, Rudy
+~41852;PLSC 250;5;0;0;720;770;mtwr;;Salazar, Debra J.
+~41853;PLSC 250;5;0;0;720;770;mtwr;;Salazar, Debra J.
+~41854;PLSC 250;5;0;0;720;770;mtwr;;Salazar, Debra J.
+~42942;PLSC 250;5;0;0;600;680;mwf;;Donovan, Todd A.
+~40797;PLSC 261;5;0;0;600;680;mwf;;Beard, Lisa
+~42371;PLSC 261;5;0;0;780;860;mwf;;Beard, Lisa
+~42622;PLSC 271;5;0;0;690;770;mwf;;Biswas, Bidisha
+~40947;PLSC 291;5;0;0;;;;;Tverdova, Yuliya V.
+~41863;PLSC 291;5;0;0;870;950;mwf;;Wolff, Michael Jerome
+~40530;PLSC 300;0;0;0;;;;;Abedi, Amir
+~43432;PLSC 301;5;0;0;510;590;mwf;;Kamena, Butch
+~42943;PLSC 311;5;0;0;720;830;tr;;Chen, Paul H.S.
+~43134;PLSC 326;5;0;0;870;950;mwf;;Destler, Kate
+~43138;PLSC 346;5;0;0;840;950;tr;;Thomas, Brian
+~43838;PLSC 357;4;0;0;600;710;tr;;Tverdova, Yuliya V.
+~42620;PLSC 364;4;0;0;720;830;tr;;Hsueh, Vicki
+~43365;PLSC 366;5;0;0;600;680;mwf;;Bowers, Melanie
+~43839;PLSC 370;5;0;0;690;770;mw;;Horne, Cynthia M.
+~43841;PLSC 376;5;0;0;780;860;mwf;;Biswas, Bidisha
+~43843;PLSC 390;5;0;0;780;860;mw;;Horne, Cynthia M.
+~40531;PLSC 400;0;0;0;;;;;Abedi, Amir
+~43844;PLSC 403;4;0;0;720;830;tr;;Abedi, Amir
+~42944;PLSC 415;5;0;0;900;1040;tr;;Chen, Paul H.S.
+~42177;PLSC 431;4;0;0;600;800;r;;Alamillo, Rudy
+~42621;PLSC 433;4;0;0;600;710;mw;;Wolff, Michael Jerome
+~40529;PLSC 444;0;0;0;;;;;Donovan, Todd A.
+~40532;PLSC 447;0;0;0;;;;;Abedi, Amir
+~40945;PLSC 448;0;0;0;;;;;Abedi, Amir
+~43845;PLSC 450;4;0;0;780;860;mwf;;Donovan, Todd A.
+~43846;PLSC 463;4;0;0;900;1010;tr;;Hsueh, Vicki
+~43847;PLSC 473;5;0;0;900;1050;tr;;Deylami, Shirin Sedigh
+~43848;PLSC 480;4;0;0;600;710;tr;;Deylami, Shirin Sedigh
+~41207;PLSC 496;0;0;0;;;;;Staff
+~44215;PME 295;0;0;0;;;;;Hoekstra, Nicole Lyn
+~44216;PME 295;0;0;0;;;;;Larson, Nicole
+~44217;PME 295;0;0;0;;;;;Peyron, Mark
+~44218;PME 295;0;0;0;;;;;Misasi, John Michail
+~44219;PME 300;0;0;0;;;;;Staff
+~44163;PME 371;5;0;0;480;590;mw;;Peyron, Mark
+~44220;PME 395;0;0;0;;;;;Hoekstra, Nicole Lyn
+~44221;PME 395;0;0;0;;;;;Larson, Nicole
+~44222;PME 395;0;0;0;;;;;Peyron, Mark
+~44223;PME 395;0;0;0;;;;;Misasi, John Michail
+~44224;PME 400;0;0;0;;;;;Staff
+~44225;PME 402;0;0;0;;;;;Larson, Nicole
+~44226;PME 402;0;0;0;;;;;Hoekstra, Nicole Lyn
+~44227;PME 402;0;0;0;;;;;Peyron, Mark
+~44228;PME 402;0;0;0;;;;;Misasi, John Michail
+~44164;PME 471;4;0;0;840;950;mw;;Peyron, Mark
+~44165;PME 472;4;0;0;600;710;mw;;Larson, Nicole
+~44166;PME 491;3;0;0;720;830;tr;;Hoekstra, Nicole Lyn
+~44229;PME 495;0;0;0;;;;;Hoekstra, Nicole Lyn
+~44230;PME 495;0;0;0;;;;;Larson, Nicole
+~44231;PME 495;0;0;0;;;;;Peyron, Mark
+~44232;PME 495;0;0;0;;;;;Misasi, John Michail
+~40313;PSY 101;5;0;0;870;950;mwf;;Symons, Larry
+~40318;PSY 101;5;0;0;780;860;mwf;;McCabe, Jennifer
+~42181;PSY 101;5;0;0;690;770;mwf;;Czopp, Alex
+~44184;PSY 101;5;0;0;690;770;mwf;;Czopp, Alex
+~44204;PSY 101;5;0;0;870;950;mwf;;Symons, Larry
+~44210;PSY 101;5;0;0;780;860;mwf;;McCabe, Jennifer
+~41321;PSY 116;5;0;0;600;680;mwf;;Graham, Jim
+~40321;PSY 119;4;0;0;600;700;tr;;Ericksen, Lena K.
+~41165;PSY 119;4;0;0;;;;;Farrand, Barbara E.
+~41166;PSY 119;4;0;0;;;;;Farrand, Barbara E.
+~42182;PSY 119;4;0;0;840;940;tr;;Ericksen, Lena K.
+~43278;PSY 203;5;0;0;870;950;mwf;;Scollon, Christie Kaye
+~43279;PSY 203;5;0;0;690;770;mwf;;Devenport, Jennifer L.
+~40319;PSY 210;5;0;0;780;860;mwf;;Matsukura, Michi
+~42408;PSY 210;5;0;0;870;950;mwf;;Hyman, Ira E.
+~40315;PSY 220;5;0;0;480;560;mwf;;Mana, Mike
+~40698;PSY 220;5;0;0;600;680;mwf;;Finlay, Janet M.
+~40316;PSY 230;5;0;0;600;710;tr;;Riggs, Anne E.
+~40536;PSY 230;5;0;0;870;980;mw;;Ericksen, Lena K.
+~40314;PSY 240;5;0;0;690;770;mwf;;Sattler, David Nathan
+~40632;PSY 240;5;0;0;600;680;mwf;;Lemm, Kristi M.
+~40633;PSY 250;5;0;0;690;770;mwf;;Olvera, Katie
+~41242;PSY 250;5;0;0;840;950;tr;;Major, Julie Ann
+~40495;PSY 300;0;0;0;;;;;Staff
+~43280;PSY 305;5;0;0;600;710;tr;;Fast, Anne Aulise
+~43281;PSY 305;5;0;0;510;590;mwf;;Warren, Mike
+~43282;PSY 305;5;0;0;840;950;tr;;Mallinckrodt, Brent Stephen
+~43284;PSY 305;5;0;0;960;1070;tr;;McLean, Kate Carter
+~43285;PSY 305;5;0;0;480;590;tr;;Mallinckrodt, Brent Stephen
+~43286;PSY 306;5;0;0;510;590;mwf;;Seifert, Matthew Steven
+~43287;PSY 306;5;0;0;870;950;mwf;;Warren, Michael Thomas
+~43288;PSY 307;5;0;0;690;770;mwf;;Gonzalez, Antonya Marie
+~43302;PSY 307;5;0;0;510;590;mwf;;Czopp, Alex
+~41243;PSY 310;5;0;0;510;590;mwf;;Symons, Larry
+~43891;PSY 311;5;0;0;690;770;mwf;;Hyman, Ira E.
+~43892;PSY 319;5;0;0;780;860;mwf;;Jantzen, Kelly Joseph
+~43904;PSY 319;5;0;0;780;860;mwf;;Jantzen, Kelly Joseph
+~42709;PSY 322;5;0;0;690;770;mwf;;Kaplan, Josh
+~43905;PSY 322;5;0;0;690;770;mwf;;Kaplan, Josh
+~41322;PSY 323;5;0;0;480;590;tr;;Finlay, Janet M.
+~43907;PSY 323;5;0;0;480;590;tr;;Finlay, Janet M.
+~42466;PSY 334;5;0;0;840;950;tr;;Riggs, Anne E.
+~42467;PSY 335;5;0;0;960;1070;mw;;Gonzalez, Antonya Marie
+~43893;PSY 340;5;0;0;510;590;mwf;;Sattler, David Nathan
+~42971;PSY 341;5;0;0;870;950;mwf;;King, Jeff
+~41440;PSY 344;5;0;0;870;950;mwf;;Devenport, Jennifer L.
+~40317;PSY 351;5;0;0;600;710;tr;;Major, Julie Ann
+~40494;PSY 351;5;0;0;600;680;mwf;;Olvera, Katie
+~41536;PSY 354;5;0;0;480;590;tr;;Grimm, Stephanie Dawn
+~43894;PSY 359;5;0;0;600;710;tr;;Sowell, Shaun Michelle
+~40453;PSY 400;0;0;0;;;;;Staff
+~42396;PSY 410;5;0;0;780;860;mwf;;Warren, Mike
+~42967;PSY 411;5;0;0;690;770;mwf;;Seifert, Matthew Steven
+~44019;PSY 420;5;0;0;690;770;mwf;;Grimm, Jeff
+~41323;PSY 430;5;0;0;840;950;tr;;Fast, Anne Aulise
+~42968;PSY 441;5;0;0;840;950;tr;;King, Jeff
+~40320;PSY 451;5;0;0;480;590;tr;;Gilbert, Brennan Daniel
+~40437;PSY 451;5;0;0;600;710;tr;;Ciao, Anna Cathleen
+~40454;PSY 500;0;0;0;;;;;Staff
+~42184;PSY 502;5;0;0;480;610;mw;;Gilbert, Brennan Daniel
+~43896;PSY 504;5;0;0;840;950;tr;;McLean, Kate Carter
+~41325;PSY 512;5;0;0;780;860;mwf;;Lemm, Kristi M.
+~44314;PSY 517;5;0;0;;;;;Staff
+~40323;PSY 551;5;0;0;600;710;tr;;Gruman, Diana Hoerlein
+~40142;PSY 553;5;0;0;840;950;tr;;Smith, Aaron
+~42710;PSY 558;4;0;0;600;710;tr;;Staff
+~40459;PSY 561;5;0;0;480;590;tr;;Smith, Aaron
+~40143;PSY 564;0;0;0;600;710;tr;;Byrne, Christina A.
+~40144;PSY 564;0;0;0;480;590;tr;;Sowell, Shaun Michelle
+~44077;PSY 564;0;0;0;720;830;mw;;Arthur-Cameselle, Jessyca Nicole
+~43898;PSY 581;0;0;0;;;;;Staff
+~43538;PSY 582;0;0;0;;;;;Lemm, Kristi M.
+~41375;PSY 584;3;0;0;600;710;tr;;Lehman, Barbara J.
+~40191;PSY 670;0;0;0;840;950;t;;Byrne, Christina A.
+~40192;PSY 670;0;0;0;810;890;tr;;Gruman, Diana Hoerlein
+~40158;PSY 690;0;0;0;;;;;Staff
+~41665;PSY 699;2;0;0;;;;;Patrick, David L.
+~40023;RECR 201;4;0;0;720;770;mtwr;;D'Eloia, Melissa Hough
+~43503;RECR 210;4;0;0;540;650;mw;;Poynter, Lindsay Ann
+~44085;RECR 375;4;0;0;600;710;tr;;D'Eloia, Melissa Hough
+~42681;RECR 376;5;0;0;840;950;mw;;Chmielewski, Kristen Elizabeth
+~40024;RECR 421;3;0;0;840;915;tr;;Chmielewski, Kristen Elizabeth
+~40025;RECR 444;4;0;0;780;830;mtwr;;Burtz, Randall Tyler
+~40026;RECR 450;4;0;0;510;590;mtw;;Russell, Keith C.
+~40027;RECR 470;3;0;0;660;735;mw;;Poynter, Lindsay Ann
+~40285;RECR 475;3;0;0;600;675;mw;;Burtz, Randall Tyler
+~40395;RECR 479;3;0;0;840;915;tr;;Goodnow, Jasmine Marie
+~40413;RECR 480;4;0;0;600;710;tr;;Goodnow, Jasmine Marie
+~40414;RECR 480;4;0;0;600;710;tr;;Chmielewski, Kristen Elizabeth
+~40415;RECR 480;4;0;0;600;710;tr;;Poynter, Lindsay Ann
+~40846;RC 501;4;0;0;1020;1250;w;;Boland, Elizabeth Anne
+~42809;RC 578;4;0;0;;;;;Matrone, Kathe
+~42810;RC 580;4;0;0;1020;1250;w;;Kuwada, Brett Geremy
+~42812;RC 580;4;0;0;1020;1250;w;;Scriven, Elizabeth Hannah
+~40588;RC 582;4;0;0;;;;;Bengtson, Kevin Eric
+~42815;RC 589;4;0;0;;;;;Bengtson, Kevin Eric
+~42209;RC 590;4;0;0;1020;1250;t;;Bengtson, Kevin Eric
+~42811;RC 590;4;0;0;1020;1250;t;;Scriven, Elizabeth Hannah
+~42814;RC 590;4;0;0;1020;1250;t;;Scriven, Elizabeth Hannah
+~42442;REL 231;5;0;0;870;950;mwf;;Picus, Daniel
+~42801;REL 231;5;0;0;690;770;mwf;;Frost, Carrie Frederick
+~44190;REL 231;5;0;0;870;950;mwf;;Picus, Daniel
+~44150;REL 233;5;0;0;870;950;mwf;;Frost, Carrie Frederick
+~42673;REL 265;5;0;0;600;710;tr;;Folk, Holly
+~44193;REL 290;5;0;0;780;860;mwf;;Moore, Tom
+~42398;REL 300;0;0;0;;;;;Staff
+~42990;REL 333;5;0;0;840;950;tr;;Folk, Holly
+~43999;REL 334;5;0;0;690;770;mwf;;Picus, Daniel
+~44000;REL 375;5;0;0;600;680;mwf;;Bushelle, Ethan David
+~42401;REL 400;0;0;0;;;;;Staff
+~44001;REL 490;5;0;0;870;980;mw;;Slouber, Michael
+~42394;REL 498;3;0;0;;;;;Lynn, Kimberly
+~42395;REL 499;3;0;0;;;;;Lynn, Kimberly
+~43128;SALI 201;4;0;0;600;710;tr;;Baker, Mary Tuti
+~43442;SALI 201;4;0;0;600;710;tr;;Baker, Mary Tuti
+~40440;SCED 201;4;0;0;720;830;mwf;;Boudreaux, Andrew
+~40788;SCED 201;4;0;0;840;950;mwf;;Borda, Emily Jeanne
+~41330;SCED 201;4;0;0;600;710;mwf;;Stephenson, Norda
+~44266;SCED 201;4;0;0;720;830;mwf;;Boudreaux, Andrew
+~41710;SCED 370;3;0;0;870;950;mw;;Dahl, Robyn Mieko
+~40473;SCED 480;5;0;0;600;710;trf;;Hardin, Caroline Dobbe
+~40755;SCED 480;5;0;0;600;710;mwf;;Morrison, Whitney Anne
+~41711;SCED 481;2;0;0;900;1010;t;;DeBari, Susan M.
+~40546;SCED 490;3;0;0;750;860;mwf;;Morrison, Whitney Anne
+~42361;SCED 490;3;0;0;750;860;trf;;Burgess, Don
+~41611;SCED 492;3;0;0;;;;;Morrison, Whitney Anne
+~41541;SEC 303;4;0;0;960;1070;tr;;Staff
+~42191;SEC 303;4;0;0;960;1070;mw;;Staff
+~42406;SEC 310;4;0;0;840;950;tr;;Staff
+~40173;SEC 400;0;0;0;;;;;Staff
+~42363;SEC 410;2;0;0;480;590;tr;;Burgess, Don
+~42364;SEC 410;2;0;0;480;590;tr;;Larson, Bruce Edward
+~40777;SEC 425;4;0;0;900;1010;tr;;McClanahan, Lauren G.
+~40709;SEC 430;4;0;0;600;710;tr;;Burgess, Don
+~40710;SEC 430;4;0;0;600;710;tr;;Larson, Bruce Edward
+~42451;SEC 432;4;0;0;600;710;r;;McClanahan, Lauren G.
+~40727;SEC 433;1;0;0;;;;;Staff
+~40576;SEC 436;1;0;0;;;;;Staff
+~40219;SEC 495;18;0;0;;;;;Roxas, Kevin C.
+~42407;SEC 501;4;0;0;840;950;tr;;Staff
+~41896;SEC 512;4;0;0;960;1070;w;;Rodgers, Shannon
+~41703;SEC 513;4;0;0;840;950;tr;;Velez, Veronica
+~42554;SEC 514;1;0;0;480;590;tr;;Longoria, A
+~42553;SEC 515;1;0;0;480;590;mw;;Staff
+~40118;SEC 531;4;0;0;840;950;tr;;Larson, Bruce Edward
+~40837;SEC 532;4;0;0;600;710;mw;;Longoria, A
+~42452;SEC 533;4;0;0;480;590;mwf;;Staff
+~41598;SEC 534;4;0;0;600;710;tr;;Ware, Molly Noelle
+~40220;SEC 595;18;0;0;;;;;Roxas, Kevin C.
+~42513;SEC 693;2;0;0;720;830;tr;;Ware, Molly Noelle
+~40577;SEC 699;2;0;0;;;;;Patrick, David L.
+~40544;SMNR 101;2;0;0;780;890;w;;Curtis, Emily KJ
+~40545;SMNR 101;2;0;0;780;890;m;;Rogers-Thibou, Shurla
+~40715;SMNR 101;2;0;0;960;1070;t;;Mayer, Aric
+~40716;SMNR 101;2;0;0;780;830;tr;;Curtis, Emily KJ
+~40717;SMNR 101;2;0;0;540;590;tr;;Wang, Grace A.
+~40781;SMNR 101;2;0;0;660;710;tr;;Hixson, Amber Lynn
+~40845;SMNR 101;2;0;0;600;710;w;;Weber, Meg
+~41262;SMNR 101;2;0;0;900;1010;r;;Padilla, Daisy
+~41263;SMNR 101;2;0;0;780;890;f;;Albertson, Zander E.
+~41274;SMNR 101;2;0;0;840;950;m;;Vohs, Rosemary Amanda Scott
+~41285;SMNR 101;2;0;0;540;590;mw;;Staff
+~41286;SMNR 101;2;0;0;600;650;mw;;Prichard, Tony Alan
+~41532;SMNR 101;2;0;0;720;770;tr;;Bell, Michael Patrick
+~41533;SMNR 101;2;0;0;720;830;t;;Erickson, Mary P A
+~41747;SMNR 101;2;0;0;540;590;mw;;Frost, Carrie Frederick
+~41748;SMNR 101;2;0;0;540;590;tr;;Sasaki, Bryce
+~41749;SMNR 101;2;0;0;540;650;f;;Albertson, Zander E.
+~41750;SMNR 101;2;0;0;540;650;m;;Weber, Meg
+~41756;SMNR 101;2;0;0;960;1070;t;;Senger, Lucas G.
+~41809;SMNR 101;2;0;0;720;770;tr;;Hixson, Amber Lynn
+~41965;SMNR 101;2;0;0;900;1010;w;;Dozier, Raine J.
+~41974;SMNR 101;2;0;0;720;830;f;;Fox, Lily Ann
+~41984;SMNR 101;2;0;0;720;770;mw;;MacIntyre Witt, Jill Marie
+~41985;SMNR 101;2;0;0;780;890;t;;Senger, Lucas G.
+~42015;SMNR 101;2;0;0;840;950;t;;Cilinceon, Stefanie Nicole
+~42220;SMNR 101;2;0;0;540;590;tr;;Ten Eyck, Toby
+~42246;SMNR 101;2;0;0;780;890;t;;Hanuscin, Debi
+~42540;SMNR 101;2;0;0;900;1010;r;;Tennessen, Travis Peter
+~44179;SMNR 201;2;0;0;960;1070;f;;Senger, Lucas G.
+~44180;SMNR 201;2;0;0;780;890;r;;Senger, Lucas G.
+~44182;SMNR 201;2;0;0;540;590;mw;;Douglas, Tania M.
+~44183;SMNR 201;2;0;0;600;650;mw;;Rogers-Thibou, Shurla
+~41366;SOC 255;5;0;0;840;950;tr;;Helms, Ron
+~43386;SOC 255;5;0;0;840;950;tr;;Helms, Ron
+~40743;SOC 268;5;0;0;510;590;mwf;;Lois, Jen
+~43396;SOC 268;5;0;0;510;590;mwf;;Lois, Jen
+~43397;SOC 268;5;0;0;510;590;mwf;;Lois, Jen
+~40346;SOC 269;5;0;0;780;860;mwf;;Tsunokai, Glenn Thomas
+~43310;SOC 269;5;0;0;780;860;mwf;;Tsunokai, Glenn Thomas
+~43314;SOC 269;5;0;0;780;860;mwf;;Tsunokai, Glenn Thomas
+~43308;SOC 302;5;0;0;600;710;tr;;Gillham, Pat
+~43309;SOC 302;5;0;0;510;590;mwf;;Ten Eyck, Toby
+~43979;SOC 304;5;0;0;600;710;tr;;Cunningham, Mick
+~43980;SOC 304;5;0;0;690;770;mwf;;Ten Eyck, Toby
+~41137;SOC 306;5;0;0;480;590;tr;;Whitley, Cameron Thomas
+~43305;SOC 306;5;0;0;900;1050;mw;;Mogford, Liz
+~44022;SOC 321;5;0;0;600;710;tr;;Zaidi, Batool
+~44023;SOC 326;5;0;0;840;950;tr;;Cunningham, Mick
+~44250;SOC 330;5;0;0;;;;;Lois, Jen
+~43950;SOC 339;5;0;0;690;770;mwf;;Lois, Jen
+~43301;SOC 341;5;0;0;840;950;tr;;Gillham, Pat
+~42083;SOC 348;5;0;0;690;770;mwf;;Mogford, Liz
+~44024;SOC 354;5;0;0;870;950;mwf;;Anderson, Kristin Lee
+~44251;SOC 356;5;0;0;;;;;Helms, Ron
+~42380;SOC 361;5;0;0;780;860;mwf;;Osborne, Melissa
+~42632;SOC 364;5;0;0;600;680;mwf;;Tsunokai, Glenn Thomas
+~42381;SOC 366;5;0;0;600;680;mwf;;Feinberg, Seth L.
+~44252;SOC 369;5;0;0;;;;;Tsunokai, Glenn Thomas
+~41167;SOC 371;5;0;0;;;;;Mogford, Liz
+~43414;SOC 373;5;0;0;720;830;tr;;Nguyen, Jenny
+~43313;SOC 380;5;0;0;720;830;tr;;Overstreet, Laura Irene
+~44092;SOC 384;5;0;0;480;590;tr;;Staff
+~44094;SOC 384;5;0;0;840;950;tr;;Staff
+~44025;SOC 386;5;0;0;600;710;tr;;Whitley, Cameron Thomas
+~44026;SOC 426;5;0;0;840;950;tr;;Zaidi, Batool
+~44020;SOC 456;5;0;0;600;710;tr;;Helms, Ron
+~44027;SOC 466;5;0;0;780;860;mwf;;Feinberg, Seth L.
+~42786;SOC 480;0;0;0;;;;;Tsunokai, Glenn Thomas
+~43315;SOC 480;0;0;0;;;;;Anderson, Kristin Lee
+~43416;SOC 480;0;0;0;;;;;Zaidi, Batool
+~43754;SOC 480;0;0;0;;;;;Gillham, Pat
+~43316;SOC 481;0;0;0;;;;;Anderson, Kristin Lee
+~43531;SOC 481;0;0;0;;;;;Osborne, Melissa
+~43317;SOC 492;5;0;0;;;;;Anderson, Kristin Lee
+~40107;SPAN 101;5;0;0;510;590;mwf;;Carbajal, Amy R.
+~40108;SPAN 101;5;0;0;690;770;mwf;;Carbajal, Amy R.
+~40159;SPAN 101;5;0;0;600;680;mwf;;Dwyer, Sean Thomas
+~40109;SPAN 104;5;0;0;870;950;mwf;;Dwyer, Sean Thomas
+~40160;SPAN 104;5;0;0;510;590;mwf;;Araniva, Mauricio Alexander
+~40271;SPAN 104;5;0;0;600;680;mwf;;Araniva, Mauricio Alexander
+~40396;SPAN 104;5;0;0;690;770;mwf;;Drickey, Kirsten M.
+~40110;SPAN 201;5;0;0;870;950;mwf;;Drickey, Kirsten M.
+~40111;SPAN 201;5;0;0;510;590;mwf;;Rangel-Guerrero, Mary Anne
+~40112;SPAN 201;5;0;0;600;680;mwf;;Rangel-Guerrero, Mary Anne
+~40161;SPAN 203;5;0;0;600;680;mwf;;Portugal, Luis Gonzalo
+~40162;SPAN 203;5;0;0;870;950;mwf;;Portugal, Luis Gonzalo
+~40113;SPAN 301;5;0;0;510;590;mwf;;Garcia Gonzalez, Hugo
+~40114;SPAN 301;5;0;0;870;950;mwf;;Patterson, Charles Patrick
+~40115;SPAN 301;5;0;0;690;770;mwf;;Araniva, Mauricio Alexander
+~40438;SPAN 301;5;0;0;780;860;mwf;;Portugal, Luis Gonzalo
+~43855;SPAN 314;5;0;0;930;1060;tr;;Mata, R.
+~42932;SPAN 331;5;0;0;780;860;mwf;;Patterson, Charles Patrick
+~41899;SPAN 332;5;0;0;690;770;mwf;;Garcia Gonzalez, Hugo
+~40116;SPAN 340;5;0;0;630;760;tr;;Aranda, Blanca
+~42635;SPAN 351;5;0;0;600;680;mwf;;Hoffman, Joan
+~40117;SPAN 401;5;0;0;870;950;mwf;;Hartwell, Ernest Rafael
+~42387;SPAN 404;5;0;0;900;1040;tr;;Bernardo-Hinesley, Sheryl
+~40937;SPAN 425;2;0;0;;;;;Mata, R.
+~41283;SPAN 430;5;0;0;780;910;tr;;Aranda, Blanca
+~41676;SPAN 450;5;0;0;510;590;mwf;;Hoffman, Joan
+~41924;SPED 303;5;0;0;;;;;Thorndike, Tracy
+~41254;SPED 310;5;0;0;600;710;tr;;Foreman-Murray, Lindsay
+~44006;SPED 310;5;0;0;600;710;tr;;Foreman-Murray, Lindsay
+~40119;SPED 360;4;0;0;960;1070;w;;Lambert, Charles
+~43851;SPED 363;4;0;0;600;710;mw;;Staff
+~41987;SPED 364;4;0;0;;;;;Cochran, Heather Michelle
+~40564;SPED 420;4;0;0;720;830;w;;Stickley, Beth A.
+~41697;SPED 440;4;0;0;780;930;r;;Stickley, Beth A.
+~41581;SPED 441;0;0;0;;;;;Lambert, Charles
+~41508;SPED 444;4;0;0;1110;1220;tr;;Staff
+~42193;SPED 452;5;0;0;600;710;tr;;Styer, Candice
+~40120;SPED 460;4;0;0;840;950;w;;Stickley, Beth A.
+~41925;SPED 462;5;0;0;960;1190;w;;Bybee, Lauriel
+~41926;SPED 463;5;0;0;720;830;tr;;Foreman-Murray, Lindsay
+~41698;SPED 464;4;0;0;960;1190;m;;Bybee, Lauriel
+~41699;SPED 465;4;0;0;840;950;tr;;Hart, Jeffery LeRoy
+~41927;SPED 469;5;0;0;600;710;mw;;Thorndike, Tracy
+~41253;SPED 474;4;0;0;960;1190;t;;Hyatt, Keith James
+~41928;SPED 476;1;0;0;;;;;Hunt-Holma, Brend
+~41956;SPED 478;5;0;0;600;710;tr;;Hart, Jeffery LeRoy
+~42195;SPED 479;5;0;0;480;590;tr;;Coulter, Gail Ann
+~40641;SPED 480;3;0;0;780:810;950:860;mtwr:f;;Styer, Candice
+~40565;SPED 486;3;0;0;540;710;f;;Stickley, Beth A.
+~41929;SPED 487;5;0;0;1020;1250;t;;Crawford, Lindsey Marie
+~41930;SPED 488;5;0;0;840;950;mw;;Kelley, Bridget
+~41931;SPED 489;3;0;0;480;710;mtwr;;Hunt-Holma, Brend
+~41837;SPED 494;0;0;0;;;;;Lambert, Charles
+~40584;SPED 496;16;0;0;;;;;Lambert, Charles
+~40585;SPED 498;0;0;0;;;;;Lambert, Charles
+~40583;SPED 499;15;0;0;;;;;Lambert, Charles
+~43853;SPED 510;4;0;0;600:600;710:710;w:m;;Styer, Candice
+~44177;SUST 471;3;0;0;840;920;mw;;MacIntyre Witt, Jill Marie
+~40124;THTR 101;3;0;0;780;830;mwf;;Fuller, Shawn Lorane
+~40719;THTR 160;3;0;0;510;590;mw;;Mueller, Evan M.
+~40951;THTR 160;3;0;0;510;590;tr;;Dudenbostel, Heather Christian
+~40125;THTR 201;3;0;0;900;950;t;;Chapman, Kamarie A.
+~44104;THTR 201;3;0;0;900;950;t;;Chapman, Kamarie A.
+~44198;THTR 201;3;0;0;900;950;t;;Chapman, Kamarie A.
+~40516;THTR 210;3;0;0;510;590;mw;;Monaghan, Sarah
+~40178;THTR 212;4;0;0;600;710;tr;;McCroom, Darren Winther
+~44264;THTR 215;2;0;0;600;710;tr;;Monaghan, Sarah
+~40126;THTR 216;3;0;0;900:600;980:710;tr:t;;Monaghan, Sarah
+~40127;THTR 216;3;0;0;900:600;980:710;tr:w;;Monaghan, Sarah
+~40335;THTR 216;3;0;0;900:600;980:710;tr:f;;Monaghan, Sarah
+~40593;THTR 228;3;0;0;780;860;tr;;Chapman, Kamarie A.
+~40950;THTR 255;1;0;0;720;770;t;;VanCurler, Ashley Nichole
+~40518;THTR 256;0;0;0;;;;;Brown, Rich
+~41215;THTR 256;0;0;0;;;;;Kuntz, Mark T.
+~40590;THTR 260;4;0;0;600;710;tr;;Staff
+~41216;THTR 260;4;0;0;600;710;mw;;Staff
+~43367;THTR 301;3;0;0;900;980;wf;;Bradman, Everett Elton
+~40615;THTR 314;3;0;0;780;860;tr;;McCroom, Darren Winther
+~41193;THTR 330;0;0;0;;;;;VanCurler, Ashley Nichole
+~43002;THTR 350;3;0;0;780;890;wf;;Staff
+~41344;THTR 355;2;0;0;;;;;McCroom, Darren Winther
+~41345;THTR 355;2;0;0;;;;;Monaghan, Sarah
+~40737;THTR 356;0;0;0;;;;;Brown, Rich
+~40952;THTR 356;0;0;0;;;;;Kuntz, Mark T.
+~40609;THTR 361;4;0;0;780;890;tr;;Mueller, Evan M.
+~42862;THTR 361;4;0;0;780;890;mw;;Mueller, Evan M.
+~41850;THTR 370;3;0;0;600;710;mwf;;Kuntz, Mark T.
+~40720;THTR 371;0;0;0;;;;;Kuntz, Mark T.
+~40175;THTR 380;4;0;0;600;710;tr;;Staff
+~40128;THTR 384;4;0;0;480;590;tr;;Kuntz, Mark T.
+~42863;THTR 428;3;0;0;510;590;mw;;Staff
+~40336;THTR 455;4;0;0;;;;;McCroom, Darren Winther
+~41217;THTR 455;4;0;0;;;;;Monaghan, Sarah
+~42864;THTR 464;5;0;0;900;1040;tr;;Brown, Rich
+~40721;THTR 471;0;0;0;;;;;Kuntz, Mark T.
+~40753;THTR 485;4;0;0;480;590;tr;;Chapman, Kamarie A.
+~40731;THTR 495;0;0;0;;;;;Brown, Rich
+~40298;THTR 496;1;0;0;;;;;Kuntz, Mark T.
+~40608;THTR 496;1;0;0;;;;;Staff
+~40612;THTR 496;1;0;0;;;;;Staff
+~41613;THTR 496;1;0;0;;;;;Mueller, Evan M.
+~41614;THTR 496;1;0;0;;;;;McCroom, Darren Winther
+~42887;THTR 496;1;0;0;;;;;Brown, Rich
+~44016;UEPP 170;1;0;0;960;1010;t;;Kamel, Nabil Mohsen
+~43204;UEPP 202;3;0;0;600;680;tr;;MacIntyre Witt, Jill Marie
+~44129;UEPP 202;3;0;0;600;680;tr;;MacIntyre Witt, Jill Marie
+~44018;UEPP 261;3;0;0;840;920;mw;;Stangl, Paul Alfred
+~43259;UEPP 270;3;0;0;720;800;mw;;Stangl, Paul Alfred
+~43954;UEPP 352;4;0;0;600;710;tr;;Wang, Xi
+~43189;UEPP 355;4;0;0;840;950;tr;;Albertson, Zander E.
+~43190;UEPP 360;3;0;0;720;800;tr;;Zaferatos, Nicholas C.
+~43947;UEPP 410;4;0;0;660;1010;f;;Berardi, Gigi
+~43192;UEPP 457;4;0;0;600;710;tr;;Russell, Sheri
+~43193;UEPP 461;4;0;0;720;830;tr;;Melious, Jean O.
+~43199;UEPP 462;3;0;0;600;680;tr;;Kamel, Nabil Mohsen
+~43194;UEPP 463;3;0;0;840;920;tr;;Zaferatos, Nicholas C.
+~43200;UEPP 470;3;0;0;840;950;mw;;Miller, James Patrick
+~43949;UEPP 471;3;0;0;840;920;mw;;MacIntyre Witt, Jill Marie
+~43201;UEPP 475;3;0;0;720;830;mw;;Laninga, Tammi
+~44017;UEPP 493;5;0;0;600;680;mwf;;Laninga, Tammi
+~43233;UEPP 495;0;0;0;;;;;Staff
+~43234;UEPP 498A;0;0;0;;;;;Staff
+~43208;UEPP 498B;0;0;0;;;;;Abel, Troy D.
+~43214;UEPP 498B;0;0;0;;;;;Berardi, Gigi
+~43220;UEPP 498B;0;0;0;;;;;Kamel, Nabil Mohsen
+~43225;UEPP 498B;0;0;0;;;;;Hollenhorst, Steve
+~43230;UEPP 498B;0;0;0;;;;;Laninga, Tammi
+~43241;UEPP 498B;0;0;0;;;;;Miller, James Patrick
+~43246;UEPP 498B;0;0;0;;;;;Stangl, Paul Alfred
+~43251;UEPP 498B;0;0;0;;;;;Wang, Grace A.
+~43256;UEPP 498B;0;0;0;;;;;Zaferatos, Nicholas C.
+~43810;UEPP 498B;0;0;0;;;;;Wang, Xi
+~43237;UEPP 498D;0;0;0;;;;;Staff
+~43260;UEPP 562;3;0;0;600;680;tr;;Kamel, Nabil Mohsen
+~43261;UEPP 563;3;0;0;720;800;tr;;Zaferatos, Nicholas C.
+~43262;UEPP 575;3;0;0;720;830;mw;;Laninga, Tammi
+~41586;WGSS 211;5;0;0;600;710;tr;;Rogers-Thibou, Shurla
+~41587;WGSS 211;5;0;0;480;590;tr;;Rogers-Thibou, Shurla
+~41588;WGSS 211;5;0;0;870;950;mwf;;Staff
+~42458;WGSS 211;5;0;0;;;;;Abustan, Paulina Theresa Banas
+~44119;WGSS 211;5;0;0;600;710;tr;;Rogers-Thibou, Shurla
+~41753;WGSS 212;5;0;0;690;770;mwf;;Staff
+~42687;WGSS 212;5;0;0;600;710;tr;;Schwartz-DuPre, Rae Lynn
+~42211;WGSS 213;5;0;0;840;950;tr;;Tilland-Stafford, Anika Oceana
+~42795;WGSS 213;5;0;0;;;;;Martindale, Lori Marie
+~43836;WGSS 213;5;0;0;510;590;mwf;;Staff
+~43411;WGSS 320;5;0;0;870;950;mwf;;Colen, Elizabeth Jane
+~43837;WGSS 331;5;0;0;780;860;mwf;;Lee, Jean
+~43831;WGSS 339;5;0;0;690;770;mwf;;Lois, Jen
+~42194;WGSS 350;5;0;0;720;830;tr;;Martindale, Lori Marie
+~43543;WGSS 367;5;0;0;600;710;tr;;Tilland-Stafford, Anika Oceana
+~42527;WGSS 450;5;0;0;720;830;tr;;Juarez, Melina

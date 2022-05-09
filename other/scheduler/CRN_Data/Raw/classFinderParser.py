@@ -132,7 +132,7 @@ def tupleToSaveString(dataTuple):
 
 if __name__ == "__main__":
     #Read the html text from the file
-    f = open("Spring_2022_Classes.html", "r", encoding="utf8")
+    f = open("Fall_2022_Classes.html", "r", encoding="utf8")
     allText = f.read()
     allText = allText.replace("\n", "")
     f.close()
