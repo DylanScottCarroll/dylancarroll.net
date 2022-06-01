@@ -36,7 +36,7 @@ body {padding: 0; margin: 0;}
 
 input.act[type="button"] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
     margin-left: auto; margin-right: auto; font-size: 15pt; color: #505050; border-radius: 5px; 
-    font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI";}
+    font-family: 'Open Sans', sans-serif;}
 
 h1 { font-size: 40pt; color: #25aac6; line-height: 1em;
     font-family: 'Open Sans', sans-serif;}
@@ -51,4 +51,4 @@ h4 { font-size: 15pt; color: #78cc86; line-height: 1em;
     font-family: 'Open Sans', sans-serif; font-weight: bold;}
 
 p {font-size: 15pt; color: #505050; 
-    font-family: 'Calibri', 'Candara', 'Segoe', "Segoe UI"}
+    font-family: 'Open Sans', sans-serif;}
