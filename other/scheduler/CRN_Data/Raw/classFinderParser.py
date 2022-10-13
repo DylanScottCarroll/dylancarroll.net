@@ -1,5 +1,6 @@
+from ctypes import ArgumentError
 from bs4 import BeautifulSoup
-import re
+import re, sys
 
 DEFAULT_COLOR = 0
 DEFAULT_SHADE = 0
@@ -132,7 +133,12 @@ def tupleToSaveString(dataTuple):
 
 if __name__ == "__main__":
     #Read the html text from the file
-    f = open("Fall_2022_Classes.html", "r", encoding="utf8")
+    if len(sys.argv) != 2:
+        raise ArgumentError("Please supply a filename to parse")
+    
+    filename = sys.argv[1]
+    
+    f = open(f"{filename}.html", "r", encoding="utf8")
     allText = f.read()
     allText = allText.replace("\n", "")
     f.close()
