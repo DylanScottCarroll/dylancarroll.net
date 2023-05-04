@@ -1,6 +1,8 @@
+<!--
 ---
 permalink: /other/scheduler
 ---
+-->
 
 <!DOCTYPE html>
 <html>
@@ -125,6 +127,7 @@ permalink: /other/scheduler
                                         <option value="Spring_2022.txt">Spring 2022</option>
                                         <option value="Fall_2022.txt">Fall 2022</option>
                                         <option value="Winter_2023.txt">Winter 2023</option>
+                                        <option value="Fall_2023.txt">Winter 2023</option>
                                     </select>
                                 </td>
 
@@ -189,45 +192,39 @@ permalink: /other/scheduler
                             <textarea id="mandatoryGroups" cols=20 rows=3 style="vertical-align:middle; resize: vertical;"></textarea>
                         </div>
 
-                        &nbsp;
-
                     </div>
 
-                    &nbsp;
 
-                    <table  style="width: 100%;">
-                        <tbody id="CourseTableBody">
-                        <tr><td>
-                            <div class="border" style="line-height: 0pt;"> 
-                                <input class="act" value="X" type="button"
-                                    style="width: 20px; height: 20px; padding: 0pt 0pt;   font-size: 10pt;
-                                    vertical-align:middle; margin-left: 20px; margin-top: 20px;"
-                                    onclick="removeCourse(this)">
-                                
-                                <div align="center" style="margin-top: -35px;">
-                                    
-                                        
-                                    <h3 class="inline" style="line-height: 0pt;">Course</h3>
+                    <div id="course-card-list">
 
-                                    <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
-                                        <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;"> 
-                                    </span>
-
+                        <div class="course-card"> 
+                            <input class="act-button" value="X" type="button" onclick="removeCourse(this)">
+                            <div class="course-card-margin"c>
+                                <div>
+  
+                                    <p>Name:</p>
+                                    <input type="text" >
                                 </div>
                                 
+                                <div>
+                                    <p>CRN:</p>
+                                    <input type="number">
+                                </div>
                                 
-                                <div align="center">
-                                    <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
-                                
-                                    <p class="inline" style="margin-left: 12pt;">Shade:</p>
+                                <div>
+                                    <p >Credits:</p>
+                                    <input type="number" min="0">
+                                </div>
+                            
+                                <div>
+                                    <p>Shade:</p>
                                     <select>
                                         <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
-
-                                    <p class="inline" style="margin-left: 12pt;">Color:</p>
+                                
+                                    <p>Color:</p>
                                     <select>
                                         <option value="0">Red</option>
                                         <option value="1">Orange</option>
@@ -240,54 +237,51 @@ permalink: /other/scheduler
                                     </select>
                                 </div>
 
-                                <div>
-                                    <div align="center">
-                                        <p class="inline">Start:</p> <input type="time">
-
-                                        <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
-
-                                        <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
-                                    </div>
-
-                                    <div align="center">
-                                        <input type="button" value="Add Time Slot" onclick= "addTimeSlot(this)" style="margin-left: 6pt;">
-                                        <input type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)" style="margin-left: 6pt;"> 
-                                    </div>
-
+                                <div class="time-slot-list">
                                     
+                                    <div class="time-slot">
+                                        <p>Start:</p>
+                                        <input type="time">
+                                    
+                                        <p>End:</p>
+                                        <input type="time">
+                                    
+                                        <input class="day-text-box" type="text" value="MTWRF">
+                                    </div>
+
+                                    <div>
+                                        <input class="act-button" type="button" value="Add Time Slot" onclick= "addTimeSlot(this)">
+                                        <input class="act-button" type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)">
+                                    </div>
                                 </div>
-
-                                <div align="center">
-                                    <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
                                     
-                                    <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 100pt; margin-left: 12pt;">
-                                    </span>
-
+                                
+                            
+                                <div>
+                                    <p>Group:</p>
+                                    <input type="text">
                                     
-
+                                    <p>Note:</p>
+                                    <input class="inline" type="text">
                                 </div>
                             </div>
-                        </td></tr>
+                        </div>
 
-                        
-                        </tbody>
-                    </table>
+                    </div>
+
                     
-
-                    &nbsp;
                     <div align=center style="margin-left: auto; margin-right: auto; display: block;">
-                        <input class="act" type="button" onclick="removeCourse(null)" value="Remove Course">
-                        <input class="act" type="button" onclick="copyCourse()" value="Copy Course">
-                        <input class="act" type="button" onclick="addCourse()" value="Add Course">
+                        <input class="act-button" type="button" onclick="removeCourse(null)" value="Remove Course">
+                        <input class="act-button" type="button" onclick="copyCourse()" value="Copy Course">
+                        <input class="act-button" type="button" onclick="addCourse()" value="Add Course">
                     </div>
                     
                     &nbsp;
 
                     <div id = "DisplayDiv">
                         <div align=center style="margin-left: auto; margin-right: auto; display: block;">
-                            <input class="act" type="button" onclick="calcOptions()" value="Calculate Options">
-                            <input class="act" type="button" onclick="downloadAllImages()" value="Download All Images">
+                            <input class="act-button" type="button" onclick="calcOptions()" value="Calculate Options">
+                            <input class="act-button" type="button" onclick="downloadAllImages()" value="Download All Images">
                         </div>
 
                         <canvas id="MainCanvas" style="width: 100%; color: #505050 1pt; margin-top: 24pt; margin-bottom: 24pt;" height="10px">
@@ -295,9 +289,9 @@ permalink: /other/scheduler
                         </canvas>
 
                         <div align=center style="margin-left: auto; margin-right: auto; display: block;">
-                            <input class="act" type="button" onclick="showPrev()" value="Show Previous">
-                            <input class="act" type="button" onclick="downloadImage()" value="Download Image">
-                            <input class="act" type="button" onclick="showNext()" value="Show Next">
+                            <input class="act-button" type="button" onclick="showPrev()" value="Show Previous">
+                            <input class="act-button" type="button" onclick="downloadImage()" value="Download Image">
+                            <input class="act-button" type="button" onclick="showNext()" value="Show Next">
                         </div>
 
 
@@ -316,28 +310,34 @@ permalink: /other/scheduler
 </body>
 
 <script>
-    var blankCourseElement = `<tr><td>
-                            <div class="border" style="line-height: 0pt;"> 
-                                <input class="act" value="X" type="button"
-                                    style="width: 20px; height: 20px; padding: 0pt 0pt;   font-size: 10pt;
-                                    vertical-align:middle; margin-left: 20px; margin-top: 20px;"
-                                    onclick="removeCourse(this)">
-                                <div align="center" style="margin-top: -35px;">
-                                    <h3 class="inline" style="line-height: 0pt;">Course</h3>
-                                    <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 24pt;">Name:</p> <input type="text" style="width: 72pt;">
-                                        <p class="inline" style="margin-left: 24pt;">CRN:</p> <input type="number" style="width: 60pt;"> 
-                                    </span>
+    var blankCourseElement = `<div class="course-card"> 
+                            <input class="act-button" value="X" type="button" onclick="removeCourse(this)">
+                            <div class="course-card-margin"c>
+                                <div>
+  
+                                    <p>Name:</p>
+                                    <input type="text" >
                                 </div>
-                                <div align="center">
-                                    <p class="inline">Credits:</p> <input type="number" min="0" style="width: 36pt;">
-                                    <p class="inline" style="margin-left: 12pt;">Shade:</p>
+                                
+                                <div>
+                                    <p>CRN:</p>
+                                    <input type="number">
+                                </div>
+                                
+                                <div>
+                                    <p >Credits:</p>
+                                    <input type="number" min="0">
+                                </div>
+                            
+                                <div>
+                                    <p>Shade:</p>
                                     <select>
                                         <option value="0">Medium</option>
                                         <option value ="1">Dark</option>
                                         <option value="2">Light</option>
                                     </select>
-                                    <p class="inline" style="margin-left: 12pt;">Color:</p>
+                                
+                                    <p>Color:</p>
                                     <select>
                                         <option value="0">Red</option>
                                         <option value="1">Orange</option>
@@ -349,32 +349,43 @@ permalink: /other/scheduler
                                         <option value="7">Grey</option>
                                     </select>
                                 </div>
-                                <div>
-                                    <div align="center">
-                                        <p class="inline">Start:</p> <input type="time">
-                                        <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
-                                        <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
-                                    </div>
-                                    <div align="center">
-                                        <input type="button" value="Add Time Slot" onclick= "addTimeSlot(this)" style="margin-left: 6pt;">
-                                        <input type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)" style="margin-left: 6pt;"> 
+
+                                <div class="time-slot-list">
+                                    
+                                    <div class="time-slot">
+                                        <p>Start:</p>
+                                        <input type="time">
+                                    
+                                        <p>End:</p>
+                                        <input type="time">
+                                    
+                                        <input class="day-text-box" type="text" value="MTWRF">
                                     </div>
                                 </div>
-                                <div align="center">
-                                    <p class="inline">Group:</p> <input type="text" style="width: 60pt;">
-                                    <span style="white-space: nowrap;"> 
-                                        <p class="inline" style="margin-left: 12pt;">Note:</p> <input class="inline" type="text" style="width: 100pt; margin-left: 12pt;">
-                                    </span>
+                                    
+                                <div>
+                                    <input class="act-button" type="button" value="Add Time Slot" onclick= "addTimeSlot(this)">
+                                    <input class="act-button" type="button" value="Remove Time Slot" onclick= "removeTimeSlot(this)">
+                                </div>
+                            
+                                <div>
+                                    <p>Group:</p>
+                                    <input type="text">
+                                    
+                                    <p>Note:</p>
+                                    <input class="inline" type="text">
                                 </div>
                             </div>
-                        </td></tr>`;
+                        </div>`;
 
-    var blankTimeSlot = `<div align="center">
-                            <p class="inline">Start:</p> <input type="time">
-
-                            <p class="inline" style="margin-left: 12pt;">End:</p> <input type="time">
-
-                            <input type="text" value="MTWRF" style="width: 40pt; margin-left: 6pt;">
+    var blankTimeSlot = `<div class="time-slot">
+                            <p>Start:</p>
+                            <input type="time">
+                        
+                            <p>End:</p>
+                            <input type="time">
+                        
+                            <input class="day-text-box" type="text" value="MTWRF">
                         </div>`
 
     //Draw Settings

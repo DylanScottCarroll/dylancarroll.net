@@ -34,8 +34,10 @@ body {padding: 0; margin: 0;}
 
 #BodyDiv {top: 100px; height: 100%;}
 
-input.act[type="button"] {background-color: lightgray; stroke: none; padding: 10pt 10pt; 
-    margin-left: auto; margin-right: auto; font-size: 15pt; color: #505050; border-radius: 5px; 
+input.act-button {background-color: #ebebeb; stroke: none;
+    padding: 10px 10px; border: 2px solid #acacac;
+    border-radius: 5px;
+    font-size: 12pt; color: #1f1f1f; 
     font-family: 'Open Sans', sans-serif;}
 
 h1 { font-size: 40pt; color: #25aac6; line-height: 1em;
@@ -52,3 +54,75 @@ h4 { font-size: 15pt; color: #78cc86; line-height: 1em;
 
 p {font-size: 15pt; color: #505050; 
     font-family: 'Open Sans', sans-serif;}
+
+
+/* * {border: #ff0000 solid 1px;;} */
+
+#course-card-list {
+    display: flex; flex-direction: column;
+    row-gap: 10px;
+    margin: 20px 0px;
+}
+
+.course-card{
+    outline: #AAAAAA solid 1px;
+    box-shadow: 4px 6px 10px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.course-card > .act-button {
+    margin: 8px;
+    border-radius: 8px;
+    height: 30px;
+    width: 30px;
+    line-height: 0pt;
+}
+
+.course-card-margin{
+    margin-left: 5em; margin-right: 5em;
+    margin-bottom: 30px;
+
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  
+ }
+
+.course-card-margin > div {
+    display: flex; flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+}
+
+.course-card-margin > div > input {
+    height: 30px;
+    width: 100px;
+    font-size: 10pt;
+    line-height: 0pt;
+}
+
+.day-text-box {
+    width: 50px;
+}
+
+div.time-slot-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time-slot {
+    display: flex; flex-direction: row;
+    align-items: center; gap: 10px;
+
+    outline: #AAAAAA solid 1px;
+    box-shadow: 2px 3px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+
+}
+
+.time-slot > * {
+    margin: 10px;
+
+}
+
