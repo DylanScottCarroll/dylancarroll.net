@@ -1,3 +1,4 @@
+
 ---
 permalink: /other/coin
 ---
@@ -83,10 +84,10 @@ permalink: /other/coin
 </body>
 
 <script>
-    const SIZE = 75;
-    const SIZE_MULT = 2
+    const SIZE = 100;
+    const SIZE_MULT = 1.2
     const FLIP_TIME = 200;
-    const CENTER_OFFSET = 5;
+    const CENTER_OFFSET = 10;
     const TEXT_SCALE = 0.8;
 
     const MIN_FLIPS = 3;
@@ -120,6 +121,7 @@ permalink: /other/coin
         else{
             flip_progress = FLIP_TIME;
             last_angle=target_angle;
+            draw(flip_progress);
             document.getElementById("Label").innerText = Math.cos(target_angle)>=0 ? "Heads!" : "Tails!";
         }
 

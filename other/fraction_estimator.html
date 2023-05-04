@@ -1,0 +1,133 @@
+---
+permalink: /other/fraction_estimator
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 901px)" href="https://www.dylancarroll.net/CSS/desktop.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://www.dylancarroll.net/CSS/mobile.css" />
+    
+    <link rel="stylesheet" href="https://www.dylancarroll.net/CSS/style.css">
+</head>
+
+<style>
+    p.display {padding-left: 50px; padding-right: 50px; padding-top: 10px;}
+</style>
+
+<body>
+
+
+<table id="MainTable">
+    
+    <tr id="MobileTitleRow">
+        <td></td>
+
+        <td id="MobileTitlecolumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+    </tr>
+    <tr id = "MobileTitleDiv"></tr>
+
+
+    <tr id="TopBarRow">
+        
+        <td id="DesktopTitleColumn">
+            <a class="TitleLink" href="https://www.dylancarroll.net">Dylan Carroll</a>
+        </td>
+        <td id="TitleDivColumn" > <div id="TitleDiv"></div> </td>
+        
+        
+        <td>
+            <table id="NavTable">
+                <tr>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/about">About</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/programming">Programming</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/animation">Animation</a></td>
+                </tr>
+                <tr>
+                    
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/contact">Contact</a></td>
+                    <td><a class="NavLink" href="https://www.dylancarroll.net/other">Other</a></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    
+    <tr><td id = "ContentPad"></td></tr>
+
+    <tr id="BodyRow"> 
+        <table id="BodyTable"><tr>
+            <td id="BodyEdge"></td>
+
+            <td>
+                <div id="BodyDiv">
+
+                    <table>
+                        <tr>
+                            <td><p>Your Value:</p></td>
+                            <td><input type="number" id="value"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Min Denominator Size:</p></td>
+                            <td><input type="number" id="minDem" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Max Denominator Size:</p></td>
+                            <td><input type="number" id="maxDem"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Number of Fractions:</p></td>
+                            <td><input type="number" id="count"></td>
+                        </tr>
+                    </table>
+
+                    <input type="button" class="act-button" value="Calculate" onclick="calculate()">
+
+                    <table id="display"></table>
+                </div>
+            </td>
+
+            <td id="BodyEdge"></td>
+        </tr></table>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
+
+<script>
+
+    function calculate(){
+        var value =  parseFloat(document.getElementById("value").value);
+        var maxDem = parseInt(document.getElementById("maxDem").value);
+        var minDem = parseInt(document.getElementById("minDem").value);
+        var count = parseFloat(document.getElementById("count").value);
+
+        console.log()
+
+        var displayString = "";
+        for(let i = 0; i < count; i++){
+            let dem = (i/count)*(maxDem-minDem) + minDem;
+            let num = dem*value;
+
+            let approxNum = Math.round(num);
+            let approxDem = Math.round(dem);
+
+            let err = ((approxNum/approxDem) - value)/value
+            err = Math.round(err*1000)/1000;
+
+            console.log("<tr><td>" + approxNum + "/" + approxDem  +  "</td><td>" + err + "</td></tr>\n");
+
+            displayString = displayString + "<tr><td><p class=\"display\">" + approxNum + "/" + approxDem  +  "</p class=\"display\"></td><td><p>" + err + "</p></td></tr>\n";
+            
+        }
+        console.log(displayString);
+        document.getElementById("display").innerHTML = displayString;
+    }
+
+</script>
