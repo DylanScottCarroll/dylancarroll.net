@@ -1,0 +1,556 @@
+---
+permalink: /natalie/soup
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>soup.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>I made two copies of this recipe, a longer one with more details and istructions to give the why as well as the what, and a shorter, briefer one that will probably be easier to follow (adapted from the longer version with ChatGPT lol).</p>
+<br>
+<h1 id="soup-recipe-long-version">Soup Recipe: Long Version</h1>
+<h2 id="ingredients">Ingredients</h2>
+<p><strong>Vegetables</strong>:</p>
+<ul>
+<li>2-4 Potatoes, cut into medium cubes. Eyeball the number of potatoes depending on their size and preference of how potato-ey you want it.</li>
+<li>1 Large Onion, diced</li>
+<li>Optional: A Carrot or two</li>
+</ul>
+<p><strong>Canned Ingredients</strong>:</p>
+<ul>
+<li>1 can cut green beans</li>
+<li>1 can kidney beans</li>
+<li>1 can peas and carrots</li>
+<li>1 can diced tomatoes</li>
+<li>1 can spinach</li>
+</ul>
+<p><strong>Sauces and Seasonings</strong>:</p>
+<ul>
+<li>1 can of tomato Sauce</li>
+<li>Better than Buillion Stuff, the vegetable one: in the fridge door</li>
+<li>Like a tablespoon of apple cider vinegar (or not, I'm not ur boss)</li>
+<li>A few bay leaves</li>
+<li>A bunch of rosemary</li>
+<li>A shit ton of italian seasoning</li>
+<li>Pepper Pepper Pepper</li>
+<li>A little bit of salt to taste (you can taste the broth before you start the instantpot to test if it's salty enough</li>
+</ul>
+<h2 id="prep">Prep:</h2>
+<ul>
+<li>
+<p>Chop up the onion and potato (and carrot if using)</p>
+<ul>
+<li>If the potato cubes are too small, they will get mushy, so you probably want to aim for 1/2 inch to 1 inch cubes. About as big as you can get them while still being small enough to fit on your spoon with the soup.</li>
+<li>The onion should just be diced as normal</li>
+<li>There is already canned carrots in the soup, but if you want more carrots, you can add fresh ones. The carrots in the fridge might seem a little off, but you can peel them until the dried up skin is off, and they should be good. Chop the carrots perpendicularly to get nice rounds. If the chunks are too big, you can cut them in half.</li>
+</ul>
+</li>
+<li>
+<p>Get ready by opening all the cans.</p>
+</li>
+<li>
+<p>Turn the instant pot to saute mode, drizzle a bit of olive oil, and let it heat up for a lil bit.</p>
+</li>
+<li>
+<p>Once it's hot, add the onion and saute until it's slightly transparent and a liiittle goldeny.</p>
+</li>
+</ul>
+<h2 id="adding-solid-ingredients">Adding Solid Ingredients:</h2>
+<ol>
+<li>
+<p>Add all solid ingredients to the instant pot.</p>
+<ul>
+<li>All cans except tomato sauce plus potato (and carrots if you're adding them).</li>
+<li>When adding the diced tomatoes, don't drain off the liquid.</li>
+</ul>
+</li>
+<li>
+<p>Stir all of the ingredients together</p>
+</li>
+</ol>
+<h2 id="adding-the-tomato-sauce-and-broth">Adding the tomato sauce and broth:</h2>
+<ol>
+<li>
+<p>Add the can of tomato sauce.</p>
+</li>
+<li>
+<p>The bullion jar should say the ratio of water to bullion, but the exact amount of water depends on how much stuff is going in and how much potato/onion you cut.</p>
+<ul>
+<li>Also, I don't know how much water to do, so you can just mix up the broth a handful of cups at a time and pour it into the instant pot until it looks like a good ratio of broth to solid stuff. And it really doesn't matter if there's more or less broth because you'll just end up with either a drier or looser soup, so it really is totally preference.</li>
+<li>You can also add more water/broth after the soup is done, or drink some of  the extra broth if there's too little/too much.</li>
+<li>Each time you add broth, mix the ingredients together so you get a better idea of the actual ratio.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Adding spices</strong>:</p>
+<ol>
+<li>
+<p>Add the spices!</p>
+<ul>
+<li>The quantities are inexact, but they just depend on how you like it! You can add spices, mix the soup throughouly, and then have a taste to see if you want more of something.</li>
+<li>This is also very much taste, but I will say, you can add more italian seasoning than you think. Once it's mixed in, it'll kind of disappear. This also goes for the pepper and rosemary because there is a lot of volume of soup in there, so you'll also need lots of spices.</li>
+<li>The Bullion does already have some salt in it, so keep that in mind, as it can be possible to oversalt this. But just taste it, mix it up, and add more if needed.</li>
+<li>If it still tastes like it's missing something, but it's already salty enough, sometimes that means a drizzle of vinegar more is called for.</li>
+</ul>
+</li>
+<li>
+<p>Drizzle several healthy glugs of olive oil in ther: probably 3ish tablespoons of it on there. This is yummy</p>
+</li>
+</ol>
+<p>Start the Instant Pot:</p>
+<ol>
+<li>Close the lid up and make sure it's sealed</li>
+<li>Select Manual and punch in ten minutes. It'll take like 10-15 minutes to get to pressure and start counting down.</li>
+<li>Once the timer goes off, leave the soup in there for 10 minutes before you vent it</li>
+<li>Once that's done, vent it off, remove the lid, and enjoy yummy soup!!</li>
+</ol>
+<p><br><br></p>
+<h1 id="soup-recipe-short-version">Soup Recipe: Short Version</h1>
+<h2 id="ingredients">Ingredients:</h2>
+<p><strong>Vegetables</strong>:</p>
+<ul>
+<li>2-4 potatoes, medium cubes</li>
+<li>1 large onion, diced</li>
+<li>Optional: 1-2 carrots, sliced into rounds</li>
+</ul>
+<p><strong>Canned Ingredients</strong>:</p>
+<ul>
+<li>1 can of cut green beans</li>
+<li>1 can of kidney beans</li>
+<li>1 can of peas and carrots</li>
+<li>1 can of diced tomatoes (with liquid)</li>
+<li>1 can of spinach</li>
+</ul>
+<p><strong>Sauces and Seasonings</strong>:</p>
+<ul>
+<li>1 can of tomato sauce</li>
+<li>Vegetable Better than Bouillon</li>
+<li>About 1 tablespoon of apple cider vinegar (optional)</li>
+<li>A few bay leaves</li>
+<li>A bunch of rosemary</li>
+<li>Italian seasoning (to taste)</li>
+<li>Pepper (to taste)</li>
+<li>A little salt (to taste)</li>
+</ul>
+<h2 id="instructions">Instructions:</h2>
+<p><strong>Prep</strong>:</p>
+<ol>
+<li>
+<p>Chop the onion and potatoes (and carrots if using) into roughly 1/2 to 1-inch cubes.</p>
+</li>
+<li>
+<p>Open all the canned ingredients.</p>
+</li>
+<li>
+<p>In the Instant Pot, select &quot;saute&quot; mode, add a bit of olive oil, and let it heat up. Once hot, saute the diced onion until slightly transparent and golden.</p>
+</li>
+</ol>
+<p>** Adding Solid Ingredients:</p>
+<ol>
+<li>
+<p>Add all the solid ingredients to the Instant Pot: canned green beans, kidney beans, peas and carrots, diced tomatoes (with liquid), spinach, and the chopped potatoes (and carrots if using).</p>
+</li>
+<li>
+<p>Mix all the ingredients together.</p>
+</li>
+</ol>
+<p><strong>Adding Tomato Sauce and Broth</strong>:</p>
+<ol>
+<li>
+<p>Add the can of tomato sauce to the pot.</p>
+</li>
+<li>
+<p>Prepare the vegetable broth using the Better than Bouillon according to the instructions on the jar. The amount of water needed may vary, so start with a few cups and add more as needed. Mix it with the other ingredients until you achieve your desired broth-to-solid ratio.</p>
+</li>
+</ol>
+<p><strong>Adding Spices</strong>:</p>
+<ol>
+<li>
+<p>Add the spices to the soup, such as Italian seasoning, pepper, and rosemary. The quantities can be adjusted according to your taste. Be cautious with salt as the Better than Bouillon already contains some.</p>
+</li>
+<li>
+<p>Taste the soup and adjust the seasoning if necessary. If the flavor feels like it's missing something, you can add a drizzle of apple cider vinegar for extra depth.</p>
+</li>
+<li>
+<p>Drizzle 2-3 additional tablespoons of olive oil into the soup.</p>
+</li>
+</ol>
+<p><strong>Start the Instant Pot</strong>:</p>
+<ol>
+<li>
+<p>Close the Instant Pot lid and ensure it's sealed. Select &quot;Manual&quot; mode and set the timer for 10 minutes. It will take some time to reach pressure before counting down.</p>
+</li>
+<li>
+<p>Once the timer goes off, allow the soup to sit in the Instant Pot for 10 minutes before venting.</p>
+</li>
+<li>
+<p>Carefully vent the Instant Pot, remove the lid, and your delicious vegetable soup is ready to enjoy!</p>
+</li>
+</ol>
+<p>Remember that this recipe allows for a lot of flexibility and personalization, so feel free to adjust the ingredients and seasonings to suit your taste preferences.</p>
+
+</body>
+</html>
