@@ -146,7 +146,13 @@ if __name__ == "__main__":
     #Create the soup object
     soup = BeautifulSoup(allText, 'html.parser')
 
-    soup.find("form", action="https://admin.wwu.edu/pls/wwis/wwsktime.ScratchPad").decompose()
+    if soup is None:
+        raise ValueError("Soup is none :(")
+
+
+    scratchpad_form = soup.find("form", action="https://admin.wwu.edu/pls/wwis/wwsktime.ScratchPad")
+    if scratchpad_form is not None:
+        scratchpad_form.decompose()
 
     selTermInputs = soup.findAll("input", attrs={"name": "sel_term"})
 
