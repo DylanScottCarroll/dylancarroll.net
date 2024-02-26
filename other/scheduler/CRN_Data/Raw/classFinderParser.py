@@ -1,6 +1,8 @@
 from ctypes import ArgumentError
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 import re, sys, os, time
+
 
 DEFAULT_COLOR = 0
 DEFAULT_SHADE = 0
@@ -28,7 +30,7 @@ def extractDatas(tr):
     except:
         print()
         print(currentTR.contents[6])
-        input("Hit enter to continue", end="")
+        input("Hit enter to continue")
         print(end="\r")
     
     credits = ""
