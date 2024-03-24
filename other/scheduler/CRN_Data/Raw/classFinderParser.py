@@ -1,6 +1,8 @@
 from ctypes import ArgumentError
 from bs4 import BeautifulSoup
-import re, sys
+from tqdm import tqdm
+import re, sys, os, time
+
 
 DEFAULT_COLOR = 0
 DEFAULT_SHADE = 0
@@ -28,7 +30,8 @@ def extractDatas(tr):
     except:
         print()
         print(currentTR.contents[6])
-        input()
+        input("Hit enter to continue")
+        print(end="\r")
     
     credits = ""
 
@@ -131,6 +134,20 @@ def tupleToSaveString(dataTuple):
 
     return string
 
+def print_progress(i, n):
+    completion = (i / n)
+    terminal_size = os.get_terminal_size().columns
+    width = terminal_size - 7 - 3
+    bar_width = int(width*completion)
+
+    terminator = "\n" if i == n else "\r"
+
+    print(f"{completion*100:6.2f}% [" + ("#"*bar_width) + (" "*(width-bar_width)) + "]", end=terminator)
+
+    
+
+
+
 if __name__ == "__main__":
     #Read the html text from the file
     if len(sys.argv) != 2:
@@ -146,21 +163,31 @@ if __name__ == "__main__":
     #Create the soup object
     soup = BeautifulSoup(allText, 'html.parser')
 
-    soup.find("form", action="https://admin.wwu.edu/pls/wwis/wwsktime.ScratchPad").decompose()
+    if soup is None:
+        raise ValueError("Soup is none :(")
+
+
+    scratchpad_form = soup.find("form", action="https://admin.wwu.edu/pls/wwis/wwsktime.ScratchPad")
+    if scratchpad_form is not None:
+        scratchpad_form.decompose()
 
     selTermInputs = soup.findAll("input", attrs={"name": "sel_term"})
+    selTermCount = len(selTermInputs)
 
     saveString = ""
-    for selTermInput in selTermInputs:
+    for i, selTermInput in enumerate(selTermInputs):
+        print_progress(i, selTermCount)
 
         currentTR = selTermInput.parent
 
         datas = extractDatas(currentTR)
         saveString += tupleToSaveString(datas) + "\n"
+    print_progress(selTermCount, selTermCount)
 
     f = open("output.txt", "w")
     f.write(saveString)
     f.close()
 
   
+
 
