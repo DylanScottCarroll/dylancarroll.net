@@ -1,0 +1,376 @@
+---
+permalink: /other/hutch_availability
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Weekly Availability</title>
+<style>
+    :root {
+        --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        --bg-color: #f9f9f9;
+        --text-color: #333;
+        --border-color: #ddd;
+        --day-header-color: #000;
+        --slot-bg: #fff;
+        --slot-bg-hover: #eee;
+
+        /* Category Colors (soft pastel tones) */
+        --cat-preferred: #b3e6b3;   /* Light green */
+        --cat-inconvenient: #d9b3e6;/* Light purple */
+        --cat-soft: #f9e5b3;        /* Light yellow */
+        --cat-school: #f2b3b3;      /* Light red/pink */
+        --cat-work: #f2cc9c;        /* Light orange */
+        --cat-personal: #c2c2c2;    /* Light gray */
+    }
+
+    body {
+        font-family: var(--font-family);
+        margin: 0;
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Name inputs row */
+    .name-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .name-row input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        width: 200px;
+    }
+    .name-row input::placeholder {
+        color: #999;
+    }
+
+    /* Categories section */
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .category-button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        background: #eee;
+        transition: background 0.3s, box-shadow 0.3s;
+    }
+    .category-button:hover {
+        background: #ddd;
+    }
+    .category-button.selected {
+        box-shadow: 0 0 0 3px #aaa;
+    }
+
+    /* Assign colors to category buttons */
+    .category-button[data-category="0"] { background-color: var(--cat-preferred); }
+    .category-button[data-category="2"] { background-color: var(--cat-inconvenient); }
+    .category-button[data-category="3"] { background-color: var(--cat-soft); }
+    .category-button[data-category="C"] { background-color: var(--cat-school); }
+    .category-button[data-category="W"] { background-color: var(--cat-work); }
+    .category-button[data-category="P"] { background-color: var(--cat-personal); }
+
+    /* Schedule layout */
+    .schedule-container {
+        overflow-x: auto;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+
+    .days-grid {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        border: 1px solid var(--border-color);
+        border-left: none;
+        margin: 0 auto;
+    }
+
+    .day-column {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        border-left: 1px solid var(--border-color);
+        min-width: 150px;
+    }
+
+    .day-column h3 {
+        text-align: center;
+        margin: 0;
+        background: #fff;
+        border-bottom: 2px solid var(--day-header-color);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .timeslot {
+        display: block;
+        padding: 15px 10px;
+        background: var(--slot-bg);
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+        margin: 0;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        transition: background 0.3s, box-shadow 0.3s;
+        white-space: nowrap;
+        border-radius: 0; /* Make them appear as a continuous stack */
+    }
+
+    .timeslot:hover {
+        background: var(--slot-bg-hover);
+    }
+
+    .day-column .timeslot:last-child {
+        border-bottom: none;
+    }
+
+    /* Timeslot category colors */
+    .timeslot[data-category="0"] { background-color: var(--cat-preferred); }
+    .timeslot[data-category="2"] { background-color: var(--cat-inconvenient); }
+    .timeslot[data-category="3"] { background-color: var(--cat-soft); }
+    .timeslot[data-category="C"] { background-color: var(--cat-school); }
+    .timeslot[data-category="W"] { background-color: var(--cat-work); }
+    .timeslot[data-category="P"] { background-color: var(--cat-personal); }
+
+    /* Download button */
+    .download-button {
+        display: block;
+        margin: 0 auto;
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 20px 40px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 4px;
+        font-weight: 500;
+        text-align: center;
+        transition: background 0.3s;
+    }
+    .download-button:hover {
+        background: #555;
+    }
+
+    @media (max-width: 600px) {
+        .name-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .timeslot {
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hutch Research Availability File Creator</h1>
+
+    <!-- Name input row -->
+    <div class="name-row">
+        <input type="text" id="fname" placeholder="First Name" />
+        <input type="text" id="lname" placeholder="Last Name" />
+    </div>
+
+    <!-- Category selection (no "No Conflict" button; no conflict is default) -->
+    <div class="categories">
+        <button class="category-button" data-category="0">Preferred</button>
+        <button class="category-button" data-category="2">Inconvenient</button>
+        <button class="category-button" data-category="3">Soft</button>
+        <button class="category-button" data-category="C">School</button>
+        <button class="category-button" data-category="W">Work</button>
+        <button class="category-button" data-category="P">Personal</button>
+    </div>
+
+    <!-- Schedule -->
+    <div class="schedule-container">
+        <div class="days-grid" id="days-grid">
+            <!-- Will be populated by JS -->
+        </div>
+    </div>
+
+    <button class="download-button">Download Your Availability File</button>
+</div>
+
+
+<script>
+    // Categories data
+    const categories = [
+        {code:"0", name:"Preferred"},
+        {code:"2", name:"Inconvenient"},
+        {code:"3", name:"Soft"},
+        {code:"C", name:"School"},
+        {code:"W", name:"Work"},
+        {code:"P", name:"Personal"}
+    ];
+
+    const days = [
+        {code:'M', label:'Mon'},
+        {code:'T', label:'Tue'},
+        {code:'W', label:'Wed'},
+        {code:'R', label:'Thu'},
+        {code:'F', label:'Fri'}
+    ];
+    const hours = [
+        ['08am','09am'],
+        ['09am','10am'],
+        ['10am','11am'],
+        ['11am','12pm'],
+        ['12pm','01pm'],
+        ['01pm','02pm'],
+        ['02pm','03pm'],
+        ['03pm','04pm'],
+        ['04pm','05pm'],
+        ['05pm','06pm'],
+    ];
+
+    const daysGrid = document.getElementById('days-grid');
+
+    // Build the schedule columns
+    days.forEach(day => {
+        const col = document.createElement('div');
+        col.classList.add('day-column');
+
+        const heading = document.createElement('h3');
+        heading.textContent = day.label;
+        col.appendChild(heading);
+
+        hours.forEach(h => {
+            const slot = document.createElement('button');
+            slot.classList.add('timeslot');
+            // Default category is '1' = no conflict
+            slot.dataset.category = '1';
+            slot.dataset.day = day.code;
+            slot.dataset.start = h[0];
+            slot.dataset.end = h[1];
+            updateTimeslotDisplay(slot);
+            slot.addEventListener('click', onTimeslotClick);
+            col.appendChild(slot);
+        });
+
+        daysGrid.appendChild(col);
+    });
+
+    // Format time: "08am" -> "8am"
+    function formatTime(t) {
+        let hour = parseInt(t, 10);
+        let suffix = t.slice(-2); // am or pm
+        return hour + suffix;
+    }
+
+    function updateTimeslotDisplay(slot) {
+        const c = slot.dataset.category;
+        const start = formatTime(slot.dataset.start);
+        // If no conflict (category=1), show time + "No Conflict"
+        if (c === '1') {
+            slot.textContent = `${start} - No Conflict`;
+        } else {
+            // Find category name
+            const cat = categories.find(cat => cat.code === c);
+            if (cat) {
+                slot.textContent = `${start} - ${cat.name}`;
+            } else {
+                slot.textContent = `${start} - No Conflict`;
+            }
+        }
+    }
+
+    // Category selection logic
+    const categoryButtons = document.querySelectorAll('.category-button');
+    let currentCategory = null;
+    categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            categoryButtons.forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            currentCategory = btn.dataset.category;
+        });
+    });
+
+    function onTimeslotClick(e) {
+        if (!currentCategory) return; // no category selected, do nothing
+
+        const slot = e.currentTarget;
+        // If the slot already has currentCategory, revert to no conflict
+        if (slot.dataset.category === currentCategory) {
+            slot.dataset.category = '1'; // no conflict
+        } else {
+            slot.dataset.category = currentCategory;
+        }
+        updateTimeslotDisplay(slot);
+    }
+
+    document.querySelector('.download-button').addEventListener('click', downloadFile);
+
+    function downloadFile() {
+        const fname = document.getElementById('fname').value.trim().toLowerCase();
+        const lname = document.getElementById('lname').value.trim().toLowerCase();
+
+        if (!fname || !lname) {
+            alert("Please enter both first and last name.");
+            return;
+        }
+
+        let fileName = `${fname}${lname}.txt`;
+        let contents = "";
+
+        // Gather all slots
+        const slots = document.querySelectorAll('.timeslot');
+        slots.forEach(slot => {
+            const day = slot.dataset.day;
+            const start = slot.dataset.start;
+            const end = slot.dataset.end;
+            const cat = slot.dataset.category;
+            contents += `${day} ${start}-${end} ${cat}\n`;
+        });
+
+        // Create a blob and download
+        const blob = new Blob([contents], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+</script>
+
+</body>
+</html>
