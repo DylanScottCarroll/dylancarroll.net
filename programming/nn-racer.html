@@ -67,15 +67,15 @@ permalink: /nn-racer
                     <h2 style="line-height: 1;">November 2020</h2>
                     <br>
 
-                    <p>I have long been interested in neural networks and have wanted to try implementing one for a while. I decided to use the neural network to play a simple racing game because I thought that it was an application that wouldn't be too difficult for my first time using neural networks. I decided to use a genetic algorithm to train the network for a similar reason: I have done minimal research on how to implement neural networks and thought that a genetic algorithm would be easy to figure out for myself.</p>
+                    <p>I had long been interested in neural networks and had wanted to try implementing one for a while. I decided to use the neural network to play a simple racing game because I thought that it was an application that wouldn't be too difficult for my first time using neural networks. I decided to use a genetic algorithm to train the network for a similar reason.</p>
 
                     <p>I wrote the program in <a class="GenericLink" href="processing.org">Processing</a>, which is a language/application that is intended to make writing simple graphical apps easy to write. Processing is essentially identical to Java since Java code will run in  Processing without modification. I do have plans to reuse this code in future Java projects.</p>
 
                     <p>The neural network takes 5 inputs that consist of the distance to the edge of the track and gives two outputs for the speed of the car and the rotational velocity of the car.</p>
 
-                    <p>The genetic algorithm works by taking the top 1/3 of networks each generation and populate the next generation with random variations off of those networks. Each generation has 50 networks. </p>
+                    <p>The training uses a simplistic genetic algorithm that takes the top 1/3 of networks each generation and populate the next generation with random variations off of those networks. Each generation has 50 networks. </p>
 
-                    <p>It took me a long time to work out all of the bugs and optimize the program. After I did, however, I was surprised to see how quickly the network trains. After only about 3-5 generations the cars can mostly navigate the course, and after 20 generations, the cars can reliably make many laps without crashing.</p>
+                    <p>After I did, however, I was surprised to see how quickly the network trains. After only about 3-5 generations the cars can mostly navigate the course, and after 20 generations, the cars can reliably make many laps without crashing.</p>
 
                     <p>After I was done training the network, I tried putting the car in a different course than the one it trained it. It crashed pretty quickly but after only a few generations, the cars were reliably not crashing in the new course.</p>
 
